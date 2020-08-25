@@ -1,0 +1,1772 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5cm
+\topmargin 0.5cm
+\rightmargin 0cm
+\bottommargin 0.5cm
+\headheight 0.5cm
+\headsep 0.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+הסתברות מותנית:
+\series default
+ 
+\begin_inset Formula $P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+הסתברות שלמה:
+\series default
+ 
+\begin_inset Formula $P\left(A\right)=\sum\limits _{b_{i}\in B}P\left(A|B_{i}\right)P\left(B_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+הסתברות בייס: 
+\series default
+
+\begin_inset Formula $P\left(H|E\right)=\frac{P\left(E|H\right)\cdot P\left(H\right)}{P\left(E\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+השערה 
+\begin_inset Formula $H=Hypothesis=$
+\end_inset
+
+, המציאות 
+\begin_inset Formula $E=Evidence=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{:\textbf{chain rule}}$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(H|E_{1,}E_{2}\right)=\frac{P\left(E_{1}|H,E_{2}\right)\cdot P\left(H,E_{2}\right)}{P\left(E_{1},E_{2}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+אנטרופיה
+\series default
+: 
+\begin_inset Formula $H\left(x\right)=-\sum\limits _{x}p\left(x\right)\cdot\log P\left(x\right)$
+\end_inset
+
+.
+ ודאות גבוה 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ אנטר' נמוכה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{Multi-Modal\ discrte}$
+\end_inset
+
+ -מספר ניחושים מדויקים , והניחוש הוא 
+\begin_inset Quotes eld
+\end_inset
+
+בינארי
+\begin_inset Quotes erd
+\end_inset
+
+ , אין לי מדד של איפה בתוך ה 
+\begin_inset Formula $bin$
+\end_inset
+
+ אני נמצא.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{Uni-Modal\ continous}$
+\end_inset
+
+ - ניחוש אחד המשקלל את האפשרויות, והניחוש רציף , לכן אפשר להיות בכל מקום
+ .
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+יעילות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+פונקציית האמונה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+מרחב המצב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אקספ'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{Mutli-modal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+בדיד
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+מסנן היסטגורמה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ריבועית
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{Uni-modal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רציף
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+מסנן קלמן
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ריבועית
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{Uni-modal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רציף
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+מסנן קלמן מורחב
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+??
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{Mutli-modal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רציף
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+מסנן חלקיקים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+גאוס : 
+\series default
+חוק 
+\begin_inset Formula $68,95,99.7$
+\end_inset
+
+ .
+ קיים 
+\begin_inset Formula $Data$
+\end_inset
+
+ בעל ממוצע 
+\begin_inset Formula $\mu$
+\end_inset
+
+ וסטיית תקן 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+הוספת 
+\begin_inset Formula $K$
+\end_inset
+
+
+\bar default
+ לכל 
+\begin_inset Formula $Data$
+\end_inset
+
+: 
+\begin_inset Formula $\mu'=\mu+K$
+\end_inset
+
+ 
+\bar under
+כפל ב 
+\begin_inset Formula $K$
+\end_inset
+
+ 
+\bar default
+: 
+\begin_inset Formula $\begin{matrix}\mu'=k\mu &  & \sigma'=k\sigma\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{:Var}$
+\end_inset
+
+
+\begin_inset Formula $\sigma_{x}^{2}=\frac{\sum_{i=1}^{N}\left(\tilde{x}-x_{i}\right)^{2}}{N}$
+\end_inset
+
+ 
+\begin_inset Formula $|$
+\end_inset
+
+ 
+\begin_inset Formula $\boldsymbol{COV}$
+\end_inset
+
+ : 
+\begin_inset Formula $\sigma_{x}\sigma_{y}=\frac{\sum_{i=1}^{N}\left(\tilde{x}-x_{i}\right)\left(\tilde{y}-y_{i}\right)}{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{PDF}$
+\end_inset
+
+ - פונ' צפיפות ההסת' - הגאוסי: 
+\begin_inset Formula $N\left(\mu_{1},\sigma_{1}^{2}\right)=\frac{1}{\sqrt{2\pi\sigma_{1}^{2}}}e^{\frac{-\left(x-\mu_{1}\right)^{2}}{2\sigma_{1}^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+הכפלת גאוסיינים:
+\series default
+
+\begin_inset Formula $\left[\begin{matrix}\mu_{3}=\frac{\mu_{1}\cdot\sigma_{2}^{2}+\mu_{2}\cdot\sigma_{1}^{2}}{\sigma_{1}^{2}+\sigma_{2}^{2}} &  & \sigma_{3}^{2}=\frac{1}{\frac{1}{\sigma_{1}^{2}}+\frac{1}{\sigma_{2}^{2}}}\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ומתקיים: 
+\begin_inset Formula $\left[\begin{matrix}\sigma_{3}^{2}\leq\sigma_{1}^{2},\sigma_{2}^{2}\\
+\sigma_{1}=\sigma_{2}\Rightarrow\sigma_{\sigma_{3}}^{2}=\frac{1}{2}\sigma_{1}^{2}
+\end{matrix}\right]$
+\end_inset
+
+ תנועה :
+\begin_inset Formula $\left\{ \begin{matrix}\mu_{3}=\mu_{1}+\mu_{2}\\
+\sigma_{3}^{2}=\sigma_{1}^{2}+\sigma_{2}^{2}
+\end{matrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+הסתברות/סבירות:
+\bar default
+ 
+\begin_inset Formula $P\left(\text{data/distribution}\right)\neq L\left(\text{distribution/data}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+ - נחשב בעזרת האינטגל.
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ - נחשב 
+\begin_inset Formula $f(x)=y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+תאור לא פרמטרי 
+\bar default
+: 
+\begin_inset Formula $X=\left\{ x^{j},w^{j}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $x^{j}$
+\end_inset
+
+ - השערת המיקום .
+ 
+\begin_inset Formula $w^{j}$
+\end_inset
+
+ - חשיבות הנקודה, חשוב = נק' גדולה
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+ולכן ההסתברות למאורע תראה כך:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $P\left(x\right)=\sum_{j=1}^{J}w^{j}\cdot\delta_{x^{j}}(x)$
+\end_inset
+
+ כאשר: 
+\begin_inset Formula $\delta_{x^{j}}(x)=\begin{cases}
+\infty & x^{j}=x\\
+0 & else
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+פונקצית משקל מתקדמת: 
+\series default
+
+\begin_inset Formula $w\left(x_{t}^{\left|k\right|}\right)=k\cdot w\left(x_{t}^{\left|k\right|}\right)+\left(1-k\right)\cdot w\left(x_{t-1}^{\left|k\right|}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+שגיאת ה 
+\begin_inset Formula $RMSE$
+\end_inset
+
+)קלמן( 
+\bar default
+: 
+\begin_inset Formula $\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}^{Est}-x_{i}^{True}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+חישוב שגיאה במסנן חלקיקים 
+\series default
+
+\begin_inset Formula $ground\_truth=\left(x,y,\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+אפשרות ראשונה: 
+\bar default
+
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ משקל, 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ חלקיק.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $error=\frac{\sum\limits _{i=1}^{M}w_{i}\sqrt{\left(P_{i}-g\right)^{2}}}{\sum\limits _{i=1}^{M}w_{i}}=\frac{\sum\limits _{i=1}^{M}w_{i}\left|\left(P_{i}-g\right)^{2}\right|}{\sum\limits _{i=1}^{M}w_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+אפשרות שניה:
+\bar default
+ 
+\begin_inset Formula $error=\left|P_{Best}-g\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+במצב 
+\series bold
+אסנכרוני
+\series default
+, ביצענו לכל חיישן : 
+\begin_inset Formula $\text{Prediction\ensuremath{\rightarrow}measurment update}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+סנכרוני
+\series default
+ : 
+\begin_inset Formula $\text{Prediction\ensuremath{\rightarrow}L update \ensuremath{\rightarrow} R update }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+מדידה 
+\bar under
+בזמנים שונים
+\bar default
+ מעדכנים את 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+משוואות התנועה
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+מהירות קבועה:
+\bar default
+ 
+\begin_inset Formula $\begin{matrix}X\left(t\right)=\int_{0}^{t}V\left(t\right)\ dt=\underline{\boldsymbol{V_{0}\cdot t+X_{0}}}\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+תאוצה קבועה:
+\bar default
+ 
+\begin_inset Formula $\begin{matrix}a\left(t\right)=a_{0}\\
+X\left(t\right)=\int_{0}^{t}V\left(t\right)\ dt=\boldsymbol{\underline{V_{0}\cdot t+\frac{1}{2}\cdot a_{0}\cdot t^{2}+X_{0}}}
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+משוואות התנועה המוכללות
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset Formula $\theta=0$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $\left[\begin{matrix}x_{f}=x_{i}+v\cdot\Delta t\times\cos\left(\theta_{0}\right)\\
+y_{f}=y_{i}+v\cdot\Delta t\times sin\left(\theta_{0}\right)
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset Formula $\theta\neq0$
+\end_inset
+
+
+\bar default
+ : 
+\begin_inset Formula $\left[\begin{matrix}x_{f}=x_{i}+\frac{v}{\dot{\theta}}\left(\sin\left(\theta_{0}+\Delta t\times\dot{\theta}\right)-\sin\left(\theta_{0}\right)\right)\\
+y_{f}=y_{i}+\frac{v}{\dot{\theta}}\left(\cos\left(\theta_{0}\right)-\cos\left(\theta_{0}+\Delta t\times\dot{\theta}\right)\right)\\
+\theta_{f}=\theta_{0}+\Delta t\times\dot{\theta}
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{\textbf{rotation matrix}}$
+\end_inset
+
+ : 
+\begin_inset Formula $\left[\begin{matrix}x_{m}\\
+y_{m}\\
+1
+\end{matrix}\right]=\left[\begin{matrix}\cos\theta & -\sin\theta & x_{p}\\
+\sin\theta & \cos\theta & x_{p}\\
+0 & 0 & 1
+\end{matrix}\right]\left[\begin{matrix}x_{c}\\
+y_{c}\\
+1
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{p},y_{p}$
+\end_inset
+
+ הקור' של החלקיק.
+ 
+\begin_inset Formula $x_{c},y_{c}$
+\end_inset
+
+ הקור' של ה 
+\begin_inset Formula $landmark$
+\end_inset
+
+ 
+\begin_inset Formula $x_{m},y_{m}$
+\end_inset
+
+ הקור' של ה 
+\begin_inset Formula $landmark$
+\end_inset
+
+ במפה.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+הזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ - מאפשר לנו לחשב גם כאשר הרובוט בזווית ביחס ל
+\begin_inset Formula $landmark$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+לינאריזציה: 
+\series default
+טיילור
+\bar default
+: 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^{n}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+\bar under
+רק שני האיברים הראשונים
+\bar default
+: 
+\begin_inset Formula $f(a)+\frac{f'(a)}{1!}\left(x-a\right)^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+יעקוביאן
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\left\{ \begin{matrix}x_{k+1}=Fx_{k}\longrightarrow x_{k+1}=f(x_{k})+r\\
+Z_{k}=Hx_{k}\longrightarrow Z_{k}=h(x_{k})+w\\
+f(x)=f(a)+f'(a)(x-a)\\
+h\left(x\right)=h\left(\mu\right)+\underbrace{\frac{dh\left(\mu\right)}{dx}}_{\text{jacobian matrix}}\left(x-\mu\right)
+\end{matrix}\right\} \Rightarrow\underbrace{\left[\begin{matrix}\frac{\vartheta h_{\boldsymbol{1}}}{\vartheta x_{\boldsymbol{1}}} & \frac{\vartheta h_{\boldsymbol{1}}}{\vartheta x_{\boldsymbol{2}}} & \cdots &  & \frac{\vartheta h_{\boldsymbol{1}}}{\vartheta x_{\boldsymbol{n}}}\\
+\frac{\vartheta h_{\boldsymbol{2}}}{\vartheta x_{\boldsymbol{1}}} & \frac{\vartheta h_{\boldsymbol{2}}}{\vartheta x_{\boldsymbol{2}}}\\
+\vdots &  & \ddots\\
+\frac{\vartheta h_{\boldsymbol{n}}}{\vartheta x_{\boldsymbol{n}}} &  &  &  & \frac{\vartheta h_{\boldsymbol{n}}}{\vartheta x_{\boldsymbol{n}}}
+\end{matrix}\right]}_{\text{general jacobian matrix}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $x=\left(\begin{matrix}P_{x}\\
+Py\\
+V_{x}\\
+V_{y}
+\end{matrix}\right),z=\left(\begin{matrix}\rho\\
+\varphi\\
+\dot{\rho}
+\end{matrix}\right)=\left(\begin{matrix}\sqrt{p_{x}^{2}+P_{y}^{2}}\\
+\arctan\left(\frac{P_{y}}{P_{x}}\right)\\
+\frac{\left(\begin{matrix}V_{x}\\
+V_{y}
+\end{matrix}\right)\left(\begin{matrix}P_{x}\\
+P_{y}
+\end{matrix}\right)}{\sqrt{P_{x}^{2}+P_{y}^{2}}}
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\left[\begin{matrix}\frac{P_{x}}{\sqrt{p_{x}^{2}+P_{y}^{2}}} & \frac{P_{y}}{\sqrt{p_{x}^{2}+P_{y}^{2}}} & 0 & 0\\
+-\frac{P_{y}}{\sqrt{p_{x}^{2}+P_{y}^{2}}} & \frac{P_{x}}{\sqrt{p_{x}^{2}+P_{y}^{2}}} & 0 & 0\\
+\frac{P_{y}\left(V_{x}P_{y}-V_{y}P_{x}\right)}{\left(P_{x}^{2}+P_{y}^{2}\right)^{3/2}} & \frac{P_{x}\left(V_{y}P_{x}-V_{x}P_{y}\right)}{\left(P_{x}^{2}+P_{y}^{2}\right)^{3/2}} & \frac{P_{x}}{\sqrt{P_{x}^{2}+P_{y}^{2}}} & \frac{P_{y}}{\sqrt{P_{x}^{2}+P_{y}^{2}}}
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\left\{ \begin{matrix}\mu_{expected}=H_{k}\cdot X_{k}\\
+\sum_{expected}=H_{k}PH_{k}^{T}
+\end{matrix}\right\} ,\left\{ \sum=P=\left(\begin{matrix}\sigma_{pos}^{2} & \sigma_{pos*vol}\\
+\sigma_{vol*pos} & \sigma_{vol}^{2}
+\end{matrix}\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\left\{ \begin{matrix}\mu_{3}=\boldsymbol{\mu_{2}+\frac{\sigma_{2}^{2}\left(\mu_{1}-\mu_{2}\right)}{\sigma_{1}^{2}+\sigma_{2}^{2}}}\\
+\\
+\sigma_{3}^{2}=\boldsymbol{\sigma_{2}^{2}-\frac{\sigma_{2}^{2}}{\sigma_{1}^{2}+\sigma_{2}^{2}}}
+\end{matrix}\right\} \left\{ \begin{matrix}(1)\ x_{k}'=x_{k}+K'\left(\overrightarrow{z}_{k}-H_{k}x_{k}\right)\\
+\\
+(2)\ P_{k}'=P_{k}-K'H_{k}P_{k}\\
+\\
+(3)\ K'=P_{k}H_{k}^{T}\left(H_{k}P_{k}H_{k}^{T}+R_{k}\right)^{-1}
+\end{matrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+הגבר קלמן:
+\series default
+ 
+\begin_inset Formula $kg=\frac{E_{est}}{E_{est}+E_{meas}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $Est_{t}=Est_{t-1}+kg\left[Meas_{t}-Est_{t-1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $E_{EST_{t}}=\left[1-kg\right]\left(E_{EST_{t-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+אלגוריתם קלמן:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\begin{matrix}\begin{matrix}\begin{matrix}\textbf{init}\\
+\left(\begin{matrix}X_{0}\\
+P_{0}
+\end{matrix}\right)\rightarrow^{0}
+\end{matrix} & \begin{matrix}\text{\textbf{prev\ st.}}\\
+\left(\begin{matrix}X_{k-1}\\
+P_{k-1}
+\end{matrix}\right)\longrightarrow
+\end{matrix}\end{matrix} & \begin{matrix}\text{\textbf{new predicted state}}\\
+\left(\begin{matrix}X_{k}=AX_{k-1}+Bu_{k}+w_{r}\\
+P_{k_{p}}=AP_{k-1}A^{T}+Q_{k}
+\end{matrix}\right)^{1,2,3}
+\end{matrix}\\
+\uparrow^{8} & \downarrow\\
+\uparrow & \begin{matrix}\text{\textbf{new observation}}\\
+\left(Y_{k}=CY_{k_{m}}+z_{m}\right)^{5}\\
+\downarrow
+\end{matrix}\\
+\begin{matrix}\left(\begin{matrix}P_{k}=\left(I-KH\right)P_{k}\\
+X_{k}
+\end{matrix}\right)^{7}\\
+\text{\textbf{update state}}
+\end{matrix}\longleftarrow & \begin{matrix}\left(\begin{matrix}K=\frac{P_{K}H^{T}}{HP_{k_{p}}H^{T}+R}\\
+X_{k}=X_{k_{p}}+K\left[Y-HX_{k}\right]
+\end{matrix}\right)^{4,6}\\
+\text{\textbf{Adjust predicted state}}
+\end{matrix}
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+0
+\numeric off
+.
+ אתחול = הצבת הנתונים:
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+1
+\numeric off
+.
+ חישוב ה 
+\begin_inset Formula $\text{predicted state }$
+\end_inset
+
+ 
+\bar default
+: עדכון המיקום 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ על פי משוואות התנועה + רעש 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+2
+\numeric off
+.
+ אתחול מטריצת ה 
+\begin_inset Formula $cov$
+\end_inset
+
+ )עושים זאת פעם אחת(:
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+3
+\numeric off
+.
+ חישוב ה 
+\begin_inset Formula $\text{predicted covarince state}$
+\end_inset
+
+: 
+\bar default
+עדכון ל 
+\begin_inset Formula $P_{K_{p}}$
+\end_inset
+
+ + רעש 
+\begin_inset Formula $\left(Q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+4
+\numeric off
+.
+ חישוב ה 
+\begin_inset Formula $Kalman\ Gain$
+\end_inset
+
+ : 
+\bar default
+כולל מעבר ממרחב המצב למרחב החיישן 
+\begin_inset Formula $\left(H\right)$
+\end_inset
+
+ + רעש 
+\begin_inset Formula $\left(R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+5
+\numeric off
+.
+ קבלת מדידה חדשה: 
+\bar default
+כולל מעבר ממרחב החיישן למרחב המצב 
+\begin_inset Formula $\left(C\right)$
+\end_inset
+
+ + 
+\begin_inset Formula $\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+6
+\numeric off
+.
+ חישוב מצב נוכחי )או התאמת הנתונים הקיימים(
+\bar default
+ : התאמת 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+7
+\numeric off
+.
+ עדכון מטריצת ה 
+\begin_inset Formula $cov$
+\end_inset
+
+:
+\bar default
+ התאמת 
+\begin_inset Formula $P_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+\bar under
+8
+\numeric off
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+העכשווי הופך לקודם
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\bar default
+הכנה למחזור הבא 
+\begin_inset Formula $X,P_{k}\Rightarrow X,P_{k-1}$
+\end_inset
+
+ )חזור ל
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Plain Layout
+מטריצה 
+\begin_inset Formula $Q$
+\end_inset
+
+: 
+\begin_inset Formula $G\cdot cov\left(a\right)\cdot G^{T}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $LiDAR$
+\end_inset
+
+ המרות:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\ |\ \underbrace{\begin{matrix}x=r\sin\left(\theta\right)\cos\left(\varphi\right)\\
+y=r\sin\left(\theta\right)\sin\left(\varphi\right)\\
+z=r\cos\left(\theta\right)
+\end{matrix}}_{\text{spherical to cartesian}}$
+\end_inset
+
+
+\begin_inset Formula $\underbrace{\begin{matrix}r=\sqrt{x^{2}+y^{2}+z^{2}}\\
+\varphi=tg^{-1}\left(\frac{y}{x}\right)=\arctan\left(\frac{y}{x}\right)\\
+\phi=\cos^{-1}\left(\frac{z}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)=\arccos\left(\frac{z}{r}\right)
+\end{matrix}}_{\text{cartesian to spherical}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $RADAR$
+\end_inset
+
+
+\series default
+: 
+\begin_inset Formula $\hat{z}_{t}=\left(\begin{matrix}\rho\\
+\phi\\
+\dot{\rho}
+\end{matrix}\right)=\left(\begin{matrix}\text{dist' from object}\\
+\text{Angle to object}\\
+\text{Radial velocity}
+\end{matrix}\right)=\left(\begin{matrix}\sqrt{p_{x}^{2}+P_{y}^{2}}\\
+tg^{-1}\frac{P_{y}}{P_{x}}\\
+\frac{V_{x}P_{x}+V_{y}P_{y}}{\sqrt{P_{x}^{2}+P_{y}^{2}}}
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+רד' למעל' ע
+\begin_inset Quotes erd
+\end_inset
+
+י: 
+\begin_inset Formula $\frac{\pi}{180^{\circ}}=\frac{180^{\circ}}{\pi}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+Resamlpe:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+p3 = []
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+index = int(random.random() * N) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+beta = 0.0 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mw = max(w_arr) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for i in range(N): 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+beta += random.random() * 2.0 * mw 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while beta > w_arr[index]: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+beta -= w_arr[index] 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+index = (index + 1) % N 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+p3.append(p[index]) 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+p = p3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+נגזרות בסיסיות: 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונ' / מטריצה הפוכה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\{ \begin{matrix}\left(f\cdot g\right)'=f'g+g'f\\
+\left(\frac{f}{g}\right)'=\frac{f'g+g'f}{g^{2}}\\
+\left(f\left(g\right)\right)'=f'\left(g\right)\cdot g'\\
+\sin\rightarrow\text{\ensuremath{\cos\rightarrow-\sin\rightarrow-\cos}}
+\end{matrix}\right\} $
+\end_inset
+
+
+\begin_inset Formula $\left\{ \begin{matrix}A=\left[\begin{matrix}a & b\\
+c & d
+\end{matrix}\right]\\
+A^{-1}=\frac{1}{ad-bc}\left[\begin{matrix}d & -b\\
+-c & d
+\end{matrix}\right]
+\end{matrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $PID$
+\end_inset
+
+ : 
+\begin_inset Formula $\frac{d}{dt}=\frac{CTE_{t}-CTE_{t-1}}{\Delta t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha=\underbrace{-\tau_{P}\cdot CTE}_{\boldsymbol{proportional}}-\underbrace{\tau_{D}\frac{d}{dt}CTE}_{\boldsymbol{derivative}}+\underbrace{\tau_{I}\sum CTE}_{\boldsymbol{integral}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

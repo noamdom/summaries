@@ -1,0 +1,11792 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תכנות מתקדם
+\end_layout
+
+\begin_layout Standard
+\align center
+מרצה: ד
+\begin_inset Quotes erd
+\end_inset
+
+ר פנחס וויסברג
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+סיכום זה מבוסס על המצגות והקלטות השיעורים , הסיכום על אחריות המשתמש.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+תודה גדולה לאביהוא אושרי על הצילומים
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+שימו לב: בסיכום יש לא מעט צילומי מצגות 
+\series bold
+בהדפסה 
+\series default
+הם עלולים לצאת
+\series bold
+ 
+\series default
+לא כל כך ברור, לשיקולכם.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+בהצלחה!!
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+לתיקונים/הערות - נעם דומוביץ 
+\begin_inset Formula $\text{0508752542}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: חסר שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פנחס לא הגיע.
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Section
+מבוא - רענון ותוספות
+\end_layout
+
+\begin_layout Subsection
+תוספות של 
+\begin_inset Formula $c++11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $auto$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה ההבדל בין 
+\begin_inset Formula $refernce$
+\end_inset
+
+ ל 
+\begin_inset Formula $pointer$
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Itemize
+אם יש לנו 
+\begin_inset Formula $pointer$
+\end_inset
+
+ ואנחנו רוצים לגשת למשתנה צריך לכתוב 
+\begin_inset Formula $*$
+\end_inset
+
+ , ו
+\begin_inset Formula $refernce$
+\end_inset
+
+ לא צריך )בדוגמה נוכל לגשת ל
+\begin_inset Formula $ri$
+\end_inset
+
+ או ל 
+\begin_inset Formula $x$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+ב 
+\begin_inset Formula $pointer$
+\end_inset
+
+ ניתן בהמשך התכנית להגדיר שיצביע על משהו אחר, 
+\begin_inset Formula $refernce$
+\end_inset
+
+ אי אפשר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $const\,refernce$
+\end_inset
+
+ - מגדיר משתנה הניתן לקריאה ולא מאפשר כתיבה
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפח הזיכרון לכל סוג משתנה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשים לב להבדל בין הגודל של ה 
+\begin_inset Formula $pointer$
+\end_inset
+
+ בין המערכות, היות וזה נובע ישירות מחלוקת הזיכרון
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $decltype()$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דומה ל 
+\begin_inset Formula $auto$
+\end_inset
+
+ , רק שאומר לקומפיילר להבין את סוג המשתנה מתוך ביטוי שנמצא במקום אחר
+\end_layout
+
+\begin_layout Subsubsection
+
+\numeric on
+4
+\numeric off
+ סוגי אתחול
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $range\,for$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשים לב להבדל בין ה 
+\begin_inset Formula $for$
+\end_inset
+
+-ים , בראשון 
+\begin_inset Formula $i$
+\end_inset
+
+ הוא 
+\series bold
+העתק
+\series default
+ של האובייקט, ובשני זה ה
+\series bold
+ערך עצמו
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $enum$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כאשר מגדירים 
+\begin_inset Formula $enum$
+\end_inset
+
+ שונים, מומלץ לתת שמות שונים, ולכן ב 
+\begin_inset Formula $c++11$
+\end_inset
+
+ יש את האפשרות ל 
+\begin_inset Formula $enum\ class$
+\end_inset
+
+ , וניתן )ואפילו הכרחי( לגשת במפורש לשמות דומים מ
+\begin_inset Formula $class$
+\end_inset
+
+ שונים.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $string$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הרעיון הוא שלקחו את ה 
+\begin_inset Formula $cstring$
+\end_inset
+
+ כלומר ה 
+\begin_inset Formula $string$
+\end_inset
+
+ מ 
+\begin_inset Formula $c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+החסרון שהגדול קבוע ואי אפשר להגדיל/להקטין ושאר פעולות
+\end_layout
+
+\begin_layout Itemize
+לכן כעת יש אובייקט 
+\begin_inset Formula $string$
+\end_inset
+
+ , ואותו כבר ניתן להגדיל , והוסיפו לא כל מיני פעולות כמו האופרטור 
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בנוסף יש מספר אפשרויות אתחול - נובע ממספר ה 
+\begin_inset Formula $construcr$
+\end_inset
+
+ שהגדירו ל 
+\begin_inset Formula $string$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $size\_type$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_8.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בתוך המחלקות 
+\begin_inset Formula $string$
+\end_inset
+
+ ו 
+\begin_inset Formula $vector$
+\end_inset
+
+ , הגדירו משתנים , וניתן להגדיר אותם מטיפוס מסוים, וכך עשו עבור גודל ה
+\begin_inset Formula $string$
+\end_inset
+
+ , וכפי שמופיע במצגת זו הדרך הנכונה להצהיר על משתנה שיחזיק אורך/גודל של
+ 
+\begin_inset Formula $string$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+דוגמאות למעבר על 
+\begin_inset Formula $string$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+לפי אינדקס:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_9.png
+	scale 80
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+עם 
+\begin_inset Formula $range$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_10.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+קליטת מחרוזות מהמשתמש :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less1_11.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה לבעיה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int x;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (cin >> x )
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout << x;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור קלט: 
+\begin_inset Formula $\begin{matrix}123\\
+456\\
+ABC
+\end{matrix}$
+\end_inset
+
+ יפול ב 
+\begin_inset Formula $ABC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הסבר: ה
+\begin_inset Formula $cin$
+\end_inset
+
+ מחזיק בנוסף משתנה של 
+\begin_inset Formula $true\backslash false$
+\end_inset
+
+ וכאשר מקבלים קלט לא תקין או סוף קובץ הוא הוא הופך ל
+\begin_inset Formula $false$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $vector$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשיעור שעבר הצגנו את האובייקט 
+\begin_inset Formula $String$
+\end_inset
+
+ שהוא נותן לנו הרבה יותר אפשרויות מאשר 
+\begin_inset Formula $Cstring$
+\end_inset
+
+ שזה היה מערך של 
+\begin_inset Formula $char$
+\end_inset
+
+ים ב
+\begin_inset Formula $C$
+\end_inset
+
+ , כך גם 
+\begin_inset Formula $vector$
+\end_inset
+
+ הוא למעשה מערך, אבל נותן לנו הרבה יותר אפשרויות :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+היתרון העיקרי שהגודל גמיש
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+איטרטורים
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה עם 
+\begin_inset Formula $string:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// change the case of the first word in a string
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string s("some string");
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (auto it = s.begin(); it != s.end() && !isspace(*it); ++it) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+*it = toupper(*it); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+The output of this program is: SOME string
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+סוגי איטרטורים
+\end_layout
+
+\begin_layout Standard
+לכל המיכלים יש איטרטורים , הם מגודרים בספריה שכל מיכל
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<int>::iterator it; 
+\color brown
+// it can read and write 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string::iterator it2; 
+\color brown
+// it2 can read and write 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<int>::const_iterator it3; 
+\color brown
+// can read but not write
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string::const_iterator it4; 
+\color brown
+// can read but not write
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// The type returned by begin and end depends on whether the object is const
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+auto it1 = v.begin(); 
+\color brown
+// It is best to use a const when we need to read only To ask for the const_iter
+ator type
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+auto it3 = v.cbegin(); 
+\color brown
+// it3 has type const_iterator
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה - חיפוש בינארי באמצעות איטרטורים
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+auto beg = text.begin(), end = text.end();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+auto mid = text.begin() + (end - beg) / 2;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (mid != end && *mid != sought) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (sought < *mid) end = mid; // if so, adjust the range 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else // element is in the second half
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+beg = mid + 1; // start looking just after mid 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+mid = beg + (end - beg) / 2; }
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+סוף שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תחילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Subsection
+מיכלים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $string$
+\end_inset
+
+ מיכל שמכיל תווים בלבד.
+ גישה אקראית מהירה, הוספה ומחיקה מהירה בסוף המחרוזת.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $vector$
+\end_inset
+
+ מערך בגודל משתנה.
+ גישה אקראית מהירה, הוספה ומחיקה מהירה בסוף הוקטור.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $deque$
+\end_inset
+
+ תור עם שני קצוות.
+ גישה אקראית מהירה, הוספה ומחיקה מהירה בתחילת ובסוף התור.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $list$
+\end_inset
+
+ רשימה מקושרת כפולה.
+ גישה סדרתית בלבד, הוספה ומחיקה מהירה בכול מקום ברשימה.
+ )חסרון א
+\begin_inset Quotes erd
+\end_inset
+
+א לגשת בצורה אקראית(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $map$
+\end_inset
+
+ אוסף של זוגות מפתח-ערך.
+ חיפוש מהיר של ערך לפי המפתח.
+ )מימוש ב
+\begin_inset Formula $cpp$
+\end_inset
+
+ : עץ חיפוש מאוזן, או 
+\begin_inset Formula $hashtable$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $set$
+\end_inset
+
+ אוסף של מפתחות.
+ חיפוש מהיר האם מפתח נמצא באוסף
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכורות:
+\end_layout
+
+\begin_layout Itemize
+היתרון בהגדרת אובייקטים בסגנון 
+\begin_inset Formula $string$
+\end_inset
+
+ או 
+\begin_inset Formula $vector$
+\end_inset
+
+ היא הקצאת זיכרון דינאמי, ואפשרות להוספת מתודות
+\end_layout
+
+\begin_layout Subsubsection
+אוסף פונקציות
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $vector$
+\end_inset
+
+ אין 
+\begin_inset Formula $push\_front$
+\end_inset
+
+ , אבל ל:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכנסה בכל מקום, ניתן להכניס גם כמה דברים,
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+יכניס 
+\bar under
+לפני
+\bar default
+ האיטרטור
+\end_layout
+
+\begin_layout Standard
+\align center
+נשים לב ל
+\begin_inset Formula $overloading$
+\end_inset
+
+ של 
+\begin_inset Formula $insert$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less2_7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $find$
+\end_inset
+
+ מחזיר איטרטור לזוג 
+\begin_inset Formula $\left(key,val\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+דוגמה לשימוש ב
+\begin_inset Formula $map$
+\end_inset
+
+ לספירת הופעות מילים בקלט:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+map<string, size_t > word_count ; 
+\color brown
+// empty map 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string word; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while ( cin >> word)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+++ word_count [word]; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for const auto &w : word_count ) 
+\color brown
+// for each element in map 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout << w.first << " occurs " << w.second << w.second > 1 ) ? " times" : "
+ time") << endl 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+The output of this program is: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Although occurs 1 time 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Before occurs 1 time 
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// Elements in a map are of type pair A pair holds two data members first
+ and seconde
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less3_1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula $SET$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+דוגמה: מספר פעמים שמילה מופיע ללא מילים שכיחות
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+map<string, size_t > word_count;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+set<string> exclude = { the ", "and ", "or", "an ", a"}; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string word; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while ( cin >> word)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// count only words that are not in exclude 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if ( exclude.find (word) == exclude.end 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+++ word_count [word];
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אלגוריתמים
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+יצרו מתודות שמתאימות לכל המיכלים, והמגשר זה איטרטורים
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $find$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה כאשר עושים 
+\begin_inset Formula $include$
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Itemize
+שאלה נניח יש קובץ 
+\begin_inset Formula $A$
+\end_inset
+
+ וקובץ 
+\begin_inset Formula $B$
+\end_inset
+
+ ,שקימפלת ביחד איך ניתן בקובץ 
+\begin_inset Formula $A$
+\end_inset
+
+ להשתמש בפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מקובץ 
+\begin_inset Formula $B$
+\end_inset
+
+ ? 
+\end_layout
+
+\begin_layout Itemize
+תשובה: צריך לרשום בראש הקובץ את חתימת הפונקציה
+\end_layout
+
+\begin_layout Standard
+זה מציק.
+ לכן יש את 
+\begin_inset Formula $header$
+\end_inset
+
+ כפי שאנחנו מכירים.
+\end_layout
+
+\begin_layout Itemize
+אבל מה קורה כאשר רוצים להביא פונקציות מספריות גדולות? רצו לפטור את המתכנת
+ מהצורך לרשום את כל חתימות הפונקציות, וזה מה שעושים ה 
+\begin_inset Formula $include$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+אבל כאשר אנחנו עושים 
+\begin_inset Formula $include\ algorithm$
+\end_inset
+
+ , מאיפה יש לו את הפונקציה הרלוונטית?
+\end_layout
+
+\begin_layout Itemize
+תשובה: כל הדברים הללו קשורים לספריה הסטנדרטית שנרחיב עליה בהמשך.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{accumualte}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שוב נשים לב להבדל בין 
+\begin_inset Formula $cstring$
+\end_inset
+
+ לאוביקט 
+\begin_inset Formula $string$
+\end_inset
+
+ של 
+\begin_inset Formula $cpp$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{equal }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מיכלים שונים לדוגמה 
+\begin_inset Formula $vector$
+\end_inset
+
+ מול 
+\begin_inset Formula $list$
+\end_inset
+
+ , כלומר מסוג שונה )בגלל שמשווים דרך איטרטור( , כנ
+\begin_inset Quotes erd
+\end_inset
+
+ל לגבי הערכים המושווים יכולים להיות מסוגים שונים.
+ באותו אופן ניתן להשוות בין כל שני אובייקטים שמגודר בעבורם השוואה 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{copy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $sizeof(*a1)$
+\end_inset
+
+ - נותן את הגודל של האיבר הראשון, וכך ניתן לחלק בגודל המערך , כדי לדעת את
+ מספר האיברים:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $sizeof$
+\end_inset
+
+ - מחזיר גודל בבתים )ולא בביט(.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{sort, unique}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less3_8.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $unique$
+\end_inset
+
+ - מבטל כפילויות לוקטור חדש, ולכן חייבים לרוקן את הערכים ה
+\begin_inset Quotes erd
+\end_inset
+
+ישנים
+\begin_inset Quotes erd
+\end_inset
+
+ על ידי 
+\begin_inset Formula $erase$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\align center
+הערך המוחזר הוא 
+\begin_inset Formula $iterator$
+\end_inset
+
+ - למקום אחרי הערכים הקיימים
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $replace,replace\_copy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך בכל המקרים נוודא שהמיכל המיועד יהיה ריק? היינו רוצים שפשוט יהיה מנגנון
+ שידע לצור את המכיל בהתאם לגודל הדרוש.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{back\_inserter}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+ולכן רואים בדוגמה שהעברנו 
+\begin_inset Formula $back\_inserter(ivec)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $ivec$
+\end_inset
+
+ הוא 
+\begin_inset Formula $vector$
+\end_inset
+
+ ריק.
+\end_layout
+
+\begin_layout Standard
+\align center
+כיצד הוא פועל? זהו אובייקט עם העמסה של שלושה אופרטורים , 
+\begin_inset Formula $*$
+\end_inset
+
+ , השמה, 
+\begin_inset Formula $++$
+\end_inset
+
+ , ואז יצא שבכל שלב יתבצע 
+\begin_inset Formula $push\_back$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+בכיתה הראנו דוגמאות ל
+\begin_inset Formula $find$
+\end_inset
+
+ ו 
+\begin_inset Formula $replace$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $transfrom$
+\end_inset
+
+ - כמו 
+\begin_inset Quotes eld
+\end_inset
+
+העתקה לינארית
+\begin_inset Quotes erd
+\end_inset
+
+ למכיל אחר
+\end_layout
+
+\begin_layout Subsection
+העברת פונקציה לאלגוריתמים
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+מיון לפי אורך של 
+\begin_inset Formula $string$
+\end_inset
+
+ )ולא לקס'(
+\end_layout
+
+\begin_layout Subsection
+פונקציית למבדה
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+פונקצית למבדה, מבנה:
+\end_layout
+
+\begin_layout Standard
+\align center
+מתחילה ב 
+\begin_inset Formula $[]$
+\end_inset
+
+ - פרמטר שעובר על ידי התוכניות לאגלוריתם )למשל כי הוא מתגלה רק בריצת התוכנית(
+ , מיד אחרי 
+\begin_inset Formula $()$
+\end_inset
+
+ - פרמטר שעובר לפונקציה , מיד אחרי 
+\begin_inset Formula $\{\}$
+\end_inset
+
+ - גוף הפונקציה
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+הלמבדה כותבת אל מחוץ לפונקציה, ולכן צריך רפרנס.
+\end_layout
+
+\begin_layout Standard
+דוגמה להעמסה על אופרטור 
+\begin_inset Formula $()$
+\end_inset
+
+ - קריאה לפונקציה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less4_7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+בדוגמה קיבלנו אובייקט שמחזיר ערך מוחלט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Section
+בניית מחלקה
+\end_layout
+
+\begin_layout Subsection
+מחלקה
+\end_layout
+
+\begin_layout Itemize
+מחלקה היא הרחבה של 
+\begin_inset Formula $struct$
+\end_inset
+
+ שבשפת C 
+\end_layout
+
+\begin_layout Itemize
+במחלקה ניתן להגדיר בנוסף למשתנים של 
+\begin_inset Formula $struct$
+\end_inset
+
+ גם פונקציות חברות במחלקה ) 
+\begin_inset Formula $Member$
+\end_inset
+
+ 
+\begin_inset Formula $Functions$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+מחלקה מאפשרת: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הפשטת נתונים 
+\begin_inset Formula $\left(Data\ Abstraction\ \right)$
+\end_inset
+
+ התעלמות מפרטי המימוש של העצם והתרכזות במאפיינים שלו 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כימוס 
+\begin_inset Formula $\left(Encapsulation\right)$
+\end_inset
+
+ הסתרת פרטי המימוש מהמשתמש 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ניתן לקבוע הרשאות גישה לחברי המחלקה: 
+\end_layout
+
+\begin_layout Itemize
+חברי מחלקה המוגדרים 
+\begin_inset Formula $private$
+\end_inset
+
+ נגישים רק לפונקציות חברות במחלקה • חברי מחלקה המוגדרים 
+\begin_inset Formula $public$
+\end_inset
+
+ נגישים גם לשאר פונקציות התכנית
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+דוגמה למימוש 
+\begin_inset Formula $vector$
+\end_inset
+
+ - נשים לב לאתחול על ידי 
+\begin_inset Formula $list\ initialization$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Vector { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int sz; 
+\color brown
+// the size 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double* elem; 
+\color brown
+// a pointer to the elements
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+using size_type = unsigned long; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector(): sz{0},elem{nullptr} {} 
+\color brown
+//default constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector(int s) 
+\color brown
+// constructor (s is the element count) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+:sz{s}, elem{new double[s]} 
+\color brown
+// initialize 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{ for (int i = 0; i<sz; ++i) elem[i] = 0.0; } 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+~Vector() // destructor 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+{ delete[] elem; } 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+int size() { return sz; }
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}; 
+\color brown
+// end of class (struct)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v1; 
+\color brown
+// use default constructor, not Vector v1();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector v2(10); 
+\color brown
+// create a vector with 10 elements
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{nullpter}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less5_1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+פתרון למקרים בהם אנחנו רוצים לתת ערך לפויטר ללא ערך )ולא להשאר עם ערך רנדומלי(
+\end_layout
+
+\begin_layout Standard
+\align center
+פתרון לבלבול בין פוינטר ל
+\begin_inset Formula $int$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{default constructor }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+If our class does not explicitly define any constructors, the compiler will
+ implicitly define the default constructor for us 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+It default-initializes the members 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Objects of builtin or compound type (such as arrays and pointers) that are
+ defined inside a block have undefined value 
+\end_layout
+
+\begin_layout Standard
+הקומפייילר מגדיר לבד את ה 
+\begin_inset Formula $defualt$
+\end_inset
+
+ בתנאי שלא הגדרנו בנאי אחד, אם הגדרנו אחר ורוצים גם את הרגיל , אז:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+we can ask the compiler to generate the default constructor for us by writing
+ = default
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+class Vector { Vector() = default ; };
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+We are defining this constructor only because we want to provide other construct
+ors
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{\textbf{Conversion constructor}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A constructor that takes a single argument defines a conversion from its
+ argument type to its class
+\end_layout
+
+\begin_layout Standard
+נסביר דרך דוגמה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class complex { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+complex( double,double);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+complex(double);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+...
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+complex z = complex{ 1.2,3.4  };
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+z = 5.6 ; 
+\color brown
+// OK, converts 5.6 to complex( 5.6,0  and assigns to z
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{\textbf{explict}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שההמרות הללו יכולות לצור תוצאות בלתי צפויות, ולכן ניתן למנוע זאת
+ על ידי:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Vector {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+explicit V ector( int
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector v( 10 ); 
+\color brown
+// OK, explicit
+\color inherit
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v = 40 ;   
+\color brown
+ // error , no int to vector conversion
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אתחול וקטור
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Initialize to default and then 
+\series bold
+assign
+\series default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v1(2); // error prone 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v1[0] = 1.2 ; v1[1] = 2.4 ; v1[2] = 7.8
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Use
+\series bold
+ push_back
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v2 ;// tedious 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v2.push_back(1.2); v2.push_back (2.4 ); v2.push_back(7.8);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+push_back
+\series default
+ is useful for input: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector read (istream & is) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (double d; is >> d;) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+v.push_back (d); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return v
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Best 
+\series bold
+use { }
+\series default
+ delimited list of elements: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v3 = {1.2 , 7.89 , 12.34 };
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מדוע הזכרנו זאת, כי נרצה שאפשרות כזה תהיה גם אצלנו ב
+\begin_inset Formula $class$
+\end_inset
+
+ , ולכן צריך להגדיר 
+\begin_inset Formula $constractor$
+\end_inset
+
+ מתאים:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Vector {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int sz ; // the size
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double * elem ; // a pointer to the elements
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector( initializer_list <double > lst ) // constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+:  sz lst.size ()}, elem {new sz ]} { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+copy ( lst.begin lst.end elem ); // copy using standard library algorithm
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{\textbf{Copy constructor}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A constructor is the copy constructor if its first parameter 
+\series bold
+is a reference
+\series default
+ to the class: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector( const Vector& rhs ) ; // copy constructor
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+copy constructor is used direct initialization and copy initialization
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+string s(dots); // direct initialization 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string null_book = 
+\begin_inset Quotes eld
+\end_inset
+
+99999
+\begin_inset Quotes erd
+\end_inset
+
+; // copy initialization 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string nines = string( 100 ,'9'); // copy initialization
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Copy initialization happens also when passing an object to a function or
+ returning an object from a function 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+if we use an initializer that requires conversion by an explicit constructor:
+ 
+\end_layout
+
+\begin_layout Itemize
+באופן דיפולטיבי לאובייקט יש בנאי העתקה, אבל זו 
+\begin_inset Formula $member-wise-copy$
+\end_inset
+
+ שהיא העתקה רדודה 
+\begin_inset Formula $\left(Shallow\ copy\right)$
+\end_inset
+
+ , וללא הגדרת בנאי ההעתקה זה מה שיתרחש:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector v2 = v
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less5_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לכן צריך להגדיר בנאי שיעשה 
+\begin_inset Formula $deep\,copy$
+\end_inset
+
+ לכל האלמנטים של הוקטור, )נמשיך את הדוגמה של מחלקת 
+\begin_inset Formula $Vector$
+\end_inset
+
+( שלנו.
+ בנאי העתקה שמעתיק כראוי:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector( const V ector& rhs ) ; // copy constructor 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+: sz {rhs.sz }, elem {new double[rhs.sz]}; { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+copy( rhs.elem , rhs.elem+sz , elem );
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less5_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+השמת העתקה
+\end_layout
+
+\begin_layout Standard
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less5_4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר באופן דיפולטיבי פעולת ההשמה )אופרטור = ( , יבצע ה 
+\begin_inset Formula $member-wise-copy$
+\end_inset
+
+ , שניהם 
+\series bold
+יצביעו
+\series default
+ על אותו וקטור , ולכן:
+\end_layout
+
+\begin_layout Itemize
+במחיקה יהיה 
+\begin_inset Formula $double\ deletion$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $memory\ leak$
+\end_inset
+
+ על הוקטור המקורי של 
+\begin_inset Formula $v2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+לכן, נוסיף ל
+\begin_inset Formula $class$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Vector  {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Vector & operator=(const Vector &) ; // copy assignment 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// .
+ .
+ .
+ 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector &Vector::operator=(const Vector & rhs) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+double * p = new double[rhs.sz ]; 
+\color brown
+// allocate new space
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+copy( rhs.elem , rhs.elem+rhs.sz, p); 
+\color brown
+// copy elements 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+delete [] elem ; 
+\color brown
+// deallocate old space 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+elem = p; 
+\color brown
+// now we can reset elem
+\color inherit
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+sz = rhs.sz 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return *this; 
+\color brown
+// return a self reference To be consistent with built in types
+\color inherit
+ 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less5_5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: אם פועלים על פי סדר פעולות זה, לא נצורת בעיה ב 
+\begin_inset Formula $self-assinment$
+\end_inset
+
+ 
+\begin_inset Formula $\left(v=v;\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזכיר את ההגדרות:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Shallow copy
+\series default
+ copies only a pointer so that the two pointers now refer to the same object
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deep copy
+\series default
+ copies what a pointer points to so that the two pointers now refer to distinct
+ objects
+\end_layout
+
+\begin_layout Subsubsection
+מניעת העתקה
+\end_layout
+
+\begin_layout Standard
+למשל נשתמש כאשר נבנה 
+\begin_inset Formula $singleton$
+\end_inset
+
+ , דוגמה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+struct NoCopy {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+NoCopy () = default ; 
+\color brown
+// use the synthesized default constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+NoCopy const NoCopy &) = delete ; 
+\color brown
+// no copy 
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+NoCopy &operator=(const NoCopy &) = delete ; 
+\color brown
+// no assignment 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+~NoCopy () = default ; 
+\color brown
+// use the synthesized destructor other members 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+\begin_inset Formula $\text{\textbf{lvalue and rvalue}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+An 
+\series bold
+lvalue
+\series default
+ can appear on the left side of an assignment operator 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+It is is an 
+\series bold
+object that can be modified
+\series default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+An 
+\series bold
+rvalue
+\series default
+ appears on the right side of an assignment expression •
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+It is an expression that identifies something 
+\series bold
+temporary
+\series default
+ that 
+\series bold
+can not be modified
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{y}_{lvalue}=\underbrace{x+2}_{rvalue}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{z}_{lvalue}=\underbrace{7}_{rvalue}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{s}_{lvalue}=\underbrace{f(x)}_{rvalue}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{7}_{rvalue}=\underbrace{z}_{lvalue}\Rightarrow ERROR$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{rvalue refrences}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\lang english
+It is illegal to assign a temporary rvalue to a reference variable:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int& r = x + 3 ; 
+\color brown
+// Error 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int i = 42 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int &r = i ; 
+\color brown
+// ok : r refers to i 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The following function call is illegal: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int f(int& n) { return 10 * n; } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x = f(x + 2);
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+C++ does have an rvalue reference
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\lang english
+int&& r
+\series default
+ = x + 3 ; 
+\color brown
+// OK: note the two ampersands 
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\lang english
+int&& rr
+\series default
+ = i ; 
+\color brown
+// error : 
+\bar under
+cannot reference an 
+\series bold
+lvalue
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The following function call is OK:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int g(int&& n) { return 10 * n;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x = g(x + 2);
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $\&$
+\end_inset
+
+ ו 
+\begin_inset Formula $\&\&$
+\end_inset
+
+ הם דברים שונים לגמרי, ולמשל ב
+\begin_inset Formula $overloading$
+\end_inset
+
+ צריך לפצל:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void ref(
+\series bold
+int& n
+\series default
+) { cout << "reference parameter: " << n << endl } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void ref(
+\series bold
+int&& n
+\series default
+) { cout << rvalue reference parameter: " << n << endl }
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{\textbf{Move constructor}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector::Vector (Vector && a) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+: sz {a.sz}, elem a.elem } 
+\color brown
+// move a.elem to elem
+\end_layout
+
+\begin_layout LyX-Code
+
+\color black
+\lang english
+{ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+a.sz = 0 ; 
+\color brown
+// make a the empty vector 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+a.elem = nullptr 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector fill( istream & is) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+vector res; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (double x; is>>x;) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+res.push_back(x)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return res; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector vec = fill(cin)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+הסבר: בפונקציה 
+\begin_inset Formula $fill$
+\end_inset
+
+ נבנה וקטור, ומוחזר ה 
+\begin_inset Formula $refernce$
+\end_inset
+
+ שלו, אם לא היה את ה
+\begin_inset Formula $move$
+\end_inset
+
+ היתה מתבצעת העתקה של הוקטור, וזו פעולה יקרה
+\end_layout
+
+\begin_layout Subsubsection
+השמת הזזה
+\end_layout
+
+\begin_layout Standard
+ההבדל בין בין השמת העתקה להשמת ההזזה הוא בחתימת הפנוקציה אם מקבלים 
+\begin_inset Formula $\&$
+\end_inset
+
+ או 
+\begin_inset Formula $\&\&$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector & Vector ::operator=(Vector && a ) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+delete [] elem ; // deallocate old space 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+elem = a.elem ; // move a.elem to elem 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+sz = a.sz;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+a.elem = nullptr ; // make a the empty vector 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+a.sz = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return *this ; // return a self reference 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+If the caller passes an 
+\series bold
+rvalue
+\series default
+ , the compiler generates code that invokes the 
+\series bold
+move constructor 
+\series default
+or
+\series bold
+ move assignment
+\series default
+ operator 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+We want to avoid making a copy of the temporary
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+פעולות נדרשות למחלקות שתופסת משאבים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $destructor$
+\end_inset
+
+ נצרך כאשר המחלקה הקצתה משאבים, למשל:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המחלקה הקצתה זכרון למערך/וקטור וכד' - צריך לשחרר את הזכרון הזה
+\end_layout
+
+\begin_layout Itemize
+המחלקה פתחה קבצים, אז צריך לסגור אותם
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $threads$
+\end_inset
+
+ במצב נעול צריך לשחרר
+\end_layout
+
+\begin_layout Itemize
+וכד'
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ כאשר למחלקה יש 
+\begin_inset Formula $destructor$
+\end_inset
+
+ , צריך לממש:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X( Sometype ); // 
+\color brown
+ordinary constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X(); 
+\color brown
+// default constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X( const X&); 
+\color brown
+// copy constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X(X&&); 
+\color brown
+// move constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X & operator=(const X&); 
+\color brown
+// copy assignment 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+X & operator=(X&&); 
+\color brown
+// move assignment 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+˜ X (); 
+\color brown
+// destructor
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+העמסת 
+\begin_inset Formula $[]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מימוש ראשון:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double operator[] (int i )
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return elem i 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שניתן רק לקרוא את את הערך ולא לכתוב, כלומר:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Vector v(10) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double x = v[ 2 ]; 
+\color brown
+// fine 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v[ 3 ] = x; 
+\color brown
+// error, v[3] is not an 
+\series bold
+lvalue
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+פתרון החזרת 
+\begin_inset Formula $\&$
+\end_inset
+
+ .
+ מימוש שני:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double& operator[ ](int n) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return elem [n]; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבעיה היא מה עושים באובייקט שהוא 
+\begin_inset Formula $const$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void f( const vector& cv) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+double d = cv[1]; 
+\color brown
+// Error , but should be fine 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cv[1] = 2.0 ; 
+\color brown
+// Error , as it should be 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Itemize
+בראשון כיון ש
+\begin_inset Formula $const$
+\end_inset
+
+ יודע לעבוד רק עם מתודות של 
+\begin_inset Formula $const$
+\end_inset
+
+ הקומפיילר 
+\begin_inset Quotes eld
+\end_inset
+
+לא ידע
+\begin_inset Quotes erd
+\end_inset
+
+ מה לעשות
+\end_layout
+
+\begin_layout Itemize
+בשני אין לבצע שינוי ב
+\begin_inset Formula $const$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון, 
+\begin_inset Quotes eld
+\end_inset
+
+מימוש כפול
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double& operator[] (int n); 
+\color brown
+// for non const 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+const double& operator[] (int n) const ; 
+\color brown
+// for const
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+העמסת 
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נגדיר אותו כ
+\begin_inset Formula $nonmember\ function$
+\end_inset
+
+ - ננמש אותו מחוץ למחלקה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הסיבה: לעיתים צריך לעשות 
+\begin_inset Formula $conversion$
+\end_inset
+
+ בשביל להשתמש באופרטור ואם האופרטור חלק מהמחלקה יכול להיות שנתקע בהמרה למשל:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string s1 ,s2;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+s1 = s + 
+\begin_inset Quotes eld
+\end_inset
+
+abc
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+s2 = 
+\begin_inset Quotes eld
+\end_inset
+
+abc
+\begin_inset Quotes erd
+\end_inset
+
+ + s;
+\end_layout
+
+\begin_layout Itemize
+אז ב 
+\begin_inset Formula $S2$
+\end_inset
+
+ תתבצע המרה של 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $cstring$
+\end_inset
+
+, ו 
+\begin_inset Formula $s2$
+\end_inset
+
+ שהוא 
+\begin_inset Formula $string$
+\end_inset
+
+ לא יכול לקבל את ה
+\begin_inset Quotes erd
+\end_inset
+
+תוצר
+\begin_inset Quotes erd
+\end_inset
+
+ הזה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נגדיר את הפרמטרים כ 
+\begin_inset Formula $const$
+\end_inset
+
+ כי אין סיבה לשנות אותם
+\end_layout
+
+\begin_layout Itemize
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ נשתמש באופרטור התואם למימוש 
+\begin_inset Formula $+=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+דוגמת מימוש:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Sales_data 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+operator+(const Sales_data &lhs, const Sales_data &rhs)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Sales_data sum = lhs; 
+\color brown
+// copy from lhs into sum 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+sum += rhs ; 
+\color brown
+// add rhs into sum 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return sum; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+העמסת 
+\begin_inset Formula $<<$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\series bold
+first
+\series default
+ parameter of an 
+\series bold
+output
+\series default
+ operator is a 
+\series bold
+\bar under
+reference
+\series default
+\bar default
+ to a 
+\series bold
+\bar under
+nonconst
+\series default
+\bar default
+ ostream object •
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+nonconst
+\series default
+ because writing to the stream changes its state.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+reference
+\series default
+ because we cannot copy an ostream object 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The 
+\series bold
+second
+\series default
+ parameter should be a 
+\series bold
+\bar under
+reference
+\bar default
+ to 
+\bar under
+const
+\series default
+\bar default
+ to avoid copying and to avoid change 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+To be consistent with other output operators, operator<< 
+\series bold
+\bar under
+returns its ostream parameter 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+output operators 
+\series bold
+\bar under
+should not print a newline
+\series default
+\bar default
+ in order to let users print descriptive text along with the object on the
+ same line 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IO Operators must be 
+\series bold
+\bar under
+nonmember functions
+\series default
+\bar default
+ , the left hand operand cannot be an object of our class 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IO operators usually 
+\series bold
+need to read or write the nonpublic data members
+\series default
+, so they usually must be 
+\series bold
+\bar under
+declared as friends
+\end_layout
+
+\begin_layout Itemize
+דוגמת מימוש:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ostream& operator<<( ostream & os , const V ector& vec 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+os << '{';
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int n = vec.size 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (n > 0 ) { // Is the vector non empty? 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+os << vec [0]; // Send first element 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 1 ; i < n; i++) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+os << ',' << vec i ]; 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+os << '}';
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return os;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout << vec 1 << vec 2 << endl
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+העמסת 
+\begin_inset Formula $<<$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\series bold
+first parameter
+\series default
+ is a 
+\series bold
+\bar under
+reference
+\series default
+\bar default
+ to the stream from which it is to read 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\series bold
+second parameter
+\series default
+ is a 
+\series bold
+reference to the ( nonconst )
+\series default
+ object into which to read, because the operator reads data into this object
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The operator usually 
+\series bold
+returns a reference
+\series default
+ to its given stream
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Input operators must deal with the possibility that the input might fail
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+we check once after reading all the data and before using those data
+\end_layout
+
+\begin_layout Itemize
+דוגמת מימוש:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+class Sales_data{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+std ::string bookNo;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+unsigned units_sold = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double price = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double revenue = 0.0 ;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+istream  &operator>>(istream &is, Sales_data &item) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+is >> item.bookNo >> item.units_sold >> item.price
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Quotes eld
+\end_inset
+
+העמסת
+\begin_inset Quotes erd
+\end_inset
+
+ איטרטורים
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less6_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+הערה: אם מבנה הנתונים הפנימי היה רשימה מקושרת, היה צריך לממש פונקציה שתחזיר
+ את הערך במקום מסוים.
+\end_layout
+
+\begin_layout Subsection
+מימוש גנרי:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less7_1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+טיפול ב 
+\begin_inset Formula $Exceptions$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ישנה התלבטות היכן לודא חריגות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מצד אחד , מי שכותב את המחלקה עצמה מכיר את מגבלותיה הכי טוב, ולכן הגיוני
+ שהוא יתמודד עם בעיות
+\end_layout
+
+\begin_layout Itemize
+מצד שני, מי שמשתמש במחלקה יודע הכי טוב, באילו תסריטים יכולות לצוץ בעיות
+ ומה בדיוק הוא רוצה לעשות איתה, ולכן הגיוני שהוא יתמודד עם הבעיות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לכן החליטו שמי שכותב מחלקה ידווח על תקלה, ומי שמשתמש יטפל בדיווח.
+\end_layout
+
+\begin_layout Itemize
+לדוגמה 
+\begin_inset Formula $vector::operator[]$
+\end_inset
+
+ ו
+\begin_inset Formula $out-of-range$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+double& Vector::operator[](int i) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (i < 0 || i >= size()) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+throw out_of_range{"Vector::operator[]"}; return elem[i];
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Itemize
+מקובל לזרוק אובייקט - שהוא מחלקה עם הבעיה , במקרה שלנו בשם 
+\begin_inset Formula $out\_of\_ragne$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תפיסת חריגות, בדרך המוכרת:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+try { // exceptions are handled below 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// v[v.size()] = 7; // returns an undefined value 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v.at(v.size) = 7 // reports a bad index 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} catch (out_of_range) { // oops: out_of_range error 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// ...
+ handle range error ...
+ }
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+בדוגמה , יש לשים לב שפניה מכוונת עם האופרטור 
+\begin_inset Formula $[]$
+\end_inset
+
+ תחזיר ערך לא מוגדר ולא תזרוק 
+\begin_inset Formula $exception$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $push\_back()$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+בחשיבה ראשונית, הדרך ההגיונית היא להעתיק את כל הוקטור לשטח בזיכרון בגדול
+ המקורי פלוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, ואז להעתיק את כל הערכים, ובמקום האחרון לשים את החדש, הבעיה שזה מאוד לא
+ יעיל ברצף של 
+\begin_inset Formula $push\_back()$
+\end_inset
+
+ , לכן מגדירים בסוף 
+\begin_inset Formula $space$
+\end_inset
+
+ , כלומר מקום ריק , ומעתיקים רק כאשר הוא מתמלא, לכן:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void Vector::reserve(int newalloc) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (newalloc <= space) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+double* p new double[newalloc];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i=0; i<sz; ++i) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+p[i] = elem[i]; delete[] elem;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+elem = p; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+space = newalloc; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void Vector::push_back(double val) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (space == 0) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+reserve(8);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else if (sz == space) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+reserve(2*space);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+elem[sz] = val; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+++sz; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הורשה
+\end_layout
+
+\begin_layout Itemize
+הורשה נועדה להגדיר מחלקות שיש להם מכנה משותף
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המחלקה המורישה נקראת מחלקת הבסיס
+\end_layout
+
+\begin_layout Itemize
+המחלקה היורשת נקראת המחלקה הנגזרת 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הורשת מימוש 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחלקת הבסיס מספקת למחלקה היורשת פונקציות ונתונים מוכנים 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הורשת ממשק 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מאפשרת שימוש במחלקות היורשות השונות באמצעות הממשק של מחלקת הבסיס המשותפת
+ 
+\end_layout
+
+\begin_layout Itemize
+את המחלקות היורשות נקצה בזיכרון הדינמי באמצעות 
+\begin_inset Formula $new$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ניגש באמצעות מצביעים או משתני ייחוס למחלקת הבסיס
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Employee { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+string first_name , family_name; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Date hiring_date; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int department; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Manager : public Employee { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+list<Employee∗> group; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int level; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Standard
+מבחינת הקצאה בזיכרון זה יראה כך:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כלומר הקצאת הזיכרון היא כמו של ה 
+\begin_inset Formula $employee$
+\end_inset
+
+ בתוספת מה שנדרש בשביל 
+\begin_inset Formula $Manger$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמת שימוש בפונקציה במחלקת הבסיס + תוספת של המחלקה היורשת:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פונקציה וירטואלית
+\end_layout
+
+\begin_layout Standard
+הבעיה: אם יש לנו רשימה מעורבת של אובייקטים מעץ הירושה, וננסה לגשת לפונקציה
+ משותפת להם )בדוגמה שלנו 
+\begin_inset Formula $print$
+\end_inset
+
+ ( הפונקציה שתקרא תהיה לפי מחלקת הבסיס )כי כך הגדרנו את הרשימה( , והיינו
+ רוצים שכל אובייקט ישתמש בפונקציה שלו, פתרון:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Employee { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Employee(const string& name, int dept); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+virtual
+\bar default
+ void print() const; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+private: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+string first_name , family_name; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+short department; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $virual$
+\end_inset
+
+ מורה לקומפיילר לגשת לפונקציה של האובייקט
+\end_layout
+
+\begin_layout Subsection
+רב-צורתיות
+\end_layout
+
+\begin_layout Standard
+איך זה עובד?
+\end_layout
+
+\begin_layout Itemize
+בשביל מימוש ה 
+\begin_inset Formula $polymorphism$
+\end_inset
+
+ הקומפיילר שומר את סוג האובייקט מכל אובייקט של 
+\begin_inset Formula $Employee$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כאשר הוא פוגש 
+\begin_inset Formula $virtual\ function$
+\end_inset
+
+ הוא ממיר אותו לאינדקס לטבלת 
+\begin_inset Formula $pointer$
+\end_inset
+
+ לפונקציות - שנקרא 
+\begin_inset Formula $vtbl$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $pointer$
+\end_inset
+
+ בטבלה יכולה להצביע לפונקציה שהוצהרה ב 
+\begin_inset Formula $class$
+\end_inset
+
+ עצמו או ב
+\begin_inset Formula $class$
+\end_inset
+
+ של מחלקת אב
+\end_layout
+
+\begin_layout Itemize
+לכל מחלקה 
+\begin_inset Formula $member$
+\end_inset
+
+ שהוא 
+\begin_inset Formula $pointer$
+\end_inset
+
+ שמצביע על טבלת ה 
+\begin_inset Formula $vtbl$
+\end_inset
+
+ שלה - בכך נרוויח שאם יש 
+\begin_inset Formula $100$
+\end_inset
+
+ אובייקטים מסוג מסוים, אין שכפול של ה 
+\begin_inset Formula $vtbl$
+\end_inset
+
+ , ו
+\begin_inset Quotes erd
+\end_inset
+
+כותבים
+\begin_inset Quotes erd
+\end_inset
+
+ אותה פעם אחת.
+\end_layout
+
+\begin_layout Itemize
+כאשר 
+\begin_inset Formula $virtual\ function$
+\end_inset
+
+ נקראת , אז בעזרת ה
+\begin_inset Formula $pointer$
+\end_inset
+
+ הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל הולכים ל
+\begin_inset Formula $vtbl$
+\end_inset
+
+ של ה 
+\begin_inset Formula $calss$
+\end_inset
+
+ , ומוצאים אותה בעזרת שם הפונקציה
+\end_layout
+
+\begin_layout Itemize
+בציורים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה : חשוב להגדיר את ה 
+\begin_inset Formula $destructor$
+\end_inset
+
+ כ 
+\begin_inset Formula $virtual$
+\end_inset
+
+ כי אחרת הקומפיילר ישתמש בכל פעם ב 
+\begin_inset Formula $destructor$
+\end_inset
+
+ של מחלקת הבסיס ותהיה דליפת זיכרון
+\end_layout
+
+\begin_layout Standard
+דוגמה
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Shape { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+virtual Point center() const = 0; // pure virtual 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+virtual void move(Point to) = 0; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+virtual void draw() const = 0; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+virtual void rotate(int angle) = 0; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+virtual ˜`Shape() {} // virtual destructor is essential  since an object
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+                 // of a derived class may be deleted through a pointer
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                 // to the base
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+עיגול היורש מצורה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Circle : public Shape { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Circle(Point p, int rr); // constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Point center() const { return x; } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void move(Point to) { x = to; } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void draw() const; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void rotate(int) {} // nice simple algorithm 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+private: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Point x; // center 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int r; // radius 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+סמיילי יורש מעיגול
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Smiley : public Circle { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Smiley(Point p, int r) : Circle{p,r}, mouth{nullptr} { }
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+˜`Smiley() {delete mouth; for (auto p : eyes) delete p;} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void move(Point to);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void draw() const;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void rotate(int); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void add_eye(Shape∗ s) { eyes.push_back(s); } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void set_mouth(Shape∗ s); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+private: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+vector<Shape∗> eyes; // usually two eyes 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Shape∗ mouth; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Itemize
+כעת אם אנחנו רוצים להשתמש בפונקציה במחלקה היורשת צריך להוסיף את המילה 
+\begin_inset Formula $override$
+\end_inset
+
+ - לדוגמה 
+\begin_inset Formula $rotate$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+למה? כדאי למנוע מהמתכנת לעשות טעות של שגיאת הקלדה/פרמטר נוסף/פרמטר אחר ובכך
+ לעשות 
+\begin_inset Formula $overloading$
+\end_inset
+
+ כלומר להוסיף פונקציה לעץ הירושה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class Smiley : public Circle { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// .
+ .
+ .
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void move(Point to) override;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void draw() const override;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void rotate(int) override;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// .
+ .
+ .
+ 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמת הרצה - סיבוב מספר צורות
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void rotate_all(vector<Shape∗>& v, int angle) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (auto p : v) p−>rotate(angle); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+void user() { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+std::vector<Shape∗> v;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (cin) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+v.push_back(read_shape(cin)); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+draw_all(v); // call draw() for each element 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+rotate_all(v,45); // call rotate(45) for each element 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (auto p : v) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+delete p;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+enum class Kind { circle, triangle , smiley };
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Shape∗ read_shape(istream& is) { // read shape header from is and find its
+ kind k 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+switch (k) { // Kind k; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+case Kind::circle: // read {Point,int} 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return new Circle{p,r}; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+case Kind::triangle: // read {Point,Point,Point} 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return new Triangle{p1,p2,p3}; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+case Kind::smiley: // read {Point,int,Shape,Shape,Shape} 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Smiley∗ ps = new Smiley{p,r}; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ps−>add_eye(e1); ps−>add_eye(e2); ps−>set_mouth(m); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return ps; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $Dynamic\_cast$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם אנחנו רוצים להבין תוך כדי ריצה, מה הסוג )או הרמה( של אובייקט בהיררכיית
+ הירושה , אז ישנם שני כלים ב 
+\begin_inset Formula $C++11$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $dynamic\_cast$
+\end_inset
+
+ - מבצע 
+\begin_inset Formula $casting$
+\end_inset
+
+ בצורה מבוקרת מ
+\begin_inset Formula $pointer$
+\end_inset
+
+ לאובייקט.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בכללי נשים לב שאנחנו עובדים עם 
+\begin_inset Formula $pointr$
+\end_inset
+
+ים כאן.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $type\_id$
+\end_inset
+
+ - מחזיר את סוג האובייקט.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נציין ששימוש רב בפונקציות אלה מעיד על תכנון בעייתי
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+Shape∗ ps {read_shape(cin)}; 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (Smiley∗ p = dynamic_cast<Smiley∗>(ps)) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// is a Smiley pointed to by p 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} else { // returns nullptr 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// not a Smiley, try something else 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כלומר קיבלנו 
+\begin_inset Formula $Shape$
+\end_inset
+
+= מחלקת בסיס, ובצענו בדיקה אם היא בכלל 
+\begin_inset Formula $Smiley$
+\end_inset
+
+ = מחלקת יורשת
+\end_layout
+
+\begin_layout Standard
+\align center
+שמה ש
+\begin_inset Quotes erd
+\end_inset
+
+מפתיע
+\begin_inset Quotes erd
+\end_inset
+
+ הוא שהיורשת 
+\begin_inset Quotes eld
+\end_inset
+
+מצביעה
+\begin_inset Quotes erd
+\end_inset
+
+ לבסיס )ראינו הרבה פעמים איך הבסיס מצביעה ליורשת(
+\end_layout
+
+\begin_layout Standard
+סיכום 
+\begin_inset Formula $upcasting\ and\ casting$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+באופן כללי, מחלקה יורשת היא גם מחלקת בסיס ולכן לא צריך לעשות משהו מיוחד
+\end_layout
+
+\begin_layout Itemize
+לעומת זאת המרה של 
+\begin_inset Formula $pointer$
+\end_inset
+
+ של מחלקת בסיס למחלקת יורשת מצריכה פעולה מיוחד
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הסיבה לכך שבמחלקה היורשת יש 
+\begin_inset Formula $data$
+\end_inset
+
+ שלא קיים במחלקת האב
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+דוגמה ל 
+\begin_inset Formula $\left(casting\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Programmer$
+\end_inset
+
+ יורש מ 
+\begin_inset Formula $Employee$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+רק ל 
+\begin_inset Formula $Programmer$
+\end_inset
+
+ יש פונקציה 
+\begin_inset Formula $coding()$
+\end_inset
+
+ , ומכאן נובעת השגיאה )שגיאת קומפליציה(
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less8_4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קלט ופלט
+\end_layout
+
+\begin_layout Subsubsection
+קריאה וכתיבה ל 
+\begin_inset Formula $Stream$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו קובץ:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+input file 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+morgan 2015552368 8625550123 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+drew 9735550130 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+lee 6095550132 2015550175 8005550000
+\end_layout
+
+\begin_layout Standard
+התוכנה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל , תקרא מהקובץ ותצור וקטור של אנשים ומספרי הטלפון שלהם.
+ כאשר בעזרת 
+\begin_inset Formula $istringstream$
+\end_inset
+
+ אנחנו קוראים מהקובץ.
+\end_layout
+
+\begin_layout Standard
+האובייקט הזה נותן לנו להתנהל עם 
+\begin_inset Formula $string$
+\end_inset
+
+ כאילו הם מגיעים מקובץ/מקלדת
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+struct PersonInfo { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+string name; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<string> phones; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<PersonInfo> getData(istream &is) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+string line, word; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<PersonInfo> people; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (getline(is, line)) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+istringstream record(line); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+PersonInfo info; record >> info.name; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (
+\color brown
+record >> word
+\color inherit
+) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+info.phones.push_back(word); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+people.push_back(info); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return people; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באותו אופן אפשר לכתוב בעזרת 
+\begin_inset Formula $ostringstream$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+התכונה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל מקבלת את הוקטור שבנינו בחלק הקודם, ובודקת אם השם תקין.
+ נשתמש ב 
+\begin_inset Formula $ostringstream$
+\end_inset
+
+ , כלומר קיבלנו מידע מהוקטור ,ואנחנו רושמים ל
+\begin_inset Formula $stream$
+\end_inset
+
+ שממנו ניתן לכתוב לקובץ או לפלוט למסך וכד'
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ostream& process(ostream &os, vector<PersonInfo> people) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (const auto &entry : people) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ostringstream formatted, badNums; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (const auto &nums : entry.phones) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (!valid(nums)) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+badNums << " " << nums; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} else {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+formatted << " " << format(nums); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (badNums.str().empty()) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+os << entry.name << " " << formatted.str() << endl; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cerr << "input error: " << entry.name << " invalid number(s) " << badNums.str()
+ << endl; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return os; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איטרטורים ל
+\begin_inset Formula $Stream$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+istream_iterator<int> in_iter(cin); // read ints from cin 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+istream_iterator<int> eof; // end iterator 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+while (in_iter != eof) // while there's input
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                       // postfix increment returns the old value of the
+ iterator 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                       // we dereference that iterator to get the previous
+ value
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+vec.push_back(*in_iter++); 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+we can rewrite this program as:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+istream_iterator<int> in_iter(cin), eof; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                       // construct vec from an iterator range 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+vector<int> vec(in_iter, eof);  Using istream_iterator with the Algorithms
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                       // generate the sum of values read from the input
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+istream_iterator<int> in(cin), eof; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout << accumulate(in, eof, 0) << endl;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+הרצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- חזרה על 
+\begin_inset Formula $stream$
+\end_inset
+
+ והצגת תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מחרוזות וביטויים רגולרים
+\end_layout
+
+\begin_layout Standard
+נזכר במחרוזות בשפת 
+\begin_inset Formula $C$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+בשפת C מחרוזת היא מערך של תווים שמסתיים בתוו שערכו 0 
+\end_layout
+
+\begin_layout Itemize
+בשפת C אין מחלקות אין פונקציות חברות ואין העמסת אופרטורים, וכדי לעבד מחרוזות
+ משתמשים בפונקציות שמקבלות מחרוזת כפרמטר:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $,strcpy()$
+\end_inset
+
+
+\begin_inset Formula $strcat()$
+\end_inset
+
+, 
+\begin_inset Formula $strcmp()$
+\end_inset
+
+, 
+\begin_inset Formula $strlen()$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $C++$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בשפת ++C נשתמש במחלקה 
+\begin_inset Formula $string$
+\end_inset
+
+ שמאפשרת לעבד מחרוזות בצורה נוחה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+s1 = s2 ; s1 += x ; s1 + s2 ; s1 == s2 ; s1 < s2 ; s.size() ; s.c_str() 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש )שלנו( למחלקה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $meber$
+\end_inset
+
+ הוא מערך של תוויים שמתסיים ב 
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יעול: מחרוזות קצרות ישמרו בתוך האובייקט, ואורכות בזיכרון הדינמי
+\end_layout
+
+\begin_layout Itemize
+מחרוזת קצרה תשמר במערך 
+\begin_inset Formula $ch$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+המשתנה 
+\begin_inset Formula $short\_max$
+\end_inset
+
+ מכיל את הגודל המריבי 
+\begin_inset Formula $(15)$
+\end_inset
+
+ לשמירת מחרוזות בתוך האוביקט
+\end_layout
+
+\begin_layout Itemize
+המשתנה 
+\begin_inset Formula $ptr$
+\end_inset
+
+ יצביע על התו הראשון במחרוזת
+\end_layout
+
+\begin_layout Itemize
+גם כאן נקצה זיכרון עודף ליעל הוספה של תווים
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+class String { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private: static const int short_max = 15;
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int sz; // number of characters
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+char∗ ptr; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int space; // unused space on free store
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+char ch[short_max+1]; // leave space for 0 (16) 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+};
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מימוש בסיסי - עם כל מה שדגשים שלמדנו עד כה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class String { 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public: 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+String(); //default constructor: x{""} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String(const char∗ p); // C-style: x{"Euler"} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String(const String&); // copy constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String& operator=(const String&); // copy assignment
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String(String&& x); // move constructor 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String& operator=(String&& x); // move assignment 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+~String() { if (sz > short_max) delete[] ptr; } 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+const char∗ c_str() { return ptr; } // C-style access 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int size() const { return sz; } // number of elements };
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מימוש ה 
+\begin_inset Formula $constructor$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Formula $Default\ constructor$
+\end_inset
+
+ //
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String::String() : sz{0}, ptr{ch} {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ch[0] = 0; // terminating 0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// 
+\begin_inset Formula $C-style$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String::String(const char∗ p) : sz{strlen(p)}, ptr{(sz<=short_max) ? ch
+ : new char[sz+1]}, space{0} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+strcpy(ptr,p); // copy characters into ptr from p 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $Regex$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+מחרוזת המתארת תבנית של טקסט
+\end_layout
+
+\begin_layout Standard
+נשתמש בפונקציות הבאות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $match\_regex$
+\end_inset
+
+ פונקציה המנסה להתאים את הביטוי הרגולרי לכל המחרוזת 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $search\_regex$
+\end_inset
+
+ פונקציה המנסה להתאים את הביטוי הרגולרי לחלק מהמחרוזת 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $replace\_regex$
+\end_inset
+
+ פונקציה המחליפה מופע של הביטוי הרגולרי בטקסט אחר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמת שימוש:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String input;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+regex pat(<some pattern>);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (true){ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout<< 
+\begin_inset Quotes eld
+\end_inset
+
+Enter text:
+\begin_inset Quotes erd
+\end_inset
+
+ << endl;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(!(cin >> input)) break;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(
+\color blue
+regex_match
+\color inherit
+(input, pat)) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout<<"Match"<<endl; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout<<
+\begin_inset Quotes erd
+\end_inset
+
+No Match
+\begin_inset Quotes erd
+\end_inset
+
+<<endl;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+Regex meta-characters 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+There are 12 punctuation characters that make regular expressions work their
+ magic, they are called 
+\series bold
+meta-characters 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any regular expression that does not include any of the 12 metacharacters
+ 
+\color blue
+$()*+.?[
+\backslash
+^{|
+\color inherit
+ simply matches itself 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+If you want your regex to match them literally, you need to escape them
+ by placing a backslash in front of them Thus, 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+the regex: 
+\color blue
+
+\backslash
+*
+\backslash
++
+\backslash
+.
+\backslash
+?
+\color inherit
+ matches the text 
+\color blue
+*+.? 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Those backslashes may need to be doubled up to quote the regex as a literal
+ string in source code (unless you use raw string): 
+\color blue
+"
+\backslash
+
+\backslash
+*
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Absent from the list are the closing square bracket ], the hyphen -, and
+ the closing curly bracket } 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The first two become metacharacters only after an unescaped [, and the }
+ only after an unescaped { 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The rules about which characters are different inside a character class:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+dot
+\series default
+ is a meta character outside of a class, but not within one 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+dash
+\series default
+ is a meta character within a class (between two characters), but not outside
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+caret
+\series default
+ has one meaning outside, 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+and another meaning if specified inside a class immediately after the opening
+ [
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The notation
+\color blue
+ []
+\color inherit
+ - look for one mathces in list the inside []
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+[aeiouy] 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+a or e or i or......or y
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+A hyphen 
+\color blue
+(-)
+\color inherit
+ creates a range when it is placed between two characters • Match hexadecimal
+ character: [a-fA-F0-9]
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A caret 
+\color blue
+(^)
+\color inherit
+ negates the character class if you place it 
+\bar under
+immediately after the opening bracket (
+\begin_inset Quotes eld
+\end_inset
+
+only first
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+[ˆaeiouy] 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+not an English vowel
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+[a^eiouy] 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ an English vowel or ^
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula $Shorthand:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash d$
+\end_inset
+
+ matches a single digit
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash D$
+\end_inset
+
+ matches any character that is 
+\bar under
+not
+\bar default
+ a digit, and is equivalent to [^
+\backslash
+d]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash w$
+\end_inset
+
+ matches a single word character, usually it is identical to [a-zA-Z0-9_]
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash W$
+\end_inset
+
+ matches any character that is 
+\bar under
+not
+\bar default
+ a word character
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash s$
+\end_inset
+
+ matches any whitespace character - spaces, tabs, and line breaks 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\backslash S$
+\end_inset
+
+ matches any character 
+\bar under
+not
+\bar default
+ matched by 
+\backslash
+s
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\color blue
+\lang english
+dot .
+
+\color inherit
+ matches any character except line breaks
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+\lang english
+* (star)
+\color inherit
+ after a regex token 
+\bar under
+means zero or more
+\bar default
+, example 
+\backslash
+d* 
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+\lang english
++ (plus)
+\color inherit
+ after a regex token 
+\bar under
+means one or more
+\bar default
+, example 
+\backslash
+d+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+•
+\color blue
+ A question mark ?
+\color inherit
+ after a regex token means zero or once
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The quantifier 
+\color blue
+{n}
+\color inherit
+, repeats the preceding regex token n number of times 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The quantifier 
+\color blue
+{n,m},
+\color inherit
+ repeats the preceding regex token n to m times
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+example:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+regex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+matches
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+
+\backslash
+d-
+\backslash
+d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1-2
+\numeric off
+,
+\numeric on
+3-4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+
+\backslash
+w
+\backslash
+w-
+\backslash
+d
+\backslash
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Ab-12,12-34
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less11_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+greedy and lazy matches 
+\end_layout
+
+\begin_layout Standard
+נסביר דרך דוגמה מעולם ה 
+\begin_inset Formula $html$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+This is a <EM>first</EM> test
+\end_layout
+
+\begin_layout Itemize
+על מנת לתפוס את 
+\begin_inset Formula $\left\langle EM\right\rangle $
+\end_inset
+
+ כנראה שנכתוב את התבנית 
+\begin_inset Formula $\left\langle .+\right\rangle $
+\end_inset
+
+ אבל זאת תבנית שנקראת 
+\begin_inset Formula $\boldsymbol{greedy}$
+\end_inset
+
+ והיא תתפוס את 
+\begin_inset Formula $<EM>first</EM>$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בגלל שהתווים 
+\begin_inset Formula $*,+,\left\{ n,m\right\} $
+\end_inset
+
+ מבקשים את ההתאמה הכי גדולה שיש
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+על לתפוס פחות נשים בסוף 
+\begin_inset Formula $?$
+\end_inset
+
+ ובכך נהפוך את החיפוש ל 
+\begin_inset Formula $\boldsymbol{lazy}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אצלנו: 
+\begin_inset Formula $\left\langle .+?\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+או 
+\begin_inset Formula $\left\langle \left[\mathcircumflex>\right]+\right\rangle $
+\end_inset
+
+ )מתאים לדוגמה(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+דוגמאות נוספת:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left(ab\right)+$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ - 
+\begin_inset Formula $greedy$
+\end_inset
+
+ - לכן 
+\begin_inset Formula $abababa...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(ab\right)+?$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $lazy$
+\end_inset
+
+ - לכן 
+\begin_inset Formula $ab$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+חיפוש
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The regular expression tokens 
+\color blue
+^, $
+\color inherit
+ are called 
+\color blue
+anchors
+\color inherit
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+They do not match any characters, instead they match at certain positions,
+ effectively anchoring the regular expression match 
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+\lang english
+^ (caret) 
+\color inherit
+matches only if it occurs at the 
+\series bold
+beginning of a string 
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+\lang english
+$ (dollar)
+\color inherit
+ matches only if it occurs at the 
+\series bold
+end of a string 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Examples: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+^cat$ a line that consists of only cat 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+^$ an empty line
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Create a regex that matches 
+\series bold
+cat
+\series default
+ in A 
+\series bold
+cat and a mouse,
+\series default
+ but not in
+\series bold
+ category
+\series default
+ or 
+\series bold
+bobcat
+\series default
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+Place the word 
+\series bold
+cat
+\series default
+ between 
+\bar under
+two word boundaries
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+
+\backslash
+b
+\series bold
+cat
+\series default
+
+\backslash
+b 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The regular expression token 
+\backslash
+b is called a 
+\bar under
+word boundary
+\bar default
+, it matches at the 
+\bar under
+start or the end of a word
+\bar default
+ (In this example:)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The 
+\bar under
+first 
+\backslash
+b requires the c
+\bar default
+ to occur at the very 
+\bar under
+start
+\bar default
+ of the string, or after a non-word character.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\bar under
+second 
+\backslash
+b requires the t
+\bar default
+ to occur at the very 
+\bar under
+end
+\bar default
+ of the string, or before a non-word character
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less12_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+Match one of several alternatives 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\bar under
+vertical bar or pipe symbol |
+\bar default
+, splits the regular expression into multiple alternatives
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mary|Jane|Su
+\series default
+e matches Mary, or Jane, or Sue with each match attempt •
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The regular expression finds the leftmost match: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+When you apply 
+\series bold
+Mary|Jane|Su
+\series default
+e to
+\series bold
+ Jane, Mary and Sue went to Mary's house 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+the match Jane is found first
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The match that begins earliest (leftmost) wins 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Each alternative is checked in a left-to-right order:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Jane|Janet matches Jane in Her name is Janet
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+Group parts of the match 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Improve the regular expression for matching Mary, Jane, or Sue by forcing
+ the match to be a whole word 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Use grouping to achieve this with one pair of word boundaries for the whole
+ regex, instead of one pair for each alternative 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+
+\backslash
+b(Mary|Jane|Sue)
+\backslash
+b
+\series default
+ has three alternatives: 
+\bar under
+Mary, Jane, and Sue
+\bar default
+, all three between two word boundaries 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+This regex 
+\bar under
+does not match
+\bar default
+ anything in
+\series bold
+ Her name is Janet 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The alternation operator, has the 
+\series bold
+lowest
+\series default
+ precedence of all regex operators 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+If you try 
+\series bold
+
+\backslash
+bMary|Jane|Sue
+\backslash
+b,
+\series default
+ the three alternatives are
+\series bold
+ 
+\backslash
+bMary, Jane, and Sue
+\backslash
+b
+\series default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+This regex 
+\bar under
+matches
+\series bold
+\bar default
+ Jane in Her name is Janet
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less12_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+נשים לב לשני סוגים סוגריים:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( למקרה של 
+\begin_inset Formula $alternation$
+\end_inset
+
+ .
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( להגדיר לקבוצת תווים - פעולה מסוימת למשל 
+\begin_inset Formula $?$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+Capture parts of the match 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Create a regular expression that matches any date in 
+\series bold
+yyyy-mm-dd
+\series default
+ format, and separately 
+\series bold
+captures
+\series default
+ the
+\series bold
+ year, month
+\series default
+, and 
+\series bold
+day
+\series default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A 
+\bar under
+pair of parentheses
+\bar default
+ isn’t just a group,
+\bar under
+ it’s a capturing group
+\bar default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Captures become useful when they cover only part of the regular expression,
+ as in 
+\series bold
+
+\backslash
+b(
+\backslash
+d
+\backslash
+d
+\backslash
+d
+\backslash
+d)-(
+\backslash
+d
+\backslash
+d)-(
+\backslash
+d
+\backslash
+d)
+\backslash
+b 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The regex 
+\series bold
+
+\backslash
+b
+\backslash
+d
+\backslash
+d
+\backslash
+d
+\backslash
+d-
+\backslash
+d
+\backslash
+d-
+\backslash
+d
+\backslash
+d
+\backslash
+b
+\series default
+ does exactly the same, but does not capture 
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\lang english
+Captures are numbered by counting opening parentheses from left to right
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+There are three ways you can use the captured text: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+match the 
+\bar under
+captured text again
+\bar default
+ within the same regex match 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+insert the captured text into the 
+\bar under
+replacement text 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The program can use the 
+\bar under
+parts of the regex match
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Example:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\mathcircumflex\underbrace{([-+]?[0-9]+\underbrace{(\backslash.[0-9]+)}_{\text{2 open parentheses}}?)}_{\text{1 open parentheses }}\underbrace{([CF])}_{\text{3 open parentheses}}\$$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+תבנית לטמפ'
+\end_layout
+
+\begin_layout Itemize
+מתחיל ב ^ ומסתיים ב 
+\begin_inset Formula $\$$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ השורה הזו צריכה להכיל את הטמפ'
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אמרנו שכל סוגריים נכנסים למשתנה, ויקרא 
+\begin_inset Formula $\$$
+\end_inset
+
+ , ולכן סוגריים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיו 
+\begin_inset Formula $\$1$
+\end_inset
+
+ , וכו'...
+\end_layout
+
+\begin_layout Standard
+\align center
+עכשיו אם נרצה להשתמש ב 
+\begin_inset Formula $capture$
+\end_inset
+
+ , כיצד? 
+\end_layout
+
+\begin_layout Standard
+\align center
+נסביר דרך דוגמת 
+\begin_inset Formula $"magical"\ date$
+\end_inset
+
+ :
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+A date is magical if the year minus the century, the month, and the day
+ of the month are all the same numbers •
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+For example, 2010-10-10 is a magical date:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+we first have to capture the previous text, then we match the same text
+ using a back-reference
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Formula $\backslash b\backslash d\backslash d\underbrace{\left(\backslash d\backslash d\right)}_{=\backslash1}-\backslash1-\backslash1\backslash b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The (
+\backslash
+d
+\backslash
+d) matches 10, and is stored in 
+\series bold
+capturing
+\series default
+ 
+\series bold
+group 1 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The 
+\series bold
+back-reference 
+\backslash
+1
+\series default
+ matches the 
+\series bold
+10
+\series default
+ of the 
+\series bold
+month
+\series default
+ and 
+\series bold
+day
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+example 2 :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Match a pair of opening and closing HTML tags: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Formula $<([A-Z][A-Z0-9]*)[\mathcircumflex>]*>.*?</\backslash1>$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+• Checking for Doubled Words (the the):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Formula $\backslash b(\backslash w+)\backslash s+\backslash1\backslash b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+תוכנית לחיפוש בעזרת 
+\begin_inset Formula $regex$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $regex\_search()$
+\end_inset
+
+ מוצא לפי התאמה 
+\series bold
+חלקית
+\series default
+ ל 
+\begin_inset Formula $pattern$
+\end_inset
+
+ , בניגוד ל 
+\begin_inset Formula $regex\_match()$
+\end_inset
+
+ שמחפש אחר התאמה 
+\series bold
+מלאה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string input;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+regex pattern(R"(
+\backslash
+d+)"); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+smatch result;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (true) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout<<"Enter:"<<endl; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(!(cin >> input)) break; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(
+\bar under
+regex_search(input, result, pattern)
+\bar default
+) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout<<"Match prefix: "<<r
+\bar under
+esult.prefix()
+\bar default
+<<endl;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout<<"Match string: "<<
+\bar under
+result[0]
+\bar default
+<<endl; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout<<"Match suffix: "<<
+\bar under
+result.suffix()
+\bar default
+<<endl; 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else cout<<"No Match"<<endl;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התוצאות נכנסות למערך )במקרה שלנו 
+\begin_inset Formula $result$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less12_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כל התוצאה נכנסת למערך 
+\begin_inset Formula $m$
+\end_inset
+
+ - ונקבל את התוצאה ב 
+\begin_inset Formula $m[0]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m.prefix$
+\end_inset
+
+ כל המחרוזת עד ההתאמה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m.suffix$
+\end_inset
+
+ כל המחרוזת מההתאמה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m[i]$
+\end_inset
+
+ מחזירה את התשובה לפי סוגריים 
+\end_layout
+
+\begin_layout Subsubsection*
+החלפה בעזרת 
+\begin_inset Formula $regex$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string 
+\bar under
+input
+\bar default
+ {"x 1 y2 22 zaq 34567"};
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+regex 
+\bar under
+pat
+\bar default
+ {"(
+\backslash
+w+)
+\backslash
+s(
+\backslash
+d+)"}; // word space number 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string 
+\bar under
+format
+\bar default
+ {"{$1,$2}
+\backslash
+n"}; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout << 
+\bar under
+regex_replace
+\bar default
+(input,pat,format); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+• The output is: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{x,1}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{y2,22} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{zaq,34567}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula $sregex_{i}terator$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+regex reg("([A-Za-z]+) 
+\backslash
+
+\backslash
+1");
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+string target = "the the cow jumped over over the fence"; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+sregex_iterator reg_begin = sregex_iterator(target.begin(), target.end(),
+ reg); sregex_iterator reg_end = sregex_iterator(); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (sregex_iterator it = reg_begin; it != reg_end; ++it) { 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout << "Substring: " << it->str() << ", "; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+cout << "Position: " << it->position() << endl; } 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+cout << "Found: " << distance(reg_begin, reg_end) << endl;
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+The output is: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Substring: the the, Position: 0 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Substring: over over, Position: 19 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Found: 2
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיכום
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_4.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הידור וקישור
+\end_layout
+
+\begin_layout Itemize
+נדבר על תהליך הקמפול
+\end_layout
+
+\begin_layout Itemize
+הקומפיילר יוצר לכל קובץ 
+\begin_inset Formula $object\ file$
+\end_inset
+
+ - הקובץ מכיל שפת מכונה, ולרוב יהיה בעל סיומת של 
+\begin_inset Formula $*.o$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כל ה
+\begin_inset Formula $object\ file$
+\end_inset
+
+ )והספריות( מחוברות לקבוץ הרצה על ידי ה 
+\begin_inset Formula $linker$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_5.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $preprocessing$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל מקום שכתוב 
+\begin_inset Formula $include$
+\end_inset
+
+ הוא מחליף בכל הקובץ שעשינו לא 
+\begin_inset Formula $include$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מחליף 
+\begin_inset Formula $define$
+\end_inset
+
+ בערך שלו
+\end_layout
+
+\begin_layout Itemize
+הערה: 
+\begin_inset Formula $include$
+\end_inset
+
+ לא מעתיק את כל הספריה, אלא רק את החתימות של הפונקציה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $Compilation$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מתרגם 
+\begin_inset Formula $assmebly$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $Assmbler$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מתרגם לשפת מכונה )אפסים ואחדות(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+שלושת השלבים הללו מתבצעים עבור כל קובץ- כעת הקובץ הוא עם סיומת 
+\begin_inset Formula $*.o$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $Linking$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקשר את כל הקבצים + הספריות
+\end_layout
+
+\begin_layout Itemize
+יוצר קובץ 
+\begin_inset Formula $.ext$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הרצה(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הערה: הפקודה הבאה מאפשרת לנו לראות את כל הקבצי הביניים:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+gcc -save-temps hello.cpp
+\end_layout
+
+\begin_layout Subsubsection*
+הצהרה והגדרה
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+הצהרה
+\series default
+ על פונקציה או משתנה , רק אומרת לקומפיילר שתהיה פונקציה כזו - וניתן לכתוב
+ זאת מספר פעמים
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+הגדרה 
+\series default
+של פונקציה או משתנה, אומרת לקומפיילר להקצות מקום בזכרון, וזה נעשה רק פעם
+ אחת
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+קבצי 
+\begin_inset Formula $header$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נכתוב רק הצהרות, אחרת לאחר 
+\begin_inset Formula $include$
+\end_inset
+
+ נקבל שגיאה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לדוגמה 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+int a; // =error
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נסייג: הצהרה על 
+\begin_inset Formula $class$
+\end_inset
+
+ כן יכול להופיע ב
+\begin_inset Formula $header$
+\end_inset
+
+ ונוכל לעשות לו 
+\begin_inset Formula $include$
+\end_inset
+
+ ממספר קבצים, לדוגמה
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+// s.h: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+class S { int a; char b; }; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// file1.cpp: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+#include "s.h"
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// file2.cpp: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+#include "s.h"
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הצהרה על שימוש 
+\begin_inset Formula $Interface$
+\end_inset
+
+ יבוצע ב 
+\begin_inset Formula $header$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מי שיעשה 
+\begin_inset Formula $include$
+\end_inset
+
+ לקובץ יקבל גם את ה
+\begin_inset Formula $interface$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ובנוסף, יקבל גם את הקובץ 
+\begin_inset Formula $.cpp$
+\end_inset
+
+ שממש את ה
+\begin_inset Formula $interface$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+דוגמה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_7.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הכלת קבצי כותרת ומניעת הכלות כפולות
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לפעמים קבצי ה 
+\begin_inset Formula $header$
+\end_inset
+
+ גם מכילים 
+\begin_inset Formula $include$
+\end_inset
+
+ ויוצא שאנחנו עושים 
+\begin_inset Formula $include$
+\end_inset
+
+לקובץ פעמים )וכפי שהראנו כל 
+\begin_inset Formula $include$
+\end_inset
+
+ מעתיק את כל הקוד של הקובץ המצורף( על מנת למנוע בעיות שכאלה:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+#ifndef SALESITEM_H 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+#define SALESITEM_H 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+// Definition of Sales_item class and related functions 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+#endif 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אפשרות אחרת:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+#pragma once 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ספריות
+\end_layout
+
+\begin_layout Standard
+משהו כתב עבורנו פונקציות שבשימוש רב.
+ ישנן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סוגים:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_8.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\begin_inset Formula $Static$
+\end_inset
+
+ : מצורפות תמיד
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחבר קובץ עם סיומת 
+\begin_inset Formula $*.a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+גורם ל 
+\begin_inset Formula $linker$
+\end_inset
+
+ לחפש סמלים )פונקציות( לא מוכרים בארכיונים, וכאשר הוא מוצא הוא מקשר אותם
+\end_layout
+
+\begin_layout Itemize
+חסרונות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מכפיל את הקוד שכתוב - כי על כל קובץ צריך להעתיק את הספריה הסטנדרטית
+\end_layout
+
+\begin_layout Itemize
+כנ
+\begin_inset Quotes erd
+\end_inset
+
+ל בזמן ריצה , צריך כל הרצה לכל קובץ להעביר את הקוד הזה לזכרון
+\end_layout
+
+\begin_layout Itemize
+תיקון באגים: צריך לקמפל מחדש את כל התוכנה
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less12_9.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+פתרון: 
+\begin_inset Formula $Shared$
+\end_inset
+
+ : מצורפות על פי בקשת המשתמש ספריות דינאמיות 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+גם אחרי ה 
+\begin_inset Formula $linker$
+\end_inset
+
+ הספריה לא מחוברת לתוכנה, אלא יש קובץ קטן שאומר לתוכנה ללכת לספריות שיושבות
+ במערכת הפעלה, ובכך פתרנו את כל הבעיות.
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $windows$
+\end_inset
+
+ נפגוש אותן תחת השם 
+\begin_inset Formula $DLL$
+\end_inset
+
+ ובלינוקס 
+\begin_inset Formula $.so$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נטענות לזכרון כאשר מריצים את התוכנה
+\end_layout
+
+\begin_layout Itemize
+ניתן גם לומר למערכת ההפעלה לטעון ספריה ממש רק בזמן ריצה
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\sim$
+\end_inset
+
+ 
+\begin_inset Formula $Makefile$
+\end_inset
+
+ לא למבחן 
+\begin_inset Formula $\sim$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align left
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+זיכרון
+\end_layout
+
+\begin_layout Subsection
+זיכרון מדומה 
+\begin_inset Formula $Virtual\ memory$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מאפשר לכל תהליך להשתמש 
+\begin_inset Quotes eld
+\end_inset
+
+בכל נפח הזכרון
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חלק מהכתובת הוירטואליות נשמרות ב
+\series bold
+זכרון
+\series default
+ 
+\series bold
+הפיסי
+\end_layout
+
+\begin_layout Itemize
+ה
+\begin_inset Formula $CPU$
+\end_inset
+
+ מתרגם כתובות וירטואליות לפיזיות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Data$
+\end_inset
+
+ שלא בזכרון הפיסי נמשכת מ
+\begin_inset Formula $Hard\ drive$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ה
+\series bold
+זיכרון הפיסי
+\series default
+ פועל כמו 
+\begin_inset Formula $cache$
+\end_inset
+
+ לזכרון הוירטואלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+\begin_inset Formula $\text{Locality in time and space }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Locality in time
+\series default
+ : keep recently accessed data in higher levels of memory hierarchy 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Locality in space
+\series default
+: If data used recently, likely to use nearby data soon 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+If an element in an array is used, other elements in the same array are
+ also likely to be used (array in loop)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+bring nearby data into higher levels of memory hierarchy too
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+במקרה ותוכנית רצה בסדר רנדומלי )מבחינת הזכרון( היא לא תרוויח מה 
+\begin_inset Formula $cache$
+\end_inset
+
+ -כי כל פעם הוא יתמלא בגישה הרנדומלית החדשה
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $Cache$
+\end_inset
+
+ אנחנו מניחים שישנה 
+\begin_inset Formula $\text{Locality in time and space }$
+\end_inset
+
+ כלומר שסביר שבפרק זמן מסוים ניגש לאותו מקום בזכרון:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לדוגמה 
+\begin_inset Formula $\text{for(i=0;i<1000;++i) x[i] ;}$
+\end_inset
+
+ מסתמך על הנחה זו
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+כתובת פיזית ולוגית
+\end_layout
+
+\begin_layout Itemize
+כל 
+\begin_inset Formula $byte$
+\end_inset
+
+ בזכרון יש לו כתובת פיסית 
+\begin_inset Formula $PA-$
+\end_inset
+
+ יחודית - 
+\end_layout
+
+\begin_layout Itemize
+הדרך הטבעית לגשת לכתובת בעבור ה 
+\begin_inset Formula $CPU$
+\end_inset
+
+ היא על ידי הכתובת הפיסית
+\end_layout
+
+\begin_layout Itemize
+כאשר ה 
+\begin_inset Formula $CPU$
+\end_inset
+
+ ניגש לכתובת הוירטואלית 
+\begin_inset Formula $\left(VA\right)$
+\end_inset
+
+ הוא מתרגם אותה לכתובת פיסית
+\end_layout
+
+\begin_layout Itemize
+ה 
+\begin_inset Formula $Hardware$
+\end_inset
+
+ ל 
+\begin_inset Formula $CPU$
+\end_inset
+
+ נקרא 
+\begin_inset Formula $MMU$
+\end_inset
+
+ יודע לתרגם כתובת וירטואלית תוך כדי ריצה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ל
+\begin_inset Formula $MMU$
+\end_inset
+
+ יש טבלת כתובות, שמנוהלת על ידי המערכת הפעלה
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+תרגום כתובת לוגית לפיזית באמצעות טבלת דפים
+\end_layout
+
+\begin_layout Itemize
+ה
+\series bold
+זכרון הוירטואלי
+\series default
+ מחולק ליחידות גודל קבועות שנקראות 
+\begin_inset Formula $\text{virtual page }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+באותו אופן 
+\series bold
+הזכרון הפיזי
+\series default
+ מחולק ליחידות בגודל דומה שנקראות 
+\begin_inset Formula $\text{physical pages or page frame}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{page table }$
+\end_inset
+
+ ממפה את הדפים הוירטואלים לפיזיים
+\end_layout
+
+\begin_layout Itemize
+ה 
+\begin_inset Formula $MMU$
+\end_inset
+
+ קורא את ה 
+\begin_inset Formula $\text{page table }$
+\end_inset
+
+ בכל פעם שהוא מתרגם וירטואלית לפיזית, רצינו שתהיה יחידה מכנית שעושה זאת
+ בשביל המהירות.
+\end_layout
+
+\begin_layout Itemize
+לכל דף במרחב הכתובות הוירטואלית, יש 
+\begin_inset Formula $\text{page table entry (PTE) }$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{valid bit }$
+\end_inset
+
+ -
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם הוא במצב 
+\begin_inset Formula $set$
+\end_inset
+
+ סימן שהכתובת בזכרון היא התחלה של 
+\begin_inset Formula $\text{\textbf{physical page}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם הוא במצב 
+\begin_inset Formula $not\ set$
+\end_inset
+
+ ויש 
+\begin_inset Formula $null\ adress$
+\end_inset
+
+ סימן שה
+\begin_inset Formula $\text{virtual page }$
+\end_inset
+
+ לא בזכרון, והוא לא תופס מקום על ה 
+\begin_inset Formula $disk$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחרת, הכותבת מצביע להתחלה של 
+\begin_inset Formula $\text{virtual page }$
+\end_inset
+
+ על ה 
+\begin_inset Formula $disk$
+\end_inset
+
+ , כלומר יש 
+\begin_inset Formula $page$
+\end_inset
+
+ בזכרון, אבל 
+\series bold
+אינו בזכרון הפיסי
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה את תהליך תרגום כתובת, בעזרת דוגמה:
+\end_layout
+
+\begin_layout Itemize
+נניח שאורך כתובת היא 
+\begin_inset Formula $32bit$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נניח שגודל דף 
+\begin_inset Formula $4KB=2^{2}\cdot2^{10}=2^{12}\boldsymbol{Byte}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\text{Page offset = \ensuremath{12}\textbf{bits}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{\begin{array}{|cccccccccc|ccccc|}
+\hline  &  &  &  &  & 20 &  &  &  &  &  &  & 12 &  & \\\hline \end{array}}_{\text{32 bit}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הביטים הראשניים יפנו אותנו לדף הנכון, וה
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הנוספים יכוונו אותנו למקום בתוך הדף.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+ניתן לראות שגודלו ה
+\begin_inset Formula $offset$
+\end_inset
+
+ זהה, כיון שגודל ה 
+\begin_inset Formula $page$
+\end_inset
+
+ זהה בפיסי ובוירטואלי.
+\end_layout
+
+\begin_layout Standard
+\align center
+תחילת הכתובת מתורגמת על פי טבלת הדפים - ונדע לגשת לשורה הנכונה על פי ההתחלה
+ של הכתובת הוירטואלית
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הביטים האחרונים בכתובת, הם: 
+\begin_inset Formula $F20$
+\end_inset
+
+ )ה 
+\begin_inset Formula $offset$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+\align center
+התחילית היא 
+\begin_inset Formula $0x00005$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ דף לוגי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הציור בטבלת הדפים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בשורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ מופיע: 
+\begin_inset Formula $0x001$
+\end_inset
+
+ , ולכן כאשר נרכיב את הכתובת הפיסית:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{|c|c|}
+\hline 0x0001 & F20\\\hline \end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+דוגמאות לחישובים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח שכתובת וירטואלית היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+32
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביט, קבע את מספר הביטים למספר הדף הוירטואלי , ומספר הביטים ל
+\begin_inset Formula $offset$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+עבור גודל דף 
+\begin_inset Formula $1KB$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $1KB=2^{10}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ה
+\begin_inset Formula $offset$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים, 
+\begin_inset Formula $page\ number$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+22
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים
+\end_layout
+
+\begin_layout Itemize
+עבור גודל דף 
+\begin_inset Formula $2KB$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $2KB=2^{10}\cdot2=2^{11}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ה
+\begin_inset Formula $offset$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים, 
+\begin_inset Formula $page\ number$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+21
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביטים
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+זיכרון מדומה כאמצעי להגנה על זיכרון
+\end_layout
+
+\begin_layout Standard
+ניתן להוסיף הרשאות, בטבלת הדפים, למשל:
+\end_layout
+
+\begin_layout Itemize
+קוד של תוכנית נתיר שיהיה לקריאה בלבד
+\end_layout
+
+\begin_layout Itemize
+קוד של מערכת ההפעלה - לקריאה בלבד
+\end_layout
+
+\begin_layout Itemize
+נרצה שתהליך לא יוכל לקרוא/לכתוב לזכרון של תהליך אחר - מתבצע על ידי הגדרת
+ אזורים שונים לכל תהליך
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ניתן להוסיף ביט 
+\begin_inset Formula $PTE$
+\end_inset
+
+ לבקרת גישה עדינה יותר
+\end_layout
+
+\begin_layout Itemize
+ביט 
+\begin_inset Formula $SUP$
+\end_inset
+
+ - ביט שמצביע האם תהליך חייב לרוץ על ה 
+\begin_inset Formula $kernel$
+\end_inset
+
+ בשביל לגשת לזכרון הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+יתרון נוסף: למקרה ורוצים זכרון משותף נוכל להגדיר זאת באופן לוגי בטבלת הדפים
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+יתרונות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שימוש יעיל בזכרון על ידי הפיכותו למעין 
+\begin_inset Formula $cache$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נותן לנו את האפשרות להשתמש בזכרון כאילו יש לנו יותר זכרון ממה שיש לנו בפועל
+\end_layout
+
+\begin_layout Itemize
+הגנה על מידע בין תהליכים
+\end_layout
+
+\begin_layout Itemize
+העבודה של ה
+\begin_inset Formula $complier$
+\end_inset
+
+ וה 
+\begin_inset Formula $linker$
+\end_inset
+
+ יותר פשוטה, כי הם מתייחסים לאותן כתובות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+פסיקת דף:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+במקרה שדף כבר 
+\begin_inset Formula $invalid$
+\end_inset
+
+ כלומר אז ה 
+\begin_inset Formula $DRAM$
+\end_inset
+
+ יקבל 
+\begin_inset Formula $cache\ miss$
+\end_inset
+
+ ידוע גם כ 
+\begin_inset Formula $page\,fault\,exception$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בשלב הזה ה 
+\begin_inset Formula $MMU$
+\end_inset
+
+ יוצר פסיקה 
+\begin_inset Formula $\left(interrupt\right)$
+\end_inset
+
+ שמודיע למערכת ההפעלה, שצריך ללכת להביא דף מהזכרון )
+\begin_inset Formula $HW$
+\end_inset
+
+ (
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הקצאת זכרון דינמית
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+מלמטה למעלה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $text$
+\end_inset
+
+ - קוד התוכנית 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $data$
+\end_inset
+
+ - משתנים גלובלים לתוכנית 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $heap$
+\end_inset
+
+ - 
+\begin_inset Formula $malloc,new$
+\end_inset
+
+ - גדל כלפי מעלה .
+ בזה נתעמק עכשיו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $stack$
+\end_inset
+
+ - גדל כלפי מטה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הספריות בין ה 
+\begin_inset Formula $heap$
+\end_inset
+
+ ל
+\begin_inset Formula $stack$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+הקצאת זכרון דינמית
+\end_layout
+
+\begin_layout Itemize
+הקצאת זכרון דינמית מקצה אזור ב
+\series bold
+זכרון הוירטואלי
+\series default
+ וידוע בשם 
+\begin_inset Formula $heap$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ה 
+\begin_inset Formula $allocator$
+\end_inset
+
+ שומר על ה 
+\begin_inset Formula $heap$
+\end_inset
+
+ כאוסף 
+\begin_inset Formula $block$
+\end_inset
+
+ים בגדלים שונים
+\end_layout
+
+\begin_layout Itemize
+כל בלוק הוא חתיכה רציפה של זכרון בשימוש או פנוי
+\end_layout
+
+\begin_layout Itemize
+ישנו משתנה 
+\begin_inset Formula $brk$
+\end_inset
+
+ שמצביע על קצה ה
+\begin_inset Formula $heap$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Explicit\ allocators$
+\end_inset
+
+ - דורש שישום באופן מפורש ישחרר זכרון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Implicit\ allocators$
+\end_inset
+
+ - 
+\begin_inset Formula $garbase\ collectos$
+\end_inset
+
+ ה 
+\begin_inset Formula $allocator$
+\end_inset
+
+ נדרש להבין מתי לשחרר בלוק
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{malloc and free}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $malloc()$
+\end_inset
+
+ - מחזירה פוינטר ל 
+\begin_inset Formula $block$
+\end_inset
+
+ עם הזכרון המבוקש
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הבלוק ביחידות של 
+\begin_inset Formula $8-byte$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $free$
+\end_inset
+
+ משחרר את הזכרון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $*sbrk()$
+\end_inset
+
+ - מגדיל את הערמה , לרוב לא נשתמש כי ה 
+\begin_inset Formula $malloc$
+\end_inset
+
+ יעשה זאת לבד
+\end_layout
+
+\begin_layout Itemize
+הפונקציות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל לא 
+\begin_inset Quotes eld
+\end_inset
+
+מנקות
+\begin_inset Quotes erd
+\end_inset
+
+ את הזכרון
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $C++$
+\end_inset
+
+ נשתמש ב:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $new$
+\end_inset
+
+ - הקצאת זיכרון דינמית + ואתחול
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $delete$
+\end_inset
+
+ - שחרור וניקוי זכרון
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בגלל שהם מוגדרים כאופרטורים הקומפיילר מבטיח לקרוא ל
+\begin_inset Formula $\text{constructors and destructors}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+MyType* fp = new MyType[100]; 
+\end_layout
+
+\begin_layout Itemize
+השורה הזו תקרא ל 
+\begin_inset Formula $\text{constructor}$
+\end_inset
+
+ של כל אובייקט 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ צריך להיות מוגדרת 
+\begin_inset Formula $default$
+\end_inset
+
+ כי זה הולך להתבצע לכל המערך
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+delete [] fp; 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קורא ל 
+\begin_inset Formula $\text{destructor}$
+\end_inset
+
+ של כל איבר במערך
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+delete fp; 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קורא רק ל 
+\begin_inset Formula $\text{destructor}$
+\end_inset
+
+ של האיבר הראשון במערך
+\end_layout
+
+\begin_layout Subsubsection
+בעיות בניהול זיכרון ידני
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{memory leak }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Double free }$
+\end_inset
+
+ - באמצע משהו השתמש ואז נדרס המידע
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{use-after-free}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Automatic Management - Reference Counting}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+איך זה עובד?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל אובייקט יש 
+\begin_inset Formula $counter$
+\end_inset
+
+ שסופר כמה מצביעים יש עליו :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עולה כאשר הוגדר 
+\begin_inset Formula $refernce$
+\end_inset
+
+ חדש למשל בכניסה לפונקציה
+\end_layout
+
+\begin_layout Itemize
+יורד כאשר 
+\begin_inset Formula $refernce$
+\end_inset
+
+ נמחק למשל ביציאה מפוקציה
+\end_layout
+
+\begin_layout Itemize
+נמחק כאשר ה
+\begin_inset Formula $counter=0$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_7.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+הסבר:
+\end_layout
+
+\begin_layout Standard
+בהתחלה שלושה מצביעים לשלוש רשימות מקושרות + קשרים בינהם 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ ואז ביטול 
+\begin_inset Formula $mid,tail$
+\end_inset
+
+ 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ , ביטול המצביע לרשימה המקושרת השלישית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $couunter=0$
+\end_inset
+
+ מחיקת 
+\begin_inset Formula $linklist\_3$
+\end_inset
+
+ 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ באופן דומה ב 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ , באופן דומה ל 
+\begin_inset Formula $\left(4\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{Reference Cycles}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אובייקטים שמצביעים אחד על השני במעגל, יכול להווצר מצב שהם לא ישיגים ולא
+ ימחקו כי 
+\begin_inset Formula $counter>0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_8.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\text{Shared\_ptr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הוא בעצם האובייקט שדיברנו עליו שנותן את האפשרות ל
+\begin_inset Formula $counter$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $shared\_ptr$
+\end_inset
+
+ הוא 
+\begin_inset Formula $class$
+\end_inset
+
+ עם 
+\begin_inset Formula $*$
+\end_inset
+
+ ו 
+\begin_inset Formula $\text{-> }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+shared_ptr 
+\series bold
+constructor increases
+\series default
+ the reference count 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+shared_ptr 
+\series bold
+destructor decrements
+\series default
+ the count and 
+\series bold
+if it reached 0 deletes 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+shared_ptr 
+\series bold
+can be copied, passed by value, and assigned
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less13_9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+נשים לב ש 
+\begin_inset Formula $control\,block$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+חיצוני
+\begin_inset Quotes erd
+\end_inset
+
+ כך אפשר לנהל את הספירה
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{unique\_ptr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אותו רעיון כמו ה 
+\begin_inset Formula $shared$
+\end_inset
+
+ רק שהוא יחודי, ולכן אין 
+\begin_inset Formula $counter$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן יותר קטן ומהיר, ולא ניתן להעתיק או להעביר 
+\begin_inset Formula $by\,value$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ניתן לעשות לו 
+\begin_inset Formula $move$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_10.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\text{Garbage Collector}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נאמר שאובייקט 
+\begin_inset Formula $reachable$
+\end_inset
+
+ אם יש לו 
+\begin_inset Formula $refernce$
+\end_inset
+
+ כלשהו בתכונית
+\end_layout
+
+\begin_layout Itemize
+ישנם אובייקטים 
+\begin_inset Formula $reachable$
+\end_inset
+
+ ועדיין לא נשתמש בהם מעולם )כמו הרשימה המעגלית ממקודם(, או סתם הצבעות לא
+ שימושיות
+\end_layout
+
+\begin_layout Itemize
+באופן אטומטי ניתן להגדיר אובייקטים כ
+\begin_inset Formula $unreachable$
+\end_inset
+
+ וזו פעולת ה 
+\begin_inset Formula $\text{Garbage Collector }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+איך זה נעשה?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{Garbage Collector }$
+\end_inset
+
+ מסתכל על הזכרון כגרף מכוון
+\end_layout
+
+\begin_layout Itemize
+הגרף מחולק ל 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{root set }$
+\end_inset
+
+ : איברים שעל ה
+\begin_inset Formula $stack$
+\end_inset
+
+ או בזכרון הגלובלי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Heap set }$
+\end_inset
+
+ : מתאים לבלוקים שהוקצו בערמה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם אין מצביע מאחד מהם, סימן שזה זכרון שדלף
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename advanced - picture/less13_11.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+פעולות ה 
+\begin_inset Formula $\text{garbage collector}$
+\end_inset
+
+ )בע
+\begin_inset Quotes erd
+\end_inset
+
+פ מפנחס(:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מעבר ראשון עובר על הזכרון הגלובלי ועל ה
+\begin_inset Formula $stack$
+\end_inset
+
+ ומסומן את הכתובת שהן מצביעות עליהן
+\end_layout
+
+\begin_layout Itemize
+שלב שני עובר על ה
+\begin_inset Formula $heap$
+\end_inset
+
+ ובודק את הכתובות המוצבעות, ואם יש הצבעות בתוך ה 
+\begin_inset Formula $heap$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בכל אחת מהבדיקות אם יש התאמה מסמן כזכרון פעיל
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מעבר שני , עובר בשנית על כל הזכרון - גלובלי, 
+\begin_inset Formula $stack$
+\end_inset
+
+ , 
+\begin_inset Formula $heap$
+\end_inset
+
+ - כל מה שלא מסומן כפעיל מוחק.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מהמצגת:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+block 
+\series bold
+q
+\series default
+ is 
+\series bold
+reachable
+\series default
+ if there exists a directed path from any root to q 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The path may include a directed edge 
+\series bold
+p → q
+\series default
+ where some location in 
+\series bold
+block p
+\series default
+ points to some location in 
+\series bold
+block q
+\series default
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unreachable
+\series default
+ blocks correspond to 
+\series bold
+garbage
+\series default
+, they can never be used by the application 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A 
+\series bold
+Mark and Sweep
+\series default
+ garbage collector consists of two phases: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+A 
+\series bold
+mark phase
+\series default
+, which marks all reachable and allocated descendants of the root nodes
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A 
+\series bold
+sweep phas
+\series default
+e, which frees each unmarked allocated block 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Typically, one of the spare low-order bits in the 
+\series bold
+block header
+\series default
+ is used to indicate whether a block is marked or not
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename advanced - picture/less13_12.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

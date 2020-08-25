@@ -1,0 +1,2501 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+\numeric on
+2014
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - סמסטר ב - מועד א
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מה מייצג הטיפוס 
+\lang english
+FLANG
+\lang hebrew
+ ?באיזה חלק של תהליך האינטרפרטציה הוא משמש אותנו )מה השתנה בנושא זה בין
+ שני המימושים של האינטרפרטר -- הראשון במודל ה- 
+\lang english
+substitution
+\lang hebrew
+ והשני במודל הסביבות(
+\begin_inset Newline newline
+\end_inset
+
+
+\bar default
+הטיפוס 
+\begin_inset Formula $FLANG$
+\end_inset
+
+ מייצג :
+\end_layout
+
+\begin_layout Itemize
+ביטויים ארימתטים 
+\begin_inset Formula $\left(*,+,-,/\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+פונק' 
+\begin_inset Formula $first-class$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+קריאה לפונקציה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+במודל ההחלפות:
+\series default
+ ה 
+\begin_inset Formula $FLANG$
+\end_inset
+
+ משמש אותנו כערך מוחזר מה
+\begin_inset Formula $parse$
+\end_inset
+
+ , ב 
+\begin_inset Formula $subst$
+\end_inset
+
+ - שבו מתבצעת ההחלפה, וב 
+\begin_inset Formula $eval$
+\end_inset
+
+ גם כערך המוחזר
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+במודל הסביבות
+\series default
+ : הוא משמש כערך מוחזר מה
+\begin_inset Formula $parse$
+\end_inset
+
+ ו ב
+\begin_inset Formula $eval$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+תהליך האינטרפרטציה בשני המודלים שונה בפונקציה 
+\lang english
+eval
+\lang hebrew
+ בטיפול בבנאי 
+\lang english
+Id
+\lang hebrew
+ .הסבירו מה מתבצע במקרה זה בכל אחד מהמימושים ומדוע.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+במודל ההחלפות:
+\series default
+ ה
+\begin_inset Formula $eval$
+\end_inset
+
+ ב 
+\begin_inset Formula $Id$
+\end_inset
+
+ יחזיר שגיאה, כיון שבשלב זה כבר כל ההחלפות היו צריכות להתבצע ב 
+\begin_inset Formula $subst$
+\end_inset
+
+ , ואם הגענו ל
+\begin_inset Formula $Id$
+\end_inset
+
+ שכזה, פרושו של דבר שיש לנו משתנה חופשי - וזו שגיאה
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+במודל הסביבות
+\series default
+ : ה 
+\begin_inset Formula $eval$
+\end_inset
+
+ ב 
+\begin_inset Formula $Id$
+\end_inset
+
+ , יבצע חיפוש - על ידי פונקציית 
+\begin_inset Formula $lookup$
+\end_inset
+
+ - של ה 
+\begin_inset Formula $Id$
+\end_inset
+
+ ב
+\begin_inset Formula $env$
+\end_inset
+
+ שבו אנחנו נמצאים באותו הרגע, ובכך תתצבע הערכה ל 
+\begin_inset Formula $Id$
+\end_inset
+
+ .
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מהו ההבדל המרכזי בתהליך האינטרפרטציה בין שני המודלים? מה הייתה המוטיבציה
+ מאחורי שינוי זה?
+\end_layout
+
+\begin_layout Standard
+ההבדל המרכזי בתהליך האינטרפרטציה הוא שמבודל החלפות, אנו נעבור על כל העץ
+ ונחליף את כל המופעים החופשיים שלנו, ורק לאחר מכן נעשה הערכה לכל העץ ובמודל
+ הסביבות אנו כל פעם נשמור את כל הסביבה שלנו, וכאשר נעשה הערכה לאותו ביטוי
+ נעריך אותו בסביבה שבה הוא הוגדר.
+\end_layout
+
+\begin_layout Standard
+המוטיבציה שלנו היתה ליעל את מודל ההחלפות - כי כל החלפה דרשה מאיתנו לעבור
+ על העץ.
+ לכן פיתחנו את מודל ה 
+\begin_inset Formula $sc$
+\end_inset
+
+ שיודע לשמור בזכרון הקרוב את הפונקציה ובכך יעלנו את ההחלפה, אבל ביחד עם
+ הפתרון יצרנו בעיה חדשה, והיא שה
+\begin_inset Formula $sc$
+\end_inset
+
+ עבד בצורה דינמית, ואנחנו רצינו מודל סטטי, ולכן יצרנו את מודל הסביבות, שנותן
+ לנו:
+\end_layout
+
+\begin_layout Itemize
+יעילות בהערכת פונקציות
+\end_layout
+
+\begin_layout Itemize
+במודל סטטי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2014
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סמסטר ב - מועד ב
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- * 
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א -??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מה יקרה עם הפעלת הקוד הבא ב- 
+\begin_inset Formula $Racket$
+\end_inset
+
+ ? 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(: s : Any -> Any) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(define (s x) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+(s x))
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+(s s)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+האינטרפרטר יחזיר שגיאה כיוון שבשפות שאינן מתייחסות לפונקציה כ-
+\begin_inset Formula $class\ first$
+\end_inset
+
+,לא ניתן להפעיל פונקציה על עצמה.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הפונקציה תכנס ללולאה אינסופית והריצה לא תעצור.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה תכנס ללולאה אינסופית והריצה תעצור כאשר יגמר זכרון המחסנית.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+אי אפשר לדעת כיוון שזה תלוי במימוש של 
+\begin_inset Formula $Racket$
+\end_inset
+
+ והאם היא משתמשת באופטימיזציה של קריאות זנב.
+ ??
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ב - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי תהליך ה-
+\begin_inset Formula $Parsing$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+בתהליך זה אנו ממירים טקסט לעץ תחביר.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בסוף התהליך אנו יודעים מה הערך המוחזר מהרצת התכנית.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+תהליך ה-
+\begin_inset Formula $Parsing$
+\end_inset
+
+ תלוי באופן מובהק בהגדרת הדקדוק חסר ההקשר המגדיר את שפת התכניות החוקיות.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהליך ה-
+\begin_inset Formula $Parsing$
+\end_inset
+
+ אינו בהכרח תלוי בסדר הופעת האופרטור והאופרנדים בביטוי חוקי, על-פי הדקדוק
+ חסר ההקשר המגדיר את שפת התכניות החוקיות – כל עוד קיים תאום עם תהליך הערכת
+ התכנית.
+ ?? - מצד אחד הסדר לא הכרחי, מצד שני זה מזכיר דו-משמעות
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ג
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי שפות המתייחסות לפונקציות כ-
+\begin_inset Formula $class\ first$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+בשפה כזו, כל פונקציה יכולה להחזיר מספר כלשהו )סופי( של ערכים.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בשפות הללו פונקציה חייבת לקבל ארגומנט כלשהו ולהחזיר ערך מוחזר כלשהו.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לא ניתן להגדיר פונקציה ללא מתן שם )בזמן הגדרתה(, אולם מאוחר יותר ניתן לשלוח
+ את הפונקציה כפרמטר לפונקציה כלשהי ואף להחזיר פונקציה כערך מוחזר של חישוב
+ כלשהו.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ - ניתן להגדיר פונקציה אנונמית
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+בשפות אלו פונקציות יכולות להיות מוגדרות בזמן ריצה כך שגוף הפונקציה המוגדרת
+ תלוי בקלט של התכנית.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ד - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי 
+\begin_inset Formula $Bindings\ \&\ Scope$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+האפשרות לתת שמות מזהים לערכים היא חשובה לקריאותה של התכנית כמו גם ליכולת
+ ההפשטה )אבסטרקציה( של המתכנת.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+האפשרות לתת שמות מזהים לערכים מאפשרת לחסוך בזמן הריצה של התכנית ומקטינה
+ את הסיכוי לבאגים.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+שם משתנה הוא 
+\lang english
+instance
+\lang hebrew
+ 
+\lang english
+binding
+\lang hebrew
+ בפעם הראשונה שבה הוא מופיע בתכנית ??
+\end_layout
+
+\begin_layout Enumerate
+ניתן לבדוק האם קיימים מופעים חופשיים של משתנה כלשהו בתכנית עוד בשלב הניתוח
+ התחבירי.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+באינטרפרטר שכתבנו הבדיקה האם קיימים מופעים חופשיים של משתנה כלשהו בתכנית
+ מתקיימת בשלב הערכת התכנית, כלומר הודעת שגיאה על משתנה חופשי תוצג רק בזמן
+ ריצת התכנית.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שם משתנה הוא חפשי אם הוא מופיע מחוץ ל- 
+\begin_inset Formula $scope$
+\end_inset
+
+ של כל 
+\lang english
+instance
+\lang hebrew
+ 
+\lang english
+binding
+\lang hebrew
+ עם אותו שם, או שהוא משתנה מקומי של פונקציה ללא פרמטרים.??
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ה - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+lexical
+\lang hebrew
+.
+ 
+\lang english
+vs
+\lang hebrew
+ 
+\lang english
+Dynamic
+\lang hebrew
+ ?
+\end_layout
+
+\begin_layout Enumerate
+ב- 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+ – בביטוי שהוא הגוף של פונקציה כלשהי – אסור שיהיו משתנים חופשיים.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ב- 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+lexical
+\lang hebrew
+ – בביטוי שהוא הגוף של פונקציה כלשהי – אסור שיהיו משתנים חופשיים.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ב- 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+ – אם בגוף של פונקציה f ,מתבצעת קריאה לפונקציה g שהוגדרה בשלב מוקדם יותר
+ ובהנתן x מחזירה 1+x ,יתכן שבזמן הרצת התכנית יוחזר 3+x מהקריאה ל-g.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+ניתן לבדוק האם קיימים מופעים חופשיים של שם משתנה כלשהו בתכנית עוד בשלב הניתוח
+ התחבירי.
+\end_layout
+
+\begin_layout Enumerate
+באינטרפרטר שכתבנו במודל הסביבות מבוצע ניתוח על-פי 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ו - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי מימושי האינטרפרטר שכתבנו עבור 
+\lang english
+FLANG
+\lang hebrew
+ במודל ההחלפה ובמודל הסביבות?
+\end_layout
+
+\begin_layout Enumerate
+במימוש במודל הסביבות ציפינו לקבל יעילות גבוהה יותר מאשר במודל ההחלפה מכיוון
+ שהוא מטפל טוב יותר ברקורסית זנב.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הטיפול בפונקציה 
+\lang english
+eval
+\lang hebrew
+ בבנאי 
+\lang english
+Id
+\lang hebrew
+ של 
+\lang english
+FLANG
+\lang hebrew
+ הוא שונה מכיוון שבמודל ההחלפה אסור שיהיו שמות משתנים חופשיים בקוד ובמודל
+ הסביבות מותרים שמות משתנים חופשיים בקוד.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+במימוש במודל ההחלפה אנו קוראים לפונקציה 
+\lang english
+subst
+\lang hebrew
+ מתוך 
+\lang english
+eval
+\lang hebrew
+ עם שם משתנה, ערך מחושב עבור המשתנה ו-עץ 
+\lang english
+FLANG
+\lang hebrew
+ שבו עשויים להופיע מופעים חופשיים של שם המשתנה הנ"ל.
+ הערך המוחזר מקריאה זו הוא עץ 
+\lang english
+FLANG
+\lang hebrew
+ שבו אין אף מופע חופשי של שם המשתנה ששלחנו.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+במודל ההחלפה יכולנו לבטל לגמרי את השימוש בבנאי 
+\lang english
+With
+\lang hebrew
+ על-ידי שימוש בבנאים 
+\lang english
+Call
+\lang hebrew
+ ו- 
+\lang english
+Fun
+\lang hebrew
+ .עובדה זו נשארת נכונה גם במודל הסביבות.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2014
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- קיץ - מועד א
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+*
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+<ME> ::= <AB> 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+| + <ME> <ME> 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+| - <ME> <ME> 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+| * <ME> <ME> 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+| / <ME> <ME> 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+<AB> ::= a | b | x | y | z
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בחרו תשובה אחת נכונה:
+\end_layout
+
+\begin_layout Enumerate
+השפה שמגדיר הדקדוק הינה שפה עילית שבה ניתן להציב ערכים בביטויים אריתמטיים.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+השפה שמגדיר הדקדוק הינה שפת הביטויים אריתמטיים עם ארבעה סימני פעולות חשבון
+ ומספרים בשפה 
+\begin_inset Formula $RACKET$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+בשפה שמגדיר הדקדוק ישנן רק מילים באורך סופי.
+\end_layout
+
+\begin_layout Enumerate
+לא ניתן לייצר מילים בשפה שמגדיר הדקדוק ללא שימוש במספרים של .
+\begin_inset Formula $RACKET$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+עבור כל אחת מן המילים הבאות, קבעו האם ניתן לייצר את המילה מהדקדוק הנתון.
+ אם תשובתכם חיובית, הראו עץ גזירה עבורה.
+ אם תשובתכם שלילית, הסבירו מדוע לא ניתן לגזור את המילה.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+3 2 1 * * 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+a + b b x + + 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+{ { x – y } / { a + b } } 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+a a a a a a + + + + + 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+axy
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ג'
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בחרו תשובה אחת נכונה:
+\end_layout
+
+\begin_layout Enumerate
+הדקדוק הנתון אינו חד-משמעי.
+ זאת מכיוון שיש בשפה שהוא מגדיר מילים שמשמעותן תתברר רק כאשר יוצבו מספרים
+ במשתנים.
+\end_layout
+
+\begin_layout Enumerate
+הדקדוק הנתון חד-משמעי.
+ זאת מכיוון שמשמעותה של מילה בשפה צריכה להתברר רק בשלב ה-eval ובשלב הסופי
+ של 
+\lang english
+parse
+\lang hebrew
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+הדקדוק הנתון חד-משמעי.
+ זאת מכיוון שלכל מילה שנגזרה ממנו, ברור מה הכלל הראשון שהופעל בגזירה.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הדקדוק הנתון אינו חד-משמעי.
+ זאת מכיוון שקיימת מילה שיש עבורה שני עצי גזירה שונים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\begin{matrix}\begin{matrix}\left\langle ME\right\rangle \end{matrix}\\
+\begin{matrix}\swarrow &  &  &  & \downarrow &  & \searrow\\
+\left\langle ME\right\rangle  &  &  &  & \left\langle -\right\rangle  &  & \left\langle ME\right\rangle \\
+\begin{matrix}\downarrow\\
+\left\langle AB\right\rangle \\
+\downarrow\\
+\left\langle x\right\rangle 
+\end{matrix} &  &  &  &  &  & \begin{matrix}\swarrow & \downarrow & \searrow\\
+\left\langle ME\right\rangle  & \left\langle +\right\rangle  & \left\langle ME\right\rangle \\
+\downarrow &  & \downarrow\\
+\left\langle AB\right\rangle  &  & \left\langle AB\right\rangle \\
+\downarrow &  & \downarrow\\
+\left\langle y\right\rangle  &  & \left\langle z\right\rangle 
+\end{matrix}
+\end{matrix}
+\end{matrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\begin{matrix}\begin{matrix} &  &  & \left\langle ME\right\rangle \end{matrix}\\
+\begin{matrix}\swarrow & \downarrow &  &  &  & \searrow\\
+\left\langle ME\right\rangle  & \left\langle +\right\rangle  &  &  &  & \left\langle ME\right\rangle \\
+\begin{matrix}\swarrow & \downarrow & \searrow\\
+\left\langle ME\right\rangle  & \left\langle -\right\rangle  & \left\langle ME\right\rangle \\
+\downarrow &  & \downarrow\\
+\left\langle AB\right\rangle  &  & \left\langle AB\right\rangle \\
+\downarrow &  & \downarrow\\
+\left\langle x\right\rangle  &  & \left\langle y\right\rangle 
+\end{matrix} &  &  &  &  & \begin{matrix}\downarrow\\
+\left\langle AB\right\rangle \\
+\downarrow\\
+\left\langle z\right\rangle 
+\end{matrix}
+\end{matrix}
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה 2 *
+\end_layout
+
+\begin_layout Standard
+שאלות כלליות - סמנו את כל התשובות הנכונות
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נתון הקוד הבא ב-
+\lang english
+Racket
+\lang hebrew
+?
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(: foo : Number (Number -> Boolean) (Listof Number) -> Number) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(define (foo x p lst) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+  (if (null? lst) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(let ([f (p (first lst))]) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(if f 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+(foo (- x (first lst)) p (rest lst)) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(foo (+ x (first lst)) p (rest lst))))))
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+כל הקריאות הרקורסיביות הן קריאות זנב.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+זוהי אינה רקורסיית זנב, כיוון שבחישוב יש פתיחת סביבה לוקאלית של 
+\lang english
+let
+\lang hebrew
+ השקולה להפעלה מקומית של פונקציה אנונימית.
+ 
+\series bold
+
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Formula $f$
+\end_inset
+
+ תמיד מקבל או ערך 
+\lang english
+true
+\lang hebrew
+ או ערך 
+\lang english
+false
+\lang hebrew
+.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+אם נשלח עבור הפרמטר p את הפונקציה 
+\lang english
+zero
+\lang hebrew
+ ?של 
+\lang english
+RACKET
+\lang hebrew
+ ,תמיד נקבל את ערך הפרמטר x ועוד סכום הערכים ברשימה 
+\lang english
+lst
+\lang hebrew
+.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ב' - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי תהליך ה- 
+\lang english
+Parsing
+\lang hebrew
+ ? 
+\end_layout
+
+\begin_layout Enumerate
+תהליך ה- 
+\lang english
+Parsing
+\lang hebrew
+ חייב להיות מנותק מתהליך ההערכה של התכנית.
+ בפרט, הראשון חייב להסתיים לפני שהשני מתחיל
+\end_layout
+
+\begin_layout Enumerate
+בסוף התהליך אנו יודעים מה הערך המוחזר מהרצת התכנית.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+תהליך ה- 
+\begin_inset Formula $Parsing$
+\end_inset
+
+ אינו יכול להתבצע אם יש רב-משמעיות בדקדוק, כיוון שלא נדע איזה עץ תחביר אבסטרקטי
+ עלינו לייצר.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+במימוש שלנו, במודל ההחלפה – בתום תהליך ה- 
+\lang english
+Parsing
+\lang hebrew
+ מתקבל 
+\lang english
+FLANG
+\lang hebrew
+ .לעומת זאת, במודל הסביבות – בתום תהליך ה- 
+\lang english
+Parsing
+\lang hebrew
+ מתקבל טיפוס אחר.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ג'
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי שפות המתייחסות לפונקציות כ-
+\lang english
+class
+\lang hebrew
+ 
+\lang english
+first
+\lang hebrew
+ ?
+\end_layout
+
+\begin_layout Enumerate
+בשפה כזו, פונקציה שנשלחת כפרמטר לפונקציה אחרת, אינה יכולה להיות רקורסיבית,
+ אחרת פונקצית ההערכה 
+\lang english
+eval
+\lang hebrew
+ עלולה להכנס ללולאה אינסופית.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+בשפות הללו פונקציה אינה חייבת לקבל ארגומנט כלשהו או להחזיר ערך מוחזר כלשהו.
+ 
+\series default
+
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ישנן שפות כנ"ל שאינן מאפשרות להגדיר פונקציה ללא מתן שם )בזמן הגדרתה(, אולם
+ מאוחר יותר ניתן לשלוח את הפונקציה כפרמטר לפונקציה כלשהי ואף להחזיר פונקציה
+ כערך מוחזר של חישוב כלשהו.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ - מתאים ל 
+\begin_inset Formula $\text{high order}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בשפות אלו פונקציה מקבלות את הפרמטר דרך רגיסטרים, והפונקציה עצמה הינה כתובת
+ בזיכרון.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אילו היתה כתובת בזכרון = הפונקציה היא אובייקט, לא נכון ל 
+\begin_inset Formula $\text{first class }$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ד
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי מימושי האינטרפרטר שכתבנו עבור 
+\lang english
+FLANG
+\lang hebrew
+ במודל ההחלפה, ה- 
+\lang english
+cache
+\lang hebrew
+ 
+\lang english
+substitution
+\lang hebrew
+ ובמודל הסביבות?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+במימוש במודל ה- 
+\lang english
+cache
+\lang hebrew
+ 
+\lang english
+substitution
+\lang hebrew
+ ציפינו לקבל יעילות גבוהה יותר מאשר במודל ההחלפה מכיוון שהוא דורש פחות סריקות
+ של הקוד בשלב ההרצה של גוף הפונקציה.
+ 
+\series default
+
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+השוני המרכזי בין מימושי האינטרפרטר שכתבנו עבור 
+\lang english
+FLANG
+\lang hebrew
+ במודל ה- 
+\lang english
+cache
+\lang hebrew
+ 
+\lang english
+substitution
+\lang hebrew
+ ובמודל הסביבות, הוא ביעילות של הפונקציה 
+\lang english
+eval
+\lang hebrew
+ הנובע משימוש בטיפוס מתוחכם של סביבה כתחליף לרשימה של רשימות.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ - השוני הוא דינמי מול ססטי
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+במימוש במודל ההחלפה והסביבות קיבלנו 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+lexical
+\lang hebrew
+ ובמימוש במודל ה- 
+\lang english
+substitution
+\lang hebrew
+ 
+\lang english
+cache
+\lang hebrew
+ קיבלנו 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+.
+ אולם, במודל ההחלפה היה באג, שהתנהג כמו 
+\lang english
+dynamic
+\lang hebrew
+ 
+\lang english
+scoping
+\lang hebrew
+ במקרה מסויים.
+ 
+\series default
+
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ - הראנו בכיתה בסוף ה 
+\begin_inset Formula $dynmic$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה 
+\lang english
+eval
+\lang hebrew
+ פעלה באופן זהה עבור פונקציות במימושי האינטרפרטר שכתבנו עבור 
+\lang english
+FLANG
+\lang hebrew
+ במודל ההחלפה וה- 
+\lang english
+cache
+\lang hebrew
+ 
+\lang english
+substitution
+\lang hebrew
+ .בפרט, במקרה זה היא החזירה את אותו ערך שקיבלה.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2015
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סמסטר ב - מועד א
+\end_layout
+
+\begin_layout Subsection*
+שאלה 2 - *
+\end_layout
+
+\begin_layout Standard
+שאלות כלליות — לפניכם מספר שאלות פשוטות.
+ עליכם לבחור את התשובות הנכונות לכל סעיף )ייתכנו מספר תשובות נכונות – סמנו
+ את כולן(
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א' ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אילו מהמשפטים הבאים נכונים לגבי 
+\lang english
+scoping
+\lang hebrew
+) 
+\lang english
+lexical
+\lang hebrew
+ (
+\lang english
+static
+\lang hebrew
+.
+ 
+\lang english
+vs
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+? 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שימוש ב - 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+ מגדיל את הצורך של המשתמש לעמוד בהגדרות הממשק שקבע מייצר התוכנה.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+שימוש ב - 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+ עשוי להיות מועיל במקרה הבא: תוכנה לניהול בנק שמקבלת כפרמטר סכום הדולרים
+ שהוחלפו בבנק.
+ הרעיון הוא שפרמטר זה משתנה בכל יום ולכן עדכון מקומי שלו, ישנה את תפקוד
+ התוכנה כולה.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+במודל 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+dynamic
+\lang hebrew
+ ,הקוד הבא מחזיר 2 ואחר כך 1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+(define (foo x) x) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(let ([x 2]) (foo 1)) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(define (bar x) (foo x)) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(let ([x 1]) (bar x))
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+במודל 
+\lang english
+scoping
+\lang hebrew
+ 
+\lang english
+static
+\lang hebrew
+ ,הקוד מסעיף ג', מחזיר 1 ואחר כך שוב 1.
+ ??
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+סעיף ב' - ??
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+5 נקודות: )סמנו את כל התשובות הנכונות(, אילו מהמשפטים הבאים נכונים לגבי
+ תהליך ה- 
+\lang english
+Parsing
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+לעיתים תהליך ה-
+\lang english
+Parsing
+\lang hebrew
+ צריך להצליח גם כאשר הקוד אינו תקין.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+במימוש שלנו, בסוף תהליך ה-
+\lang english
+Parsing
+\lang hebrew
+ קיבלנו 
+\lang english
+FLANG
+\lang hebrew
+ שהוא בהכרח או ואריאנט 
+\lang english
+Num
+\lang hebrew
+ או ואריאנט 
+\lang english
+Fun
+\lang hebrew
+.
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+אם בכל ביטוי בשפה 
+\lang english
+FLANG
+\lang hebrew
+ היינו מחליפים סוגר מסולסל בסוגר מעוגל 
+\lang english
+)
+\lang hebrew
+באותו כיוון( ומחליפים 
+\lang english
+with
+\lang hebrew
+ ב-
+\lang english
+let
+\lang hebrew
+ ו-
+\lang english
+call
+\lang hebrew
+ במילה ריקה, ניתן להשתמש באותו עץ תחביר אבסטרקטי לכל מילה – לפני ואחרי השינוי.
+ ??
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+במימוש שלנו, תהליך ה-
+\lang english
+Parsing
+\lang hebrew
+ במודל הסביבות – זהה לתהליך ה-
+\lang english
+Parsing
+\lang hebrew
+ במודל ה- .
+\lang english
+substitution
+\lang hebrew
+ 
+\lang english
+
+\begin_inset Formula $\checkmark$
+\end_inset
+
+ cache
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2016
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סמסטר ב - מועד א
+\end_layout
+
+\begin_layout Subsection*
+שאלה 2
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מנו )ותארו במשפט קצר( לפחות שלושה יתרונות חשובים שדנו בהם כאשר הוספנו שמות
+ מזהים לשפה שלנו.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מנו )ותארו במשפט קצר( לפחות שלושה יתרונות חשובים שדנו בהם כאשר הוספנו פונקציות
+ לשפה שלנו.
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+תכנות בסיסי
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2018
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סמסטר ב - מועד ב 
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Section*
+שיעור חזרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PL$
+\end_inset
+
+ היא ססטיק טייפניג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PL\ dyn$
+\end_inset
+
+ זה סטטי שנותן דינמיק סקופינג
+\end_layout
+
+\begin_layout Standard
+ואנחנו דינמיק טייפניג
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(define foo (let ([op *])
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+                  (lambda (x y) (op x y))))
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+  (test (foo 6 7) => 13) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Graphics
+	filename prog-lang-picture/exam03.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2019
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סמסטר ב- מועד א
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מופעים חופשיים של שמות מזהים
+\end_layout
+
+\begin_layout Standard
+קוד בשפה שכתבנו 
+\lang english
+FLANG
+\lang hebrew
+ המכיל מופעים חופשיים של שמות מזהים הוא קוד שגוי – עליו יש להוציא הודעת
+ שגיאה.
+ 
+\end_layout
+
+\begin_layout Standard
+באינטרפרטר שכתבנו במודל ההחלפות, הודעת השגיאה ניתנת בזמן הערכת התוכנית.
+ למעשה, שגיאה כזאת יכולה להתגלות עוד לפני הפעלת ה- 
+\lang english
+eval
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף א - 
+\lang english
+instance
+\lang hebrew
+ - 
+\lang english
+free
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+יהא E ביטוי )תכנית בשפה 
+\lang english
+FLANG
+\lang hebrew
+ (.
+ הסבירו מהו מופע חופשי בביטוי E 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+וכיצד עשוי מופע של x להיות לא-חופשי )קשור( בביטוי E כולו, אך חופשי בתת-ביטוי
+ של E .
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+תנו תשובה קצרה )לא יותר ארבע שורות(.
+ השתמשו במילים - 
+\lang english
+binding
+\lang hebrew
+, 
+\lang english
+scope
+\lang hebrew
+ .
+\lang english
+instance
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Binding instance}$
+\end_inset
+
+ - מופע של 
+\begin_inset Formula $x$
+\end_inset
+
+ , שבו אני מקשר את 
+\begin_inset Formula $x$
+\end_inset
+
+ לביטוי כלשהו ) הצהרה על שם מזהה 
+\begin_inset Formula $x$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Scope }$
+\end_inset
+
+ - עבור 
+\begin_inset Formula $\text{Binding instance}$
+\end_inset
+
+ אותו חלק בקוד שבו כל מופע של 
+\begin_inset Formula $x$
+\end_inset
+
+ מקושר למופע ההצהרתי הזה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Bound instance}$
+\end_inset
+
+ - כל מופע של 
+\begin_inset Formula $x$
+\end_inset
+
+ שאינו 
+\begin_inset Formula $\text{Binding instance }$
+\end_inset
+
+ וגם נמצא בתוך 
+\begin_inset Formula $scope$
+\end_inset
+
+של 
+\begin_inset Formula $\text{Binding instance }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{Free instance }$
+\end_inset
+
+ - כל מופע של 
+\begin_inset Formula $x$
+\end_inset
+
+ שאינו 
+\begin_inset Formula $\text{Binding instance }$
+\end_inset
+
+ וגם אינו 
+\begin_inset Formula $\text{Bound}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{E ::= \{+ \ensuremath{\underbrace{x}_{\begin{matrix}\text{free}\\
+\text{incstance}
+\end{matrix}}} \ensuremath{\{\text{with \{ }\ensuremath{\underbrace{\text{x}}_{\begin{matrix}\text{binding}\\
+\text{incstance}
+\end{matrix}}}\underbrace{\text{5}}_{\begin{matrix}\text{value}\\
+\text{bound}
+\end{matrix}}\text{\}}\ensuremath{\overbrace{\text{\{ + }\underbrace{\text{x}}_{\begin{matrix}\text{bound}\\
+\text{instance}
+\end{matrix}}\text{ 1\}}}^{\text{scope}}}\}}\}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סעיף ב - 
+\lang english
+count-free-instances
+\end_layout
+
+\begin_layout Standard
+נתון הקוד הבא בשפה 
+\lang english
+FLANG
+\lang hebrew
+ :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{with {x {fun {y} {- x y}}} 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+{+ {with {x {- x 3}} {+ x y}}
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y}}" 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\bar under
+מהם המופעים החופשיים בקוד זה )רק כאלה שהינם חופשיים בביטוי כולו(? הסבירו
+ לגבי כל אחד שקבעתם שהוא חופשי – מדוע הוא אכן כזה.
+\end_layout
+
+\begin_layout Itemize
+ה 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $\text{{fun {y} {- x y}}}$
+\end_inset
+
+ - כיון שזה עדיין ה
+\begin_inset Formula $value-bound$
+\end_inset
+
+ , ו
+\begin_inset Formula $x$
+\end_inset
+
+ עדיין לא מוגדר בשלב הזה
+\end_layout
+
+\begin_layout Itemize
+שני המופעים של ה
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $\text{\{+ \{with \{x \{- x 3\}\} \{+ x y\}\} y\}\}" }$
+\end_inset
+
+ = ה 
+\begin_inset Formula $scope$
+\end_inset
+
+של ה 
+\begin_inset Formula $with$
+\end_inset
+
+ החיצוני, כי ה
+\begin_inset Formula $y$
+\end_inset
+
+ מוגדר רק ב
+\begin_inset Formula $scope$
+\end_inset
+
+ של ה 
+\begin_inset Formula $fun$
+\end_inset
+
+ שנמצא בתוך ה
+\begin_inset Formula $value-bound$
+\end_inset
+
+ , ול
+\begin_inset Formula $body$
+\end_inset
+
+ הוא לא מוגדר.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,3176 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ec}[1]{\overset{#1}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tc}{\sum^{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rc}[1]{\overset{#1}{\Rightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lc}[1]{\overset{#1}{\Leftarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sesue}[4]{\left(#1,#2,#3,#4\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ngcr}[1]{\hat{\delta}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lep}{\leq_{p}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\ec}[1]{\overset{#1}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\tc}{\sum^{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\rc}[1]{\overset{#1}{\Rightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lc}[1]{\overset{#1}{\Leftarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\sesue}[4]{\left(#1,#2,#3,#4\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ngcr}[1]{\hat{\delta}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lep}{\leq_{p}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+הגדרות
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מכונות טיורינג
+\end_layout
+
+\begin_layout Subsubsection
+מכונת טיורינג 
+\end_layout
+
+\begin_layout Standard
+מגודרת ע"י שביעיה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q$
+\end_inset
+
+ - קב' סופית של מצבים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ מצב התחלתי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum$
+\end_inset
+
+ א"ב הקלט 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ א"ב העבודה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\flat$
+\end_inset
+
+ מצבים סופיים 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ קב' של מצביים סופיים )תפקיד שונה מאוטומט מחסנית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta$
+\end_inset
+
+ פונקציית מעברים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\flat$
+\end_inset
+
+-ים )מסמן לנו סרט אינסופי לימין את סוף הקלט(
+\end_layout
+
+\begin_layout Standard
+נזכר שבאוטומט מחסנית לא היה צריך את זה כי בכל רגע דרשנו לתת את הפלט הנכון
+ עבור הרישא שקראנו.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מהלך החישוב:
+\bar default
+ מוגדר ע"י 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ בכל צעד מבצעים "מהלך" לפי 
+\begin_inset Formula $\delta$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מוגדרת כך 
+\begin_inset Formula $\delta\left(Q\backslash F\right)\times\Gamma\rightarrow Q\times\Gamma\times\left\{ L,S,R\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q$
+\end_inset
+
+ מצב נוכחי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - תו המוצבע ע"י הראש 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q\times\Gamma$
+\end_inset
+
+ = תו שכותבים במקום המבוצע ע"י הראש 
+\begin_inset Formula $\times$
+\end_inset
+
+ מצב חדש 
+\end_layout
+
+\begin_layout Itemize
+לאן הראש זז בסוף הצעד: 
+\begin_inset Formula $\left(Left,Stay,Right\right)$
+\end_inset
+
+ - 
+\begin_inset Formula $left$
+\end_inset
+
+ קורה בסוף הצעד.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סיום החישוב:
+\bar default
+ אם מגיעים למצב השייך ל 
+\begin_inset Formula $F$
+\end_inset
+
+ החישוב מיד עוצר והפלט שלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )על הקלט 
+\begin_inset Formula $\times$
+\end_inset
+
+ שלו( מוגדר כתוכן הסרט משמאל לראש.
+ אם לא עוצרים אף פעם , אז הפלט על אותו קלט לא מוגדר.
+\end_layout
+
+\begin_layout Standard
+כלומר הפונקציה שמ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ מחשבת , 
+\begin_inset Formula $\delta_{M}:\sum^{*}\rightarrow\Gamma^{*}$
+\end_inset
+
+ היא פונקציה חלקית )מותר ש 
+\begin_inset Formula $\delta_{M}$
+\end_inset
+
+ לא תהיה מגודרת על קלטים מסוימים(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הגדרה:
+\bar default
+ 
+\series bold
+מודל חישובי
+\series default
+ הוא מיפוי
+\end_layout
+
+\begin_layout Standard
+\align center
+קב' הפונקציות )חלקיות( 
+\begin_inset Formula $\mathbb{M}:\sum^{*}\rightarrow\delta:\sum_{1}^{*}\rightarrow\sum_{2}^{*}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+בה
+\begin_inset Quotes erd
+\end_inset
+
+כ נניח תמיד ש 
+\begin_inset Formula $\sum=\left\{ 0,1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דו סרטית:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\delta:Q\backslash F\times\Gamma\times\Gamma\rightarrow Q\times\Gamma\times\Gamma\times\left\{ L,R,S\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q\backslash F$
+\end_inset
+
+ - מצב משותף
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ - תו בסרט ב 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ - תו בסרט ה
+\begin_inset Formula $II$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma\times\Gamma$
+\end_inset
+
+ - מה כותבים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ L,R,S\right\} $
+\end_inset
+
+ - לאן זזים 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $3.1$
+\end_inset
+
+ :)קונפיגורציה(: 
+\end_layout
+
+\begin_layout Standard
+בהנתן מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ , קונפיגורציה )מצב רגעי( של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא שלשה 
+\begin_inset Formula $C=\left(q,i,\alpha\right)$
+\end_inset
+
+ המתארת )באופן מלא( את המצב הכולל של מכונה אחרי מספר )סופי( של צעדי ריצה:
+\end_layout
+
+\begin_layout Itemize
+כאן 
+\begin_inset Formula $q$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא המצב הנוכחי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $i$
+\end_inset
+
+ - התא שבו נמצא הראש הקורא/כותב.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - תוכן הסרט, כיוון שמדובר בריצה מס' סופי של צעדים על קלט כלשהו 
+\begin_inset Formula $x$
+\end_inset
+
+ מספיק לשמור רישא סופית של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כמוסכמה נשמור 
+\begin_inset Formula $\varphi=max\left(|x|,T\right)$
+\end_inset
+
+ תוים, כאשר 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא התו הימני ביותר שבו 
+\begin_inset Formula $M$
+\end_inset
+
+ ביקרה.
+ אם, בצורה כזו מבוטח שמימין ל 
+\begin_inset Formula $\alpha\left[x\right]$
+\end_inset
+
+ יש רק 
+\begin_inset Formula $\flat$
+\end_inset
+
+ ים ואין צורך לשמור אתם במפורש.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+הגדרה )צעד חישוב של מ
+\begin_inset Quotes erd
+\end_inset
+
+ט(
+\series medium
+ 
+\series default
+\numeric on
+
+\begin_inset Formula $3.2$
+\end_inset
+
+
+\numeric off
+: 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט ו 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ קונפיגורציה שלה.
+ נאמר ש 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ עוקבת ל 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ יכולה לעבור מ 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ בצעד חישוב יחיד.
+ כלומר 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ מהצורה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{1}=\left(q,i,\alpha\right),C_{2}=\left(p,i',\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר: 
+\begin_inset Formula $\delta\left(q,\alpha\left[i\right]\right)=\left(p,b,m\right)$
+\end_inset
+
+ וגם: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $i'=\begin{cases}
+i & m=S\\
+i+1 & m=R\\
+max\left(i-1,1\right) & m=L
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $max$
+\end_inset
+
+ בשביל לטפל ב'נפילה' מהסרט 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta$
+\end_inset
+
+ היא מחרוזת באורך 
+\begin_inset Formula $\left|\alpha\right|$
+\end_inset
+
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ, ומקיימת 
+\begin_inset Formula $\beta\left[i\right]=b$
+\end_inset
+
+, 
+\begin_inset Formula $\beta\left[j\right]=\alpha\left[j\right]$
+\end_inset
+
+ , 
+\begin_inset Formula $i\neq j,j\leq\left|a\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+בנוסף )לא הבד
+\begin_inset Quotes erd
+\end_inset
+
+כ( אם 
+\begin_inset Formula $I'$
+\end_inset
+
+ גדול מ 
+\begin_inset Formula $max\left(\left|x\right|,T\right)$
+\end_inset
+
+ )התו הימני ביותר שבקרנו( - אז 
+\begin_inset Formula $\beta$
+\end_inset
+
+ יהיה באורך 
+\begin_inset Formula $i'\left|a\right|+1$
+\end_inset
+
+ ו 
+\begin_inset Formula $\beta\left[i+1\right]=\flat$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+בעצם הגדרנו מחדש, בצורה מדויקת וקצרה כיצד מתבצע צעד חישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ , נסמן זאת כך: 
+\begin_inset Formula $C_{1}\vdash C_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הערה
+\bar default
+: לכל קונפ' 
+\begin_inset Formula $C=\left(q,i,\alpha\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ שבה 
+\begin_inset Formula $q\notin F$
+\end_inset
+
+ )כלומר קונפ' שאינה סופית( יש קונפ' עוקבת אחת ויחידה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $3.3$
+\end_inset
+
+ )הפונקציה 
+\begin_inset Formula $f_{M}$
+\end_inset
+
+ שמ
+\begin_inset Quotes erd
+\end_inset
+
+ט מחשבת(:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט.
+ ויהיה 
+\begin_inset Formula $x\in\sum^{*}$
+\end_inset
+
+ קלט עבורה.
+ נסמן ב 
+\begin_inset Formula $C_{x}=\left(q_{0},1,x\right)$
+\end_inset
+
+ את הקונפ' ההתחלתית של ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ )במקרה ו
+\begin_inset Formula $x=\varepsilon$
+\end_inset
+
+ אז 
+\begin_inset Formula $C_{x}=\left(q_{0},1,\flat\right)$
+\end_inset
+
+ ( מתואר ע
+\begin_inset Quotes erd
+\end_inset
+
+י סדרת הקונפיגורציות )היחידה( מהצורה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{x}=C_{1},C_{2},....$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+כאשר לכל 
+\begin_inset Formula $i>1$
+\end_inset
+
+ , 
+\begin_inset Formula $C_{i+1}\vdash_{M}C_{i}$
+\end_inset
+
+ , 
+\begin_inset Formula $f_{M}(x)$
+\end_inset
+
+ תוגדר כך:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $f_{M}(x)=\begin{cases}
+a\left[1,...,i-1\right] & \text{A finite sequence with configartion of: \ensuremath{\left(q,i,\alpha\right)}}\\
+\bot\left(\text{undifined}\right) & \text{else (infinite)}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הפונ' האוניברסלית 
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+המוגדרת כך:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $U\left(\left\langle M\right\rangle ,\left\langle X\right\rangle \right)=\begin{cases}
+f_{M}(X) & \text{valid syntax \textbf{and} M stop on x}\\
+\bot & \text{else}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $M$
+\end_inset
+
+ - קידוד של מ
+\begin_inset Quotes erd
+\end_inset
+
+ט , 
+\begin_inset Formula $X$
+\end_inset
+
+ - קידוק של קלט עבור 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מעכשיו והלאה נניח שהמ
+\begin_inset Quotes erd
+\end_inset
+
+ט שלנו היא בעלת שני מצבים סופיים 
+\begin_inset Formula $F=\left\{ q_{acc,}q_{rej}\right\} $
+\end_inset
+
+ , ו 
+\begin_inset Formula $\sum=\left\{ 0,1\right\} $
+\end_inset
+
+ אלא אם נאמר אחרת.
+\end_layout
+
+\begin_layout Standard
+נוסיף למ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $feature$
+\end_inset
+
+ של קבלת שפות
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+הגדרה: 
+\begin_inset Formula $3.4$
+\end_inset
+
+
+\bar default
+ נאמר שמ
+\begin_inset Quotes erd
+\end_inset
+
+ט מקבלת מילה 
+\begin_inset Formula $x\in\sum^{*}$
+\end_inset
+
+ , אם 
+\begin_inset Formula $M$
+\end_inset
+
+ בריצתה על 
+\begin_inset Formula $x$
+\end_inset
+
+ עוצרת במצב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $3.5$
+\end_inset
+
+ השפה של מ
+\begin_inset Quotes erd
+\end_inset
+
+ט
+\end_layout
+
+\begin_layout Standard
+בהנתן מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ נגדיר:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L(M)=\left\{ x\in\tc|\text{m accept x }\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+השפה של 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+נאמר ש 
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L(M)$
+\end_inset
+
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ תמיד עוצרת על כל קלט(.
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $3.6$
+\end_inset
+
+ : 
+\begin_inset Formula $RE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קב' כל השפות שנתן לקבל ע
+\begin_inset Quotes erd
+\end_inset
+
+י מ
+\begin_inset Quotes erd
+\end_inset
+
+ט תקרא 
+\begin_inset Formula $RE$
+\end_inset
+
+ כלומר :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $RE\triangleq\left\{ L\in P\left(\tc\right)|\text{exist Turing machine for L(M)=L }\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $3.7$
+\end_inset
+
+: 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $R\triangleq\left\{ L\in P\left(\tc\right)|\text{exist Turing machine M accepted L}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $4.4$
+\end_inset
+
+: 
+\begin_inset Formula $coRE=\left\{ L\subseteq\tc|\,\bar{L}\in RE\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ 
+\begin_inset Formula $II$
+\end_inset
+
+ של 
+\begin_inset Formula $coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נאמר 
+\begin_inset Formula $L\in P\left(\tc\right)$
+\end_inset
+
+ שייכת לקבוצת המילים 
+\begin_inset Formula $CoRE$
+\end_inset
+
+ אם קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שדוחה כל 
+\begin_inset Formula $x\in\bar{L}$
+\end_inset
+
+, ועבור 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ מקבלת או לא עוצרת .
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרות לתרגיל:
+\end_layout
+
+\begin_layout Itemize
+יחס דו מקומי 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא קבוצה של זוגות סדורים
+\end_layout
+
+\begin_layout Itemize
+פונקציה חלקית - מקרה פרטי של יחס דו מקומי - בו לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש לכל היותר 
+\begin_inset Formula $y$
+\end_inset
+
+ אחד עבורו מתקיים 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+פונקציה מלאה - מקרה פרטי של פונקציה חלקית - בו לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $y$
+\end_inset
+
+ אחד עבורו מתקיים 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה: שפות הלכסון
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{D}=\left\{ \left\langle M\right\rangle |\text{M accept \left\langle M\right\rangle }\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה: 
+\begin_inset Formula $5.1$
+\end_inset
+
+ השפה האוניברסלית:
+\end_layout
+
+\begin_layout Standard
+\align center
+{
+\begin_inset Formula $\left\langle M\right\rangle ,\left\langle X\right\rangle $
+\end_inset
+
+ קידוד חוקי סינטקטית וגם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $L_{U}=\{\left\langle M\right\rangle ,\left\langle X\right\rangle |$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כאשר: 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ קידוד של מ
+\begin_inset Quotes erd
+\end_inset
+
+ט, 
+\begin_inset Formula $\left\langle X\right\rangle $
+\end_inset
+
+ קידוד של קלט עבור 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+רידקוציות
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה פונקציית רידוקציה: בהנתן זוג שפות 
+\begin_inset Formula $L_{1},L_{2}\subseteq\tc$
+\end_inset
+
+ נאמר שפונקציה 
+\begin_inset Formula $f:\tc\rightarrow\tc$
+\end_inset
+
+ היא פונקציית רידוקציה בין זוג השפות אם היא מקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ ניתנת לחישוב )בפרט 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ המחשבת אותה מייד עוצרת(
+\end_layout
+
+\begin_layout Enumerate
+תקפה : 
+\begin_inset Formula $\forall x\in\tc\ x\in L_{1}\iff f(x)\in L_{2}$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הגדרה
+\series default
+: יהיו 
+\begin_inset Formula $L_{1},L_{2}\in\tc$
+\end_inset
+
+ נאמר ש 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+- במילים: 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ נתנת 
+\series bold
+לרידוקציה
+\series default
+ ל 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ - אם קיימת פנו' 
+\begin_inset Formula $f:\tc\rightarrow\tc$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ ניתנת לחישוב 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ תקפה: 
+\begin_inset Formula $\forall x\in\tc:x\in L_{1}\iff f(x)\in L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less5_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $7.1$
+\end_inset
+
+ : 
+\begin_inset Formula $L_{eq}=\left\{ \left\langle M_{1}\right\rangle ,\left\langle M_{2}\right\rangle |L\left(M_{1}\right)=L\left(M_{2}\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $Rice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $7.3$
+\end_inset
+
+ : תכונה של שפות ב 
+\begin_inset Formula $RE,S$
+\end_inset
+
+ היא תת קבוצה 
+\begin_inset Formula $S\subseteq RE$
+\end_inset
+
+ , נאמר ש 
+\begin_inset Formula $S$
+\end_inset
+
+ טריויאלית אםם 
+\begin_inset Formula $S\in\left\{ RE,\phi\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: נגדיר 
+\begin_inset Formula $L_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M accept }\varepsilon\right\} $
+\end_inset
+
+ )מקבלת את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ( 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L'_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M doesnt accept }\varepsilon\right\} \notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L"_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M reject }\varepsilon\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ט אי-דרמינסטית
+\end_layout
+
+\begin_layout Subsubsection
+מכונת טיורינג אי-דטרמינסטית תוגדר כמו מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטרמניסטית, אלא ש 
+\begin_inset Formula $\delta$
+\end_inset
+
+ תאפשר בכל צעד בדיוק שתי בחירות במקום בחירה אחת.
+ כלומר:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\delta:\left(Q\backslash F\right)\times\Gamma\rightarrow\left(Q\times\Gamma\times\left\{ L,S,R\right\} \right)^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד מגדירה על קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ עץ חישוב במקום מסלול חישוב:
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $8.2$
+\end_inset
+
+ : נאמר ש מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת מילה 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קים מסלול בעץ החישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ בו 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ )יתכנו מסלולים אחרים בהם היא עוצרת ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ או לא עוצרת(
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $RE_{ND}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כקבוצת השפות שקיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד המקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+ = 
+\begin_inset Formula $\left\{ L|\text{Exist non-detemenstic turing machine accpet L}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+סיבוכיות
+\end_layout
+
+\begin_layout Subsubsection
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטרמניסטית.
+ נגדיר את פונ' זמן הריצה שלה, 
+\begin_inset Formula $tm$
+\end_inset
+
+ 
+\begin_inset Formula $tm:\tc\rightarrow\mathbb{N}$
+\end_inset
+
+ - פונקציה חלקית מוגדרת כך:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $tm(x)$
+\end_inset
+
+ - מס' הצעדים ש 
+\begin_inset Formula $tm$
+\end_inset
+
+ מבצעת בריצה על 
+\begin_inset Formula $x$
+\end_inset
+
+ אם עוצרת
+\end_layout
+
+\begin_layout Itemize
+אחרת - לא מוגדר
+\end_layout
+
+\begin_layout Subsubsection
+נאמר שפונקציה מלאה 
+\begin_inset Formula $t(n):\mathbb{N}\rightarrow\mathbb{N}$
+\end_inset
+
+ היא חסם על זמן הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $x\in\tc$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $tm\left(x\right)\leq t\left(\left|x\right|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+נאמר ש 
+\begin_inset Formula $M$
+\end_inset
+
+ )מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטר'( היא יעילה או פולינומית אם קיים עבורה חסם זמן ריצה 
+\begin_inset Formula $p(n)$
+\end_inset
+
+ שהוא פולינום )בה
+\begin_inset Quotes erd
+\end_inset
+
+כ נתן להניח ש 
+\begin_inset Formula $p(n)=c\cdot n^{d}$
+\end_inset
+
+ ( *
+\begin_inset Formula $c,d$
+\end_inset
+
+ קבועים 
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה: {קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטרמיסטית יעילה המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ | 
+\begin_inset Formula $L$
+\end_inset
+
+ } 
+\begin_inset Formula $P=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\}$
+\end_inset
+
+ קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטר' יעילה המחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+ | 
+\begin_inset Formula $f$
+\end_inset
+
+ }
+\begin_inset Formula $POLY=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד נאמר ש 
+\begin_inset Formula $tm(x)$
+\end_inset
+
+ היא פונק' זמן הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+נגדיר את הפונקציה 
+\begin_inset Formula $tm(x)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ בכל מסלול 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ זה המקס' על פני כל המסלולים של מס' צעדים הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אחרת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא מוגדר
+\end_layout
+
+\begin_layout Standard
+בדומה למ
+\begin_inset Quotes erd
+\end_inset
+
+ט דטר.
+ חסם זמן ריצה 
+\begin_inset Formula $t(n)$
+\end_inset
+
+ מוגדר כמו קודם.
+ נאמר כמו קודם ש 
+\begin_inset Formula $M$
+\end_inset
+
+ א
+\begin_inset Quotes erd
+\end_inset
+
+ד יעילה אם קיים עבורה חסן זמן ריצה שהוא פולינומי 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $NP$
+\end_inset
+
+ = { קבוצת השפות שקיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד יעילה המקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $L\ |$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $9.3$
+\end_inset
+
+ : נאמר ש 
+\begin_inset Formula $R\subseteq\tc\times\tc$
+\end_inset
+
+ הוא יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ אם הוא מקיים :
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ חסום פולינומית.
+ קיים פולינום 
+\begin_inset Formula $p(n)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|y\right|\leq p\left(|x|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט )דטר'( פולינומית המכריעה את השפה: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\widetilde{L}_{R}=\left\{ \left(x,y\right)\in\tc\times\tc|\left(x,y\right)\in R\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+דוגמה ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: היחס 
+\begin_inset Formula $\left(x,x11x^{2}\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(x,x11x^{3}\right)$
+\end_inset
+
+ - הוא יחס חסום פולינומית עם חסם 
+\begin_inset Formula $P(n)=4n+4$
+\end_inset
+
+ )שימו לב שהעלאה בשלישית מכפילה אורך פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא בשלישית(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה ל
+\numeric on
+2
+\numeric off
+: היחס שראינו בסעיף הוא גם נתן לזיהוי פולינומי ) 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ או 
+\begin_inset Formula $x^{3}$
+\end_inset
+
+ נתן לחישוב יעיל ע
+\begin_inset Quotes erd
+\end_inset
+
+י אלג' כפל ארוך של כיתה ג' - כשמתארים אלגוריתם מספיק לתאר אלג' למודל 
+\begin_inset Formula $REM$
+\end_inset
+
+ כי האקסטרה חישוב במעבר למ
+\begin_inset Quotes erd
+\end_inset
+
+ט הוא פולינומי(.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $x,k\in\mathbb{N}^{+}\}$
+\end_inset
+
+ קיים מחלק 
+\begin_inset Formula $y$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $k\leq y<x$
+\end_inset
+
+ וכן 
+\begin_inset Formula $y\neq1$
+\end_inset
+
+
+\begin_inset Formula $factory=\{\left(x,k\right)|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $10.1$
+\end_inset
+
+: 
+\begin_inset Formula $coNP=\left\{ L|\overline{L}\in NP\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $10.2$
+\end_inset
+
+: יהיו 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ שפות, נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ היא פונקציית רידוקציה פולינומית מ 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\in Poly\left(y\right)$
+\end_inset
+
+ )בפרט 
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה(
+\end_layout
+
+\begin_layout Enumerate
+תקפות: 
+\begin_inset Formula $f(x)\in L\Leftrightarrow x\in L_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in\sum^{*}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם קיימת 
+\begin_inset Formula $f$
+\end_inset
+
+ כזו עבור 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ אמר ש 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ נתנת לרדוקציה פולי' ל 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $L_{1}\leq_{p}L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+המחלקה 
+\begin_inset Formula $NPC$
+\end_inset
+
+ היא קב' כל השפות 
+\begin_inset Formula $L$
+\end_inset
+
+ המקיימות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L$
+\end_inset
+
+ שלמה ב 
+\begin_inset Formula $NP$
+\end_inset
+
+ ,כלומר 
+\begin_inset Formula $\forall L'\in NP$
+\end_inset
+
+ , 
+\begin_inset Formula $L'\leq_{p}L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+בעיות שונות ב 
+\begin_inset Formula $NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $11.4$
+\end_inset
+
+ : השפה 
+\begin_inset Formula $BH-Bounded\ Halting$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $M\}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד קיים ב 
+\begin_inset Formula $M$
+\end_inset
+
+ מסלול מקבל בריצתה על 
+\begin_inset Formula $x$
+\end_inset
+
+ שאורכו 
+\begin_inset Formula $l\geq$
+\end_inset
+
+ 
+\begin_inset Formula $BH=\{\left\langle M\right\rangle ,1^{p},\left\langle x\right\rangle |$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $11.6$
+\end_inset
+
+ : נאמר שפסוק לוגי 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ הוא בצורת 
+\begin_inset Formula $CNF$
+\end_inset
+
+ אם: 
+\begin_inset Formula $\varphi\left(x\right)=\bigwedge\limits _{i=1}^{m}C_{i}$
+\end_inset
+
+ , ו 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ היא פסוקית 
+\begin_inset Formula $CNF$
+\end_inset
+
+ כלומר מהצורה 
+\begin_inset Formula $C_{i}=\bigvee\limits _{j=1}^{h_{i}}l_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+לדוגמה 
+\begin_inset Formula $P\left(x_{1},...,x_{5}\right)=\left(\lor..\lor\right)\land\left(\lor..\lor\right)\land\left(\lor..\lor\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השפה 
+\begin_inset Formula $SAT$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\varphi\}$
+\end_inset
+
+ הוא פסוק 
+\begin_inset Formula $CNF$
+\end_inset
+
+ שקימת לו השמה מספקת כלומר 
+\begin_inset Formula $\phi$
+\end_inset
+
+ , כך ש 
+\begin_inset Formula $\varphi\left(\phi\right)=T$
+\end_inset
+
+
+\begin_inset Formula $SAT=\{\ \varphi\left(x\right)|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה
+\begin_inset Formula $12.1$
+\end_inset
+
+ השפה 
+\begin_inset Formula $Vertex\ color$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\}$
+\end_inset
+
+
+\begin_inset Formula $G=\left(V,x\right)$
+\end_inset
+
+ לא מכוון וקיימת 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ כך שלכל קשת 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ , לפחות אחד הקצוות שייך ל 
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\begin_inset Formula $VC=\{\left(\left\langle G\right\rangle ,k\right)\ |$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left\langle G\right\rangle $
+\end_inset
+
+ הוא קידוד של גרף למשל כמטריצת שכנויות
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה 
+\begin_inset Formula $12.2$
+\end_inset
+
+ השפה 
+\begin_inset Formula $\left(HS\right)\ Hitting\ set$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\}$
+\end_inset
+
+ כל 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ מוכלת ב 
+\begin_inset Formula $\left[n\right]$
+\end_inset
+
+ וקיית תת 
+\begin_inset Formula $U$
+\end_inset
+
+ של 
+\begin_inset Formula $U\subseteq\left[n\right]$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall i\ C_{i}\cap U\neq\phi$
+\end_inset
+
+ 
+\begin_inset space \space{}
+\end_inset
+
+ 
+\begin_inset Formula $HS=\{N,K,C_{1},...,C_{t}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הגדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $12.3$
+\end_inset
+
+ השפה 
+\begin_inset Formula $Set\ cover$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+משפטים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מכונות טיורינג
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.1$
+\end_inset
+
+ : 
+\begin_inset Formula $R$
+\end_inset
+
+ סגורה למשלים
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.2$
+\end_inset
+
+: 
+\begin_inset Formula $R$
+\end_inset
+
+ סגורה לאיחוד.
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.3$
+\end_inset
+
+ : 
+\begin_inset Formula $RE$
+\end_inset
+
+ סגורה לאיחוד
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.6$
+\end_inset
+
+ : הגדרות 
+\begin_inset Formula $4.5$
+\end_inset
+
+ , 
+\begin_inset Formula $4.4$
+\end_inset
+
+ 
+\begin_inset Formula $CoRE$
+\end_inset
+
+ שקולות 
+\end_layout
+
+\begin_layout Subsubsection
+טענה: 
+\begin_inset Formula $R=RE\cap CoRE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+טענה: 
+\begin_inset Formula $L_{D}\in RE\backslash R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+כעת נראה ש 
+\begin_inset Formula $L_{D}\notin R$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $5.2$
+\end_inset
+
+ : 
+\begin_inset Formula $L_{u}\in RE\backslash R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+רידקוציות
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L_{D}\leq L_{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט הרידוקציה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\overset{*}{\in}R$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\overset{**}{\in}RE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\in CoRE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in CoRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+ניסוח שקול )ושימושי( למשפט הרדוקציה: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin R$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin RE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin coRE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin CooRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+תכונות של רדוקציה
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $\bar{L}_{1}\leq\bar{L}_{2}$
+\end_inset
+
+ - )תוצאה ישירה של תקפות הרידוקציה(
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ הוא רפלקסיבי: לכל שפה 
+\begin_inset Formula $L\subseteq\tc$
+\end_inset
+
+ , 
+\begin_inset Formula $L\leq L$
+\end_inset
+
+ - הוכחה לפי פונ' הזהות.
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ טרנזיטיבי: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $L_{2}\leq L_{3}$
+\end_inset
+
+ אז: 
+\begin_inset Formula $L_{1}\leq L_{3}$
+\end_inset
+
+ - הוכחה הרכבת פונקציות
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ אנטי-סימטרי: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז לא בהכרח ש: 
+\begin_inset Formula $L_{2}\leq L_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{=3}=\left\{ \left\langle M\right\rangle |\left|L\left(M\right)\right|=3\right\} \notin RE\cup coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נתונה השפה: 
+\begin_inset Formula $L_{\infty}=\left\{ \left\langle M\right\rangle |\left|L\left(M\right)=\infty\right|\right\} \notin RE\cup coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\overline{HP}\leq L_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $7.2$
+\end_inset
+
+ : 
+\begin_inset Formula $L_{eq}\notin RE\cup CoRE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $Rice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $Rice$
+\end_inset
+
+ 
+\begin_inset Formula $7.4$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\align center
+תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ תכונה של שפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ , נגדיר: 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in S\right\} $
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{S}\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ טריויאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L_{\varepsilon}\in RE\backslash R$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $Rice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה 1 : נגדיר 
+\begin_inset Formula $L_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M accept }\varepsilon\right\} $
+\end_inset
+
+ )מקבלת את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ( 
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $L'_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M doesnt accept }\varepsilon\right\} \notin R$
+\end_inset
+
+ )לא מקבלת את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ( בעזרת 
+\begin_inset Formula $Rice$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L"_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M reject }\varepsilon\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $7.5$
+\end_inset
+
+ ל 
+\begin_inset Formula $RE$
+\end_inset
+
+ 
+\begin_inset Formula $Rice$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ תכונה לא טריוויאלית של שפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $\phi\in S$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{s}\notin RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ט אי-דרמינסטית
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $RE=RE_{ND}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+סיבוכיות
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $9.4$
+\end_inset
+
+ : הגדרות 
+\begin_inset Formula $9.3$
+\end_inset
+
+ ו 
+\begin_inset Formula $8.9$
+\end_inset
+
+ ל
+\begin_inset Formula $NP$
+\end_inset
+
+ שקילות
+\end_layout
+
+\begin_layout Subsubsection
+נראה ש
+\begin_inset Formula $factory\in NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $x,k\in\mathbb{N}^{+}\}$
+\end_inset
+
+ קיים מחלק 
+\begin_inset Formula $y$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $k\leq y<x$
+\end_inset
+
+ וכן 
+\begin_inset Formula $y\neq1$
+\end_inset
+
+
+\begin_inset Formula $factory=\{\left(x,k\right)|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $P\subseteq NP\cap coNP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $factoring\in NP$
+\end_inset
+
+ הראנו, נותר להראות שייכות ל
+\begin_inset Formula $coNP$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsubsection
+תכוונת היחס 
+\begin_inset Formula $\lep$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט הרדוקציה 
+\begin_inset Formula $10.3$
+\end_inset
+
+: יהיו 
+\begin_inset Formula $L_{1},L_{2}\subseteq\tc$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $L_{1}\leq_{p}L_{2}$
+\end_inset
+
+ .
+ אזי 
+\begin_inset Formula $L_{1}\in P\Leftarrow L_{2}\in P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $11.2$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ אז 
+\begin_inset Formula $P=NP\Leftrightarrow L\in P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+בעיות שונות ב 
+\begin_inset Formula $NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $11.3$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+ .
+ אזי אם 
+\begin_inset Formula $L\lep L'$
+\end_inset
+
+ אז 
+\begin_inset Formula $L'\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $11.5$
+\end_inset
+
+ : 
+\begin_inset Formula $BH\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.4$
+\end_inset
+
+ 
+\begin_inset Formula $VC\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.5$
+\end_inset
+
+ 
+\begin_inset Formula $HS\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.6$
+\end_inset
+
+ 
+\begin_inset Formula $SC\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.7$
+\end_inset
+
+ 
+\begin_inset Formula $3SAT\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

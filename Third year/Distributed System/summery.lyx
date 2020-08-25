@@ -1,0 +1,6247 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "cmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\hb}{\Rightarrow_{S}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+לברר
+\end_layout
+
+\begin_layout Standard
+תרגיל עם שימוש בוקטור לחישוב מארועות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+19
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+תרגיל בית שקילות וקטור ל
+\begin_inset Formula $\hb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תרגילים
+\end_layout
+
+\begin_layout Standard
+תרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שעוני למפורט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $S,S'$
+\end_inset
+
+ המכילים את אותם מערועות .
+ נניח שכל המאורעות הם שליחה וקבל של הודעות.
+ נריץ על שניהם את אלגוריתם שעוני למפורט, ונסמן את השעונים המתקבלים ב 
+\begin_inset Formula $t,t'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+תרגול
+\end_layout
+
+\begin_layout Subsubsection
+א.
+ הוכח/הפרך: אם 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא 
+\begin_inset Formula $C.S$
+\end_inset
+
+ של 
+\begin_inset Formula $S'$
+\end_inset
+
+ אז 
+\begin_inset Formula $t\left(e\right)=t'\left(e'\right)$
+\end_inset
+
+ לכל מאורע 
+\begin_inset Formula $e$
+\end_inset
+
+ של 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה : 
+\end_layout
+
+\begin_layout Itemize
+ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הגדרה, אף קודקוד לא מבחין בין 
+\begin_inset Formula $S$
+\end_inset
+
+ ו 
+\begin_inset Formula $S'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אלגוריתם שעוני למפורט דטרמינסטי, ולכן כל המארועות יקבלו את אותם שוענים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ב.
+ הוכח/הפך : אם 
+\begin_inset Formula $t\left(e\right)=t'\left(e\right)$
+\end_inset
+
+ לכל מאורע 
+\begin_inset Formula $e$
+\end_inset
+
+ של 
+\begin_inset Formula $S$
+\end_inset
+
+ , אז 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא 
+\begin_inset Formula $C.S$
+\end_inset
+
+ של 
+\begin_inset Formula $S'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $u$
+\end_inset
+
+ צומת כלשהו ויהיו 
+\begin_inset Formula $e_{1},e_{3}$
+\end_inset
+
+ מאורעות ב 
+\begin_inset Formula $u$
+\end_inset
+
+ , בה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $e_{1}\Rightarrow_{S}e_{2}$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $t'\left(e_{1}\right)=t\left(e_{1}\right)<t\left(e_{3}\right)=t'\left(e_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+מנתון + הגדרה שעוני למפורט ויחס 
+\begin_inset Formula $\Rightarrow_{S}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+היות ו 
+\begin_inset Formula $u,e_{1},e_{2}$
+\end_inset
+
+ נסיק ש 
+\begin_inset Formula $S|v_{i}=S'|v_{i}$
+\end_inset
+
+ וע
+\begin_inset Quotes erd
+\end_inset
+
+פ הגדרה 
+\begin_inset Formula $S,S'$
+\end_inset
+
+ 
+\begin_inset Formula $C.S.$
+\end_inset
+
+ כנדרש
+\end_layout
+
+\begin_layout Standard
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Subsubsection
+תנו דוגמה ללוח זמנים כך שבהרצת אלג' שעוני למפורט על 
+\begin_inset Formula $S$
+\end_inset
+
+ מתקבלת קפיצה בגודל 
+\begin_inset Formula $10$
+\end_inset
+
+ כלומר, שעל קודוקד 
+\begin_inset Formula $u$
+\end_inset
+
+ קיימים שני מאורעות סמוכים 
+\begin_inset Formula $e_{1,}e_{2}$
+\end_inset
+
+ שההפרש בין השעונים הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על פי האלגוריתם
+\end_layout
+
+\begin_layout Itemize
+נדאג לקפיצות בקודקוד האחרים
+\end_layout
+
+\begin_layout Subsubsection
+הוכח/הפרך : 
+\begin_inset Formula $e_{1},e_{2}\in S$
+\end_inset
+
+ מאורעות רצופים על אותו קודקוד, כך שבהרצה של האלגוריתם מתקיים ש 
+\begin_inset Formula $t\left(e_{2}\right)=t\left(e_{1}\right)+k$
+\end_inset
+
+ אז ב 
+\begin_inset Formula $S$
+\end_inset
+
+ מופיעים לפחות 
+\begin_inset Formula $k$
+\end_inset
+
+ ארועים בין 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נדאג שערך שנשלח ל
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ יהיה עם 
+\begin_inset Formula $k-1$
+\end_inset
+
+ ואז בגלל 
+\begin_inset Formula $max$
+\end_inset
+
+ נבחר בו ונעדכן בפלוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Subsubsection
+הוכיח כי בכל שלב ריצת האלגוריתם, לכל שני קודקודים 
+\begin_inset Formula $u,v$
+\end_inset
+
+ מתקיים ש 
+\begin_inset Formula $VC_{v}\left(v\right)\geq VC_{v}\left(u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)כל קודקוד הכי מעודכן לגבי עצמו(
+\end_layout
+
+\begin_layout Standard
+הוכחה - אינדוקציה על כמות השלבים 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+בסיס:
+\bar default
+ עבור 
+\begin_inset Formula $n=0$
+\end_inset
+
+, מתקיים מיידית כי כל הוקטורים מאותחלים ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+צעד:
+\bar default
+ נניח לכל 
+\begin_inset Formula $k<n$
+\end_inset
+
+ ש: 
+\begin_inset Formula $VC_{v}\left(v\right)\geq VC_{v}\left(u\right)$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $k=n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $e$
+\end_inset
+
+ המאורע ה 
+\begin_inset Formula $k$
+\end_inset
+
+ שהתרחש בקודקוד 
+\begin_inset Formula $w$
+\end_inset
+
+ כעת:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w\neq u,w\neq v$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ לא התרחש 
+\begin_inset Formula $v,u$
+\end_inset
+
+ אז הוקטורים שלהם לא השתנו ומהנחת האידוקציה הטענה מתקיימת
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w=v$
+\end_inset
+
+ אז 
+\begin_inset Formula $VC_{v}\left(v\right)$
+\end_inset
+
+ גדל באחד )בין לשליחה ובין לקבלה( ולכן: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $VC_{v}\left(V\right)+1>VC_{v}\left(V\right)\geq VC_{v}\left(u\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w=u$
+\end_inset
+
+ , נפצל לפי סוג מאורע:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\bar under
+שליחה: 
+\bar default
+אז 
+\begin_inset Formula $VC_{u}\left(u\right)$
+\end_inset
+
+ מקבל פלוס אחד, ו
+\begin_inset Formula $VC_{v}\left(u\right)$
+\end_inset
+
+ לא משתנה, וע
+\begin_inset Quotes erd
+\end_inset
+
+פ הנחת האינדוקציה 
+\begin_inset Formula $VC_{v}\left(v\right)\geq VC_{v}\left(u\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+קבלה:
+\bar default
+ אז 
+\begin_inset Formula $VC_{u}\left(u\right)$
+\end_inset
+
+ מתעדכן בפלוס אחד )ולמעשה לא משפיע עלינו, ועבור כל קורדיטנה אחרת ובפרט עבור
+ 
+\begin_inset Formula $VC_{v}\left(u\right)=\max\left(VC_{v}\left(u\right),VC_{v}\left(S\right)\right)$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא וקטור של מאורע שליחה כשלהו מהעבר ולכן ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הנחת האינדוקציה על כ
+\begin_inset Quotes erd
+\end_inset
+
+א מהפרמטרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $VC_{v}\left(u\right)=\max\left(VC_{v}\left(u\right),VC_{v}\left(S\right)\right)\leq VC_{v}\left(V\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $u,v$
+\end_inset
+
+ כלליים ובכל המקרים הטענה עומדת לכך
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הוכיחו כי 
+\begin_inset Formula $VC\left(e\right)\neq VC\left(e'\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $e\neq e'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שישנם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ שונים כך ש 
+\begin_inset Formula $VC\left(e\right)=VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ , ותהיה 
+\begin_inset Formula $u$
+\end_inset
+
+ הקור' בו 
+\begin_inset Formula $e$
+\end_inset
+
+ התרחש ו 
+\begin_inset Formula $v$
+\end_inset
+
+ הקורד' בו 
+\begin_inset Formula $e'$
+\end_inset
+
+ התרחש
+\end_layout
+
+\begin_layout Itemize
+ע
+\begin_inset Quotes erd
+\end_inset
+
+פ תרגיל קודם לכל 
+\begin_inset Formula $VC_{v}\left(v\right)\geq VC_{v}\left(u\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת בין אם מאורע קבלה ובין אם שליחה מתבצע 
+\begin_inset Formula $VC_{v}\left(V\right)++$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ולכן 
+\begin_inset Formula $VC_{v}\left(v\right)>VC_{v}\left(u\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $VC_{v}\left(e'\right)>VC_{v}\left(e\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $VC\left(e\right)\neq VC\left(e'\right)$
+\end_inset
+
+ ,כנדרש
+\end_layout
+
+\begin_layout Subsubsection*
+יהי 
+\begin_inset Formula $v$
+\end_inset
+
+ קודקוד ו 
+\begin_inset Formula $e_{1,}e_{2}$
+\end_inset
+
+ מארועות סמוכים על 
+\begin_inset Formula $v$
+\end_inset
+
+ .
+ הוכח/הפרך 
+\end_layout
+
+\begin_layout Subsubsection
+בקורדינטה של 
+\begin_inset Formula $v$
+\end_inset
+
+ מתקיים בהכרח 
+\begin_inset Formula $VC_{v}\left(e_{1}\right)+1=VC_{v}\left(e_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לפי האלגו' במאורע שליחה/קבלה .
+ הקורד' שלי מקבלת ++ , היות ו 
+\begin_inset Formula $e_{1},e_{2}$
+\end_inset
+
+ מארועות סמוכים, הטענה נובעת
+\end_layout
+
+\begin_layout Subsubsection
+בקורדינטה של 
+\begin_inset Formula $u\neq v$
+\end_inset
+
+ מתקיים בהכרח 
+\begin_inset Formula $VC_{u}\left(e_{1}\right)+1=VC_{u}\left(e_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לא, ד
+\begin_inset Quotes erd
+\end_inset
+
+נ מאורעות קבלה ושליחה בין 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ וחזרה
+\end_layout
+
+\begin_layout Subsubsection
+יהיו 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ עקבי ו 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ חתך האם 
+\begin_inset Formula $C_{1}\cup C_{2}$
+\end_inset
+
+ עקבי? האם 
+\begin_inset Formula $C_{1}\cap C_{2}$
+\end_inset
+
+ עקבי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}\cup C_{2}$
+\end_inset
+
+ : ניקח 
+\begin_inset Formula $C_{1}=\phi$
+\end_inset
+
+ , 
+\begin_inset Formula $C_{2}=\left\{ r_{12}\right\} $
+\end_inset
+
+ מתקיים ש: 
+\begin_inset Formula $C_{1}\subseteq C_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ אינו עיקבי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}\cap C_{2}$
+\end_inset
+
+ : ניקח 
+\begin_inset Formula $C_{1}=\left\{ s_{12},r_{21}\right\} $
+\end_inset
+
+ , 
+\begin_inset Formula $C_{2}=\left\{ r_{21}\right\} $
+\end_inset
+
+ מתקיים ש: 
+\begin_inset Formula $C_{2}\subseteq C_{1}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $C_{1}\cap C_{2}=C_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $C_{2}$
+\end_inset
+
+אינו עיקבי
+\end_layout
+
+\begin_layout Subsubsection
+תרגיל: יהיו 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ חתכים כך ש 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ עקבי.
+ האם החתכים הבאים עקביים: 
+\begin_inset Formula $C_{1}\cup C_{2}$
+\end_inset
+
+? 
+\begin_inset Formula $C_{2}\cap C_{1}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}\cup C_{2}$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+נראה שחתך:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+ ארועים בקודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ , ו 
+\begin_inset Formula $e'$
+\end_inset
+
+ באיחוד
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $e'\in C_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $e'\in C_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מכך שכ
+\begin_inset Quotes erd
+\end_inset
+
+א עיקבי נובע ש 
+\begin_inset Formula $e\in C_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $e\in C_{2}$
+\end_inset
+
+ בהתאמה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נראה שעיקבי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהי ארוע 
+\begin_inset Formula $r_{M}\in C_{1}\cup C_{2}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $r_{M}\in C_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $r_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $r_{M}\in C_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $r_{M}\in C_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מכך שכ
+\begin_inset Quotes erd
+\end_inset
+
+א עיקבי נובע ש 
+\begin_inset Formula $r_{M}\in C_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $r_{M}\in C_{2}$
+\end_inset
+
+ בהתאמה
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $C_{1}\cap C_{2}$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+להחליף 
+\begin_inset Quotes eld
+\end_inset
+
+או
+\begin_inset Quotes erd
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+וגם
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $S,S'$
+\end_inset
+
+ הם 
+\begin_inset Formula $CS$
+\end_inset
+
+ וגם 
+\begin_inset Formula $C$
+\end_inset
+
+ חתך עיקבי ל 
+\begin_inset Formula $S$
+\end_inset
+
+ ,א ז 
+\begin_inset Formula $C$
+\end_inset
+
+ חתך עקבי ל 
+\begin_inset Formula $S'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ חתך ב 
+\begin_inset Formula $S'$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+יהיו שני מאורעות 
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+ על אותו קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ בה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נתון ש 
+\begin_inset Formula $S,S'$
+\end_inset
+
+ הם 
+\begin_inset Formula $CS$
+\end_inset
+
+ לכן 
+\begin_inset Formula $S|v=S'|v$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $e\Rightarrow_{S'}e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+דורון: 
+\begin_inset Formula $C$
+\end_inset
+
+ חתך ב 
+\begin_inset Formula $S$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\begin_inset Formula $C\cap S|v$
+\end_inset
+
+ הוא פרפיקס מכך ש 
+\begin_inset Formula $CS$
+\end_inset
+
+ 
+\begin_inset Formula $C\cap S'|v$
+\end_inset
+
+ גם פרפיקס לכל 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ עיקבי ב 
+\begin_inset Formula $S'$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $r_{M}\in C,S'$
+\end_inset
+
+ נראה ש 
+\begin_inset Formula $s_{M}\in S'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מכך ש 
+\begin_inset Formula $CS$
+\end_inset
+
+ נובע ש
+\begin_inset Formula $r_{M}\in S$
+\end_inset
+
+ מכך 
+\begin_inset Formula $r_{M}\in C$
+\end_inset
+
+ קיים לו 
+\begin_inset Formula $s_{M}\in C,S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מכך ש 
+\begin_inset Formula $CS$
+\end_inset
+
+ ל 
+\begin_inset Formula $S'$
+\end_inset
+
+ גם 
+\begin_inset Formula $S$
+\end_inset
+
+, נוכל ל
+\begin_inset Quotes erd
+\end_inset
+
+חזור ל 
+\begin_inset Formula $S'$
+\end_inset
+
+ ונקבל ש 
+\begin_inset Formula $s_{M}\in C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $C$
+\end_inset
+
+ חתך עקבי ב 
+\begin_inset Formula $S$
+\end_inset
+
+ וגם חתך עקבי ב 
+\begin_inset Formula $S'$
+\end_inset
+
+ אז 
+\begin_inset Formula $S,S'$
+\end_inset
+
+ הם 
+\begin_inset Formula $CS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+דוגמה נגדית
+\end_layout
+
+\begin_layout Subsubsection
+הגדירו משפחה של פונקציות עם מספר קונצנזוס
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f,g,h$
+\end_inset
+
+ המקיימות 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $f\left(g\left(h\left(x\right)\right)\right)=g\left(f\left(h\left(x\right)\right)\right)=...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה 
+\begin_inset Formula $f=g=h=x+1\left(\mod3\right)$
+\end_inset
+
+ : 
+\begin_inset Formula $0\rightarrow1\rightarrow2\rightarrow0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+הגדרות
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $S'$
+\end_inset
+
+ יקרא 
+\begin_inset Formula $CS$
+\end_inset
+
+ של 
+\begin_inset Formula $S$
+\end_inset
+
+ אם אף קודקוד לא מבין בין 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $S'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+חתך : בהינתן 
+\begin_inset Formula $S$
+\end_inset
+
+ , חתך הינו קבוצה 
+\begin_inset Formula $C$
+\end_inset
+
+ כך שלכל הקודקודים מתקיים שאם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ על 
+\begin_inset Formula $v$
+\end_inset
+
+ וגם 
+\begin_inset Formula $e\Rightarrow_{s}e'$
+\end_inset
+
+ , אם 
+\begin_inset Formula $e'\in C$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $e\in C$
+\end_inset
+
+ )
+\begin_inset Formula $prefix$
+\end_inset
+
+ לכל קודקוד(
+\end_layout
+
+\begin_layout Subsubsection
+חתך עיקבי: אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ ארועים בקודקדים שונים המקיימים את 
+\begin_inset Formula $e\Rightarrow_{s}e'$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $e'\in C$
+\end_inset
+
+ גם 
+\begin_inset Formula $e\in C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+נאמר שאלגוריתם יקרא 
+\begin_inset Formula $m-resilient$
+\end_inset
+
+ אם הוא מתמודד עם 
+\begin_inset Formula $m$
+\end_inset
+
+ קודקודים תקולים
+\end_layout
+
+\begin_layout Section
+משפטים
+\end_layout
+
+\begin_layout Subsection
+שעוני למפורט
+\end_layout
+
+\begin_layout Subsubsection
+אלגוריתם
+\end_layout
+
+\begin_layout Standard
+כל קודקוד מחזיק מונה
+\end_layout
+
+\begin_layout Itemize
+בשליחה 
+\begin_inset Formula $\text{c++}$
+\end_inset
+
+ - הערך המעודכן מתווסף להודעה
+\end_layout
+
+\begin_layout Itemize
+בקבלה: 
+\begin_inset Formula $c=\max\left(c,r\right)+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ אז 
+\begin_inset Formula $T(e)<T(e')$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $vector-clocks$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אלגוריתם
+\end_layout
+
+\begin_layout Standard
+כל קודקוד מחזיק וקטור 
+\begin_inset Formula $VC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בשליחה - מקדם קורד' עצמית ב
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז שולח את הוקטור
+\end_layout
+
+\begin_layout Itemize
+בקבלה של 
+\begin_inset Formula $u$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $v=u$
+\end_inset
+
+ )הקורד' שלי( מקדם ב
+\numeric on
+1
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $v\neq u$
+\end_inset
+
+ )שאר הקורד'( 
+\begin_inset Formula $max\left(VC_{v}\left(u\right),VC_{v}\left(S\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ גורר 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ באותה הודעה או על אותו קודקד לפי האלגוריתם 
+\begin_inset Formula $VC_{u}\left(e\right)<VC_{u}\left(e'\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $VC_{v}(e)\leq VC_{v}\left(e'\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $v\neq u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $VC(e)\leq VC(e')$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אחרת אינדוקציה על מרחק הקודקודים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ גורר 
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ באותו קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ לפי האלגוריתם והעובדה ש 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ מקיים ש: 
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחרת 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $e$
+\end_inset
+
+ ו 
+\begin_inset Formula $v$
+\end_inset
+
+ ל
+\begin_inset Formula $e'$
+\end_inset
+
+ ונוכל לצייר את מסלול המאורעות בין 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ ונקבל את הדרוש
+\end_layout
+
+\begin_layout Subsection
+חתכים
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $C$
+\end_inset
+
+ חתך עקבי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל הודעה 
+\begin_inset Formula $M$
+\end_inset
+
+ : אם 
+\begin_inset Formula $r_{M}\in C$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $s_{M}\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+ עיקבי 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בהנתן 
+\begin_inset Formula $r_{M}$
+\end_inset
+
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $s_{M}\in C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מהגדרת היחס 
+\begin_inset Formula $\hb$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $s_{M}\hb r_{M}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מהגדרת 
+\begin_inset Formula $C$
+\end_inset
+
+ כעיקבי נקבל ש 
+\begin_inset Formula $s_{M}\in C$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ אם 
+\begin_inset Formula $r_{M}\in C$
+\end_inset
+
+ אז 
+\begin_inset Formula $s_{M}\in C$
+\end_inset
+
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $C$
+\end_inset
+
+ עיקבי
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כלומר צ
+\begin_inset Quotes erd
+\end_inset
+
+ל לכל 
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+ אם 
+\begin_inset Formula $e'\in C$
+\end_inset
+
+ וגם 
+\begin_inset Formula $e\hb e'$
+\end_inset
+
+ אז 
+\begin_inset Formula $e\in C$
+\end_inset
+
+ נראה באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+ = מספר המאורעות בין 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ ב 
+\begin_inset Formula $S$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+בסיס:
+\bar default
+
+\begin_inset Formula $k=0$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ התרחשו באותו קודקוד נובע מהגדרת חתך )הבסיסית(
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ התרחשו באותה הודעה נובע מנתון
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד:
+\bar default
+נניח 
+\begin_inset Formula $k<n$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ התרחשו באותו קודקוד או שהם על אותו הודעה, סיימנו )כמו בבסיס(
+\end_layout
+
+\begin_layout Itemize
+אחרת , ישנו קודקוד 
+\begin_inset Formula $e"$
+\end_inset
+
+ שבעבורו 
+\begin_inset Formula $e\hb e"\hb e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת מספר המאורעות בי ן
+\begin_inset Formula $e,e"$
+\end_inset
+
+ הוא לכל היותר 
+\begin_inset Formula $k-1$
+\end_inset
+
+ ומתקיים ש 
+\begin_inset Formula $e"\hb e'$
+\end_inset
+
+ אז מהנחת האינדוקציה 
+\begin_inset Formula $e"\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כמו המרחק בין 
+\begin_inset Formula $e"$
+\end_inset
+
+ ל 
+\begin_inset Formula $e$
+\end_inset
+
+ הוא לכל היותר 
+\begin_inset Formula $k-1$
+\end_inset
+
+ ומתקיים ש 
+\begin_inset Formula $e\hb e"$
+\end_inset
+
+ אז נוכל להפעיל את הנחת האינדוקציה בשני ולקבל ש 
+\begin_inset Formula $e\in C$
+\end_inset
+
+ , כנדרש
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+קונצנזוס
+\end_layout
+
+\begin_layout Subsubsection
+לכל 
+\begin_inset Formula $RMW$
+\end_inset
+
+ ששונה מ 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+ ניתן להגיע הלסכמה בלפחות
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תהליכים
+\end_layout
+
+\begin_layout Standard
+מימוש
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public class RMWConsensusFor2 implements Consensus {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+private RMW r;                   
+\color brown
+// initialized to v
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public Object dedice() {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int i = Thread.myIndex();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(r.rmw(f) == v)            
+\color brown
+// Am i first?
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return this.announce[i];  
+\color brown
+// Yes, return my input
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return this.announce[1-i]  
+\color brown
+// No ,return other's input
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסבר:
+\end_layout
+
+\begin_layout Itemize
+אתחול: הרג'יסטר 
+\begin_inset Formula $r$
+\end_inset
+
+ מושם להיות הערך של 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+הבהרה: 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא הרג'יסטר המיוחד, והוא קורא מתא בעזרת 
+\begin_inset Formula $rmw$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת בודקים אם 
+\begin_inset Formula $r.rmw(f)==v$
+\end_inset
+
+ , אז אני 
+\begin_inset Formula $thread$
+\end_inset
+
+ הראשון, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אז בתא המיוחד נכתב 
+\begin_inset Formula $f(v)$
+\end_inset
+
+ )כפעולה אטומית(
+\end_layout
+
+\begin_layout Itemize
+ואני פולט את ה
+\series bold
+ערך שלי
+\series default
+ )מתא בזיכרון רגיל שהוא שלי(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $r.rmw(f)\neq v$
+\end_inset
+
+ אז בעבור כל 
+\begin_inset Formula $thread$
+\end_inset
+
+ אחר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יפלוט את הערך 
+\series bold
+של הראשון
+\end_layout
+
+\begin_layout Itemize
+מכך ש 
+\begin_inset Formula $f$
+\end_inset
+
+ לא טרוויאלית , זה מתקיים.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+למשפחה של פונקציות שאינה קומטטיבית/דריסה מקיימת מספר קונצנזוס 
+\begin_inset Formula $2\geq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שבעץ הנפרש על ידי שלושה תהליכים יש קודקוד קריטי + אין קודקוד קריטי
+ ומהסתירה תנבע הטענה
+\end_layout
+
+\begin_layout Standard
+יש קודקוד קריטי - זהה למקודם :
+\end_layout
+
+\begin_layout Itemize
+ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הלמה יש קודקוד 
+\begin_inset Formula $bivaint$
+\end_inset
+
+ רד לילד עד שתמצא
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שלא , אז העץ איןסופי בסתירה לסופיות המודל
+\end_layout
+
+\begin_layout Standard
+אין קודקוד קריטי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ קומטטיבית ולכן 
+\begin_inset Formula $f_{A}\left(f_{B}\left(c\right)\right)=f_{B}\left(f_{A}\left(c\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא הקודקוד הדו-ערכי
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכן בילד
+\begin_inset Formula $f_{B}\left(f_{A}\left(c\right)\right)=1$
+\end_inset
+
+ בילד השני 
+\begin_inset Formula $f_{A}\left(f_{B}\left(c\right)\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כעת תהליך 
+\begin_inset Formula $C$
+\end_inset
+
+ ירוץ סולו בשניהם - ו 
+\begin_inset Formula $C$
+\end_inset
+
+ לא הושפע מ 
+\begin_inset Formula $A,B$
+\end_inset
+
+ כי 
+\begin_inset Formula $wait-free$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ונקבל שבשתי הרצות דומות 
+\begin_inset Formula $C_{out}=0\neq1=C_{out}$
+\end_inset
+
+ - סתירה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ דורסת ולכן 
+\begin_inset Formula $f_{A}\left(f_{B}\left(c\right)\right)=f_{A}\left(c\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא הקודקוד הדו-ערכי
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכן בילד
+\begin_inset Formula $f_{A}\left(c\right)=0$
+\end_inset
+
+ בילד השני 
+\begin_inset Formula $f_{A}\left(f_{B}\left(c\right)\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כעת תהליך 
+\begin_inset Formula $C$
+\end_inset
+
+ ירוץ סולו בשניהם - ו 
+\begin_inset Formula $C$
+\end_inset
+
+ לא הושפע מ 
+\begin_inset Formula $A,B$
+\end_inset
+
+ כי 
+\begin_inset Formula $wait-free$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ונקבל שבשתי הרצות דומות 
+\begin_inset Formula $C_{out}=0\neq1=C_{out}$
+\end_inset
+
+ - סתירה
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+אלגוריתם 
+\begin_inset Formula $m-resilient$
+\end_inset
+
+ ידרוש לפחות 
+\begin_inset Formula $m+1$
+\end_inset
+
+ סיבובים
+\end_layout
+
+\begin_layout Standard
+או
+\end_layout
+
+\begin_layout Subsubsection
+במערכת סינכרונית עם העברת הודעות כאשר 
+\begin_inset Formula $n\geq f+2$
+\end_inset
+
+ קודקודים , כל אלגוריתם 
+\begin_inset Formula $f-resilient$
+\end_inset
+
+ דורש לפחות 
+\begin_inset Formula $f+1$
+\end_inset
+
+ הרצות
+\end_layout
+
+\begin_layout Subsubsection
+לא קיים אלגוריתם עם 
+\begin_inset Formula $m-resilient$
+\end_inset
+
+ במערכת הודעות סינכרונת על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקדוים כאשר 
+\begin_inset Formula $m\geq\frac{n}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אלגוריתם פשוט
+\end_layout
+
+\begin_layout Subsubsection
+אלגוריתם
+\end_layout
+
+\begin_layout Itemize
+בסיבוב הראשון שלח את הערך שלך
+\end_layout
+
+\begin_layout Itemize
+סיבוב שני והלאה שלח את כל המידע שקיבלת
+\end_layout
+
+\begin_layout Itemize
+בסוף 
+\begin_inset Formula $m$
+\end_inset
+
+ הסיבובים אסוף את המידע 
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $m=2$
+\end_inset
+
+ )מטריצה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2\times2$
+\end_inset
+
+ (:
+\end_layout
+
+\begin_layout Itemize
+מחק אלכסון
+\end_layout
+
+\begin_layout Itemize
+רוב מכל עמודה -אם אין התעלם
+\end_layout
+
+\begin_layout Itemize
+רוב מהוקטור אם אין מינימום
+\end_layout
+
+\begin_layout Subsubsection
+למה: מחיקת האלכסון מצדיקה את הפתרון
+\end_layout
+
+\begin_layout Itemize
+נציב ערכים כללים
+\end_layout
+
+\begin_layout Itemize
+שלב ראשון: נשים לב שבעמודות התקינות הערך לא ישתנה אם /בלי האלכסון = הערך
+ העצמי שלי
+\end_layout
+
+\begin_layout Itemize
+שלב שני: נתבונן בעמודה ביזנטית כאן היא מורכבת משני חלקים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המדיע שמסר לקודקודים האחרים בפעם הראשון - כאן מפעולת האלגוריתם נבחר את הרוב,
+ נשים לב שאם לכ
+\begin_inset Quotes erd
+\end_inset
+
+א אמר שקר אחר לא יהיה רוב והעמודה תזרק
+\end_layout
+
+\begin_layout Itemize
+השורה של הביזנטי שיכולה להיות עם שקר גם בסבב השני - והיא יכולה להשפיע על
+ הבחירה בעמודה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כיון שנרצה להמנע מהשקר הכפול נזרוק את המדיע הזה ובכך לא ישפיע על בחירתנו
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+מקרה כללי:
+\end_layout
+
+\begin_layout Standard
+אם אין מספיק סיבובים , ממשפט - מספיק להראות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות שונות
+\end_layout
+
+\begin_layout Subsection
+אלגוריתם מלכה
+\end_layout
+
+\begin_layout Subsubsection
+אלגוריתם
+\end_layout
+
+\begin_layout Itemize
+אתחול:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש 
+\begin_inset Formula $f+1$
+\end_inset
+
+ שלבים
+\end_layout
+
+\begin_layout Itemize
+בכל שלב מלכה אחרת
+\end_layout
+
+\begin_layout Itemize
+לכל קודקוד ע
+\begin_inset Quotes erd
+\end_inset
+
+ע המאותחל לקלט שלו
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שדר את הערך העצמי לכולם
+\end_layout
+
+\begin_layout Itemize
+עדכן לערך שהתקבל הכי הרבה פעמים )תיקו כך מינימום(
+\end_layout
+
+\begin_layout Itemize
+בדוק: האם הערך התקבל יותר מ 
+\begin_inset Formula $\frac{n}{2}+f$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $appreas>\frac{n}{2}+f$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כן - התחייב עליו
+\end_layout
+
+\begin_layout Itemize
+לא - אל תתחייב על דבר
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+סיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המלכה משדרת ערך
+\end_layout
+
+\begin_layout Itemize
+בדוק: אם לא התחייבת
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+התחייב על הערך מהמלכה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+נכונות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f+1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש שלב בו מלכה אינה ביזנטית
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\bar under
+בסוף השלב כל התקינים בעלי אותו ערך
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נוכל להניח שיש כאלה שהחליטו לא להקשיב למלכה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיבלו ערך נסמנו ב 
+\begin_inset Formula $x$
+\end_inset
+
+, יותר מ 
+\begin_inset Formula $\frac{n}{2}+f$
+\end_inset
+
+ פעמים 
+\end_layout
+
+\begin_layout Itemize
+לפחות 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ קודקודים תקינים )כולל המלכה( שהחליטו על 
+\begin_inset Formula $x$
+\end_inset
+
+ כי הוא הרוב
+\end_layout
+
+\begin_layout Itemize
+כלומר חלק בוחרים ב 
+\begin_inset Formula $x$
+\end_inset
+
+ מהרוב והחלק שלו בוחרים במלכה שמשדרת 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+הערך לא משתנה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל התקינים יש ערך 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קודקוד תקין מקבל ערך זה לפחות 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים .
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם מוגדר בעבור 
+\begin_inset Formula $f>\frac{n}{4}$
+\end_inset
+
+ ולכן: 
+\begin_inset Formula $n-f>\frac{n}{2}+f$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כולם ישארו עם ערכם ולא יקשיבו למלה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+הערה: 
+\begin_inset Formula $valdiity$
+\end_inset
+
+מתקיים מיידית מהסבב הראשון ולמשל 
+\begin_inset Formula $x=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+דוגמה
+\end_layout
+
+\begin_layout Subsection
+אלגוריתם מלך
+\end_layout
+
+\begin_layout Itemize
+אתחול:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש 
+\begin_inset Formula $f+1$
+\end_inset
+
+ שלבים
+\end_layout
+
+\begin_layout Itemize
+בכל שלב מלך אחרת
+\end_layout
+
+\begin_layout Itemize
+לכל קודקוד ע
+\begin_inset Quotes erd
+\end_inset
+
+ע המאותחל לקלט שלו
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שדר את הערך העצמי לכולם )גם לעצמך(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם ערך כלשהו שודר לך 
+\bar under
+לפחות
+\bar default
+ 
+\begin_inset Formula $n-f$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $appreas\geq n-f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הצע 
+\begin_inset Formula $x$
+\end_inset
+
+ לכולם - 
+\series bold
+גם לעצמך
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+)בדוק הצעות( אם ערך כלשהו הוצע 
+\bar under
+יותר
+\bar default
+ מ 
+\begin_inset Formula $f$
+\end_inset
+
+ פעמים כלומר 
+\begin_inset Formula $proposal>f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עדכן ערכך ל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+סיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Itemize
+מלך משדר ערכו
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בדוק: אם הערך העצמי הנוכחי שלך הוצע לך בסיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפחות
+\bar default
+ 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים כלומר 
+\begin_inset Formula $propsal\leq n-f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עדכן את ערכך ל 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+למה: אם קודקוד תקין הציע 
+\begin_inset Formula $x$
+\end_inset
+
+ אז לא קיים קודקוד תקין שהציע 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שכן ,כלומר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ישנו 
+\begin_inset Formula $u$
+\end_inset
+
+ שהציע 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הוא קיבל את הערך 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים 
+\end_layout
+
+\begin_layout Itemize
+וישנו 
+\begin_inset Formula $v$
+\end_inset
+
+ שהציע 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הוא קיבל את הערך 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ישנם 
+\begin_inset Formula $f<\frac{n}{3}$
+\end_inset
+
+ ביזנטים, לכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $u$
+\end_inset
+
+ ו 
+\begin_inset Formula $v$
+\end_inset
+
+ קיבלו את הערך מלפחות 
+\begin_inset Formula $n-2f$
+\end_inset
+
+ קודקודים תקינים, מהנחה בשלילה 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ ולכן קבוצות הקודקודים זרות, ויתקיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $2\left(n-2f\right)+f>2\left(n-\frac{2n}{3}\right)+\frac{n}{3}=n$
+\end_inset
+
+ וזו סתירה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+נכונות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f+1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש שלב בו מלך אינו בזינטי
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\bar under
+בסוף השלב כל התקינים בעלי אותו ערך
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נוכל להניח שיש כאלה שהחליטו לא להקשיב למלך 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיבלו את 
+\begin_inset Formula $x$
+\end_inset
+
+ לפחות 
+\begin_inset Formula $n-f$
+\end_inset
+
+ תקינים והחלטו לשדר לאותו בסיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+לפחות 
+\begin_inset Formula $n-2f>f$
+\end_inset
+
+ קודקודים תקינים )כולל המלך שהרי תקין( שהחליטו על 
+\begin_inset Formula $x$
+\end_inset
+
+ כי הוא הרוב )מהלמה יש רק 
+\begin_inset Formula $x$
+\end_inset
+
+ אחד כזה( לכן בסיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ הם בחרו בערך זה
+\end_layout
+
+\begin_layout Itemize
+בסיבוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המלך ישלח 
+\begin_inset Formula $x$
+\end_inset
+
+ לכולם, כעת חלק יקשיבו למלך ויבחרו 
+\begin_inset Formula $x$
+\end_inset
+
+ וחלק לא יקשיבו וישארו עם בחירתם 
+\begin_inset Formula $x$
+\end_inset
+
+ , בכל מקרה יבחר 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+הערך לא משתנה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל התקינים יש ערך 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קודקוד תקין מקבל ערך זה לפחות 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל התקינים יציעו את 
+\begin_inset Formula $x$
+\end_inset
+
+ בסיבוב השני 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ההצעה תתקבל לפחות 
+\begin_inset Formula $n-f$
+\end_inset
+
+ פעמים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא יקשיבו למלך 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ישארו עם ערכם עד סוף הריצה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יפלטו 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+הערה: 
+\begin_inset Formula $valdiity$
+\end_inset
+
+מתקיים מיידית מהסבב הראשון ולמשל 
+\begin_inset Formula $x=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+שאלות
+\end_layout
+
+\begin_layout Subsection
+תרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+בעיית שני הגנרלים האם הבעיה פתירה כאשר?
+\end_layout
+
+\begin_layout Subsubsection
+מובטח שהגיעה הודעה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ו 
+\begin_inset Formula $v$
+\end_inset
+
+ )ולהיפך( ב
+\numeric on
+6
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הסבבים הראשונים?
+\end_layout
+
+\begin_layout Standard
+פתרון:
+\end_layout
+
+\begin_layout Standard
+אלגוריתם:
+\end_layout
+
+\begin_layout Itemize
+ב
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הסיבובים הראשונים - שלח את ה
+\begin_inset Formula $input$
+\end_inset
+
+שלך
+\end_layout
+
+\begin_layout Itemize
+לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סיבובים, פלוט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ראית את ה
+\begin_inset Formula $input$
+\end_inset
+
+של השני
+\end_layout
+
+\begin_layout Itemize
+וה
+\begin_inset Formula $input$
+\end_inset
+
+שלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אחרת, פלוט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+נכונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $termination$
+\end_inset
+
+ - יש 
+\begin_inset Formula $t$
+\end_inset
+
+ סיבובים ובפרט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ סופי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $validity$
+\end_inset
+
+ - אם שניהם מקבלים 
+\begin_inset Formula $0$
+\end_inset
+
+ , אז התנאי לא יעמוד ושניהם יפלטו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+הסכמה - התנאי יעמוד רק אם שניהם יקבלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, ואכן שניהם יעמדו בתנאי כיון מנתון שמגיע לפחות הודעה אחת בכל כיוון, בכל
+ המקרים האחרים, יפלטו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שניהם, ולכן יש הסכמה
+\end_layout
+
+\begin_layout Subsubsection
+מובטח שבזמן
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הסיבובים הראשונים הגיעה הודעה אחת
+\end_layout
+
+\begin_layout Standard
+הוכחה שאין פתרון - כמו בבעית שני הגנרלים הרגילה רק שנוודא שתשלח הודעה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_layout Itemize
+כל ההודעות נשלחות 
+\begin_inset Formula $input$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- יש הסכמה מאמינות
+\end_layout
+
+\begin_layout Itemize
+....
+\end_layout
+
+\begin_layout Itemize
+נגיע למצב בו נשלחה נשארה רק ההודעה הראשונה בכל כיוון, כעת
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $E_{2t-2}$
+\end_inset
+
+ : נניח שההודעה מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ אבדה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2t-1}$
+\end_inset
+
+ : נשנה את ה 
+\begin_inset Formula $u_{in}$
+\end_inset
+
+ ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2t}$
+\end_inset
+
+: נחזיר את ההודעה האבודה מ 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ -אין הודעות ולכן 
+\begin_inset Formula $v$
+\end_inset
+
+ לא יכול להודיע שיש שינוי = ההסכמה נשמרת מדמיון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2t+1}$
+\end_inset
+
+ : נבטל את ההדועה 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2t+2}$
+\end_inset
+
+ : נשנה את 
+\begin_inset Formula $v_{in}$
+\end_inset
+
+ ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2t+2}$
+\end_inset
+
+ : נחזיר את ההודעה האבודה מ 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ -אין הודעות לאחר מכן ולכן 
+\begin_inset Formula $u$
+\end_inset
+
+ לא יכול להודיע שיש שינוי = הסכמה נשמרת מדימיון
+\end_layout
+
+\begin_layout Itemize
+....
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $4t+2$
+\end_inset
+
+ הרצות
+\end_layout
+
+\begin_layout Subsubsection
+ה
+\begin_inset Formula $in=x\in\left\{ 0,1,...,k\right\} $
+\end_inset
+
+ , אם כל ההודעות הגיעו ולשני הקודקדוים אותו 
+\begin_inset Formula $x$
+\end_inset
+
+ ה
+\begin_inset Formula $output$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ , אחרת הפער בין ה
+\begin_inset Formula $out$
+\end_inset
+
+ קטן שווה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, דורש 
+\begin_inset Formula $termination$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אלגוריתם:
+\end_layout
+
+\begin_layout Itemize
+נריץ את 
+\begin_inset Formula $level-algo$
+\end_inset
+
+ למשך 
+\begin_inset Formula $k$
+\end_inset
+
+ סיבובים, כאשר 
+\begin_inset Formula $u$
+\end_inset
+
+ יוסיף ל
+\begin_inset Formula $msg$
+\end_inset
+
+ את 
+\begin_inset Formula $in_{u}=x_{u}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לאחר 
+\begin_inset Formula $k$
+\end_inset
+
+ סיבובים, 
+\begin_inset Formula $out_{u}=\min\left(x_{u},l_{u}\right)$
+\end_inset
+
+ בתנאי ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ראה את שני ה 
+\begin_inset Formula $in$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+וגם 
+\begin_inset Formula $x_{u}=x_{v}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אחרת, 
+\begin_inset Formula $l_{u}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נכונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k$
+\end_inset
+
+ מספר טבעי, ומכאן שהאלג' יסתיים בזמן 
+\series bold
+סופי
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+אמינות : 
+\series default
+כלומר 
+\begin_inset Formula $x_{v}=x_{u}$
+\end_inset
+
+ + כל ההודעות הגיעו :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ + כל ההודעות הגיעו 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ שני הקודקודים ראו את ה
+\begin_inset Formula $in$
+\end_inset
+
+ של השני
+\end_layout
+
+\begin_layout Itemize
+מנתון 
+\begin_inset Formula $x_{v}=x_{u}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ עמדנו בתנאי האלגוריתם ונפלוט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $min(x_{v},l_{v})=\min\left(x_{v},k\right)=x_{v}=x_{u}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בפרט 
+\begin_inset Formula $x_{v}=x_{u}\iff x_{v}-x_{u}=0<1$
+\end_inset
+
+ כנדרש
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+הסכמה:
+\end_layout
+
+\begin_layout Itemize
+אפשרות אחת ש 
+\begin_inset Formula $x_{u}\neq x_{v}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+פ האלגוריתם כל אחד פולט את הרמה שלו והראנו בכיתה שבכל שלב 
+\begin_inset Formula $\left|l_{u}-l_{v}\right|\leq1$
+\end_inset
+
+ ובפרט כאשר הם פולטים
+\end_layout
+
+\begin_layout Itemize
+לכן נוכל להניח ש 
+\begin_inset Formula $x_{u}=x_{v}$
+\end_inset
+
+ ולא כל ההודעות הגיעו
+\end_layout
+
+\begin_layout Itemize
+אם לשניהם הפלט הוא ה
+\begin_inset Formula $level$
+\end_inset
+
+ או ה 
+\begin_inset Formula $in$
+\end_inset
+
+ סיימנו
+\end_layout
+
+\begin_layout Itemize
+לכן נניח ששיש הצלבה כלומר 
+\begin_inset Formula $x_{u}$
+\end_inset
+
+ פלט ל 
+\begin_inset Formula $u$
+\end_inset
+
+ ו 
+\begin_inset Formula $l_{v}$
+\end_inset
+
+ פלט ל
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x_{u}\leq l_{u}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $l_{v}\leq x_{v}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בגלל ש 
+\begin_inset Formula $x_{u}=x_{v}$
+\end_inset
+
+ ומנכונות 
+\begin_inset Formula $level-algo$
+\end_inset
+
+ יתקיים ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $l_{v}\leq x_{v}=x_{u}\leq l_{u}\leq l_{v}+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ובפרט ה
+\begin_inset Formula $out$
+\end_inset
+
+ מתקיים כפי שרצינו
+\end_layout
+
+\begin_layout Standard
+תרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+יהיה עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים, הוכח שקיים הרצה אסנכרונית של 
+\begin_inset Formula $flooding$
+\end_inset
+
+ שתפרוש את העץ
+\end_layout
+
+\begin_layout Standard
+הוכחה
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $T$
+\end_inset
+
+ העץ על 
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ ונסמן את את קודקודיו בסדר כלשהו 
+\begin_inset Formula $v_{1},...,v_{n}$
+\end_inset
+
+ , כאשר 
+\begin_inset Formula $s=v_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $1\leq i\neq j\leq n$
+\end_inset
+
+ נשלחו הודעות בקצב 
+\begin_inset Formula $1/n$
+\end_inset
+
+ אם הצלע 
+\begin_inset Formula $\left\{ i,j\right\} \in T$
+\end_inset
+
+ , אחרת ההודעה נשלחה בקצב 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת נראה שכל עץ יכול להפרש
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שהעץ הנפרש על ידי האלגוריתם 
+\begin_inset Formula $T'$
+\end_inset
+
+ שונה מהעץ שלנו 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+תהיה 
+\begin_inset Formula $\left\{ i,j\right\} \in T'$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left\{ i,j\right\} \notin T$
+\end_inset
+
+ בה
+\begin_inset Quotes erd
+\end_inset
+
+כ צלע זו נוספה לאחר הודעה מ
+\begin_inset Formula $i$
+\end_inset
+
+ ל 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מהגדרת האלגוריתם שלנו ההודעה הזו הגיעו לאחר 
+\begin_inset Formula $1$
+\end_inset
+
+ יחידת זמן, ואם נדייק 
+\begin_inset Formula $j$
+\end_inset
+
+ נוסף 
+\bar under
+לפחות לאחר 
+\numeric on
+1
+\numeric off
+ יחידת זמן
+\end_layout
+
+\begin_layout Itemize
+מצד שני שאר ההודעות הגיעו בזמן 
+\begin_inset Formula $1/n$
+\end_inset
+
+ ולכן נוכל לצייר את המסלול מהשורש ל 
+\begin_inset Formula $j$
+\end_inset
+
+ כך: 
+\begin_inset Formula $s,v_{p_{1}},v_{p_{2},....,}v_{p_{t}},j$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $v_{p_{t}}=v_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נתבונן באורך מסלול זה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $t=dist_{T'}\left(s,j\right)\leq diam\left(T'\right)\leq n-1$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+במשך ריצת האלגוריתם נשלחו הודעות בין כל 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ ו 
+\begin_inset Formula $p_{i+1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $1\leq i\leq t-1$
+\end_inset
+
+ בזמן של 
+\begin_inset Formula $1/n$
+\end_inset
+
+ ו
+\begin_inset Formula $p_{t}$
+\end_inset
+
+ שלח הודעה ל 
+\begin_inset Formula $j$
+\end_inset
+
+ - ומיידית הוסיף אותו לעץ
+\end_layout
+
+\begin_layout Itemize
+נחשב את סך הזמן שעבר: כל הודעה נשלחה בזמן של 
+\begin_inset Formula $1/n$
+\end_inset
+
+ ולכן סך ההודעות עד להוספת 
+\begin_inset Formula $j$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\frac{t}{n}\leq\frac{n-1}{n}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+וזו סתירה
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+הוכח שבהנתן 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ - ישנו גרף על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים והרצות של 
+\begin_inset Formula $Bellman-FOrd$
+\end_inset
+
+ שסיבוכיות ההודעות 
+\begin_inset Formula $\Theta\left(n^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון - סקיצה:
+\end_layout
+
+\begin_layout Itemize
+נקח את 
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ )מקס' צלעות = הודעות(, 
+\begin_inset Formula $1$
+\end_inset
+
+ יהיה קודקוד המקור
+\end_layout
+
+\begin_layout Itemize
+נגדיר עיכובים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל הודעה בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $1\leq i<j\leq n$
+\end_inset
+
+ נעקב ב 
+\begin_inset Formula $n^{j-i-n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחרת נעקב ב
+\numeric on
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+נשים לב שמספר צמודים יקבלו מהר, ו
+\begin_inset Quotes erd
+\end_inset
+
+רחוקים
+\begin_inset Quotes erd
+\end_inset
+
+ יקבל לאט לדוגמה 
+\begin_inset Formula $1,2$
+\end_inset
+
+ ו 
+\begin_inset Formula $1,10$
+\end_inset
+
+ : 
+\begin_inset Formula $n^{j-i-n}=n^{2-1-n}=\frac{n^{2}}{n^{n+1}}=\frac{1}{n^{n-1}}$
+\end_inset
+
+ מהיר מ 
+\begin_inset Formula $n^{j-i-n}=n^{10-1-n}=\frac{n^{10}}{n^{n+1}}=\frac{1}{n^{n-9}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בשלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: לדוגמה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קודקוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישלח הודעות לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ הקודקודים
+\end_layout
+
+\begin_layout Itemize
+ההודעה ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תגיע הכי מהר,
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יעדכן 
+\begin_inset Formula $d_{2}=1$
+\end_inset
+
+ וישלח הודעה לכולם חוץ מ
+\numeric on
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Itemize
+ההודעה ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תגיע הכי מהר....
+\end_layout
+
+\begin_layout Itemize
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ לכל 
+\begin_inset Formula $2\leq k\leq n$
+\end_inset
+
+ נקבל ששלח 
+\begin_inset Formula $n-k$
+\end_inset
+
+ הודעות ו
+\begin_inset Formula $d_{k}=k-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
++ שקודקוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלח 
+\begin_inset Formula $n-1$
+\end_inset
+
+ הודעות
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $n-1+\left(n-1\right)\left(n-2\right)=\Omega\left(n^{2}\right)$
+\end_inset
+
+ )מקווה שהבנתי נכון(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+צריך להראות שגם בשלב 
+\begin_inset Formula $n/2$
+\end_inset
+
+ עדיין הודעות מגיעות כי 
+\begin_inset Formula $d_{k}=k-\left\lfloor \frac{n}{2}\right\rfloor $
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $d_{n}>1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ שלבים ונקבל ש
+\begin_inset Formula $\Omega\left(n^{3}\right)$
+\end_inset
+
+ הודעות
+\end_layout
+
+\begin_layout Itemize
+מצד שני הראנו בכיתה שיש 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+ ואם נציב את 
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ אז : 
+\begin_inset Formula $\left|V\right|=n$
+\end_inset
+
+ , 
+\begin_inset Formula $\left|E\right|=\frac{n(n-1)}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+הוכח ש 
+\begin_inset Formula $vector-clock-algo$
+\end_inset
+
+ מחשב על פי 
+\begin_inset Formula $happen-before$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $S$
+\end_inset
+
+ לכל שני מאורעות 
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+ המקיימים 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $e\Rightarrow_{s}e'$
+\end_inset
+
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ באותו קודקוד נסמנו ב 
+\begin_inset Formula $v$
+\end_inset
+
+ + פלוס מנתון מתקיים ש 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ אז: 
+\begin_inset Formula $VC_{v}\left(e\right)<VC_{v}\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל שאר הקודקודים מתקיים ש 
+\begin_inset Formula $VC_{u}\left(e\right)\leq VC_{u}\left(e'\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $u\neq v$
+\end_inset
+
+ , 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן מהגדרה 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e=s_{M}$
+\end_inset
+
+ ו 
+\begin_inset Formula $e'=r_{M}$
+\end_inset
+
+ להודעה 
+\begin_inset Formula $M$
+\end_inset
+
+ כלשהי אז דומה למקרה קודם
+\end_layout
+
+\begin_layout Itemize
+אחרת, נוכיח באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+ )מקרי הבסיס הראנו לעיל( כלומר הראנו ל
+\begin_inset Formula $k=2$
+\end_inset
+
+ ננח אם כן שמתקיים לכל 
+\begin_inset Formula $2\leq k<m$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מהו 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $?$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא מספר המארועות בין 
+\begin_inset Formula $e=f_{1},f_{2},...,f_{k}=e'$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ מאורע קבלה/שליחה, נשקול את 
+\begin_inset Formula $k=m$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהיה אם כן 
+\begin_inset Formula $e=f_{1},f_{2},.....,f_{m-1},f_{m}=e'$
+\end_inset
+
+ מתקיים ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $e\Rightarrow_{s}f_{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f_{2}\Rightarrow e'$
+\end_inset
+
+ על הגדרת 
+\begin_inset Formula $\Rightarrow_{S}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מהנחת האינדוקציה 
+\begin_inset Formula $VC\left(e\right)<VC\left(f_{2}\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $VC\left(f_{2}\right)<VC\left(e'\right)$
+\end_inset
+
+ כי על פי הגדרה :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $VC_{v}\left(e\right)\leq VC_{v}\left(f_{2}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+)מהאינדוקציה( וגם 
+\begin_inset Formula $e\neq f_{2}$
+\end_inset
+
+ )אחרת 
+\begin_inset Formula $k=m-1$
+\end_inset
+
+ ונקבל מיידית מהנחת האינדוקציה(
+\end_layout
+
+\begin_layout Itemize
+כנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ל
+\begin_inset Formula $f_{2},e'$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל ש 
+\begin_inset Formula $e\Rightarrow_{s}e'$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+מקרה א :
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $e,e'$
+\end_inset
+
+ באותו קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ אז ע
+\begin_inset Quotes erd
+\end_inset
+
+פ האלגוריתם ומכיון ש 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $VC_{u}\left(e\right)<VC_{u}\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן ב
+\begin_inset Formula $S$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $e\Rightarrow_{S}e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+מקרה ב:
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $u$
+\end_inset
+
+ הקודקוד בו התרחש 
+\begin_inset Formula $e$
+\end_inset
+
+ , ו 
+\begin_inset Formula $v$
+\end_inset
+
+ הקודקוד בו התרחש 
+\begin_inset Formula $e'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת נוכל להניח ש 
+\begin_inset Formula $v\neq u$
+\end_inset
+
+ - אחרת נחזור למקרה א 
+\end_layout
+
+\begin_layout Itemize
+נתון ש 
+\begin_inset Formula $VC\left(e\right)<VC\left(e'\right)$
+\end_inset
+
+ אז מהגדרה 
+\begin_inset Formula $VC_{u}\left(e\right)\leq VC_{u}\left(e'\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

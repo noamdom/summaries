@@ -1,0 +1,12172 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "default"
+\font_sans "cmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip 2bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\grp}{G=\left(V,E\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+אלגוריתמים
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+נעם דומוביץ
+\end_layout
+
+\begin_layout Standard
+\align center
+סיכום זה הוא אוסף של קודים/פסאודו-קודים מהסיכומים של אליזבת, יוסף זוהר,
+ מלא גוגל, 
+\begin_inset Formula $java$
+\end_inset
+
+ ,
+\begin_inset Formula $python$
+\end_inset
+
+ , הקלטות של ואדים, אור )תודה לאביהו(, תוספות שלי וכד', מוזמנים לקחת את
+ הכל בערבון מוגבל.
+\end_layout
+
+\begin_layout Standard
+\align center
+לתיקונים/הערות/הארות - 
+\begin_inset Formula $ndomovich@gmail.com$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+בהצלחה לכולנו!
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הגדרות ומשפטים לגרפים ועצים
+\end_layout
+
+\begin_layout Subsubsection*
+תורת הגרפים
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $G(V,E)$
+\end_inset
+
+, כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $V$
+\end_inset
+
+ - קבוצת קודקודים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E=\left\{ e\right\} $
+\end_inset
+
+ - קבוצת צלעות, כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left\{ e=(v_{i},v_{j})\right\} $
+\end_inset
+
+ - כלומר כל צלע מחברת שני קודקודים בגרף
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם זוג מורכב מזוגות סדורים נאמר שזהו 
+\series bold
+גרף מכוון
+\end_layout
+
+\begin_layout Itemize
+כאשר הצלעות מיצגות זוג לא סדור - נאמר שזהו 
+\series bold
+גרף לא מכוון
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+גרף ריק
+\series default
+ - אוסף של קודקודים ללא צלעות
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+מסלול בגרף
+\series default
+ - סדרת קודקודים בגרף 
+\begin_inset Formula $v_{i_{1}},v_{i_{2}},...v_{i_{k}}$
+\end_inset
+
+ כך שבין כל זוג של קודקודים סמוכים יש צלע.
+\end_layout
+
+\begin_layout Itemize
+מסלול סגור שמתחיל ומסתיים באותו קודקוד נקרא 
+\series bold
+מעגל
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+צלעות מקבילות - 
+\series default
+הן מחברות בין אותו זוג של קודקוד הגרף
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+לולאה בגרף
+\series default
+ - צלע שמחברת קודקוד עם עצמו
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+גרף פשוט
+\series default
+- גרף לא מכוון ללא צלעות מקבילות, וללא ללואות
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+מסלול פשוט - 
+\series default
+מסלול שכל הקודקודים שלו שונים
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+גרף שלם
+\series default
+ - גרף שכל קודקוד מחובר לכל קודקוד אחד על ידי צלע
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+גרף קשיר
+\series default
+ - בין כל זוג קודקודים קיים מסלול
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+רכיב קשירות
+\series default
+ - תת גרף קשיר מקסימאלי
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+גרף לא קשיר -
+\series default
+גרף בו קיים זוג קודקודים שלא קיימת צלע שתחבר אותם.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+מרחק
+\series default
+ - הוא מספר הצלעות המינימאלי )מסלול( בין שני קודקודים
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+אורך מסלול פשוט - 
+\series default
+מספר צלעות במסלול
+\end_layout
+
+\begin_layout Itemize
+בגרף לא מכוון 
+\series bold
+דרגת הקודקוד
+\series default
+ הוא מס' הצלעות היוצאות מקדקוד זה נסמן ב 
+\begin_inset Formula $degree\backslash deg$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בגרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים הדרגה המקסימאלית היא 
+\begin_inset Formula $n-1$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+קוטר
+\series default
+ גרף - המרחק המקסימלי בגרף בין זוג קודקודים כלשהם
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+עצים
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+עץ 
+\series default
+הוא גרף קשיר ללא מעגלים
+\end_layout
+
+\begin_layout Itemize
+הגדרה אלגברית: עץ הוא 
+\begin_inset Formula $|V|=|E|+1$
+\end_inset
+
+ 
+\begin_inset Formula $and$
+\end_inset
+
+ 
+\begin_inset Formula $\#\left(Com\left(G\right)\right)=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+קוטר עץ
+\series default
+: אורך של מסלול ארוך ביותר
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+אקספליסטי
+\series default
+ של קודקוד 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא המרחק הגדול ביותר בין 
+\begin_inset Formula $x$
+\end_inset
+
+לכל קודקד אחר: 
+\begin_inset Formula $ex(x)=Max\{dist(v,x),\ v\in V\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+רדיוס
+\series default
+ העץ הוא אקספיליסטי המינמלי: 
+\begin_inset Formula $radius\left(T\right)=Min\{ex(v),\ v\in V\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $\grp$
+\end_inset
+
+ גרף לא מכוון.
+ 
+\series bold
+מסלול אוילר
+\series default
+ הוא מסלול לא בהכרח פשוט שעובר בכל צלע בגרף בדיוק פעם אחת
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+מעגל אוילר 
+\series default
+הוא מעגל לא בהכרח פשוט שעובר בכל צלע בגרף בדיוק פעם אחת.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\bar under
+משפט:
+\bar default
+ בכל גרף )קשיר( יש לפחות שני קודקודים, בעלי אותה דרגה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נניח שיש לנו גרף עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים
+\end_layout
+
+\begin_layout Itemize
+טווח הדרגות האפשרי הוא מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $n-1$
+\end_inset
+
+ , לכן אם נגדיר :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $n-1$
+\end_inset
+
+ שובכים - שובך לכל דרגה אפשרית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ יונים - יונה לכל קודקוד
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נקבל מעקרון שובך היונים, שיש שני קודקודים בעלי אותה דרגה
+\end_layout
+
+\begin_layout Subsubsection*
+
+\bar under
+משפט:
+\bar default
+ סכום של כל דרגות של קודקודי הגרף שווה לפעמים מס צעלות כלומר:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\sum\limits _{i-1}^{n}ged(v_{i})=2|E|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נספור את הצלעות המחוברות לכל הקודקודים, בכך נקבל את סך הדרגות
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מהגדרה הצלע, כל קודקוד נספר פעמיים
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: סכם דרגות של כל קדקודי הגרף הוא מס זוגי
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: מס' הקודקודים בעלי דרגה אי-זוגית - זוגי
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נחלק את כל קדקודי הגרף לשתי קבוצות, כלומר 
+\begin_inset Formula $V=A\cup B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ - קודקודים בעלי דרגה זוגית
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $B$
+\end_inset
+
+ - קודקודים בעלי דרגה אי- זוגית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\cap B=\phi$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מהמשפט:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{2|E|}_{even}=\sum\limits _{i-1}^{n}deg(v_{i})=\underbrace{\sum\limits _{v\in A}deg(v)}_{even}+\sum\limits _{v\in B}deg(v)\Rightarrow\underbrace{\sum\limits _{v\in B}deg(v)}_{even}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מכיוון 
+\begin_inset Formula $B$
+\end_inset
+
+ זוהי קבוצת הקודקודים בעל דרגה אי-זוגית, לכן מספר הקודקודים צריך להיות בעצמו
+ זוגי , כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\bar under
+עצים
+\end_layout
+
+\begin_layout Standard
+הגדרה: עץ הוא גרף קשיר לא מכוון ללא מעגלים
+\end_layout
+
+\begin_layout Subsubsection*
+טענה
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: בעץ לכל שני קודקודים קיים מסלול יחיד
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שבין שני קודקודים שונים בעץ יש שני מסלולים שונים
+\end_layout
+
+\begin_layout Itemize
+נמחק את הצלעות המשותפות
+\end_layout
+
+\begin_layout Itemize
+תוצאה: קיבלנו מעגל בסתירה להגדרת העץ
+\end_layout
+
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: לכל עץ יש לפחות עלה אחד
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שלעץ אין עלים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ דרגת כל קודקוד בעץ היא לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Itemize
+ונניח שיש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים
+\end_layout
+
+\begin_layout Itemize
+יהיה קודקוד כלשהו, נסמנו ב 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מהנחה בשלילה כל קודוקד מחובר ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים נוספים )לפחות( ולכן נוכל לעבור בצלע המשותפת ולהרכיב מסלול 
+\begin_inset Formula $v_{1},v_{2},v_{3},....$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם במהלך הרכבת המסלול , חזרנו על קדוקד שכבר שותף במסלול, אז קיבלנו מעגל
+ - וזו סתירה להגדרת עץ.
+\end_layout
+
+\begin_layout Itemize
+אחרת, אז קיים קודקוד 
+\begin_inset Formula $w$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall i\in[1,n]\ w\neq v_{i}$
+\end_inset
+
+ , ולכן הרכבנו מסלול 
+\begin_inset Formula $v_{1},...,v_{n},w$
+\end_inset
+
+ )כי הגרף קשיר(, בסתירה לכך שיש רק 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: לכל עץ יש לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עלים
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $P$
+\end_inset
+
+ מסלול ארוך ביותר בין שני קודקודים, כלומר 
+\begin_inset Formula $P=v_{1},v_{2},...,v_{k}$
+\end_inset
+
+ , 
+\begin_inset Formula $P$
+\end_inset
+
+ הוא מסלול פשוט )כל הקודקודים שונים זה מזה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אין מעגלים (
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{1}$
+\end_inset
+
+עלה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח בשלילה שאינו עלה, לכן דרגתו לפחות 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+אז קיים קודקוד נוסף הסמוך אליו נסמנו ב 
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מהגדרת 
+\begin_inset Formula $P$
+\end_inset
+
+ כמסלול פשוט נובע ש 
+\begin_inset Formula $u$
+\end_inset
+
+ אינו שייך ל
+\begin_inset Formula $P$
+\end_inset
+
+ ולכן ניתן לכתוב: 
+\begin_inset Formula $P'=u,v_{1},v_{2},...,v_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+וזו סתירה לכך שאורך 
+\begin_inset Formula $P$
+\end_inset
+
+ מקסימלי
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: לכל עץ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+בסיס
+\bar default
+: 
+\begin_inset Formula $n=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $|E|=0=1-1$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $n=2$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $|E|=1=2-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+צעד - נניח לעץ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $n+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהיה עץ עם 
+\begin_inset Formula $n+1$
+\end_inset
+
+ קודקודים.
+ מטענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיים לו עלה אחד לפחות.
+\end_layout
+
+\begin_layout Itemize
+נמחק את העלה הזה )צלע + הקודקוד(
+\end_layout
+
+\begin_layout Itemize
+מהנחת האינדקוציה נקבל עץ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקדים ו 
+\begin_inset Formula $n-1$
+\end_inset
+
+צלעות
+\end_layout
+
+\begin_layout Itemize
+כעת נחשב: 
+\begin_inset Formula $|E|=n-1+1=n$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+טענה: גרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא עץ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר מינמלי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ חסר מעגלים
+\end_layout
+
+\begin_layout Itemize
+ׂ
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר מנימלי - הסבר: קשיר + הורדת צלע כלשהי תפגע בקשירותו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G$
+\end_inset
+
+ חסר מעגלים מקסימלי - הסבר:: כל צלע שנוסיף תסגור מעגל
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ גרף לא מכוון הוא עץ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר מינמלי:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $G$
+\end_inset
+
+ עץ, 
+\begin_inset Formula $G$
+\end_inset
+
+ ודאי קשיר, צ"ל להראות שהוא קשיר מינמלי
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שאינו קשיר מינימלי, לכן קיימת צלע 
+\begin_inset Formula $e=\left\{ x,y\right\} $
+\end_inset
+
+ שאם נוריד אותה מ 
+\begin_inset Formula $G$
+\end_inset
+
+ הגרף עדיין יהיה קשיר ) כלומר הגרף 
+\begin_inset Formula $G\backslash\left\{ e\right\} $
+\end_inset
+
+ קשיר(
+\end_layout
+
+\begin_layout Itemize
+בגרף 
+\begin_inset Formula $G\backslash\left\{ e\right\} $
+\end_inset
+
+ יש מסלול מ 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $y$
+\end_inset
+
+ שכומבן לא כולל את 
+\begin_inset Formula $e$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מכאן שאם נוסיף את 
+\begin_inset Formula $e$
+\end_inset
+
+ נקבל מעגל, בסתירה לכך 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא עץ, ומהגדרה חסר מעגלים.
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר מינמלי צ"ל שהוא עץ, מנתון 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר נותר להראות שהוא חסר מעגלים
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה ש 
+\begin_inset Formula $G$
+\end_inset
+
+ היה מכיל מעגל, אז אם נסיר צלע ששיכת למעגל, נקבל גרף שהוא עדיין קשיר ) הוכחנו
+ בשיעור שעבר(
+\end_layout
+
+\begin_layout Itemize
+סתירה לכך ש
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ גרף לא מכוון הוא עץ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ חסר מעגלים מקסימלי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ניתן להוכיח מנימוקים דומים
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעיית הבקבוקים
+\end_layout
+
+\begin_layout Standard
+נניח ויש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ מיכלים:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ ונניח שב 
+\begin_inset Formula $A$
+\end_inset
+
+ יש 
+\begin_inset Formula $a$
+\end_inset
+
+ ליטרים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $m$
+\end_inset
+
+ , וננניח ב 
+\begin_inset Formula $B$
+\end_inset
+
+ יש 
+\begin_inset Formula $b$
+\end_inset
+
+ ליטרים
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מהם כל המצבים האפשרים לכמויות במיכלים?
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def index(i, j, n):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return (m + 1) * i + j 
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+def bottle(n, m):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dim = (m + 1 ) * ( n + 1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat = [[False] * dim for i in range(dim)]
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for i in range(n + 1):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j in range(m + 1):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ind = index(i, j, m)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][index(0, j, m)] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][index(i, 0, m)] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][index(i, m, m)] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][index(n, j, m)] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i1 = index(max(0, i + j - m), min(m, i + j), m)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][i1] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i1 = index(min(n, i + j), max(0, j + i - n), m)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mat[ind][i1] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j in range (dim): // diagonal - should decide what path from v to v
+ himslef
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+mat[j][j] = False
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return mat
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+על פי שני ה
+\begin_inset Formula $for$
+\end_inset
+
+ נקבל : 
+\begin_inset Formula $O\left(nm\right)$
+\end_inset
+
+- היות ובפנים יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק פעולות קשיחות
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Subsubsection*
+המצבים האפשריים מ
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rightarrow\left(m,b\right)$
+\end_inset
+
+// למלא את 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rightarrow\left(o,b\right)$
+\end_inset
+
+// לרוקן את 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rightarrow\left(a,n\right)$
+\end_inset
+
+// למלא את 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rightarrow\left(a,0\right)$
+\end_inset
+
+// לרוקן את 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כמו כן, אפשר לשפוך מ 
+\begin_inset Formula $A$
+\end_inset
+
+ ל 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (a+b <= n) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(0,a + b)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else // a+b > n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $\rightarrow(a-(n-b,n)$
+\end_inset
+
+// 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+=(a+b-n,n)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+כלומר 
+\begin_inset Formula $A\rightarrow B$
+\end_inset
+
+ אנחנו מבצעים 
+\begin_inset Formula $\left\langle Max\left(0,a+b-n\right),MIN\left(a+b,n\right)\right\rangle $
+\end_inset
+
+ או יותר פשוט: 
+\begin_inset Formula $\left\langle (a+b)-MIN\left(a+b,n\right),MIN\left(a+b,n\right)\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ואם נשפוך מ 
+\begin_inset Formula $B\rightarrow A$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (a+b <= m)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(a+b,0)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else // a+b > m
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $\rightarrow(m,b-\left(m-a\right))$
+\end_inset
+
+// 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+=(m,a+b-m)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כלומר 
+\begin_inset Formula $B\rightarrow A$
+\end_inset
+
+ אנחנו מבצעים 
+\begin_inset Formula $\left\langle Min(a+b,m),(a+b)-Min(a+b,m)\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $A=2$
+\end_inset
+
+ ו 
+\begin_inset Formula $B=1$
+\end_inset
+
+ , המצבים האפשריים:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{cc|cccccc}
+ &  & 0 & 1 & 2 & 3 & 4 & 5\\
+ &  & (0,0) & (0,1) & (1,0) & (1,1) & (2,0) & (2,1)\\
+\hline 0 & (0,0) & 1 & 1 & 0 & 0 & 1 & 0\\
+1 & (0,1) & 1 & 1 & 1 & 0 & 0 & 1\\
+2 & (1,0) & 1 & 1 & 1 & 1 & 1 & 0\\
+3 & (1,1) & 0 & 1 & 1 & 1 & 1 & 1\\
+4 & (2,0) & 1 & 0 & 0 & 1 & 1 & 1\\
+5 & (2,1) & 0 & 1 & 0 & 0 & 1 & 1
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פלויד-ורשל
+\end_layout
+
+\begin_layout Standard
+שימושים
+\end_layout
+
+\begin_layout Itemize
+האם הגרף קשיר - בהנתן מטריצת שכנויות של 
+\begin_inset Formula $0,1$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+לכל
+\series default
+ קודקוד מה המסלול הקצר ביותר בשבילו 
+\series bold
+לכל
+\series default
+ קודקוד 
+\end_layout
+
+\begin_layout Standard
+חסר:
+\end_layout
+
+\begin_layout Itemize
+אלגוריתם לספירת רכיבי קשירות - יותר יעיל ב 
+\begin_inset Formula $DFS\backslash BFS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+דוגמה קומפקטית
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+FW(w[][])
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for each pair of vertices (i,j)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[i][j] = 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for each edge vertices(i,j)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[u][v] = w(u,v) 
+\color brown
+// weight of
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for each vertex v
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[v][v]
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for k from 0 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i from 0 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j from 0 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color blue
+\lang english
+dist[i][j] = dist[i][j] ||dist[i][k] && dist[k][j] 
+\color brown
+// case of bool - check Connectivity 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(dist[i][k] != 
+\begin_inset Formula $\infty$
+\end_inset
+
+ && dist [k][j] != 
+\begin_inset Formula $\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[i][j] = min (dist [i,j],dist[i][k] + dist[k][j]
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+Fw_Get_Pathes() 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i from 1 to n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j from 1 to n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (dost[i][j] != 
+\begin_inset Formula $\infty$
+\end_inset
+
+  path[i][j] = i
+\begin_inset Formula $\rightarrow j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else path[i][j] = 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for k from 1 to n 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i from 1 to n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j from 1 to n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (dist[i][k] != 
+\begin_inset Formula $\infty$
+\end_inset
+
+ && dist[k][j])
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+  if(dist[i][j] > dist[i][k] + dist[k][j])
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+   dist[i][j] = dist[i][k] + dist[k][j]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+   path[i]j] = path[i][k] + path [k][j]
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Standard
+למה: יהיה 
+\begin_inset Formula $p=\left(v_{1},v_{2},.....v_{k}\right)$
+\end_inset
+
+ המסלול הקצר ביותר בין קדוקוד 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ , ויהיה 
+\begin_inset Formula $p'_{ij}=\left(v_{1},...v_{j}\right)$
+\end_inset
+
+ תת מסלול של 
+\begin_inset Formula $p$
+\end_inset
+
+ , אם 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא המסלול הקצר ביתר בין קודקוד 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ אז 
+\begin_inset Formula $p'_{ij}$
+\end_inset
+
+ הוא המסלול הקצר ביותר בין קדקודים 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה ש 
+\begin_inset Formula $p'_{ij}$
+\end_inset
+
+ אינו המסלול הקצר ביותר בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ , לכן קיים מסלול 
+\begin_inset Formula $f"_{i,j}$
+\end_inset
+
+ שיכול להחליף אותו.
+\end_layout
+
+\begin_layout Itemize
+נפרק את המסלול 
+\begin_inset Formula $p$
+\end_inset
+
+ לשלושה חלקים: 
+\begin_inset Formula $p^{1}=(v_{1},....,v_{i-1}),\ p^{2}=\left(v_{i},...v_{j}\right),\ p^{3}=\left(v_{j+1},....v_{k}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מתקיים ש: 
+\begin_inset Formula $p=p^{1}\cup p^{2}\cup p^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מההנחה 
+\begin_inset Formula $|f|<|p^{2}|$
+\end_inset
+
+, ולכן נחליף את המסלול 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+ ב 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נקבל מסלול חדש 
+\begin_inset Formula $t=p^{1}\cup f\cup p^{3}$
+\end_inset
+
+ הקצר יותר מ מ 
+\begin_inset Formula $p$
+\end_inset
+
+ בסתירה לכך ש 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא המסלול הקצר ביותר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הגדרה )טווח חיפוש המסלול(
+\series default
+: יהיו 
+\begin_inset Formula $v_{1},...,v_{n}$
+\end_inset
+
+ קודוקודים, ומסלול 
+\begin_inset Formula $p_{i,j}$
+\end_inset
+
+ , בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ אז נסמן ב 
+\begin_inset Formula $k$
+\end_inset
+
+ את אורך המסלול בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ ונאמר
+\begin_inset Formula $\left\{ v_{1},...,v_{k}\right\} $
+\end_inset
+
+ כקודקודים לאורך המסלול, הם ה
+\series bold
+קודקודים המורשים
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k=0$
+\end_inset
+
+ , הקודקודים המורשים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k=1$
+\end_inset
+
+ מסלול העובר דרך קוקוד מורשה אחד
+\end_layout
+
+\begin_layout Itemize
+....
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות 
+\begin_inset Formula $FW$
+\end_inset
+
+ : בין כל קודקוד לכל קודקוד מתקבל המסלול הקצר ביותר
+\end_layout
+
+\begin_layout Standard
+נתבונן במסלול קצר ביותר 
+\begin_inset Formula $F_{i,j}$
+\end_inset
+
+ כאשר :
+\end_layout
+
+\begin_layout Itemize
+הקודקדים המורשים הם 
+\begin_inset Formula $\left\{ v_{1},...,v_{k-1}\right\} $
+\end_inset
+
+ ,
+\end_layout
+
+\begin_layout Itemize
+נסמן את המרחק ב 
+\begin_inset Formula $d_{i,j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נוסיף את 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ לרשימת הקודקודים המורשים )נגדול את המסלול האפשרי( ישנן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\bar under
+הקוקדקוד 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ לא נמצא על המסלול הקצר ביותר
+\bar default
+ בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ לבין 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הוספת הקודקוד החדש לא שיפרה את המרחק בין 
+\begin_inset Formula $v_{i},v_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i,j}^{k}=d_{i,j}^{k-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+הקודקוד 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+נמצא על המסלול הקצר ביותר
+\bar default
+ , מהו המרחק החדש בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ ?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נחלק את המסלול החדש לשנים 
+\begin_inset Formula $p_{ik},p_{kj}$
+\end_inset
+
+ - תתי מסלולים של המסלול הקצר ביותר מהטענה הם גם הקצרים ביותר 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i,j}^{k}=d_{ik}^{k}+d_{k,j}^{k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בכל אחד מתת המסלולים 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ הוא קודקוד אחרון/ראשון , ולכן לא שייך לרשימת המורשים שהם קודקודים אמצעים
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכן העלות מושפעת לכל היותר מ 
+\begin_inset Formula $k-1$
+\end_inset
+
+ קודקודים מורשים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i,j}^{k}=d_{ik}^{k-1}+d_{k,j}^{k-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+בשני המקרים המרחק בין 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ מורכב ממרחקים של הקבוצה הקודמת של הקודקודים המורשים
+\end_layout
+
+\begin_layout Itemize
+לכן בהינתן מטריצת שכנות המתאימה ל 
+\begin_inset Formula $k=0$
+\end_inset
+
+ אנו יכולים לחשב את המרחקים הקצרים ביותר לכל 
+\begin_inset Formula $k=1,2,...$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כאשר 
+\begin_inset Formula $k=n$
+\end_inset
+
+ מקבלים מסלול אופטימלים לכל זוגות קדקודי הגרף.
+ כאשר עוברים מ 
+\begin_inset Formula $k-1$
+\end_inset
+
+ ל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקבל ערך מינמלאי שמתקבל בשני המקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $d_{i,j}^{k}=\min\left(d_{i,j}^{k-1},d_{ik}^{k-1}+d_{kj}^{k-1}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+משקלים על הקודקודים וצלעות
+\end_layout
+
+\begin_layout Subsubsection*
+משקלים רק על הקודקודים
+\end_layout
+
+\begin_layout Subsubsection*
+פסואודו-קוד
+\end_layout
+
+\begin_layout Standard
+קלט: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f[]$
+\end_inset
+
+- מערך של משקלים המגודרים על קודקודי הגרף 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $adj[][]$
+\end_inset
+
+ -מטריצה בוליאנית המגדירה את צלעות הגרף
+\end_layout
+
+\begin_layout Standard
+פלט: מטריצה המייצגת את המרחקים הקצרים ביותר בין קדקודי הגרף
+\end_layout
+
+\begin_layout Standard
+אלגוריתם
+\end_layout
+
+\begin_layout Enumerate
+בונים מטריצה המייצגת את המשקלים על צלעות הגרף, על פי הנוסחה: 
+\begin_inset Formula $weight[a][b]=f[a]+f[b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h[][]=Fw(weight)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ממירים כל תא ב
+\begin_inset Formula $h$
+\end_inset
+
+ על פי הנוסחה הבאה: 
+\begin_inset Formula $d[i][j]=\frac{h[i][j]+f[i]+f[j]}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות:
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+למה: בסוף האלגוריתם כל תא מייצג
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נסמן ב 
+\begin_inset Formula $h(i,j)$
+\end_inset
+
+ את עלות המעבר בין קוקוד 
+\begin_inset Formula $i$
+\end_inset
+
+ לקודקוד 
+\begin_inset Formula $j$
+\end_inset
+
+ לפי 
+\bar under
+צלעות
+\end_layout
+
+\begin_layout Itemize
+נסמן ב 
+\begin_inset Formula $d(i,j)$
+\end_inset
+
+ עלות המעבר בין קודקוד 
+\begin_inset Formula $i$
+\end_inset
+
+ לקודקוד 
+\begin_inset Formula $j$
+\end_inset
+
+ לפי הקודקודים אז מהגדרת המחיר
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d(i,j)=f_{1}+f_{i+1}+....+f_{j-1}+f_{j}\Rightarrow2\times d(i,j)=2\left(f_{1}+f_{i+1}+....+f_{j-1}+f_{j}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $h(i,j)=\left(f_{i}+f_{i+1}\right)+\left(f_{i+1}+f_{i+2}\right)+....+\left(f_{j-1}+f_{j}\right)=f_{i}+2\left(f_{i+1}+f_{i+2}+....+f_{j-1}\right)+f_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכן: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{2\times d(i,j)-h(i,j)=f_{i}+f_{j}}_{1}\iff\underbrace{h(i,j)=2\times d(i,j)-f_{i}+f_{j}}_{2}\iff\underbrace{d(i,j)=\frac{h(i,j)+f_{i}+f_{j}}{2}}_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+לכן מנוכנות 
+\begin_inset Formula $fw$
+\end_inset
+
+ המטריצה 
+\begin_inset Formula $h$
+\end_inset
+
+ היא מטריצת המסלולים הקצרים בין כל קודקוד לכל קודקוד +
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מהלמה את ההמרה מהמטריצה 
+\begin_inset Formula $h$
+\end_inset
+
+ )משקלים על צלעות( למטריצה 
+\begin_inset Formula $d$
+\end_inset
+
+ )משקלים על הקודקודים(, כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+משקלים על צלעות + קודקודים
+\end_layout
+
+\begin_layout Standard
+פתרון:
+\end_layout
+
+\begin_layout Itemize
+נגדיר עלות צלע: 
+\begin_inset Formula $p(a,b)=f(a)+2w(a,b)+f(b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בהנתן מסלול 
+\begin_inset Formula $h(i,j)$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}h(i,j)=\overbrace{f(i)+2w(i,i+1)+f(i+1)}^{p_{1}}+\overbrace{f(i+1)+2w(i+1,i+2)+f(i+2)}^{p_{2}}+....+f(j)\\
+=f(i)+2\left(f(i+1+w(i+1)+.....f(j-1)+w(j-1,j)\right)+f(j)
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הפעם 
+\begin_inset Formula $d$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}d(i,j)=f(i)+w(i+1)+f(i+1)+.....+f(j-1)+w(j-1,j)+f(j)\\
+\Downarrow\\
+2d(i,j)=2\left(f(i)+w(i+1)+f(i+1)+.....+f(j-1)+w(j-1,j)+f(j)\right)\\
+=f(i)+2\left(w(i+1)+f(i+1)+.....+f(j-1)+w(j-1,j)\right)+f(j)
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מתקיים ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $2d(i,j)-h(i,j)=f(i)+f(j)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ולכן נמיר כל תא במטריצה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $d(i,j)=\frac{h(i,j)+f(i)+f(j)}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דיקסטרה
+\end_layout
+
+\begin_layout Standard
+שימושים
+\end_layout
+
+\begin_layout Itemize
+מציאת המסלול הקצר ביותר מקודקוד מקור לכל קודקודי הגרף )בגרף עם משקלים אי-שלילים(
+\end_layout
+
+\begin_layout Standard
+האלגוריתם:
+\end_layout
+
+\begin_layout Enumerate
+מסמנים את 
+\begin_inset Formula $X$
+\end_inset
+
+ הקודקוד הנוכחי, כקודקוד שביקרו בו
+\end_layout
+
+\begin_layout Enumerate
+נסמן ב 
+\begin_inset Formula $Y$
+\end_inset
+
+ קודקוד שכן של 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם לא ביקרנו כבר ב 
+\begin_inset Formula $Y$
+\end_inset
+
+ , נסמן שמרחקו שווה ל 
+\begin_inset Formula $Min\left(Y.dist,X.dist+wieght(X,Y)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ממשיכים כך, עד שנעבור על כל הקודקדים
+\end_layout
+
+\begin_layout Subsubsection*
+פסאודו
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+G  - array of vertices, S  - source vertrex
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Dijkstra(G,S)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+//init
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+MinHeap()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Adj - list of adjancy 
+\color brown
+// egdes with wieght
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+pred 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+array() 
+\color brown
+// previous vertex of vertex v
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+dist 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+array() 
+\color brown
+// min distance from source
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+visited 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+array() 
+\color brown
+// boolean array
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for each 
+\begin_inset Formula $v\in G$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[v]= 
+\begin_inset Formula $\infty$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+pred[v] = NIL
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+visited[v] = false
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[s] = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.push(S)
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (Q not empty) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+u = Q.pop() 
+\color brown
+// get vertrex
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for each(vertex v
+\begin_inset Formula $\in Adj(u)$
+\end_inset
+
+ 
+\color brown
+// get neighbour
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (not visited[v]) 
+\color brown
+// 
+\begin_inset Quotes eld
+\end_inset
+
+new path found
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if
+\begin_inset Formula $\left(dist[v]>dist[u]+weight(v,u)\right)$
+\end_inset
+
+ 
+\color brown
+// if better update
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist[v] = dist[u] + weight(v,u)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+pred[v]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.decreaseKey(v)
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+visited[u] = true 
+\color brown
+// sign this path
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+קבלת כל המסלולים:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+getPath(G,u,v)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Dijkstra(G,u)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+t = v
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+String path = t
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while(t!=u)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+t = pred[t]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+path = t + path
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return path
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+עוברים על כל הקודקודים, דרך כל הצלעות ולכן 
+\begin_inset Formula $O(|V|+|E|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כל הוצאה מערימת מינימום 
+\begin_inset Formula $O(\log|V|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $O\left(\left(|E+|V|\right)*\log|V|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות 
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ - גרף מכוון משוקלל, משקלי הצלעות מספרים לא שלילים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ - קודקוד מקור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta\left(S,v\right)$
+\end_inset
+
+ = המרחק המינמלי בין 
+\begin_inset Formula $S$
+\end_inset
+
+ לבין כל 
+\begin_inset Formula $v\in V(G)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט: לאחר הרצת האל' מתקיים 
+\begin_inset Formula $dist[v]=\delta\left(S,v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה באינדוקציה - נראה שלכל קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ כאשר מוצאים אותו מתור עדיפויות 
+\begin_inset Formula $Q$
+\end_inset
+
+ מתקיים השיוויון 
+\begin_inset Formula $dist[v]=\delta\left(S,v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס:
+\bar default
+ בשלב הראשון 
+\begin_inset Formula $dist[S]=\delta\left(S,S\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד:
+\bar default
+ נניח עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ שלבים ונוכיח לשלב 
+\begin_inset Formula $n+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $u$
+\end_inset
+
+ הקודקוד שנבחר בשלב ה 
+\begin_inset Formula $n+1$
+\end_inset
+
+ צ"ל ש 
+\begin_inset Formula $dist[u]=\delta\left(s,u\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+נשים לב כי לכל 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ מתקיים ש 
+\begin_inset Formula $dist[x]\geq\delta(S,x)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $P$
+\end_inset
+
+ המסלול הקצר ביותר מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Itemize
+נסמן ב 
+\begin_inset Formula $v$
+\end_inset
+
+ את הקודקוד הראשון הלא מטופל במסלול 
+\begin_inset Formula $P$
+\end_inset
+
+ ויהיה 
+\begin_inset Formula $z$
+\end_inset
+
+ קודקוד קודם ל 
+\begin_inset Formula $v$
+\end_inset
+
+ ב 
+\begin_inset Formula $P$
+\end_inset
+
+ , לכן קודקוד 
+\begin_inset Formula $z$
+\end_inset
+
+ טופל כבר ומהנחת האינדוקציה מתקיים 
+\begin_inset Formula $dist[z]=\delta\left(S,z\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כיון ש 
+\begin_inset Formula $P$
+\end_inset
+
+ הוא מסלול קצר ביותר מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ התת-מסלול שלו מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ הוא גם קצר ביותר לכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\delta\left(S,v\right)=\delta\left(S,z\right)+wight(v,z)=dist[z]+wight(v,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Downarrow$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\delta\left(S,v\right)=dist[z]+weight(v,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+על פי פעולת האלגוריתם 
+\bar default
+נבחר את המינימלית ולכן במסלול שהתקבל לפי דייקטסרה קדקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ קיבל מרחק מינמלי , ולכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $dist[v]\leq dist[z]+weight(z,v)=\delta\left(S,v\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כיון ש 
+\begin_inset Formula $\delta\left(S,v\right)$
+\end_inset
+
+ הוא המרחק הקצר ביותר מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ אז 
+\begin_inset Formula $dist[v]=\delta\left(S,v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אבל קדקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ לא מטופל ואנו בחרנו בקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ ולכן:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}dist[u]\leq dist[v]=\delta\left(S,v\right)\leq\delta\left(S,u\right)\overset{*}{\leq}dist[u]\\
+\Downarrow\\
+dist[u]=\delta\left(s,u\right)
+\end{matrix}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם מסתיים כאשר כל הקודקדים מטופלים לכן לכל קדקוד מתקיים 
+\begin_inset Formula $dist[u]=\delta\left(S,u\right)$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרפים עם משקלים שלילים - קטע מקסימלי במערך
+\end_layout
+
+\begin_layout Standard
+הבעיה: מציאת הקטע המקסימלי
+\end_layout
+
+\begin_layout Itemize
+חיפוש שלם - 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מספר הקטעים הרצופים במערך 
+\begin_inset Formula $\left(n-1\right)+(n-2)+...+1=\frac{n(n-1)}{2}=O(n^{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+חישוב סכום כל קטע 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+סה"כ: 
+\begin_inset Formula $O(n)*O(n^{2})=O(n^{3})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+חמדני - לא עובד
+\end_layout
+
+\begin_layout Itemize
+דינאמי - נחשב את סכומם של כל 
+\begin_inset Formula $\frac{n(n-1)}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+על ידי :פתרון ראשון: 
+\begin_inset Formula $S[i,j]=S[i,j-1]+s[j,j]$
+\end_inset
+
+ )לוודא מול התרגול של אור(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+\begin_inset Formula $Best$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+מתחילים לסכום את איברי המערך מאיבר חיובי ראשון
+\end_layout
+
+\begin_layout Enumerate
+סוכמים את האיברים ושומרים על הסכום המקסמיאלי עד שנקבל סכום שלילי.
+ כלורמ בכל תת-קטע 
+\begin_inset Formula $\left[a_{i},...,a_{k}\right]$
+\end_inset
+
+ הסכומים 
+\begin_inset Formula $a_{i}+a_{i+1}+..+a_{j}>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j<k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+מאפסים את הסכום וחוזרים ל
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+best(int[] arr) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int n = arr.length; int helper[] = new int[n];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int tmp_sum = 0, t_l = 0, t_r = 0; max_sum  = 0, m_l = 0, m_r =0 ;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < n; ++i) :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+tmp_sum += arr[i];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (tmp_sum < 0): 
+\color brown
+// count to negative -> define new segment
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+tmp_sum = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+helper[i] = -1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+t_l = i + 1; 
+\color brown
+// next segment
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+helper[i] = tmp_sum;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if ( max_sum < helper[i]) : 
+\color brown
+ // found greater sub-array 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+max_sum = helper[i];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+m_l = t_l;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+m_r = i;
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("max_sum: " + max_sum);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("m_l: " + m_l);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("m_r: " + m_r);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return max_sum;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Standard
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: קטע בכל סכום מקסמיאלי הוא אחד מהקטעים הנ"ל
+\end_layout
+
+\begin_layout Itemize
+המספר האחרון של כל תת-מרוח הוא שלילי בגלל שלפניו הוא סכום חיובי
+\end_layout
+
+\begin_layout Itemize
+המספר הראשון של כל תת-מרוח הוא חיובי אחרת הוא בעצמו היה שלילי - ואנחנו מדלגים
+ עליו.
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שבחלוקה זו יש תת קטע עם סכום גדול יותר.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+על כן יהיו 
+\begin_inset Formula $a_{i},...,a_{j-1}a_{j},...a_{k},$
+\end_inset
+
+ ובה"כ ננייח כי הקטע 
+\begin_inset Formula $a_{j}....a_{k}$
+\end_inset
+
+ הוא המקסימלי
+\end_layout
+
+\begin_layout Itemize
+נסכום מ 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ אז הסכום 
+\begin_inset Formula $a_{i}+...+a_{j-1}>0$
+\end_inset
+
+ ולכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $a_{j}+...+a_{k}<a_{i}+...+a_{j-1}+a_{j}+...a_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+בסתירה למקסמיליות של 
+\begin_inset Formula $\left[a_{j},...a_{k}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+על כן הסכום המקסימלי מתקבל מסכימת כל אברי הקטע
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כעת נניח בשלילה, שקיימת סכימה מקסמלית עם אברי מהקטע הבא
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+על כן יהיו 
+\begin_inset Formula $a_{i},...,a_{j-1}a_{j},a_{j+1}...a_{k},$
+\end_inset
+
+ ובה"כ ננייח כי האיבר ה
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ גורם לסכום להיות קטן מאפס
+\end_layout
+
+\begin_layout Itemize
+אז באופן מיידי נקבל ש:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $a_{i}+...+a_{j-1}>a_{i}+...+a_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כי 
+\begin_inset Formula $a_{j}<0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מסקנה: בין כל 
+\begin_inset Formula $\frac{n^{2}}{n}$
+\end_inset
+
+ כדאי להתבונן ב 
+\begin_inset Formula $n$
+\end_inset
+
+ קטעים בלבד.
+\end_layout
+
+\begin_layout Subsection
+קטע מקסימלי במערך מעגלי
+\end_layout
+
+\begin_layout Standard
+הרחבות
+\end_layout
+
+\begin_layout Itemize
+תת קטע עם סכום מקסימלי, הקצר/הארוך ביותר
+\end_layout
+
+\begin_layout Itemize
+כמה תת קטעים יש עם סכום מקסימלי
+\end_layout
+
+\begin_layout Standard
+פתרונות
+\end_layout
+
+\begin_layout Itemize
+חיפוש שלם:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נצור את כל תת המערכים האפשריים 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נפעיל 
+\begin_inset Formula $best$
+\end_inset
+
+ על כל אחד מהם 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+סה"כ 
+\begin_inset Formula $O(n^{3})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בתכנון דינאמי 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+שרשור המערך לעצמו + 
+\begin_inset Formula $best$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+דוגמה נגדית: 
+\begin_inset Formula $\left[1,2,-1,5\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $max=1+2+5=8$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בפתרון 
+\begin_inset Formula $\left[1,2,-1,5\right]\left[1,2,-1,5\right]$
+\end_inset
+
+
+\begin_inset Formula $\text{\Leftarrow}$
+\end_inset
+
+
+\begin_inset Formula $m\_sum=14$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+שימוש חכם ב
+\begin_inset Formula $Best$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ישנן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לגרום ל 
+\begin_inset Formula $Best$
+\end_inset
+
+ למצוא את ה 
+\begin_inset Formula $min$
+\end_inset
+
+ ואז 
+\begin_inset Formula $comp=\sum(A)-min$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+להשאר את 
+\begin_inset Formula $Best$
+\end_inset
+
+ אותו דבר , ואז: 
+\begin_inset Formula $comp=\sum(A)+Best(-A)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ולהחזיר את 
+\begin_inset Formula $Max\left(Best(A),\ comp\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נכונות
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $max\left(Best(A)\right)=\sum(A)-\left(-Best(-A)\right)=\sum(A)+Best(-A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+דוגמה: 
+\begin_inset Formula $\left[10,2,-5,8,-30,12\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+בעיות תחנות הדלק 
+\end_layout
+
+\begin_layout Standard
+הבעיה: נתון מעגל עם מחירים על הצלעות )=ק"מ( ומחיר בקודקודים )=דלק שניתן
+ למלא( - הרכב נמצא )עם מכל ריק( בנקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ורוצים שהוא ישלים סיבוב - דרך 
+\begin_inset Formula $n$
+\end_inset
+
+ הקודקודים והצלעות - האם יצליח?
+\end_layout
+
+\begin_layout Itemize
+יש לבדוק בכל שלב שיהיה יותר דלק =
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ מק"מ = 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נצור מערך שלישי 
+\begin_inset Formula $c_{i}=b_{i}-a_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נפעיל 
+\begin_inset Formula $best$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נתחיל מתחילת הקטע המקסימלי אותו מחזיר 
+\begin_inset Formula $best$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נכונות
+\end_layout
+
+\begin_layout Itemize
+לוודא:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}a_{1}\geq b_{1}\\
+a_{1}+a_{2}\geq b_{1}+b_{2}\iff a_{2}\geq(b_{1}-a_{1})+b_{2}\\
+\vdots\\
+a_{1}+a_{2}+...+a_{n}\geq b_{1}+b_{2}+..+b_{n}
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סיבוכיות )באופן דינאמי( - 
+\begin_inset Formula $O(n)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\bar under
+משפט לובס: אם 
+\begin_inset Formula $\sum a_{i}=\sum b_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת נקודה שממנה ניתן להתחיל ולסגור נקודה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגדיר מערך חדש 
+\begin_inset Formula $c_{i}=b_{i}-a_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשים לב ש: 
+\begin_inset Formula $\sum a_{i}=\sum b_{i}\Leftrightarrow\sum b_{i}-\sum a_{i}=0=\sum c_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ונניח בשלילה שישנו 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $sum\left(C\left[i,j\right]\right)+sum\left(C\left[j+1,k\right]\right)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אז מתכונת המשלים יתקיים ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{sum\left(C\left[i,j\right]\right)+sum\left(C\left[j+1,k\right]\right)}_{<0}+\underbrace{sum\left(C\left[k+1,i-1\right]\right)}_{>0}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ולכן על פי הרעיון של 
+\begin_inset Formula $best$
+\end_inset
+
+ נחבר את 
+\begin_inset Formula $\left[i,j\right]$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left[k+1,i-1\right]$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נתחיל מנקודה 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ תמיד נהיה חיוביים )= מספיק דלק( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נסגור את המעגל
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעיית המטריצה )הרחבת קטע מקסימלי במערך(
+\end_layout
+
+\begin_layout Subsection
+חיפוש שלם
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void whole_search() {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int max = 0, tmp, t_i = 0, t_j = 0, b_i = 0, b_j = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < n; ++i)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ for (int j = 0; j < m; ++j)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+  for (int k = i; k < n; ++k) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+   for (int l = j; l < m; ++l)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+    tmp = sumSubMat(k, l, i, j)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+   if (max < tmp) {
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+    max = tmp; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+    t_i = i; t_j = j;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+    b_i = k; b_j = l;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return max,t_i,t_j,b_i,b_j
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private int sumSubMat(int rows, int cols, int s_i, int s_j):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int sum = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = s_i; i <= rows; ++i) :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int j = s_j; j <= cols; ++j):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+sum += mat[i][j];
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return sum;
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+אפשרויות לבנות רצועות של שורות = 
+\begin_inset Formula $\frac{m(m-1)}{2}$
+\end_inset
+
+ , אפשרויות לבנות פסים של עמודות = 
+\begin_inset Formula $\frac{n(n-1)}{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+חישוב סכום תת מטריצה : 
+\begin_inset Formula $O(m\cdot n)$
+\end_inset
+
+, סהכ האפשרויות לתת מטריצות : 
+\begin_inset Formula $\frac{n(n-1)}{1}*\frac{m(m-1)}{2}=O\left(n^{2}m^{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+סה"כ : 
+\begin_inset Formula $O\left(n^{3}m^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חישוב רצועות עם 
+\begin_inset Formula $best$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void strip_search():
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int max = 0, tmp, t_i = 0, t_j = 0, b_i = 0, b_j = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int[] arr = new int[m];
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < n; ++i) { 
+\color brown
+// idx row - start range
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int j = i; j < n; ++j) { 
+\color brown
+// idx row - end range
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Arrays.fill(arr, 0);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int k = i; k <= j; ++k) { 
+\color brown
+// idx row start in range
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int l = 0; l < m; ++l) { 
+\color brown
+// idx row end in range
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+arr[l] += mat[k][l];
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+tmp = best(arr);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+max = max < tmp ? tmp : max;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return max
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+יש לנו 
+\begin_inset Formula $O\left(\frac{n(n+1)}{2}\right)$
+\end_inset
+
+ רצועות, 
+\begin_inset Formula $O(n\cdot m)$
+\end_inset
+
+ חישוב שטח מלבן, 
+\begin_inset Formula $O(m)$
+\end_inset
+
+ מציאת מקס'
+\end_layout
+
+\begin_layout Itemize
+סה"כ: 
+\begin_inset Formula $O\left(n^{2}\right)\left(O\left(n\cdot m\right)O\left(m\right)\right)=O\left(n^{3}\cdot m\right)$
+\end_inset
+
+ )עבור מלבן עומד( 
+\end_layout
+
+\begin_layout Itemize
+שיפור היעילות: 
+\begin_inset Formula $O\left(Min^{3}\left(n,m\right)*Max(n,m)\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection
+הכלה והדחה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void inc_exp_princple() {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int max = 0, tmp;
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// fill helper mat by counting sub-mats from (0,0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int[][] helpMat = new int[n][m];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+helpMat[0][0] = mat[0][0];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int j = 1; j < m; ++j) { helpMat[0][j] += helpMat[0][j - 1] + mat[0][j];}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 1; i < n; ++i) { helpMat[i][0] += helpMat[i - 1][0] + mat[i][0];}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 1; i < n; ++i) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int j = 1; j < m; ++j) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+helpMat[i][j] = mat[i][j] + helpMat[i - 1][j] + helpMat[i][j - 1] - helpMat[i
+ - 1][j - 1];
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+//create all rectangle
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int t_i = 0, t_j = 0, b_i = 0, b_j = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < n; ++i) :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ for (int j = 0; j < m; ++j) :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+  for (int k = i; k < n; ++k) :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+   for (int l = j; l < m; ++l) :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// find max sub-mat
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ tmp = sumByHelper(helpMat, i, j, k, l); 
+\color brown
+//O(1)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (max < tmp) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+max = tmp;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+t_i = i; t_j = j;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+b_i = k; b_j = l;
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private int sumByHelper(int[][] helpMat, int s_i, int s_j, int rows, int
+ cols)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// case on frame
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (s_i == 0 && s_j == 0) return helpMat[rows][cols];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else if (s_i == 0 && s_j > 0) return (helpMat[rows][cols] - helpMat[rows][s_j
+ - 1]);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else if (s_i > 0 && s_j == 0) return (helpMat[rows][cols] - helpMat[s_i
+ - 1][cols]);
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// all inner cases - by Inclusion–exclusion principle 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else { // (s_i > 0 && s_j > 0 )
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return (helpMat[rows][cols] - helpMat[s_i - 1][cols] 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+- helpMat[rows][s_j - 1] + helpMat[s_i - 1][s_j - 1]);
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+בניית 
+\begin_inset Formula $helper$
+\end_inset
+
+ - 
+\begin_inset Formula $O(m\cdot n)$
+\end_inset
+
+ , מעבר על כל המלבנים האפשריית 
+\begin_inset Formula $O(n^{2}m^{2})$
+\end_inset
+
+ , חישוב מלבן 
+\begin_inset Formula $O(1)\cdot3$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+סה"כ:
+\begin_inset Formula $O(n\cdot m)+O\left(n^{2}\cdot m^{2}\right)\cdot O(1)=O\left(n^{2}m^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פתרון משופר וסופי
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void integrated_sol() {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int max = 0, tmp;    int[] arr = new int[n];
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < m; ++i) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Arrays.fill(arr, 0);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int j = i; j < m; ++j) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int k = 0; k < n; ++k) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+arr[k] += mat[k][j]; 
+\color brown
+// count vertical strips
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+tmp = best(arr); 
+\color brown
+// inc_exp_principle is inside best
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+max = max < tmp ? tmp : max;
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+מספר הרצועות 
+\begin_inset Formula $\times$
+\end_inset
+
+ חישוב כל רצועה לכן : 
+\begin_inset Formula $O\left(\frac{n(n+1)}{2}\right)\cdot O\left(m\right)=O\left(\min^{2}(n,m),\max(n,m)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שרפת עצים
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void fireTree(adjLost) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int[] deg = new int[size];
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+LinkedList<Integer> leafQ = new LinkedList();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+LinkedList<Integer> newLeafQ = new LinkedList();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int count = size;  steps = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// count degrees
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < adjList.length; ++i): 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int d = adjList[i].size();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+deg[i] = d;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (d == 1) { leafQ.add(i); } 
+\color brown
+// keep only leaves
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (count > 2) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// burn leave
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+steps++;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (!leafQ.isEmpty()) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int u = leafQ.remove();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+deg[u]--;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (deg[u] == 0) count--; // undirected?
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// update his father - u is leaf ==> get(0) == his parent
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int p = (int) adjList[u].get(0); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+deg[p]--;
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// check if father is new leave
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (deg[p] == 1) { newLeafQ.add(p); }
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// free newLeafQ by pass the new leaves to LeafQ
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+leafQ = (LinkedList<Integer>) newLeafQ.clone();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+newLeafQ.clear();
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (count == 2) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("r: " +  steps+1);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("d: " +  (2*steps -1));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return (leafQ.remove(),leafQ,remove());
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+} else {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("r: " +  steps);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+System.out.println("d: " +  (2*steps));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return leafQ.remove();
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+סכימת הדרגות : 
+\begin_inset Formula $2|E|=2(|V|-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+על צלע אנחנו עוברים פעמיים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ כאשר קודקוד שואל את אביו אם הוא הופך לעלה.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ כאשר שורפים עלה, לכן גם 
+\begin_inset Formula $2|E|=2(|V|-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סה"כ 
+\begin_inset Formula $4|V|=O(|V|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: יהיה 
+\begin_inset Formula $T$
+\end_inset
+
+ עץ ו 
+\begin_inset Formula $a\in T$
+\end_inset
+
+ קודקוד כלשהו , ויהיה 
+\begin_inset Formula $b$
+\end_inset
+
+ הקדקוד הרחוק ביותר ממנו )כלומר 
+\begin_inset Formula $ex(a)=max\left\{ dist(v,a),v\in V\right\} =dist(a,b)$
+\end_inset
+
+ ( אז המסלול שבין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל 
+\begin_inset Formula $b$
+\end_inset
+
+ עובר דרך מרכז העץ 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה 
+\end_layout
+
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)מציאת קוטר(: יהיה 
+\begin_inset Formula $x\in T$
+\end_inset
+
+ , ויהיה 
+\begin_inset Formula $y$
+\end_inset
+
+ הקודקוד הרחוק ביותר ב 
+\begin_inset Formula $x$
+\end_inset
+
+ ,אז קוטר העץ הוא המרחק בין 
+\begin_inset Formula $y$
+\end_inset
+
+ ל 
+\begin_inset Formula $z$
+\end_inset
+
+ , כאשר 
+\begin_inset Formula $z$
+\end_inset
+
+ הוא הקודקוד הרחוק ביותר מ 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שקיים מסלול אחר בין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל 
+\begin_inset Formula $b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $dist(a,b)>dist(y,z)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+ממשפט שני המסלולים עוברים דרך מרכז העץ 
+\begin_inset Formula $c$
+\end_inset
+
+ , ולכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $dsit(y,c)+dist(c,z)=dist(y,z)<dist(a,b)=dist(a,c)+dist(b,c)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+קודקוד 
+\begin_inset Formula $y$
+\end_inset
+
+ רחוק ביותר מ 
+\begin_inset Formula $x$
+\end_inset
+
+ לכן 
+\begin_inset Formula $dist(b,c)\leq dist(y,c)$
+\end_inset
+
+, אחרת הוא 
+\begin_inset Formula $b$
+\end_inset
+
+ היה נבחר
+\end_layout
+
+\begin_layout Itemize
+באופן דומה 
+\begin_inset Formula $z$
+\end_inset
+
+ הרחוק ביותר מ 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $dist(c,a)\leq dist(c,z)$
+\end_inset
+
+ , אחרת 
+\begin_inset Formula $a$
+\end_inset
+
+ היה נבחר
+\end_layout
+
+\begin_layout Itemize
+לכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}dsit(y,c)+dist(c,z)<dist(a,c)+dist(b,c)\leq dsit(y,c)+dist(c,z)\\
+\Updownarrow\\
+dsit(y,c)+dist(c,z)<dsit(y,c)+dist(c,z)
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+וזו סתירה
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+: )מציאת מרכז( : לכל עץ יש מרכז אחד או שניים
+\end_layout
+
+\begin_layout Itemize
+המרחק המרבי מקודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ אחר, הוא כאשר 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ עלה
+\end_layout
+
+\begin_layout Itemize
+נתבונן ב 
+\begin_inset Formula $T$
+\end_inset
+
+ בעל יותר משני קודקודים, ממשפט ב 
+\begin_inset Formula $T$
+\end_inset
+
+ יש לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עלים
+\end_layout
+
+\begin_layout Itemize
+)שרפה ראשונה( מוחקים את כל העלים ב 
+\begin_inset Formula $T$
+\end_inset
+
+ מתקים ש:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\#)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בגרף 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ שהתקבל הוא שוב עץ, כי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחקנו עלים, ולכן הגרף עדיין קשיר
+\end_layout
+
+\begin_layout Itemize
+מחיקת צלעות, אינה סוגרת מעגל
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ל 
+\begin_inset Formula $T$
+\end_inset
+
+ ו 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ יש את אותו מרכז, כי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחיקה כזו מורידה 
+\series bold
+לכל הקודקודים בגרף
+\series default
+ את מדד האקסצנטריות, ולכן המקס' נשאר אותו מקסימום, ולכן המרכז אותו מרכז
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+שרפה שניה - נמחק את כל העלים מ
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ , ונקבל עץ 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ מ 
+\begin_inset Formula $\#$
+\end_inset
+
+ , המרכז אותו מרכז
+\end_layout
+
+\begin_layout Itemize
+כיון שהגרף סופי, בשלב כלשהו ניוותר עם קודקוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או צלע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, ומכאן נובעת הטענה.
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנות:
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+מספר השרפות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לעץ עם מרכז אחד - הרדיוס שווה למספר השרפות
+\end_layout
+
+\begin_layout Itemize
+לעץ עם שני מרכזים - הרדיוס של העץ שווה למפסר השרפות +
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+הקוטר מקיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $2\cdot r-1\leq diameter\leq2\cdot r$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הערה: גרף שאינו עץ יכול להכיל יותר מרכזים
+\end_layout
+
+\begin_layout Standard
+הוכחה - להשלים
+\end_layout
+
+\begin_layout Subsubsection
+הרחבה: האם
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עצים איזומורפים
+\end_layout
+
+\begin_layout Standard
+פסאודו- קוד
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+isIsom(T1,T1):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+centers1 = fireTree(T1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+centers2 = frieTree(T2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (centers1 != centers2):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return false;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+if centers1 == 1 :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+retrun helpIsom(T1.root) && helpIsom(T2.root)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+retrun helpIsom(T1.root1,T2.root1) && helpIsom(T1.root1,T1.root2)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def helpIsom(s1,s2):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return tree_code(s1) == tree_code(s2)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def tree_code(v)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if v is leaf:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return 
+\begin_inset Quotes eld
+\end_inset
+
+01
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i in range(v.childs.length)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+codes[i] = tree_code(v.childs[i])
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+sort(codes)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for code in codes
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ans += code
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+ans = 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+ + ans 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return ans;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+סיבוכיות: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $fireTree\times2$
+\end_inset
+
+ = 
+\begin_inset Formula $O\left(|V|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $tree\_code$
+\end_inset
+
+ - עובד ברקרוסיה, ועובר על כל העץ פעמיים פעם בירידה ופעם בעליה, לכן עבורים
+ על כל קודקוד )למעט העלים( ועל כל צלע פעמיים, לכן: 
+\begin_inset Formula $O(|V|+|E|)=O(|V|)$
+\end_inset
+
+ )כי זה עץ(
+\end_layout
+
+\begin_layout Itemize
+סה"כ : 
+\begin_inset Formula $O(|V|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נכונות:
+\end_layout
+
+\begin_layout Standard
+)לא מספיק פורמאלי - חסר המון טענות עזר והגדרות(
+\end_layout
+
+\begin_layout Subsubsection*
+טענה: שני עצים איזומורפים אם ורק אם בכל תת עץ השם הקנוני של העצים זהה
+\end_layout
+
+\begin_layout Standard
+נוכיח רק צד אחד - שמות זהים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ עצים איזו':
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה באינדוקציה:
+\bar default
+ על גובה העץ )"מלמטה"(
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+נניח עבור 
+\begin_inset Formula $h=0$
+\end_inset
+
+ 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $v$
+\end_inset
+
+ הוא עלה, ומהגדרת האלגוריתם כל עלה בשני העצים הוא 
+\begin_inset Formula $"01"$
+\end_inset
+
+ ומכאן שכל עלה איזומורפי לכל עלה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד
+\bar default
+: נניח לעצים בגובה 
+\begin_inset Formula $k<h$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $h$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $T_{1},T_{2}$
+\end_inset
+
+ תתי עץ בגובה 
+\begin_inset Formula $h$
+\end_inset
+
+ , נסמן את שורש העץ ב 
+\begin_inset Formula $s_{1},s_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ממשפט בדיסקרטית כל אחד מהילדים שלהם הוא גם עץ, וגובהו 
+\begin_inset Formula $h-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מהנחת האינדוקציה אם השמות הקנונים של העצים ב 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+זהים לשמות העצים ב 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ העצים איזומורפים
+\end_layout
+
+\begin_layout Itemize
+ע"פ פעולת האלגוריתם נמיין את הרצפים הבינארים מקטן לגדול + ונסדר את הילדים
+ של 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ ע"פ סדר זה
+\end_layout
+
+\begin_layout Itemize
+באותו אופן נבצע עבור 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נקבל שאם השמות זהות זהים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ השמות הקנונים זהים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הילדים מסודרים באותו סדר ב 
+\begin_inset Formula $T_{1},T_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ העצים זהים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ העצים איזומורפים
+\end_layout
+
+\begin_layout Standard
+ע"פ פעולת האלגוריתם נוסיף 
+\begin_inset Formula $0$
+\end_inset
+
+ בהתחלה ו 
+\begin_inset Formula $1$
+\end_inset
+
+ בסוף - מכין שהעץ סופי, בשלב כלשהו נגיע לשורשים ונקבל שכל 
+\begin_inset Formula $T_{1},T_{2}$
+\end_inset
+
+ איזומורפים זה לזה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $BFS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+קלט: רשימת שכנויות )הגרף(, קודקוד מקור
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+private void bfs(LinketList[] adjList, int s) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+//init1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int[] color = new int[size] , distance = new int[size] , parents = new int[size]
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+LinkedList<Integer> Q = new LinkedList();
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int u;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// init2
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < size; ++i)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[i] = WHITE; distance[i] = -1; parents[i] = -1;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// init3 - take source
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+color[s] = GREY; distance[s] = 0; parents[s] = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.add(s);
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (!Q.isEmpty()) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+u = Q.remove();
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// look at u neighbour's <==> down tree level
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < adjList[u].size(); ++i) :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int v = (int) adjList[u].get(i); 
+\color brown
+// get neighbour
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (color[v] == WHITE) : 
+\color brown
+// if new - sign it + update distance + keep it
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[v] = GREY;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+distance[v] = distance[u] + 1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+parents[v] = u;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.add(v);
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[u] = BLACK; 
+\color brown
+// forget u
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return d,p
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $init2$
+\end_inset
+
+ - מעבר על כל הקודקודים לכן 
+\begin_inset Formula $O(|V|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כל קודקוד נכנס ויוצא פעם אחת מהתור , ב 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $while$
+\end_inset
+
+ אנחנו עוברים על כל הקודקודים הסמוכים לקודקוד כלשהו, לכן עוברים פעמיים על
+ כל קודקוד ופעמיים על כל צלע )צד אחד מכל קודקוד( לכן 
+\begin_inset Formula $O(2|E|+|V|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סה"כ: 
+\begin_inset Formula $O(|V|+|E|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Subsubsection*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ : סריקת הגרף 
+\begin_inset Formula $BFS$
+\end_inset
+
+ בונה עץ כתת-גרף של 
+\begin_inset Formula $G$
+\end_inset
+
+ בעל הקודקודים שניתן להגיע אליהם מ 
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה באינדוקציה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס:
+\end_layout
+
+\begin_layout Itemize
+בשלב הראשון הגרף מכיל קודקוד אחד, 
+\begin_inset Formula $s$
+\end_inset
+
+ , כאשר אנו מוספים קודקודים הם בהכרח לבנים )נפגשים איתם פעם ראשונה( לכן
+ אנו מוסיפים גם הצלע שבעזרתה הגענו לקודקוד 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש לנו תת -גרף קשיר וחסר מעגלים כנדרש לעץ
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד: נניח לשלב 
+\begin_inset Formula $i$
+\end_inset
+
+ ונוכיח לשלב 
+\begin_inset Formula $i+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+עד השלב ה 
+\begin_inset Formula $i$
+\end_inset
+
+ גילינו קודקוד לכל היותר פעם אחד, ולכן מהנחת האינדוקציה יש לו אב אחד
+\end_layout
+
+\begin_layout Itemize
+נוציא קודקוד מהתור נמסמנו ב 
+\begin_inset Formula $u$
+\end_inset
+
+, ונעבור על שכניו, אם כל שכניו אפורים/שחורים, אז מהנחת האינדוקציה יש לנו
+ עץ
+\end_layout
+
+\begin_layout Itemize
+אחרת מצאנו קודקוד חדש 
+\begin_inset Formula $v$
+\end_inset
+
+ , ונחבר אותו כבן של 
+\begin_inset Formula $u$
+\end_inset
+
+ , בפרט יש לנו גרף קשיר חסר מעגלים )כי התעלמנו מקודקודים אותם פגשנו( , ולכן
+ יש לנו עץ כתת גרף של 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+למה 
+\numeric on
+2
+\numeric off
+ )
+\begin_inset Formula $BFS$
+\end_inset
+
+ עובד לפי רמות העץ(
+\series default
+: התור 
+\begin_inset Formula $Q=\left\{ v_{1},.....v_{r}\right\} $
+\end_inset
+
+ מקיים אחת משתי האפשוריות:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $i\in\left[1,r\right]$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $dist[v]=k$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+קיים 
+\begin_inset Formula $t\in\left[1,r\right]$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $i\in\left[1,t\right]$
+\end_inset
+
+ 
+\begin_inset Formula $dist[v_{i}]=k$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $j\in\left[t+1,r\right]$
+\end_inset
+
+ 
+\begin_inset Formula $dist[v_{j}]=k+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס:
+\bar default
+ 
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $init$
+\end_inset
+
+ מכניסים 
+\begin_inset Formula $s$
+\end_inset
+
+ וב 
+\begin_inset Formula $while$
+\end_inset
+
+ מוסיפים את כל שכניו - כולם חדשים ולכן 
+\begin_inset Formula $dist=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד:
+\bar default
+ נניח ל איטרציה ה 
+\begin_inset Formula $i$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $i+1$
+\end_inset
+
+ - כלומר נניח 
+\begin_inset Formula $dist$
+\end_inset
+
+ בכל התור הוא 
+\begin_inset Formula $k$
+\end_inset
+
+ או 
+\begin_inset Formula $k+1$
+\end_inset
+
+ )על פי סדר(
+\end_layout
+
+\begin_layout Itemize
+נשלוף קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ מהנחה 
+\begin_inset Formula $dist[u]=k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נבדוק את שכניו.
+ אם השכן חדש אז נכניס אותו לתור עם 
+\begin_inset Formula $dist[u]+1=k+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחרת, 
+\begin_inset Formula $v$
+\end_inset
+
+ הוא קודקוד שכבר פגשנו, ולא יכנס לתור.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נכונות 
+\begin_inset Formula $BFS$
+\end_inset
+
+ : המרחקים של קדקודי הגרף עד המקור המתקבלים בעזרת אלגוריתם 
+\begin_inset Formula $BFS$
+\end_inset
+
+ הם המרחקים הקצרים ביותר
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $\delta(u,v)$
+\end_inset
+
+ כאורך המסלול המינימלי מ 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+, ונאמר ש 
+\begin_inset Formula $\delta(u,v)=\infty$
+\end_inset
+
+ אם אין מסלול בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נפעיל את האלגוריתם על קודקוד 
+\begin_inset Formula $s$
+\end_inset
+
+ , נקבל בחזרה נקבל ערך כלשהו ב 
+\begin_inset Formula $dist[u]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שקיימת קבוצת קדקודי הגרף לא ריקה 
+\begin_inset Formula $P=\left\{ p_{1},p_{2},...,p_{m}\right\} $
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $p\in P$
+\end_inset
+
+ מתקיים ש: 
+\begin_inset Formula $\delta\left(p,s\right)<dist[p]$
+\end_inset
+
+ כלומר קבוצה של קודקודים 
+\begin_inset Formula $P$
+\end_inset
+
+ שבעבורה ה 
+\begin_inset Formula $BFS$
+\end_inset
+
+ לא מחשב נכון
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $u\in P$
+\end_inset
+
+ שמרחקו עד המקור הוא 
+\begin_inset Formula $\delta\left(u,s\right)$
+\end_inset
+
+ הוא מינימאלי כלומר 
+\begin_inset Formula $\delta(u,s)=\min\left\{ \delta\left(p,s)\right)\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ויהיה 
+\begin_inset Formula $w$
+\end_inset
+
+ אביו של 
+\begin_inset Formula $u$
+\end_inset
+
+ במסלול 
+\bar under
+הקצר ביותר
+\bar default
+ אז: 
+\begin_inset Formula $\delta\left(w,s\right)<\delta\left(u,s\right)\iff\delta(u,s)=\delta(w,s)+1$
+\end_inset
+
+ לכן 
+\begin_inset Formula $w\notin P$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $dist[w]=\delta(w,s)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $v$
+\end_inset
+
+ קודקוד האב של 
+\begin_inset Formula $u$
+\end_inset
+
+ השונה מ 
+\begin_inset Formula $w$
+\end_inset
+
+ על פי ה 
+\begin_inset Formula $BFS$
+\end_inset
+
+ אז 
+\begin_inset Formula $dist[u]=dist[v]+1$
+\end_inset
+
+ אבל 
+\begin_inset Formula $u\in P$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\delta(u,s)<dist[u]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta(w,s)+1<dist[v]+1\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $dist[w]+1<dist[v]+1\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $dist[w]<dist[v]\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+במצב זה לפי למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $w$
+\end_inset
+
+ נכנס לתור לפני 
+\begin_inset Formula $v$
+\end_inset
+
+ , אבל מהנחה 
+\begin_inset Formula $w$
+\end_inset
+
+ סמוך ל 
+\begin_inset Formula $u$
+\end_inset
+
+ , ולכן 
+\begin_inset Formula $v$
+\end_inset
+
+ לא יכול להיות אביו של 
+\begin_inset Formula $u$
+\end_inset
+
+ )אא"כ 
+\begin_inset Formula $v=w$
+\end_inset
+
+( בעץ הנפרש על ידי 
+\begin_inset Formula $BFS$
+\end_inset
+
+ )למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(, ולכן קבלנו סתירה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שימושים
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+בדיקה האם גרף קשיר:
+\end_layout
+
+\begin_layout Itemize
+נעבור על 
+\begin_inset Formula $dist$
+\end_inset
+
+ החוזר מ 
+\begin_inset Formula $BFS$
+\end_inset
+
+ אם קיים קודקוד שהמרחק שלו הוא 
+\begin_inset Formula $\infty/-1$
+\end_inset
+
+ , סימן שהגרף אינו קשיר
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+הדפסת המסלול הקצר ביותר בין שני קודקדים:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+print_path(s,v, parents)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (v == s)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+print s
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else if (parents[v] == 
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+print 
+\begin_inset Quotes eld
+\end_inset
+
+no path
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+print_path(s,v,parents[v])
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+print v
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+חישוב מספר רכיבי קישרות, ושורשי הרכיבים
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+countComp()
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int v = 0 , int count = 1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+int [] dist
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+boolean partOf = true;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Set sources;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (partOf)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+dist = bfs(G, v);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+sources.add(v);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+partOf = false;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for( int  i = 0 ; i < dist.length ; ++i )
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if( dist[i] == -1)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+v = i;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+count++;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+partOf = true
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+break;
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return count or sources;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+חישוב קוטר עץ
+\end_layout
+
+\begin_layout Subsubsection
+בדיקה האם גרף צדדי
+\end_layout
+
+\begin_layout Itemize
+נוסיף משתנה בוליאני, 
+\begin_inset Formula $is2sides=True$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נוסיף מערך 
+\begin_inset Formula $group$
+\end_inset
+
+ , שיחלק את את הגרף לקבוצות 
+\begin_inset Formula $1,2$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $0$
+\end_inset
+
+ יהיה קודקוד שעדיין לא בוקר
+\end_layout
+
+\begin_layout Itemize
+בתוך ה
+\begin_inset Formula $for$
+\end_inset
+
+ נוסיף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while (!Q.isEmpty()) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+u = Q.remove();
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// look at u neighbour's <==> down tree level
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < adjList[u].size(); ++i) :
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+int v = (int) adjList[u].get(i); 
+\color brown
+// get neighbour
+\end_layout
+
+\begin_layout LyX-Code
+
+\color blue
+\lang english
+if group[v] == group[u]:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color blue
+\lang english
+is2sides = False
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (color[v] == WHITE) : 
+\color brown
+// if new - sign it + update distance + keep it
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[v] = GREY;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+distance[v] = distance[u] + 1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+parents[v] = u;
+\end_layout
+
+\begin_layout LyX-Code
+
+\color blue
+\lang english
+group[v] = 3 - group[u]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.add(v);
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[u] = BLACK; 
+\color brown
+// forget u
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return d,p,is2sides, group
+\end_layout
+
+\begin_layout Subsubsection*
+גרף 
+\begin_inset Formula $\grp$
+\end_inset
+
+ הוא דו-צדדי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ כל המעגלים בו )גם לא פשוטים( בעלי אורך זוגי
+\end_layout
+
+\begin_layout Standard
+הוכחה 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+כיוון ראשון - נניח 
+\begin_inset Formula $G$
+\end_inset
+
+ דו"צ, נוכיח שאורך המעגלים זוגי
+\end_layout
+
+\begin_layout Itemize
+נתון ש 
+\begin_inset Formula $G$
+\end_inset
+
+ דו-צדדי, לכן ניתן לחלק את קודקודי הגרף לשתי קבוצות זרות 
+\begin_inset Formula $V_{1},V_{2}$
+\end_inset
+
+ כך שכל צלע בגרף מעילה קודקוד מ 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ וקודקוד מ 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נבחר מעגל כלשהו בגרף, נניח ש 
+\begin_inset Formula $u$
+\end_inset
+
+ קודקוד כלשהו במעגל, בה"כ 
+\begin_inset Formula $u\in V_{1}$
+\end_inset
+
+ נטייל על המעגל, כלומר נעבור בצלע ב 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+מכיון ש 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף דו"צ, כל צלע מעבירה אותנו לקבוצה אחרת בגרף
+\end_layout
+
+\begin_layout Itemize
+לכן ע"מ להיות חזרה ב 
+\begin_inset Formula $u\in V_{1}$
+\end_inset
+
+ , חובה עלינו "לחזור" ל 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ , ולכן מספר המעברים זוגי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+כיון שני - נניח שאורך המעגלים זוגי נוכיח ש 
+\begin_inset Formula $G$
+\end_inset
+
+ דו"צ
+\end_layout
+
+\begin_layout Itemize
+נניח ש 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר, אחרת נפעיל את ההוכחה על כל רכיב קשירות בנפרד.
+\end_layout
+
+\begin_layout Itemize
+נבחר קודקוד כלשהו, 
+\begin_inset Formula $u\in V_{1}$
+\end_inset
+
+ ונגדיר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $V_{1}=\left\{ x\in V|\text{distance between u and x is even}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V_{2}=\left\{ x\in V|\text{distance between u and x is odd}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נניח בשלילה שיש בגרף צלע ששני קודקודיה ב 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ )בה"כ( , נסמנה ב 
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לפי הגדרת 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ קיים מעגל בגרף שמתחיל ב 
+\begin_inset Formula $u$
+\end_inset
+
+ מגיע דרך מסלול באורך 
+\bar under
+זוגי
+\bar default
+ ל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחר כך ממשיך ל 
+\begin_inset Formula $y$
+\end_inset
+
+ ע"ׁי מסלול של צלע 
+\bar under
+יחידה
+\bar default
+ 
+\end_layout
+
+\begin_layout Itemize
+מ
+\begin_inset Formula $y$
+\end_inset
+
+ חוזר ל 
+\begin_inset Formula $u$
+\end_inset
+
+ דרך מסלול באורך 
+\bar under
+זוגי
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סה"כ קיבלנו מסלול באורך 
+\bar under
+אי-זוגי
+\end_layout
+
+\begin_layout Itemize
+וזוהי סתירה כי קיבלנו מעגל באורך אי זוגי בסתירה להנחה שאין מעגלים באורך
+ אי-זוגי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $DFS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+public void dfs(int s){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for (int i = 0; i < size; i++) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[i] = WHITE;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+pred[i] = NIL;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+first[i] = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+last[i] = 0;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+hasCycle = false;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+startCycle = NIL;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+endCycle = NIL;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+time = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+visit(s);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+private void visit(int u){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[u] = GRAY; first[u] = ++time;
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for(int v : graph[u]){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if (!hasCycle && color[v] == GRAY && pred[u] != v){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+hasCycle = true;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+startCycle = u;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+endCycle = v;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if (color[v] == WHITE){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+color[v] = GRAY;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+pred[v] = u;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+visit(v);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+color[u] = BLACK;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+last[u] = ++time;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+\begin_inset Formula $dfs$
+\end_inset
+
+ עובר על כל קדקוד פעם אחת בלבד
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחה: הפונקציה 
+\begin_inset Formula $dfs\_visit$
+\end_inset
+
+ נקראת על קדקד 
+\begin_inset Formula $V$
+\end_inset
+
+ רק עם הצבע שלו לבן, והצבע משתנה מיידית
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+\begin_inset Formula $dfs$
+\end_inset
+
+ עובר על כל צלע פעם אחת בלבד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחה: הפונקציה 
+\begin_inset Formula $dfs\_visit$
+\end_inset
+
+ נקרא על קדקוד פעם אחת בלבד + בלולאה עוברים על השכנים של אותו קודקוד 
+\begin_inset Formula $\iff$
+\end_inset
+
+ עוברים על כל צלע שיוצאת מהקודקוד פעם אחת
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+\begin_inset Formula $dfs$
+\end_inset
+
+ עובר כל קודקדי הגרף )ברכיב קשירות אחד(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחה - אינדוקציה על המרחק 
+\begin_inset Formula $k$
+\end_inset
+
+ של קדקוד כלשהו מהמקור
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס
+\bar default
+: 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם מתחיל מקודקוד המקור
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד
+\bar default
+: נניח ל 
+\begin_inset Formula $t<k$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נתבונן בקדקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ כשלהו שמרחקו עד המקור הוא 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בגלל שקיים מסלול מ 
+\begin_inset Formula $v$
+\end_inset
+
+ עד המקור, ישנו קודקוד 
+\begin_inset Formula $w$
+\end_inset
+
+ המחובר בצלע ל 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן, מרחקו של 
+\begin_inset Formula $w=k-1$
+\end_inset
+
+ מקודוקד המקור, ומהנחת האינדוקציה 
+\begin_inset Formula $w$
+\end_inset
+
+ האלגוריתם יעבור על 
+\begin_inset Formula $w$
+\end_inset
+
+ בדרכו ל 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+אתחול: 
+\begin_inset Formula $O(|V|)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+)עוברים על כל הקודקדוים( 
+\begin_inset Formula $dfs\_visit$
+\end_inset
+
+ נקראת פעם אחת על כל קדוקד ב 
+\begin_inset Formula $V$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+)עוברים על כל הצלעות( ה 
+\begin_inset Formula $for$
+\end_inset
+
+ בפונקציה מתבצעה סה"כ 
+\begin_inset Formula $O(|E|)=\sum\limits _{v\in V}Adj(v)$
+\end_inset
+
+ ,
+\end_layout
+
+\begin_layout Itemize
+סה"כ 
+\begin_inset Formula $\left(O(|E|)+O(|V|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אוילר
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+asssum all degrees is even > 0:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def Euler_Cycle(G):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+st = Stack()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Cyc = []
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+st.myPush(4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while not st.isEmpty():
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+v = st.myPeek()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if len(G[v]) == 0:  
+\color brown
+# count deg
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+Cyc.append(v)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+st.myPop()
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+u = G[v][0] 
+\color brown
+ # first
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+st.myPush(u)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+G[v].remove(u)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+G[u].remove(v) 
+\color brown
+# delete 1 edge <==> deg(G) -= 2
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return Cyc 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Subsubsection*
+משפט: היה 
+\begin_inset Formula $\grp$
+\end_inset
+
+ גרף קשיר לא מכוון.
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ יש מעגל אוילר 
+\begin_inset Formula $\iff$
+\end_inset
+
+ כל הדרגות של הקודקודים בגרף זוגיות
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+כיון ראשון: ב
+\begin_inset Formula $G$
+\end_inset
+
+ יש מעגל אוילר 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל הדרגות זוגיות
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ קודקוד כלשהו במעגל.
+\end_layout
+
+\begin_layout Itemize
+כל מעבר של המעגל דרך הקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ הוא דרך שתי צלעות שונות זו מזו, ומהצלעות של המעברים האחרים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכן דרגתו של הקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ זוגית.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $u$
+\end_inset
+
+ הוא הקודקוד הראשון במעגל אז סופרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביציאה הראשונה ממנו,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל פעם שעוברים דרכו, ולבסוף כשחוזרים אליו בסיום.
+\end_layout
+
+\begin_layout Itemize
+בכל מקרה קיבלנו שהדרגה של 
+\begin_inset Formula $u$
+\end_inset
+
+ זוגית, כנרש.
+\end_layout
+
+\begin_layout Standard
+טענת עזר:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+יהי 
+\begin_inset Formula $\grp$
+\end_inset
+
+ גרף קשיר לא מכוון שהדרגות של הקודקודים בו זוגיות גדולות מ 
+\numeric on
+0
+\numeric off
+ אז כל קודקוד ב 
+\begin_inset Formula $G$
+\end_inset
+
+ שייך למעגל כלשהו
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נצא מקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ ונמשיך להתקדם מקודקוד לקודקוד בלי לעבור באותה צלע פעמיים.
+\end_layout
+
+\begin_layout Itemize
+מכיון שמספר הצלעות סופי, לאחר מספר שלבים סופי לא נוכל להמשיך.
+\end_layout
+
+\begin_layout Itemize
+הקודקוד בו נעצור הוא 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אחרת לקודקוד האחרון דרגה אי-זוגית מכיון שכל מעבר בו תורם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צלעות וכשעצרנו הוספנו צלע אחת )לכניסה(, ואלו כל הצלעות, וזוהי סתירה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+כיון שני - כל הדרגות זוגיות 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש מעגל אוילר
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $u_{1}\in V$
+\end_inset
+
+ קודקוד כלשהו
+\end_layout
+
+\begin_layout Itemize
+לפי טענת העזר הוא חלק ממעגל 
+\begin_inset Formula $c_{1}=\left(u_{1},.....u_{k},u_{1}\right)$
+\end_inset
+
+ אם המעגל עובר דרך כל הצלעות סיימנו.
+\end_layout
+
+\begin_layout Itemize
+אחרת, אז 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ לא מכסה את כל הצלעות.
+\end_layout
+
+\begin_layout Itemize
+נמחק את כל הצלעות המשתתפות ב 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ ונסמן את הגרף החדש ב 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נשים לב שכל הדרגות ב 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ גם זוגיות - כיון שהורדנו מספר זוגי של דרגות
+\end_layout
+
+\begin_layout Itemize
+בהכרח קיים קודקוד 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ במעגל שדרגתו שונה מאפס )אחרת 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ כיסה את כל הגרף כפי שציינו(
+\end_layout
+
+\begin_layout Itemize
+כיון ש 
+\begin_inset Formula $G$
+\end_inset
+
+ המקורי קשיר, קיים קודקוד 
+\begin_inset Formula $x$
+\end_inset
+
+ לא ב 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ שמחובר על ידי צלע לקודקוד 
+\begin_inset Formula $y$
+\end_inset
+
+ ב 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $y$
+\end_inset
+
+ יש דרגה חיובית ב 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ כי הצלע 
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset
+
+ לא נמצאת ב 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן נסמן 
+\begin_inset Formula $c_{2}=\left(u_{i},v_{2},...v_{k},u_{i}\right)$
+\end_inset
+
+ מעגל המתחיל ב 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כעת נגדיר מעגל שלישי: 
+\begin_inset Formula $c_{3}=\left(u_{1},....u_{i},v_{2},....v_{k},u_{i},...u_{k},u_{1}\right)$
+\end_inset
+
+ )הרכבת המעגלים(
+\end_layout
+
+\begin_layout Itemize
+אם קיבלנו מעגל של כל הקודקודים, סיימנו, אחרת נמשיך בתהליך עד שנכסה את כל
+ הצלעות
+\end_layout
+
+\begin_layout Itemize
+כיון שיש מספר סופי של צלעות, בשלב כלשהו יגמר התהליך, ונקבל מעגל אוילר כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט: יהי 
+\begin_inset Formula $\grp$
+\end_inset
+
+ גרף קשיר לא מכוון.
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ יש מסלול אוילר 
+\begin_inset Formula $\iff$
+\end_inset
+
+ כל הדרגות של הקודקודים בגרף זוגיות או שיש בדיוק שני קודקודים בעלי דרגה
+ אי-זוגית.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+כיוון ראשון - מסלול אוילר 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל הדרגות זוגיות או שיש בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים בעלי דרגה אי-זוגית:
+\end_layout
+
+\begin_layout Itemize
+כמו ההוכחה בבטענה קודמת ללא הדרישה על זוגיות של הקודקוד הראשון והאחרון במסלול
+ שהן אי-זוגיות )רק כניסה/יציאה בהתאמה(
+\end_layout
+
+\begin_layout Standard
+כיון שני: כל הדרגות זוגיות/יש בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים בעלי דרגה אי-זוגית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מסלול אוילר
+\end_layout
+
+\begin_layout Itemize
+אם כל הדרגות זוגית אז לפי משפט קודם יש מעגל אוילר, וסיימנו
+\end_layout
+
+\begin_layout Itemize
+לכן נניח שיש קודקודים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שדרגם אי-זוגית.
+\end_layout
+
+\begin_layout Itemize
+נוסיף קודקוד חדש 
+\begin_inset Formula $z$
+\end_inset
+
+ וצלעות 
+\begin_inset Formula $\left\{ a,z\right\} ,\left\{ z,b\right\} $
+\end_inset
+
+ .
+ קיבלנו גרף חדש קשיר שכל דרגותיו זוגיות
+\end_layout
+
+\begin_layout Itemize
+ממשפט קודם יש בו מעגל אוילר שמתחיל ומסתיים ב 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כעת נשמט מהמעגל את 
+\begin_inset Formula $z$
+\end_inset
+
+ וצלעותיו, ונקבל מסלול אוילר שמתחיל ב 
+\begin_inset Formula $a$
+\end_inset
+
+ ונגמר ב 
+\begin_inset Formula $b$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+הוספת צלעות מינמלית לאוילר
+\end_layout
+
+\begin_layout Standard
+הרחבה: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף כלשהו, מהו מספר הצלעות 
+\series bold
+המינימלי
+\series default
+ שצריך להוסיף על מנת שיהיה בו מעגל אוילר:
+\end_layout
+
+\begin_layout Standard
+)ניסיון שלי לקראת המבחן(
+\end_layout
+
+\begin_layout Enumerate
+הרץ 
+\begin_inset Formula $BFS$
+\end_inset
+
+ שמחזיר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+רשימת קודקודים בעלי דרגה אי-זוגית
+\end_layout
+
+\begin_layout Itemize
+מערך 
+\begin_inset Formula $color$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+בפונקציה 
+\begin_inset Formula $countComp$
+\end_inset
+
+ עבור על קדקודי הגרף:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל עוד יש קודקודי לבנים, קרא ל
+\begin_inset Formula $BFS$
+\end_inset
+
+ עם קודקוד לבן
+\end_layout
+
+\begin_layout Itemize
+ע"פ הערך המוחזר , הכנס לערימת מקסימום את השלישיה 
+\begin_inset Formula $\left(source,stack\_of\_odd,key=stack\_of\_odd.size()\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+פונקציית 
+\begin_inset Formula $connect\_comp$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $count=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שלוף שני רכיבים 
+\begin_inset Formula $C1,C2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם שניהם שונים מאפס
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+שלוף קודוקד אי-זוגי מ 
+\begin_inset Formula $v=C1.stack\_of\_odd.pop()$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Enumerate
+שלוף קודוקד אי-זוגי מ 
+\begin_inset Formula $u=C2.stack\_of\_odd.pop()$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $G[u].add(v)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G[v].add(u)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $maxHeap.push(C1.source,C1.stuack\cup C2.stack,key=C1.size+C2.size-1-1,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $count++$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם אחד שונה מאפס, עבור 
+\begin_inset Formula $C1$
+\end_inset
+
+ סימטרי ל 
+\begin_inset Formula $C2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v=C1.stack\_of\_odd.po()$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u.C2.s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $G[u].add(v)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G[v].add(u)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $maxHeap.push(C1.source,C1.stuack\cup C2.stack,key=C1.size+C2.size-1+1,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $count++$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+שניהם 
+\begin_inset Formula $0$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v=C1.s$
+\end_inset
+
+ 
+\begin_inset Formula $u=C2.s$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $G[u].add(v)$
+\end_inset
+
+ 
+\begin_inset Formula $2\times$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G[v].add(u)$
+\end_inset
+
+ 
+\begin_inset Formula $2\times$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $maxHeap.push(C1.source,C1.\{\},0,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $count+=2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+פונקציית חיבור 
+\begin_inset Formula $connect\_odd|\_v$
+\end_inset
+
+ )לרכיב קשירות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $C=maxQ.pop()$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כל עוד 
+\begin_inset Formula $C.stack.size()>0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $u=C.stack.pop()$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $v=C.stack.pop()$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $G[u].add(v)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+בצע 
+\begin_inset Formula $G[v].add(u)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $count++$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קרוסקל
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+"לא יהיו מעגלים"
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def kruskal (graph):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MST = []
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+n = len(graph) , numE = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+edges = ascending_sort_edges_Q_by price(graph)
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while numE < n-1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+min_e = edges.enqueue() // Node {v,e,price}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+T = MST + min_e
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+has_cyc = bfs(T, min_e.v) // improve: stop bfs if v is GRAY
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if  not has_cyc:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MST = T
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE++
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+הפוך - "נוודא שהגרף קשיר"
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def kruskal_oppsite(G):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MST = G , n = len(graph) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+edges = descending_sort_edges_Q_by price(graph)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE = edges,size()
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while numE > n-1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+max_e = edges.enqueue() // Node {v,e,price}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+T = MST - max_e
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+num_of_comp = bfs(T, max_e.v, max_e.u) // improve: stop bfs if it met v on
+ the road
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if  num_of_comp == 1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MST = T
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE--
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבכויות: 
+\end_layout
+
+\begin_layout Itemize
+עוברים על 
+\begin_inset Formula $O(m-(n-1))=O(m)$
+\end_inset
+
+ צלעות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $bfs$
+\end_inset
+
+ הוא 
+\begin_inset Formula $O(m+n)$
+\end_inset
+
+ , לכן: 
+\begin_inset Formula $O(m^{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $disjoint-set$
+\end_inset
+
+ - שיפור ל "לא יהיו מעגלים" 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+פסאודו:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+KRUSKAL(G):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+T =
+\family typewriter
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+empty
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+foreach v ∈ G.V:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MAKE-SET(v)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+foreach (u, v) in G.E ordered by weight(u, v), increasing:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if FIND-SET(u) ≠ FIND-SET(v):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+T = T ∪ {(u, v)}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+UNION(FIND-SET(u), FIND-SET(v))
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return A
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\bar under
+מימוש:
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+class MySet:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+def __init__(self, x):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+self.parent = x
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+self.rank = 0
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+def find_set(x):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if x.parent != x:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x.parent = find_set(x)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return x.parent
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+def union(x, y):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x_root = find_set(x)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+y_root = find_set(y)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if x_root == y_root: 
+\color brown
+ # connected
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+if x_root.rank < y_root.rank:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x_root.parent = y_root
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+elif x_root.rank > y_root.rank:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y_root.parent = x_root
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else:  
+\color brown
+# rank equals
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y_root.parent = x_root
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x_root.rank += 1
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+def kruskal_set(G):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+T = [] , n = len(G) , numE = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for v in G:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+MySet(v)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+edges = edges_list(G)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while len(edges) > 0 and numE < n - 1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+min_e = get_min(edges) // Node{price,v,e}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+v = min_e.v, u = min_e.u
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+if find_set(v) != find_set(v):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+T.append(min_e)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+union(v, u)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE += 1
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return T 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Itemize
+יהיה 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף, נסמן 
+\begin_inset Formula $W\left(G\right)$
+\end_inset
+
+ כמשקל הכולל של הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+, יהי 
+\begin_inset Formula $T$
+\end_inset
+
+ עץ שנבנה בעזרת אלג' קרסקל, ויהיה 
+\begin_inset Formula $S$
+\end_inset
+
+ עץ פורש מינמלאלי נניח בשלילה שמתקיים כי 
+\begin_inset Formula $W\left(S\right)<W\left(T\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בגרף יכולים להיות מספר עצים פורשים מינימאלים, ניקח את 
+\begin_inset Formula $S$
+\end_inset
+
+ כך שמספר הצלעות המשותפות שלו עם 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא מקסימאלי ונסמן את מספר הצלעות ב 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נניח כי 
+\begin_inset Formula $T=\left\{ e_{1},e_{2},....e_{n}\right\} $
+\end_inset
+
+ היא סדרת הצלעות המתקבלות על ידי קרסקל ) ממוינת עולה חלש(
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $e_{i}=\left(a,b\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i\in\left[i,n\right]$
+\end_inset
+
+ , הצלע הראשונה המקיימת 
+\begin_inset Formula $e_{i}\notin S$
+\end_inset
+
+ )
+\begin_inset Formula $1,....,i-1$
+\end_inset
+
+ כן שייכות..(
+\end_layout
+
+\begin_layout Itemize
+נוסיף אותה לעץ 
+\begin_inset Formula $S$
+\end_inset
+
+ , נקבל גרף חדש 
+\begin_inset Formula $S_{1}=S\cup e_{i}$
+\end_inset
+
+, בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ צלעות 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ מכיל מעגל נסמנו ב 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+היות ו 
+\begin_inset Formula $T$
+\end_inset
+
+ עץ, במעגל 
+\begin_inset Formula $C$
+\end_inset
+
+ ישנה 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $e_{p}\notin T$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+נשווה את משקלי הצלעות 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ ו 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נזכר כי 
+\begin_inset Formula $e_{1},...e_{i-1}\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+ לא סוגרת איתן מעגל, 
+\end_layout
+
+\begin_layout Itemize
+מפעולת האלגוריתם בשלב ה 
+\begin_inset Formula $i$
+\end_inset
+
+ בחרנו את הצלע המינימלית ולכן בחרנו ב 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ולכן 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $weight\left(e_{i}\right)\leq weight\left(e_{p}\right)\iff weight\left(e_{i}\right)-weight\left(e_{p}\right)\leq0$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+נסיר את צלע 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+ מגרף 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ נקבל עץ: 
+\begin_inset Formula $S_{2}=S_{1}\backslash\left\{ e_{p}\right\} =S\cup\left\{ e_{i}\right\} \backslash\left\{ e_{p}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+העץ 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ התקבל מ 
+\begin_inset Formula $S$
+\end_inset
+
+ , ויש בו 
+\begin_inset Formula $k+1$
+\end_inset
+
+ צלעות משותפות עם 
+\begin_inset Formula $T$
+\end_inset
+
+ , נשים לב כי :
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $W\left(S_{2}\right)=W\left(S\right)+\underbrace{wight(e_{i})-weight\left(e_{p}\right)}\leq S\left(S\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מהנחה 
+\begin_inset Formula $S$
+\end_inset
+
+ עץ פורש מינמאלי ולכן המשקל שלו קטן ביותר בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $W\left(S_{2}\right)=W\left(S\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+והרי גם 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ עץ פורש מינמאלי 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+סיבוכיות:
+\end_layout
+
+\begin_layout Itemize
+פתרון נאיבי:
+\begin_inset Formula $O\left(\left|E\right|\log_{2}\left|V\right|+\left|V\right|^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פתרון משופר ע"י 
+\begin_inset Formula $disjoint-set$
+\end_inset
+
+ + איחוד חכם על פי הדרגות =
+\begin_inset Formula $O\left(\left|E\right|\log_{2}\left|V\right|+\left|V\right|\log_{2}\left||V\right|\right)=O\left(\left|E\right|\log_{2}\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עם מערך הצלעות ממוין
+\begin_inset Formula $O\left(\left|V\right|\log_{2}\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $Prim$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+פסאודו - קוד
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def Prim(tree, root):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+T = dict()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+n = len(tree)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+visited = dict(), key = dict(), parent = dict()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for v in tree:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+visited[v] = False
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+key[v] = 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+parent[v] = None
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+key[root] = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q = min_heap(tree, key)
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while len(Q) != 0 and numE < n - 1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+u = extract_min(Q)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for v in tree[u1]:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if visited[v.neb] == False and v.key < key[v_neb]:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+key[v.neb] = v.price
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+parent[v.neb] = u1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+decrese_key(Q, v_price, v_neb)
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+visited[u.name] = True
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x = get_min(Q)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+T[numE] = (parent[x.name], x.name)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+numE += 1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return T
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+הלולאה תרוץ תעבור על כל צלעות הגרף, ולכן 
+\begin_inset Formula $O(|E|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מלבד כמה פעולות של עדכונים ב 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ , ישנה הוצאה/עדכון של הצלע המינמלית ב 
+\begin_inset Formula $O(\log|V|)$
+\end_inset
+
+ היות והערמה וזו ערמת מינימום של הקודקדים.
+\end_layout
+
+\begin_layout Itemize
+סה"כ: 
+\begin_inset Formula $O\left(|E|\log|V|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה: בכל שלב בו אנו מוסיפים צלע חדשה ל 
+\begin_inset Formula $T$
+\end_inset
+
+ , אנו מקבלים תת עץ של עץ פורש מינמאלי כלשהו 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה באינדוקציה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס:
+\end_layout
+
+\begin_layout Standard
+בשלב הראשון אנו מוצאים מ 
+\begin_inset Formula $Q$
+\end_inset
+
+ - ערמת מינמום את ה 
+\begin_inset Formula $root$
+\end_inset
+
+ שהוא שייך לכל עץ פורש מינמאלי
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד: על האיטרצות
+\end_layout
+
+\begin_layout Itemize
+נניח שקיבלנו 
+\begin_inset Formula $T$
+\end_inset
+
+ תת עץ פורש של 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אנו מוסיפים את הצלע 
+\begin_inset Formula $e$
+\end_inset
+
+ ל
+\begin_inset Formula $T$
+\end_inset
+
+ , אם 
+\begin_inset Formula $e\in M$
+\end_inset
+
+ אז 
+\begin_inset Formula $T\cup\left\{ e=\left(a,b\right)\right\} \subseteq M$
+\end_inset
+
+ וסיימנו
+\end_layout
+
+\begin_layout Itemize
+אחרת, אז 
+\begin_inset Formula $e\notin M$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+שב 
+\begin_inset Formula $T\cup\left\{ e\right\} $
+\end_inset
+
+ יש מעגל, היות ו 
+\begin_inset Formula $T$
+\end_inset
+
+ כבר עץ פורש.
+\end_layout
+
+\begin_layout Itemize
+מהגדרה רק קודקוד אחד של 
+\begin_inset Formula $e$
+\end_inset
+
+ שייך ל 
+\begin_inset Formula $T$
+\end_inset
+
+, בה"כ נניח שזה 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+היות ויש מעגל, ישנו מסלול כלשהו בין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+תהיה הצלע 
+\begin_inset Formula $g=\left(x,y\right)$
+\end_inset
+
+ צלע שמחברת בין רכיבי הקשירות ובכך יוצרת את המסלול בין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם של פרים היה יכול להוסיף 
+\begin_inset Formula $g$
+\end_inset
+
+ ל 
+\begin_inset Formula $T$
+\end_inset
+
+ , אבל הוא בחר ב 
+\begin_inset Formula $e$
+\end_inset
+
+ ומכאן ש 
+\begin_inset Formula $w(e)\leq w(g)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+נבנה עץ חדש 
+\begin_inset Formula $M'=M\cup\left\{ e\right\} \backslash\left\{ g\right\} $
+\end_inset
+
+ שמשקלו קטן או שווה למשקל של 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אבל 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא בעל משקל מינימאלי לכן 
+\begin_inset Formula $W(M)=W\left(M'\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $M'$
+\end_inset
+
+ הוא גם עץ פורש מינימאלי שמכיל את 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $T\cup\left\{ e\right\} \subseteq M$
+\end_inset
+
+ , מש"ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+ואדים המלצות
+\end_layout
+
+\begin_layout Itemize
+עם הגרף קטן - עדיף מחיקות
+\end_layout
+
+\begin_layout Itemize
+עם הגרף גדול - קרוסקל/פרים
+\end_layout
+
+\begin_layout Itemize
+עם הגרף עצום - פרים עם ערמה בינארית פיבונאצי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הופמן
+\end_layout
+
+\begin_layout Subsubsection*
+פסאודו-קוד
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Huffman(C)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+n = |C|
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q 
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+c  
+\color brown
+// minHeap
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for i =1 to n -1 {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+create node z
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x = Q.extractMin()
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+y = Q.extractMin()
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// update father
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+z.left = x ; z.right = y
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+z.freq = x.freq + y.freq
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q.insert(z)
+\end_layout
+
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// update sons
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x.parent = z ; y.
+ parent =z
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return Q.extractMin()
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוצאות + הכנסה + עדכונים = 
+\begin_inset Formula $O\left(\log n)\right)=3\cdot O(\log n)+O(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים = 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+סה"כ : 
+\begin_inset Formula $O(n\log n)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה 
+\numeric on
+1
+\numeric off
+ : אם קידוד הוא 
+\begin_inset Formula $prefix\ free$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $uniquely\ decodable$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שישנו קידוד דו-משמעי, נסמן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $x_{1},x_{2},.....x_{k},...x_{r}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בה"כ נוכל לסמן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\overbrace{x_{1},x_{2},.....}^{f}\overbrace{x_{k},...x_{r}}^{g}$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\underbrace{x_{1},x_{2}}_{a},\underbrace{.....x_{k},...x_{r}}_{b}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כעת נשווה את הקידוד ל 
+\begin_inset Formula $a$
+\end_inset
+
+ ל 
+\begin_inset Formula $f$
+\end_inset
+
+ נקבל סתירה לכך ש 
+\begin_inset Formula $prefix\,free$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה 
+\numeric on
+2
+\numeric off
+: אם בהנתן קידוד נבנה עץ בו העלים הם מייצגים אות 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ הקידוד 
+\begin_inset Formula $pfrefix\ free$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה שבהנתן קידוק 
+\begin_inset Formula $prefix-free$
+\end_inset
+
+ בנינו עץ בו קיים קודקוד המייצג אותו שאינו עלה נסמנו ב 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נטייל בגרף מהשורש עד אותו צומת 
+\begin_inset Formula $u$
+\end_inset
+
+, ונאסוף את הקידוד בגרף, בה"כ 
+\begin_inset Formula $x_{1},x_{2}...x_{r}$
+\end_inset
+
+ ומייצג את האות 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כעת נמשיך בטיול ונגיע לעלה בה"כ תהיה זו האות 
+\begin_inset Formula $b$
+\end_inset
+
+ ועל פי הטיול שלנו נקבל ש: 
+\begin_inset Formula $b=x_{1},....,x_{r},...x_{s}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+בסתירה לכך ש 
+\begin_inset Formula $prefix-free$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+סימטרי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה 
+\numeric on
+3
+\numeric off
+ : 
+\begin_inset Formula $hufmman$
+\end_inset
+
+ אופטימלי
+\end_layout
+
+\begin_layout Standard
+רעיון )לא הוכחה(
+\end_layout
+
+\begin_layout Itemize
+מכיון שאנחנו מתחילים לבנות את העץ "מלמטה" כלומר דואגים שאותיות בתדירות נמוכה
+ יקבלו קידוד הכי ארוך , נקבל שאותיות בדירוג גבוה, יהיו קרובים לשורש, ולכן
+ הקידוד שלהם יהיה קצר.
+ ונקבל שהימוש בזכרון אופטימלי
+\end_layout
+
+\begin_layout Subsection
+שיפור - האפמן עם שני תורים
+\end_layout
+
+\begin_layout Standard
+קלט: מערך ממוין של תדירויות מהקטן לגדול
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+def huff_code_2q(abc_freq):
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\color brown
+\lang english
+// init
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Queue q1,q2
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+q1  <-- abc_freq  
+\color brown
+// by oncresing order (smellest in front)
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while q1.size + q2.size > 1:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x = get_min(q1, q2) 
+\color brown
+// handle case of one queue empty
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+y = get_min(q1, q2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+z = Node(x.name + y.name, x.freq + y.freq)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+z.left = x , z.right = y
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+q2.enqueue(z) 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x.parent = z , y.parent = z
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return get_min(q1,q2) 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות:
+\end_layout
+
+\begin_layout Itemize
+במקרה הגרוע כל הערכים שווים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הלולאה תתבצע 
+\begin_inset Formula $\frac{n}{2}+\frac{n}{4}+\frac{n}{8}+.....$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $O(n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אוסף בעיות מתמטיות
+\end_layout
+
+\begin_layout Standard
+הגדרה - זמן ריצה 
+\begin_inset Formula $NP$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+נניח ויש לנו בעיה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ , אם קיים אלגוריתם בוליאני הפותר אותה בזמן פולינמיאלי נאמר שהוא 
+\begin_inset Formula $"Non-Deterministic-Polynomialtime"$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+שאלת מליון הדולר:
+\bar default
+ האם קיים לבעיה פתרון פולינמיאלי המתאים לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ )מעין חיפוש שלם(
+\end_layout
+
+\begin_layout Subsection
+בעיית החתול והכלב
+\end_layout
+
+\begin_layout Standard
+ישנו מעגל שבמרכזו עומד חתול, ועל ההיקף עומד כלב
+\end_layout
+
+\begin_layout Itemize
+לכלב אסור להכנס למעגל
+\end_layout
+
+\begin_layout Itemize
+הכלב רוצה לתפוס את החתול על ההיקף
+\end_layout
+
+\begin_layout Itemize
+מהירות החתול היא 
+\begin_inset Formula $v$
+\end_inset
+
+ ומהירות הכלב היא 
+\begin_inset Formula $4v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הרעיון : היקף מעגל הוא 
+\begin_inset Formula $2\pi r$
+\end_inset
+
+ , לכן כאשר החתול הולך 
+\begin_inset Formula $r$
+\end_inset
+
+ , הכלב רץ חצי מעגל 
+\begin_inset Formula $\pi r$
+\end_inset
+
+ ומתקיים ש: 
+\begin_inset Formula $4r>\pi r$
+\end_inset
+
+ ולכן הכלב תופס
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כיצד החתול יצליח לברוח - "חמדן חכם" 
+\end_layout
+
+\begin_layout Standard
+אלגוריתם
+\end_layout
+
+\begin_layout Itemize
+החתול לוקח 
+\begin_inset Formula $\frac{1}{4}r-\varepsilon$
+\end_inset
+
+ מהמרכז , ורץ במעגל )מעגל קטן(
+\end_layout
+
+\begin_layout Itemize
+ברגע שהוא מגיע לנקודה הנגדית ביחס לכלב, מתחיל לצאת החוצה
+\end_layout
+
+\begin_layout Standard
+הסבר, מתקיים: מהירות 
+\begin_inset Formula $\times$
+\end_inset
+
+ זמן = דרך
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\frac{\frac{3r}{4}}{V_{c}}=\frac{3r}{4\cdot V_{c}}<\frac{\pi r}{4\cdot V_{c}}\iff3<\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+בעיית שוקולד
+\end_layout
+
+\begin_layout Standard
+צריך לפרק את השוקולוד 
+\bar under
+ליחידות
+\bar default
+ עם עלות מינמלית:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{c|c|c|c|c|c|c|c}
+\hline 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+\hline  &  &  &  &  &  & \\
+\hline \end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עלות חלוקה ל 
+\begin_inset Formula $k,n-k$
+\end_inset
+
+ היא 
+\begin_inset Formula $k(n-k)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+ניסיונות:
+\end_layout
+
+\begin_layout Itemize
+חלוקה לחצאים 
+\begin_inset Formula $4*4+2*2+2*2+4*1*1=16+8+4=28$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+חלוקה לבודדים משמאל: 
+\begin_inset Formula $1*7+1*6+1*5.....1*1=28$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+פיבונאצי: 
+\begin_inset Formula $3*5+1*2+1+2*3+1+2*1+1=28$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט: עלות חלוקה ליחדות של 
+\begin_inset Formula $n$
+\end_inset
+
+ יחידות: 
+\begin_inset Formula $1+2+...(n-1)=\frac{n(n-1)}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה - באינדוקציה: 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+בסיס: 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\bar default
+אז: 
+\begin_inset Formula $1*1=1=\frac{2(2-1)}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+צעד:
+\bar default
+ נניח ל 
+\begin_inset Formula $n$
+\end_inset
+
+ נוכיח ל 
+\begin_inset Formula $n+1$
+\end_inset
+
+ כלומר שהעלות שווה ל 
+\begin_inset Formula $\frac{(n+1)n}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נבצע את החלוקה ל 
+\begin_inset Formula $n$
+\end_inset
+
+ ול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכן מהגדרת העלות + הנחת האינדקוציה: 
+\begin_inset Formula $n*1+\frac{n(n-1)}{2}=...=\frac{n(n+1)}{2}$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Subsection
+דוור סיני
+\end_layout
+
+\begin_layout Itemize
+הבעיה: גרף ממושקל )לא בהכרח גרף מלא(, צריך לצור מעגל אוילר בצורה אופטימלית
+\end_layout
+
+\begin_layout Itemize
+הרעיון: להוסיף לקודקודים עם דרגות אי זוגיות, צלעות )מקבילות( מינמליות ליצירת
+ מעגל אוילר בעלות מינמלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אלגוריתם )סקיצה(
+\end_layout
+
+\begin_layout Enumerate
+לוקחים את כל הדרגות האי זוגיות
+\end_layout
+
+\begin_layout Enumerate
+מכינים ממנו גרף שלם )המטריצה( - ממשפט זה יהיה מספר זוגי של קודקודים ולכן
+ אפשר לבצע שידוך.
+\end_layout
+
+\begin_layout Enumerate
+מבצעים 
+\begin_inset Formula $matching$
+\end_inset
+
+ = ההתאמה הכי זולה )לא בהכרח של צלע אחת( בין כל זוג קודקודים
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+)את ה 
+\begin_inset Formula $matching$
+\end_inset
+
+ נייצג במטריצה(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מוסיפים את הצלעות לגרף המקורי
+\end_layout
+
+\begin_layout Itemize
+קיבלנו שכל הדרגות זוגיות 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש מעגל אוילר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סיבוכיות
+\bar default
+: 
+\begin_inset Formula $NP<O\left(n^{3}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+בעיית העוגה
+\end_layout
+
+\begin_layout Standard
+הבעיה: ישנה עוגה, ושני ילדים.
+ על העוגה יש כל מיני תוספות )שוקולוד, קצפת וכו'(, צריך לחלק את העוגה לשניים
+ כך ששני הילדים יהיו מרוצים
+\end_layout
+
+\begin_layout Standard
+פרומלית:ישנה קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ , ופונקציות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{1}:2^{A}\rightarrow\left[0,1\right]$
+\end_inset
+
+ )
+\begin_inset Formula $2^{A}$
+\end_inset
+
+ תתי הקבוצות של 
+\begin_inset Formula $A$
+\end_inset
+
+ ( , 
+\begin_inset Formula $\mu_{2}:2^{A}\rightarrow\left[0,1\right]$
+\end_inset
+
+ , כך ש : 
+\begin_inset Formula $\mu_{1}\left(A\right)=\mu_{2}\left(A\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+צריך שיתקיים: 
+\begin_inset Formula $\left\{ \begin{matrix}\mu_{1}(A_{1})\geq\frac{1}{2}\\
+\mu_{2}(A_{2})\geq\frac{1}{2}
+\end{matrix}\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $A_{1}\cap A_{2}=\phi$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הנחה
+\bar default
+: הפונקציות אדדטיביות 
+\begin_inset Formula $\mu_{1}\left(A_{1}\cup A_{2}\right)=\mu_{2}\left(A_{1}\right)+\mu_{2}\left(A_{2}\right)$
+\end_inset
+
+ )אין מוצרים שמקיימים הגדול שלם מסך חלקים - דוגמת המפתח והמנעול(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\bar under
+פתרון:
+\end_layout
+
+\begin_layout Itemize
+הראשון מחלק את העוגה לשני חצאים, כלומר 
+\begin_inset Formula $\mu_{1}\left(A_{1}\right)=\mu_{2}\left(A_{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+השני בוחר את החצי המועדף אליו, כלומר 
+\begin_inset Formula $Max\left(\mu_{1}\left(A_{2}\right),\mu_{2}\left(A_{2}\right)\right)\geq\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+השני בוחר את החצי הנותר, ולכן 
+\begin_inset Formula $\mu_{1}\left(A_{?}\right)=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הכללה
+\bar default
+ - חלוקת העוגה לשלוש
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{1},\mu_{2}\mu_{3}:2^{A}\rightarrow\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}\mu_{1}\left(A_{1}\right)\geq\frac{1}{3} &  & \mu_{2}\left(A_{2}\right)\geq\frac{1}{3} &  & \mu_{3}\left(A_{3}\right)\geq\frac{1}{3}\\
+ &  & \bigcup A_{i}=A & A_{i}\cap A_{j}=\phi
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הראשון מחלק : 
+\begin_inset Formula $A=A_{1}\cup A_{2}$
+\end_inset
+
+ , השני בוחר, על פי 
+\begin_inset Formula $\mu_{2}(A_{2})$
+\end_inset
+
+, והראשון בוחר את שנותר על פי 
+\begin_inset Formula $\mu_{1}\left(A_{1}\right)$
+\end_inset
+
+ , השלישי מבקש 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ מכל אחד .
+\end_layout
+
+\begin_layout Itemize
+נסמן את החלוקה 
+\begin_inset Formula $A_{1}=A_{11}\cup A_{13}$
+\end_inset
+
+ מתקיים ש: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הראשון מרגיש: 
+\begin_inset Formula $\mu_{1}\left(A_{11}\right)\geq\frac{2}{3}\mu_{1}\left(A_{1}\right)\geq\frac{2}{3}\cdot\frac{1}{2}=\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נסמן את החלוקה
+\begin_inset Formula $A_{2}=A_{22}\cup A_{23}$
+\end_inset
+
+ְ מתקיים ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+השני מרגיש:
+\begin_inset Formula $\mu_{2}\left(A_{2}\right)\geq\frac{2}{3}\mu_{2}\left(A_{2}\right)\geq\frac{2}{3}\cdot\frac{1}{2}=\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+השלישי מרגיש, )מהאדדטיביות(:
+\begin_inset Formula $\mu_{3}\left(A_{13}\cup A_{23}\right)=\mu_{3}\left(A_{13}\right)+\mu_{3}\left(A_{23}\right)\geq\frac{1}{3}\mu_{3}\left(A_{1}\right)+\frac{1}{3}\mu_{3}\left(A_{2}\right)=\frac{1}{3}\mu_{3}\left(A_{1}\cup A_{2}\right)=\frac{1}{3}\mu_{3}\left(A\right)=\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הכללה 
+\begin_inset Formula $k$
+\end_inset
+
+ - הוכחה באינדוקציה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{1}(A)=\mu_{2}\left(A\right)=....=A(\mu_{3})=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix} &  & \forall i\in\left[1,k\right] & \mu_{i}\left(A_{i}\right)\geq\frac{1}{k}\\
+ &  & \bigcup\limits _{i=1}^{k}A_{i}=A & A_{i}\cap A_{j}=\phi
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נניח ל
+\begin_inset Formula $t<k$
+\end_inset
+
+ ונוכיח ל 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מהנחת האינדוקציה נבצע את החלוקה בין 
+\begin_inset Formula $k-1$
+\end_inset
+
+ הילדים, ונתבונן במשא ומתן של הילד ה 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הראשון מרגיש: 
+\begin_inset Formula $\mu_{1}\left(A_{11}\right)\geq\frac{k-1}{k}\mu_{1}\left(A_{1}\right)\geq\frac{k-1}{k}\cdot\frac{1}{k}=\frac{1}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הילד ה 
+\begin_inset Formula $k$
+\end_inset
+
+ הולך לשאר הילדים, ולוקח:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mu_{k}\left(A_{1,k}\right)\geq\frac{1}{k}\mu_{k}\left(A_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{k}\left(A_{2,k}\right)\geq\frac{1}{k}\mu_{k}\left(A_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+...
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{k}\left(A_{k-1,k}\right)\geq\frac{1}{k}\mu_{k}\left(A_{k-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה"כ:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\mu_{k}\left(A_{1,k}\cup A_{2,k}\cup....A_{k-1,k}\right)\geq\frac{1}{k}\mu_{k}\left(A_{1}\cup A_{2}\cup....A_{k}\right)=\frac{1}{k}\mu_{k}\left(A\right)=\frac{1}{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\bar under
+הערות
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+המרה למדעי המחשב: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח ש 
+\begin_inset Formula $A=\left\{ a_{1},....,a_{n}\right\} $
+\end_inset
+
+ ע"פ ההסתכלות של 
+\bar under
+הראשון
+\bar default
+ , ונניח ש 
+\begin_inset Formula $B=\left\{ b_{1},b_{2},...b_{n}\right\} $
+\end_inset
+
+ ההסתכלות של 
+\bar under
+השני
+\end_layout
+
+\begin_layout Itemize
+צריך להתקיים 
+\begin_inset Formula $\sum\limits _{i\in n}a_{i}\geq\frac{1}{2}\cdot\sum\limits _{i=1}^{n}a_{i}$
+\end_inset
+
+, באופן דומה ל 
+\begin_inset Formula $B$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\bar under
+סיבוכיות
+\bar default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ אנחנו יודעים להגיד מהי החלוקה ב 
+\begin_inset Formula $kn=O(n)$
+\end_inset
+
+ )
+\begin_inset Formula $k$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Itemize
+מהי החלוקה ? לא ידועה וזה זמן ריצה 
+\begin_inset Formula $NP$
+\end_inset
+
+ ולא ב
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

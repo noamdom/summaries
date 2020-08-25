@@ -1,0 +1,9374 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ec}[1]{\overset{#1}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tc}{\sum^{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rc}[1]{\overset{#1}{\Rightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lc}[1]{\overset{#1}{\Leftarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sesue}[4]{\left(#1,#2,#3,#4\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ngcr}[1]{\hat{\delta}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lep}{\leq_{p}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+משפטים
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מכונות טיורינג
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.1$
+\end_inset
+
+ : 
+\begin_inset Formula $R$
+\end_inset
+
+ סגורה למשלים
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in R$
+\end_inset
+
+ .
+ נראה 
+\begin_inset Formula $\sum\in R$
+\end_inset
+
+ מהגדרת 
+\begin_inset Formula $R$
+\end_inset
+
+ , קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ .
+ נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\bar{L}$
+\end_inset
+
+ באופן הבא: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M'(x)$
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ועונה הפוך.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כלומר אם 
+\begin_inset Formula $M$
+\end_inset
+
+ עצרה ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ , נעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ואם עצרה ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ נעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נבדוק את שני המקרים:
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $x\in\bar{L}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $x$
+\end_inset
+
+ )כי 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+( .
+ לכן בסימולציה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $M'$
+\end_inset
+
+ , 
+\begin_inset Formula $M'$
+\end_inset
+
+ תעצור, תזהה דחיה ואז תענה הפוך, כלומר 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ - כנדרש 
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $x\notin\bar{L}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מריצה על 
+\begin_inset Formula $x$
+\end_inset
+
+ תקבל 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M'$
+\end_inset
+
+ תסייים את הרצת הסימלוציה על 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ , תזהה קבלה ותענה הפוך, כלומר 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ ,כנדרש .
+ בפרט 
+\begin_inset Formula $M'$
+\end_inset
+
+ תמיד עוצרת, ולכן מכריעה את 
+\begin_inset Formula $\bar{L}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.2$
+\end_inset
+
+: 
+\begin_inset Formula $R$
+\end_inset
+
+ סגורה לאיחוד.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $L_{1},L_{2}\in R$
+\end_inset
+
+ .
+ נרה ש 
+\begin_inset Formula $L_{1}\cup L_{2}\in R$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י בניית מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{1,2}$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $L_{1}\cup L_{2}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ המכירעות את 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ בהתאמה :
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M_{1,2}(x)$
+\end_inset
+
+ : מריצה את 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ שומרת את התוצאה במשתנה 
+\begin_inset Formula $out_{1}=\left\{ true_{q_{acc}},false_{q_{rej}}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{1,2}(x)$
+\end_inset
+
+ : מריצה את 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ שומרת את התוצאה במשתנה 
+\begin_inset Formula $out_{2}=\left\{ true_{q_{acc}},false_{q_{rej}}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עוצרת ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ אם 
+\begin_inset Formula $out_{1}\lor out_{2}=T$
+\end_inset
+
+ , אחרת עוצרת ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נראה ש
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ מכריע את 
+\begin_inset Formula $L_{1}\cup L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L_{1}\cup L_{2}$
+\end_inset
+
+ : 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ תעצור ותקבל )או שתיהן( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נגיע לשלב 3 וה 
+\begin_inset Formula $OR$
+\end_inset
+
+ שיחושב יהיה 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ תקבל, כנדרש 
+\begin_inset Formula $\left(x\in L\left(M_{12}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L_{1}\cup L_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ יעצרו ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נגיע לשלב 
+\begin_inset Formula $3$
+\end_inset
+
+ הוא 
+\begin_inset Formula $OR$
+\end_inset
+
+ שיחושב 
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ תדחה את 
+\begin_inset Formula $x$
+\end_inset
+
+ ,כנדרש 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.3$
+\end_inset
+
+ : 
+\begin_inset Formula $RE$
+\end_inset
+
+ סגורה לאיחוד
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\end_layout
+
+\begin_layout Standard
+ניסיון 
+\begin_inset Formula $I$
+\end_inset
+
+ : נבנה 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ כמו בהוכחה עבור 
+\begin_inset Formula $R$
+\end_inset
+
+ .
+ הבעיה כאן היא במקרה ש 
+\begin_inset Formula $x\in L_{2}\backslash L_{1}$
+\end_inset
+
+ .
+ במקרה זה 
+\begin_inset Formula $x\in L_{1}\cup L_{2}$
+\end_inset
+
+ , ולכ המכונה 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ צריכה לקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ )בפרט לעצור( ו 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ שבנינו תתקע בשלב 
+\begin_inset Formula $1$
+\end_inset
+
+ ולא תעצור לעולם.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נסיון 
+\begin_inset Formula $II$
+\end_inset
+
+ : )עובד( הרעיון הוא להריץ את 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ )המכריעות את 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ בתאמה ב
+\begin_inset Quotes erd
+\end_inset
+
+מקביל
+\begin_inset Quotes erd
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כיצד נעשה זאת? נריץ את המכונות על 
+\begin_inset Formula $x$
+\end_inset
+
+ לסירוגין .
+ בצעד ראשון נריץ צעד 
+\begin_inset Formula $1$
+\end_inset
+
+ של 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ , בצעד 2 צעד 1 של 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ , בצעד 
+\begin_inset Formula $3$
+\end_inset
+
+, צעד שני של 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ וכו'
+\end_layout
+
+\begin_layout Standard
+פורמלית:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{12}(x)$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ במקביל על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם אחת מהן עצרה ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ , מיד נעצור ונקבל 
+\end_layout
+
+\begin_layout Enumerate
+אם שתיהן עצרו ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ , נעצור ונדחה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשאר להוכיח את נכונות הבניה.
+ 
+\begin_inset Formula $x\in L\left(M_{1}\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in L\left(M_{2}\right)$
+\end_inset
+
+ )מנכונות 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L_{1}\cup L_{2}$
+\end_inset
+
+ לפחות אחת מהמכונות עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ נסמן ב 
+\begin_inset Formula $i$
+\end_inset
+
+ את הצעד שבו היא עוצרת.
+ מהבניה 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ תזהה עצירה זו בסימולציה של הצעד הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל בצעד סימולציה 
+\begin_inset Formula $2i$
+\end_inset
+
+ לכל היותר.
+ במקרה זה היא גם תעצור ותקבל.
+ גם אם המ
+\begin_inset Quotes erd
+\end_inset
+
+ט השניה עצרה לפני כן, זה לא ישנה את התוצאה ל 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+, כי 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ לא עוצרת ב 
+\begin_inset Formula $q-rej$
+\end_inset
+
+ אלא אם שתי המכונות עצרו ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L_{1}\cup L_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\notin L_{1}=L\left(M_{1}\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin L_{2}=L\left(M_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אף אחת מהמכונות לא תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{12}$
+\end_inset
+
+ לא תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ )אלא תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ אם שתיהן עוצרות או לא תעצור מש
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $4.6$
+\end_inset
+
+ : הגדרות 
+\begin_inset Formula $4.5$
+\end_inset
+
+ , 
+\begin_inset Formula $4.4$
+\end_inset
+
+ 
+\begin_inset Formula $CoRE$
+\end_inset
+
+ שקולות 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $4.4\Rightarrow4.5$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in CoRE$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $4.4$
+\end_inset
+
+ ,נראה ש 
+\begin_inset Formula $L\in CoRE$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+בניה: תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המקבלת את 
+\begin_inset Formula $\bar{L}$
+\end_inset
+
+ .
+ נבנה 
+\begin_inset Formula $\bar{M}$
+\end_inset
+
+ מתאימה עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ שתספק את הגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $\bar{M}(x)$
+\end_inset
+
+ - תריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ותענה הפוך.
+ )אם לא עוצרת אז לא תעצור(
+\end_layout
+
+\begin_layout Itemize
+נכונות: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\notin\bar{L}$
+\end_inset
+
+ , ולכן 
+\begin_inset Formula $M$
+\end_inset
+
+ או תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ או לא תעצור 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bar{M}$
+\end_inset
+
+ או תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ או לא תעצור ,כנדרש
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\bar{L}$
+\end_inset
+
+ , מהגדרת 
+\begin_inset Formula $RE$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ בריצתה על 
+\begin_inset Formula $x$
+\end_inset
+
+ עוצרת ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ , מהבניה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $4.4\Leftarrow4.5$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in CoRE$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ ,נראה ש 
+\begin_inset Formula $L\in CoRE$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $4.4$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+בניה: תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המובטחת עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $\bar{M}$
+\end_inset
+
+ המקבלת את 
+\begin_inset Formula $\bar{L}$
+\end_inset
+
+ , ונסיק ש 
+\begin_inset Formula $L\in CoRE$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $4.4$
+\end_inset
+
+ - 
+\begin_inset Formula $\bar{M}(x)$
+\end_inset
+
+ : מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ועונה הפוך
+\end_layout
+
+\begin_layout Itemize
+נכונות: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ או לא תעצור 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bar{M}$
+\end_inset
+
+ תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+או לא תעצור 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\notin L\left(\bar{M}\right)$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ ,מהגדרת 
+\begin_inset Formula $4.5$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ , מהבניה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bar{M}$
+\end_inset
+
+ עוצרת ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in L\left(\bar{M}\right)$
+\end_inset
+
+ ,כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+טענה: 
+\begin_inset Formula $R=RE\cap CoRE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נראה הכלה דו כיוונית.
+\end_layout
+
+\begin_layout Standard
+כיון קל - 
+\begin_inset Formula $R\subseteq RE\cap CoRE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מתקיים כי מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ובפרט מקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L\in RE$
+\end_inset
+
+ וגם מקיימת את הדרישה של הגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ לשייכת ל 
+\begin_inset Formula $CoRE$
+\end_inset
+
+ )אף פעם לא טועה ומותר לה לא לעצור רק אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ אבל במקרה שלנו היא תמיד תעצור, בפרט עבור כל 
+\begin_inset Formula $x\in\bar{L}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון מענין 
+\begin_inset Formula $RE\cap CoRE\subseteq R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in RE\cap CoRE$
+\end_inset
+
+ .
+ לכן קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ .בהתאמה כך ש:
+\end_layout
+
+\begin_layout Enumerate
+כל 
+\begin_inset Formula $M$
+\end_inset
+
+ תמיד צודקת לגבי שייכות של 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $L$
+\end_inset
+
+ במידה ועוצרת
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ , 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+עוצרת ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+)מהגדרה 
+\begin_inset Formula $4.5$
+\end_inset
+
+ ( אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ , 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ עוצרת ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ באופן הבא: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(x)$
+\end_inset
+
+ : מריצה את 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ במקביל.
+ )כמו שעשינו בהוכחה ש 
+\begin_inset Formula $RE$
+\end_inset
+
+ סגורות לאיחוד( ברגע שאחת מהן עצרה מיד עוצרת ועונה כמוה
+\end_layout
+
+\begin_layout Standard
+נכונות הבניה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בהכרח , 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יתכן אחד משני מקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ היא הראשונה שעצרה בצעד 
+\begin_inset Formula $\geq$
+\end_inset
+
+ מהצעד שבו 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ עוצרת אם בכלל( ,אז מהבניה 
+\begin_inset Formula $M$
+\end_inset
+
+ תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ , כמוה .
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ עוצרת ראשונה .
+ אבל מתכונה 
+\begin_inset Formula $1$
+\end_inset
+
+ , היא גם תעצור ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ ו 
+\begin_inset Formula $M$
+\end_inset
+
+ תענה כמוה, כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ באופן דומה לטעיון במקרה הקודם, מובטח ש 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ וגם אם 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ עוצרת לפניה, היא תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ ו 
+\begin_inset Formula $M$
+\end_inset
+
+ תעצור ב 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Standard
+לכן, נוכל לעדכן את מפת העולם:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less4_2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+טענה: 
+\begin_inset Formula $L_{D}\in RE\backslash R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שייכות ל 
+\begin_inset Formula $RE$
+\end_inset
+
+
+\series default
+ - נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המקבלת את 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ , )אבל לא תכריע אותה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{D}\left(\left\langle M\right\rangle \right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+תבדוק 
+\begin_inset Quotes eld
+\end_inset
+
+חוקיות
+\begin_inset Quotes erd
+\end_inset
+
+ של 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+.
+ אם לא חוקי מיד תעצור ותקבל )אז 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ הוא קידוד של 
+\begin_inset Formula $M_{stam}$
+\end_inset
+
+ וזו מקבלת הכל, בפרט את 
+\begin_inset Formula $\left\langle M_{stam}\right\rangle $
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אחרת, : תריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ , ותענה כמוה.
+\end_layout
+
+\begin_layout Standard
+נכונות: בבית
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+אי שייכות ל 
+\begin_inset Formula $R$
+\end_inset
+
+ : 
+\series default
+נראה ש 
+\begin_inset Formula $\bar{L}_{D}$
+\end_inset
+
+ אינה ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ ומכך נסיק בקלות ש: 
+\begin_inset Formula $L_{D}\in R$
+\end_inset
+
+ .
+ כיצד נוכיח?
+\end_layout
+
+\begin_layout Standard
+נוכיח באמצעות טעון לכסון.
+ 
+\end_layout
+
+\begin_layout Standard
+נתבונן בטבלה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{c|c|c|c|c|c|c|cc}
+ & 0 & 1 & 1 & 0 & \dots & \\
+M\backslash\tc & \left\langle M_{1}\right\rangle  & \left\langle M_{2}\right\rangle  &  & \left\langle M_{i}\right\rangle  &  &  & \left\langle M_{j}\right\rangle \\
+\hline \left\langle M_{1}\right\rangle  & \boldsymbol{0} & 1 & 1 &  &  & \\
+\hline \left\langle M_{2}\right\rangle ^{2} & 1 & \boldsymbol{0} & 1 & 1 & 0 & 0 & 1 & \dots\\
+\hline  &  &  & \boldsymbol{\_} &  &  & \\
+\hline \left\langle M_{i}\right\rangle  &  &  &  & \boldsymbol{\_} &  & 0^{1}\\
+\hline  &  &  &  &  & \boldsymbol{\_} & \\
+ &  &  &  &  &  & \boldsymbol{\boldsymbol{\_}}\\
+\left\langle M_{j}\right\rangle  &  &  &  &  &  & 
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $1$
+\end_inset
+
+ .
+ כל משבצת מופיע 1 אם 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left\langle M_{j}\right\rangle $
+\end_inset
+
+ ו 
+\begin_inset Formula $0$
+\end_inset
+
+ אחרת
+\end_layout
+
+\begin_layout Standard
+\align center
+2.
+ בשורה 
+\begin_inset Formula $\left\langle M_{2}\right\rangle $
+\end_inset
+
+ ישנו וקטור של 
+\begin_inset Formula $0$
+\end_inset
+
+ים ו1ים כך שה1ים מופיעים במקומות המתיאמים למילים ב 
+\begin_inset Formula $L\left(M_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבנון בשפה 
+\begin_inset Formula $\bar{L}_{D}$
+\end_inset
+
+ )מופיע מעל השורה הראשונה( - זוהי שורה אינסופית כלשהי של 0ים ו1ים.
+ האבחנה הקריטית היא ששורה זו אינה שווה לאף אחת מהשורות בטבלה שהן רשימת כל
+ השפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ , ואז נסיק שאינה 
+\begin_inset Formula $RE$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+מדוע? עבור השורה של 
+\begin_inset Formula $\left\langle M_{i}\right\rangle $
+\end_inset
+
+כלשהי, 
+\begin_inset Formula $\bar{L}_{D}$
+\end_inset
+
+ שלנו אינה מסכימה עם 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ לגבי הקלט 
+\begin_inset Formula $\left\langle M_{i}\right\rangle $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left\langle M_{i}\right\rangle $
+\end_inset
+
+ , אז 
+\begin_inset Formula $\left\langle M_{i}\right\rangle \in L_{D}$
+\end_inset
+
+ )כתוב 1 בכניסה 
+\begin_inset Formula $\left(i,i\right)$
+\end_inset
+
+( , אבל מהגדרת 
+\begin_inset Formula $\bar{L}_{D}$
+\end_inset
+
+ , 
+\begin_inset Formula $\left\langle M_{i}\right\rangle \notin\bar{L}_{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $\left\langle M_{i}\right\rangle $
+\end_inset
+
+ , אז 
+\begin_inset Formula $\left\langle M_{i}\right\rangle \in L_{D}$
+\end_inset
+
+ וכתוב 
+\begin_inset Formula $1$
+\end_inset
+
+ בשורה של 
+\begin_inset Formula $\bar{L}_{D}$
+\end_inset
+
+ לעומת 0 ב 
+\begin_inset Formula $\left(i,i\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+כנדרש
+\end_layout
+
+\begin_layout Subsubsection*
+כעת נראה ש 
+\begin_inset Formula $L_{D}\notin R$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שכן:
+\end_layout
+
+\begin_layout Standard
+\align center
+אז 
+\begin_inset Formula $\overline{L_{D}}\in R\ensuremath{\overset{def'}{\Leftarrow}}L_{D}\in R$
+\end_inset
+
+
+\begin_inset Formula $\overset{R\subseteq RE}{\Leftarrow}$
+\end_inset
+
+
+\begin_inset Formula $\overline{L_{D}}\in RE$
+\end_inset
+
+ , וזו סתירה
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Square$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $5.2$
+\end_inset
+
+ : 
+\begin_inset Formula $L_{u}\in RE\backslash R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\series bold
+נראה קודם ש 
+\begin_inset Formula $L_{u}\in RE$
+\end_inset
+
+ 
+\series default
+)סטנדרטי( .
+ נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $N_{u}$
+\end_inset
+
+ המקבלת את 
+\begin_inset Formula $L_{u}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{u}(y)$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $y$
+\end_inset
+
+ אינה מהווה קידוד חוקי 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle X\right\rangle \right)$
+\end_inset
+
+ של זוג מכונה וקלט עבורה, נעצור ונדחה.
+ תקינות סינטקטית כזו, אפשרית לבדיקה )למשל צריך לוודא התאמה בין 
+\begin_inset Formula $\sum$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ וכו'...(
+\end_layout
+
+\begin_layout Enumerate
+נריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ )בדומה למכונה האונבריסלית שבינינו בהרצאה 3 נבצע סימולציה צעד-צעד(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קיבלה, נקבל ואם דחתה, נדחה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נכונות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle X\right\rangle \right)=y\in L_{u}$
+\end_inset
+
+ : 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ )מהבניה( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L_{u}$
+\end_inset
+
+ תזהה שהקלט תקין ב 
+\begin_inset Formula $1$
+\end_inset
+
+ וב 
+\begin_inset Formula $2$
+\end_inset
+
+ הסימולציה תעצור ותזהה קבלה.
+ מהבניה של 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ ,גם 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ תעצור ותקבל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y\notin L_{u}$
+\end_inset
+
+ ישנם שלושה מקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y$
+\end_inset
+
+ אינו קידוד תקין.
+ 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ תזהה זאת בשלב 
+\begin_inset Formula $1$
+\end_inset
+
+ ותדחה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $y\notin L\left(M_{U}\right)$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ בריצה על 
+\begin_inset Formula $x$
+\end_inset
+
+ )והקידוד חוקי( דוחה.
+ במקרה זה , 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ תעצור בשלב 2 )בסימולציה(, ותזהה דחיה ותדחה גם 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $y\notin L\left(M_{U}\right)$
+\end_inset
+
+ ,כנדרש
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ )הקידוד חוקי( .
+ 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ בסימולציה בשלב 2 לא תסיים את הסימולציה )על כל צעד של 
+\begin_inset Formula $M$
+\end_inset
+
+ בריצה על 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ מסמלצת את הצעד, כייון שיש 
+\begin_inset Formula $\infty$
+\end_inset
+
+ צעדים יהיו 
+\begin_inset Formula $\infty$
+\end_inset
+
+ צעדי סימולציה(, ולא תעצור )על 
+\begin_inset Formula $y$
+\end_inset
+
+( 
+\begin_inset Formula $y\notin L\left(M_{U}\right)\Leftarrow$
+\end_inset
+
+ , כנדרש.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נראה ש 
+\begin_inset Formula $L_{u}\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+איך? נשתמש בעובדה ש 
+\begin_inset Formula $L_{D}\notin R$
+\end_inset
+
+ )הוכחנו בשבוע שעבור(: נניח בשלילה ש 
+\begin_inset Formula $L_{U}\notin R$
+\end_inset
+
+ נשתמש במכונה המובטחת 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ )שמכריעה את 
+\begin_inset Formula $L_{U}$
+\end_inset
+
+ , לפי ההנחה בשלילה( כדי לבנות מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ שתכריע את 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ .
+ אבל זו תהיה סתירה כי 
+\begin_inset Formula $L_{D}\notin R$
+\end_inset
+
+ ולכן אין מכונה כזו.
+\end_layout
+
+\begin_layout Standard
+כיצד 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ תוגדר? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{D}\left(\left\langle M\right\rangle \right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Itemize
+נריץ את 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ על הקלט 
+\begin_inset Formula $x=\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)$
+\end_inset
+
+ )האם המכונה מקבלת את הקידוד של עצמה( ונענה כמוה ) אינטואיטבית , כי 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ יודעת לענות בדיוק על השאלה האם מכונה עוצרת על קלט נתון, ואותנו מעניינת
+ התשובה לגבי המכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ והקלט 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ ( .
+\end_layout
+
+\begin_layout Itemize
+כיצד נעשה זאת: בדומה למימוש של המכונה האוניברסלית.
+ בפרט, הקידוד של 
+\begin_inset Formula $M_{u}$
+\end_inset
+
+ )שמהמכונה האוניברסלית צריכה ( יגיע מ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ של 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ .כלומר נרשום את 
+\begin_inset Formula $\underbrace{\left\langle M_{u}\right\rangle }_{machine},\underbrace{\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)}_{input}$
+\end_inset
+
+ בתור קלט לפרוצדורה שתריץ את המכונה האוניברסלית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הערה לגבי הקלט: קל לייצר )להכפיל את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ זה אפשרי ב 
+\begin_inset Formula $RAM$
+\end_inset
+
+ , אפילו ראינו מימוש במ
+\begin_inset Quotes erd
+\end_inset
+
+ט בהרצאה 2 (
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נשאר להראות ש 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle M\right\rangle \in L_{D}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בסימולציה של 
+\begin_inset Formula $M_{u}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)$
+\end_inset
+
+ 
+\begin_inset Formula $M_{u}$
+\end_inset
+
+ תקבל ולכן גם 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ תקבל את )את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ ( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M\right\rangle \in L\left(M_{D}\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle M\right\rangle \notin L_{D}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ אינה מקבלת את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ )נתעלם מחוקיות קידוד( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+)מההנחה ש 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L_{U}$
+\end_inset
+
+( של 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ , ובפרט עוצרת על 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר לסיכום, 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ תמיד עוצרת עם התשובה הנכונה לגבי שייכות של 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ וזו סתירה.
+ לכן 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L_{U}$
+\end_inset
+
+ אינה קיימת, ולכן 
+\begin_inset Formula $L_{U}\in R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Square$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+רידקוציות
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L_{D}\leq L_{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציה שהגדרנו היא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $f\left(\left\langle M\right\rangle \right)\rightarrow\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נראה שהיא אכן מקיימת את שלושת התכונות של פונק' רדוקציה מ 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה ) כל מחרוזת נתן לפרש כקידוד של מכונה( בפרט ההגדרה של 
+\begin_inset Formula $f$
+\end_inset
+
+ לא דורשת אפילו את זה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ נתנת לחישוב - קל לקחת מחרוזת ולשכפל אותה
+\end_layout
+
+\begin_layout Enumerate
+תקפה: 
+\begin_inset Formula $\Rightarrow f\left(\left\langle M\right\rangle \right)=\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)\in L_{U}$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M\right\rangle \in L_{D}\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ואם: 
+\begin_inset Formula $\Rightarrow f\left(\left\langle M\right\rangle \right)=\left(\left\langle M\right\rangle ,\left\langle M\right\rangle \right)\notin L_{U}$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M\right\rangle \notin L_{D}\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מה הוכחה עשתה? בנתה 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $M_{U}$
+\end_inset
+
+ )דמיונית שהנחנו בשלילה את קיומה( בעזרת 
+\begin_inset Formula $f$
+\end_inset
+
+ .
+ כיצד? נסמן ב 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+ .
+ בנינו את 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ כ:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less5_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ , ו
+\begin_inset Formula $M_{u}$
+\end_inset
+
+ תמיד עוצרות ו 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ תקפה, התשובה של 
+\begin_inset Formula $M_{u}$
+\end_inset
+
+ לגבי שייכות 
+\begin_inset Formula $f\left(\left\langle M\right\rangle \right)$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{u}$
+\end_inset
+
+ זהה להאם 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ שייכת ל 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $M_{D}$
+\end_inset
+
+ הזו מכריעה את 
+\begin_inset Formula $L_{D}$
+\end_inset
+
+ .
+ וזו סתירה.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+משפט הרידוקציה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\overset{*}{\in}R$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\overset{**}{\in}RE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{2}\in CoRE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{1}\in CoRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+ניסוח שקול )ושימושי( למשפט הרדוקציה: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin R$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin RE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\notin coRE$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $L_{2}\notin CooRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה - עבור
+\series medium
+ 
+\series default
+1 
+\end_layout
+
+\begin_layout Itemize
+נניח ש 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $L_{2}\in R$
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קיימת מכונה 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+המכריעה את 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+וכן קיימת מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ המחשבת את פונ' הרדוקציה בין 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נתאר מכונה מכריעה 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $x\in\tc$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תריץ את 
+\begin_inset Formula $M_{f}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ותקבל 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+תריץ את 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ ותקבל על 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ותענה כמוה 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מכיוון שפונ' הרדוקציה מלאה וניתנת לחישוב החישוב של 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ לא יתקע בשלב 
+\begin_inset Formula $1$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Itemize
+ומכיון שפונ' תקפה התשובה של 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ על השייכות של 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ זהה לתשובה הדרושה עבור השייכות של 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+תכונות של רדוקציה
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $\bar{L}_{1}\leq\bar{L}_{2}$
+\end_inset
+
+ - )תוצאה ישירה של תקפות הרידוקציה(
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ הוא רפלקסיבי: לכל שפה 
+\begin_inset Formula $L\subseteq\tc$
+\end_inset
+
+ , 
+\begin_inset Formula $L\leq L$
+\end_inset
+
+ - הוכחה לפי פונ' הזהות.
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ טרנזיטיבי: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $L_{2}\leq L_{3}$
+\end_inset
+
+ אז: 
+\begin_inset Formula $L_{1}\leq L_{3}$
+\end_inset
+
+ - הוכחה הרכבת פונקציות
+\end_layout
+
+\begin_layout Itemize
+היחס 
+\begin_inset Formula $\leq$
+\end_inset
+
+ אנטי-סימטרי: אם 
+\begin_inset Formula $L_{1}\leq L_{2}$
+\end_inset
+
+ אז לא בהכרח ש: 
+\begin_inset Formula $L_{2}\leq L_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $L_{=3}\notin RE\cup coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{=3}=\left\{ \left\langle M\right\rangle |\left|L\left(M\right)\right|=3\right\} \notin RE\cup coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה -יש להראות 2 רדוקציות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $HP\leq L_{=3}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $L_{=3}\notin R$
+\end_inset
+
+ , 
+\begin_inset Formula $L_{=3}\notin coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{HP}\leq L_{=3}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $L_{=3}\notin RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה 
+\begin_inset Formula $1$
+\end_inset
+
+ : 
+\begin_inset Formula $HP\leq L_{=3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(\left\langle M,x\right\rangle \right)=\left\langle M^{*}\right\rangle $
+\end_inset
+
+ , כך ש 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $y\in\tc$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $y\in\left\{ 0,1,01\right\} $
+\end_inset
+
+ קבל 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אחרת - דחה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה וניתנת לחישוב - כי ראינו שניתן לקודד מ
+\begin_inset Quotes erd
+\end_inset
+
+ט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ תקפה: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \in HP$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ תקבל כל 
+\begin_inset Formula $y\in\left\{ 0,1,01\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M^{*}\right)=\left\{ 0,1,01\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|L\left(M^{*}\right)\right|=3$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M^{*}\right\rangle \in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \notin HP$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ תמיד תכנס ללואה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M^{*}\right)=\phi$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|L\left(M^{*}\right)\right|=0\neq3$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M^{*}\right\rangle \notin L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה 2 : 
+\begin_inset Formula $\overline{HP}\leq L_{=3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(\left\langle M,x\right\rangle \right)=\left\langle \widetilde{M}\right\rangle $
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $y\in\tc$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $y\in\left\{ 0,1,01\right\} $
+\end_inset
+
+ קבל 
+\end_layout
+
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+, אם עצרה - קבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה וניתנת לחישוב כי ראינו שניתן לקודד מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ תקפה: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \in\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+ תקבל רק את 
+\begin_inset Formula $y\in\left\{ 0,1,01\right\} $
+\end_inset
+
+)משלב 1( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|L\left(\tilde{M}\right)\right|=3$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle \tilde{M}\right\rangle \in L_{=3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \notin\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+ בשלב 1 תקבל את כל 
+\begin_inset Formula $y\in\left\{ 0,1,01\right\} $
+\end_inset
+
+ ובשלב 2 תקבל 
+\begin_inset Formula $L\left(\tilde{M}\right)=\tc$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\tc\right|=\infty\neq3$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle \tilde{M}\right\rangle \notin L_{=3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונה השפה: 
+\begin_inset Formula $L_{\infty}=\left\{ \left\langle M\right\rangle |\left|L\left(M\right)=\infty\right|\right\} \notin RE\cup coRE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $HP\leq L_{\infty}$
+\end_inset
+
+ - בבית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{HP}\leq L_{\infty}$
+\end_inset
+
+ - קצת טריקית
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\overline{HP}\leq L_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(\left\langle M,x\right\rangle \right)=\left\langle M_{x}\right\rangle $
+\end_inset
+
+, כך ש 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $y\in\tc$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ למשל 
+\begin_inset Formula $\left|y\right|$
+\end_inset
+
+ צעדים
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עצרה - קבל 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אחרת - דחה
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה וניתנת לחישוב...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ תקפה: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \in\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{x}\right)=\tc$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \in L_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M,x\right\rangle \notin\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ , אחרי 
+\begin_inset Formula $t$
+\end_inset
+
+ כלשהו של צעדים, נפצל למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left|y\right|\geq t$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ תדחה
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left|y\right|<t$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ תקבל
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בכל מקרה, 
+\begin_inset Formula $L\left(M_{x}\right)=\left\{ y|y<t\right\} $
+\end_inset
+
+ וזאת שפה סופית! 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \notin L_{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $7.2$
+\end_inset
+
+ : 
+\begin_inset Formula $L_{eq}\notin RE\cup CoRE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נוכיח באמצעות רדוקציה 
+\begin_inset Formula $L_{\infty}\leq L_{eq}$
+\end_inset
+
+ , שימו לב שכיוון ש 
+\begin_inset Formula $L_{\infty}\notin RE\cup CoRE$
+\end_inset
+
+ נתן להוכיח את שני הדברים 
+\begin_inset Quotes eld
+\end_inset
+
+בבת אחת
+\begin_inset Quotes erd
+\end_inset
+
+ ספציפית מ 
+\begin_inset Formula $L_{\infty}\leq L_{eq}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{eq}\notin RE$
+\end_inset
+
+ , כי 
+\begin_inset Formula $L_{\infty}\notin RE$
+\end_inset
+
+ - משפט הרדוקציה סעיף 2 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{eq}\notin CoRE$
+\end_inset
+
+ ,כי 
+\begin_inset Formula $L_{\infty}\notin CORE$
+\end_inset
+
+ - הרצאה קודמת - משפט הרדוקציה סעיף 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה רדוקציה מתאימה: 
+\begin_inset Formula $f\left(\left\langle M\right\rangle \right)=\left(\left\langle M_{1}\right\rangle ,\left\langle M_{2}\right\rangle \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle M_{2}\right\rangle =\left\langle M_{\tc}\right\rangle $
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט שמיד עוצרת ומקבלת כל מילה )מיד מ 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ הולכת ל 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M_{1}\left(y\right)$
+\end_inset
+
+ : מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\tc$
+\end_inset
+
+ בהרצה מבוקרת.
+ אם בצעד מסויים 
+\begin_inset Formula $i$
+\end_inset
+
+ של ההרצה המבוקרת התקבלו כבר 
+\begin_inset Formula $\left|y\right|$
+\end_inset
+
+ מילים, נעצור ונקבל את 
+\begin_inset Formula $y$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+נסביר רגע בדוגמה:
+\end_layout
+
+\begin_layout Itemize
+נגיד ש 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $11$
+\end_inset
+
+ )המילה ה 
+\begin_inset Formula $7$
+\end_inset
+
+ בסדר לקסקוגרפי(, בצעד ה 
+\begin_inset Formula $328$
+\end_inset
+
+ , 
+\end_layout
+
+\begin_layout Itemize
+את 
+\begin_inset Formula $0$
+\end_inset
+
+ )מילה 
+\begin_inset Formula $2$
+\end_inset
+
+ בסדר הלקס' בצעד 
+\begin_inset Formula $512$
+\end_inset
+
+(, 
+\end_layout
+
+\begin_layout Itemize
+ועוד 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מילים בצעדים יותר מאוחרים.
+ 
+\end_layout
+
+\begin_layout Itemize
+אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ על קלט 
+\begin_inset Formula $y=10$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $y$
+\end_inset
+
+ בצעד 
+\begin_inset Formula $512$
+\end_inset
+
+ )כאשר מתקבלת המילה השניה( בציור:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{c|c|c|c|c|c|c|c|c}
+string\backslash step & 1 & 2 & \dots &  &  &  & \\
+\hline \varepsilon_{0} &  &  &  &  &  & X &  & X\\
+\hline  &  &  &  &  &  &  &  & \dots\\
+\hline  &  &  & \boldsymbol{} &  &  &  & \\
+\hline  &  &  &  &  &  &  & \\
+\hline  &  &  &  &  &  &  & \\
+ &  &  &  &  &  &  & \\
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נחזור לרידוקציה - נכונות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה - כל מחרוזת ניתן לפרש כקידוד של מכונה )לפי המוסכמה שלנו של 
+\begin_inset Formula $M_{stam}$
+\end_inset
+
+ (, לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ אכן מוגדרת על כל קלט.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ נתנת לחישוב: כדי לחשב את 
+\begin_inset Formula $f$
+\end_inset
+
+ מבצעים פעולת קומפילציה, בפרט אין צורך להריץ מכונות על קלטים כלשהם.
+ ) זה וריאנט של המכונה האוניברסלית, ו 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תדאג לרשום לה את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ בתור המכונה שמריצים - את כל זה לא קשה לקודד(
+\end_layout
+
+\begin_layout Enumerate
+תקפות :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $\left\langle M\right\rangle \in L_{\infty}$
+\end_inset
+
+: 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תקבל כל 
+\begin_inset Formula $y$
+\end_inset
+
+ , כי 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מילים, ולכן בהנתן 
+\begin_inset Formula $y$
+\end_inset
+
+ מסוים, תקבל 
+\begin_inset Formula $\left|y\right|$
+\end_inset
+
+ מילים תוך מס' סופי של צעדים ברצה מבוקרת 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L=L\left(M_{1}\right)=L\left(M_{2}\right)=L\left(\tc\right)=\tc\Leftarrow L\left(M_{1}\right)=\tc$
+\end_inset
+
+ , מכאן ש 
+\begin_inset Formula $f\left(\left\langle M_{1}\right\rangle \right)=\left(\left\langle M_{1}\right\rangle ,\left\langle M_{2}\right\rangle \right)\in L_{eq}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $\left\langle M\right\rangle \notin L_{\infty}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת 
+\begin_inset Formula $N$
+\end_inset
+
+ )מס' סופי של מילים( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ תקבל אך ורק את ה
+\begin_inset Formula $y$
+\end_inset
+
+ים שאורכם 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{1}\right)$
+\end_inset
+
+ שפה סופית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{1}\right)\neq L\left(M_{2}\right)=\tc$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\left\langle M_{1}\right\rangle ,\left\langle M_{2}\right\rangle \right)\notin L_{eq}$
+\end_inset
+
+ ,כנדרש.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Square$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+\begin_inset Formula $Rice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $Rice$
+\end_inset
+
+ 
+\begin_inset Formula $7.4$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\align center
+תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ תכונה של שפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ , נגדיר: 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in S\right\} $
+\end_inset
+
+ אז:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{S}\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ טריויאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כיון קל:
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ תכונה טריוויאלית של שפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ .
+ נראה ש 
+\begin_inset Formula $L_{S}\in R$
+\end_inset
+
+ .
+ ישנן שתי אפשרויות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S=RE$
+\end_inset
+
+ אזי: 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in RE\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אבל, מהגדרת 
+\begin_inset Formula $RE$
+\end_inset
+
+ , לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ , 
+\begin_inset Formula $L\left(M\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ כי 
+\begin_inset Formula $M$
+\end_inset
+
+ היא מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המקבלת את 
+\begin_inset Formula $L\left(M\right)$
+\end_inset
+
+ .
+ מהמוסכמה שכל מחרוזת היא קידוד של מכונה כלשהי , 
+\begin_inset Formula $L_{S}=\tc$
+\end_inset
+
+ אכן 
+\begin_inset Formula $\tc\in R$
+\end_inset
+
+ )קל לבנות מ
+\begin_inset Quotes erd
+\end_inset
+
+ט שתקבל אותה(.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S=\phi$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in\phi\right\} =\phi$
+\end_inset
+
+ , אכן 
+\begin_inset Formula $\phi\in R$
+\end_inset
+
+ )קל לבנות מ
+\begin_inset Quotes erd
+\end_inset
+
+ט שתכריע אותה(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ כייון שני:
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ לא טריוויאלית נוכיח ש 
+\begin_inset Formula $L_{S}\notin R$
+\end_inset
+
+ באמצעות רדוקציה שתעבוד לא 
+\begin_inset Formula $S$
+\end_inset
+
+ )נחלק לשני מקרים( - 
+\begin_inset Quotes eld
+\end_inset
+
+משפחה
+\begin_inset Quotes erd
+\end_inset
+
+ של רדוקציות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מקרה 1: נניח 
+\begin_inset Formula $\phi\notin S$
+\end_inset
+
+ .נראה 
+\begin_inset Formula $HP\leq L_{S}$
+\end_inset
+
+ .
+ כיון ש 
+\begin_inset Formula $HP\notin R$
+\end_inset
+
+ , משפט הרדוקציה , 
+\begin_inset Formula $L_{S}\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(\left\langle M\right\rangle ,\left\langle x\right\rangle \right)=\left\langle M_{x}\right\rangle $
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{x}(y)$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+)המקרה בו עברנו את המחסום( תהי 
+\begin_inset Formula $L\in S$
+\end_inset
+
+ קיימת כזו, כי 
+\begin_inset Formula $S$
+\end_inset
+
+ לא טריוויאלית, כיון ש 
+\begin_inset Formula $S\subseteq RE$
+\end_inset
+
+ קיימת לה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ המקבלת אותה נריץ את 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+ ונענה כמוה
+\end_layout
+
+\begin_layout Standard
+נוכיח נכונות של 
+\begin_inset Formula $f$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה - למעשה כמו שהגדרנו אותה אינה מלאה כי לא טיפלנו במקרה 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle X\right\rangle \right)$
+\end_inset
+
+לא תקין סינטקטית .
+ אבל תמיד אפשר לטפל בזה ע
+\begin_inset Quotes erd
+\end_inset
+
+י בדיקת סינטס )קל לעשות(, ואם לא עובר, פולטים 
+\begin_inset Formula $M'$
+\end_inset
+
+ קבוע שאינה ב 
+\begin_inset Formula $L_{s}$
+\end_inset
+
+ )במקרה הזה 
+\begin_inset Formula $M_{\phi}$
+\end_inset
+
+ כלשהי שמיד דוחה הכל( בהמשך נתעלם מענניני תקינות סינטקטית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ ניתנת לחישוב - פעולת קומפילציה
+\end_layout
+
+\begin_layout Enumerate
+תקפות: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle x\right\rangle \right)\in HP$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ מגיעה לשלב 
+\begin_inset Formula $2$
+\end_inset
+
+ ועונה כמו 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{x}\right)=L\left(M_{L}\right)$
+\end_inset
+
+ )מבחירת 
+\begin_inset Formula $L\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{x}\right)\in S$
+\end_inset
+
+ )הגדרת 
+\begin_inset Formula $L_{S}$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \in L_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle x\right\rangle \right)\notin HP$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכל קלט 
+\begin_inset Formula $y$
+\end_inset
+
+ , 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+מתנקעת
+\begin_inset Quotes erd
+\end_inset
+
+ בשלב 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+)מהנחה( 
+\begin_inset Formula $L\left(M_{x}\right)=\phi\notin S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \notin L_{S}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+כנדרש
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מקרה 2: 
+\begin_inset Formula $\phi\in S$
+\end_inset
+
+ .
+ נשים לב ש:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in S\right\} =\overline{L}_{\overline{s}}=\left\{ \left\langle M\right\rangle |L\left(M\right)\in RE\backslash S\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+כי לכל 
+\begin_inset Formula $S\subseteq RE$
+\end_inset
+
+ , 
+\begin_inset Formula $M$
+\end_inset
+
+ מסוימת , 
+\begin_inset Formula $L\left(M\right)\in S$
+\end_inset
+
+ או 
+\begin_inset Formula $L\left(M\right)\in RE\backslash S$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כעת, 
+\begin_inset Formula $\phi\in S$
+\end_inset
+
+ ,אז בהכרח 
+\begin_inset Formula $\phi\notin\bar{S}=RE\backslash S$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+לכן 
+\begin_inset Formula $L_{\bar{S}}$
+\end_inset
+
+ אינה ב 
+\begin_inset Formula $R$
+\end_inset
+
+ בגלל המקרה הקודם.
+\end_layout
+
+\begin_layout Itemize
+בפרט 
+\begin_inset Formula $\bar{S}$
+\end_inset
+
+ אינה טריוויאלית כי 
+\begin_inset Formula $S$
+\end_inset
+
+ אינה טריויאלית
+\end_layout
+
+\begin_layout Itemize
+מסגירות של 
+\begin_inset Formula $R$
+\end_inset
+
+ למשלים, גם 
+\begin_inset Formula $L_{S}=\overline{L_{\bar{S}}}$
+\end_inset
+
+ אינה ב 
+\begin_inset Formula $R$
+\end_inset
+
+ )אחרת גם 
+\begin_inset Formula $L_{\bar{S}}$
+\end_inset
+
+ הייתה ב 
+\begin_inset Formula $R$
+\end_inset
+
+ (.
+ מש
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Square$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L_{\varepsilon}\in RE\backslash E$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $Rice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה 1 : נגדיר 
+\begin_inset Formula $L_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M accept }\varepsilon\right\} $
+\end_inset
+
+ )מקבלת את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ( , נראה ש
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+כדי להראות שייכות ל 
+\begin_inset Formula $RE$
+\end_inset
+
+ , נתן לבנות מ
+\begin_inset Quotes erd
+\end_inset
+
+ט 
+\begin_inset Formula $M_{\varepsilon}$
+\end_inset
+
+ המקבלת את 
+\begin_inset Formula $L_{\varepsilon}$
+\end_inset
+
+ שעל קלט 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ועונה כמוה )בפרט אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת, גם היא לא תעצור(.
+\end_layout
+
+\begin_layout Itemize
+כדי להראות 
+\begin_inset Formula $L_{\varepsilon}\notin R$
+\end_inset
+
+ נשתמש במשפט 
+\begin_inset Formula $Rice$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Itemize
+נגדיר תכונה לא טריויאלית של שפות 
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $L_{\varepsilon}=L_{S}$
+\end_inset
+
+ במקרה זה: 
+\begin_inset Formula $S=\left\{ L\in RE|\varepsilon\in L\right\} $
+\end_inset
+
+ .
+ כדי להשמתש ב 
+\begin_inset Formula $Rice$
+\end_inset
+
+ צריך להראות ש 
+\begin_inset Formula $S$
+\end_inset
+
+ לא טריויאלית
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S\neq RE$
+\end_inset
+
+ : 
+\begin_inset Formula $\phi\in RE\backslash S$
+\end_inset
+
+ לדוגמה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\neq\phi$
+\end_inset
+
+ , למשל : 
+\begin_inset Formula $\tc,\left\{ \varepsilon\right\} ,\left\{ \varepsilon,01101\right\} \in S$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לכן מ 
+\begin_inset Formula $Rice$
+\end_inset
+
+ נסיק ש 
+\begin_inset Formula $L_{\varepsilon}\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $L'_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M doesnt accept }\varepsilon\right\} \notin R$
+\end_inset
+
+ )לא מקבלת את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ( בעזרת 
+\begin_inset Formula $Rice$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+האם ניתן להשתמש ב
+\begin_inset Formula $Rice$
+\end_inset
+
+ כדי להוכיח שאינה ב 
+\begin_inset Formula $R$
+\end_inset
+
+ )למעשה היא השפה המשלימה של 
+\begin_inset Formula $L_{\varepsilon}$
+\end_inset
+
+ ולכן אינה ב 
+\begin_inset Formula $R$
+\end_inset
+
+ מסגירות למשלים - אבל כאן מעניין אותנו ספציפית 
+\begin_inset Formula $Rice$
+\end_inset
+
+ (.
+ אפשר .
+ נגדיר 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $S=\left\{ L\in RE|\varepsilon\notin L\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+גם כאן 
+\begin_inset Formula $S$
+\end_inset
+
+ לא טריוויאלית.
+ )אפשר להפוך סימנים בין הדוגמאות ל 
+\begin_inset Formula $L_{\varepsilon}$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $L"_{\varepsilon}=\left\{ \left\langle M\right\rangle |\text{M reject }\varepsilon\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+האם ניתן להשתמש כאן ב 
+\begin_inset Formula $Rice$
+\end_inset
+
+ כדי להראות ש 
+\begin_inset Formula $L_{\varepsilon}\notin R$
+\end_inset
+
+ )זה לכשעצמו נכון נכון(? כאן זה לא אפשרי, כלומר לא קיימת 
+\begin_inset Formula $S$
+\end_inset
+
+ מתאימה כך ש 
+\begin_inset Formula $L"_{\varepsilon}=L_{S}$
+\end_inset
+
+ .
+ אינטואיטיבית 
+\begin_inset Formula $L"_{\varepsilon}$
+\end_inset
+
+ בודקת תכונה של 
+\begin_inset Formula $M$
+\end_inset
+
+ שאינה רק תכונה של 
+\begin_inset Formula $L\left(M\right)$
+\end_inset
+
+.
+ אפשר להראות זה במפורש: נראה זוג מכונות 
+\begin_inset Formula $\left\langle M_{1}\right\rangle ,\left\langle M_{2}\right\rangle $
+\end_inset
+
+ שאחת ב 
+\begin_inset Formula $L"_{\varepsilon}$
+\end_inset
+
+ והשניה לא, אבל 
+\begin_inset Formula $L\left(M_{1}\right)=L\left(M_{2}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{1}\left(y\right)$
+\end_inset
+
+ : מיד עוצרת ודוחה:
+\begin_inset Formula $L\left(M_{1}\right)=\phi$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left\langle M\right\rangle \in L_{\varepsilon}$
+\end_inset
+
+ )דוחה את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{2}\left(y\right)$
+\end_inset
+
+ : למשל תמיד נכנסת ללואה על 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $L\left(M_{2}\right)=\phi$
+\end_inset
+
+ כאן 
+\begin_inset Formula $\left\langle M_{1}\right\rangle \notin L"_{\varepsilon}$
+\end_inset
+
+ )לא דוחה את 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש 
+\begin_inset Formula $L'_{\varepsilon}$
+\end_inset
+
+ שראינו היא אינה ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $Rice$
+\end_inset
+
+ נתן לנו חלק מהאבחנה - מוכיח ש 
+\begin_inset Formula $L'_{\varepsilon}$
+\end_inset
+
+ .
+ כדי להראות ש 
+\begin_inset Formula $L'_{\varepsilon}\notin RE$
+\end_inset
+
+ , נתן להסתמך על כך ש 
+\begin_inset Formula $L_{\varepsilon}\notin RE$
+\end_inset
+
+ )דוקא אבחנה 
+\begin_inset Quotes eld
+\end_inset
+
+חיובית
+\begin_inset Quotes erd
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+וכיון ש 
+\begin_inset Formula $L_{\varepsilon}=\overline{L'_{\varepsilon}}$
+\end_inset
+
+ , נסיק מידית שלא יתכן 
+\begin_inset Formula $L'_{\varepsilon}\in RE$
+\end_inset
+
+ , אחרת היה 
+\begin_inset Formula $L'_{\varepsilon}\in RE\cup CoRE=R$
+\end_inset
+
+ בסתירה ל 
+\begin_inset Formula $L_{\varepsilon}\notin RE$
+\end_inset
+
+ ל 
+\begin_inset Formula $\overline{L_{\varepsilon}}\in R$
+\end_inset
+
+ )סגירות 
+\begin_inset Formula $R$
+\end_inset
+
+ למשלים(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $7.5$
+\end_inset
+
+ ל 
+\begin_inset Formula $RE$
+\end_inset
+
+ 
+\begin_inset Formula $Rice$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ תכונה לא טריוויאלית של שפות ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $\phi\in S$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{s}\notin RE$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הערה: זה אפיון מלא כמו במקרה של 
+\begin_inset Formula $R$
+\end_inset
+
+ .
+ ידוע אפיון, אבל לא לא נלמד אותו בקורס.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נראה ש 
+\begin_inset Formula $\overline{HP}\leq L_{S}$
+\end_inset
+
+ , ונסיק ש 
+\begin_inset Formula $L_{S}\notin RE$
+\end_inset
+
+ ,כי 
+\begin_inset Formula $\overline{HP}\notin RE$
+\end_inset
+
+ , ברידוקציה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(\left\langle M\right\rangle ,\left\langle X\right\rangle \right)=\left\langle M_{x}\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M_{x}\left(y\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $L\in RE\backslash S$
+\end_inset
+
+ קיימת כזו כי 
+\begin_inset Formula $S$
+\end_inset
+
+ לא טריוויאלית.
+ תהי 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מכונה שמקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+תריץ את 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+ ותענה כמוה.
+\end_layout
+
+\begin_layout Standard
+נכונות הרדקוציה: 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ מלאה ונתנת לחישוב - פעולת קומפילציה
+\end_layout
+
+\begin_layout Itemize
+תקפות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle x\right\rangle \right)\in\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ תתקע בשלב 
+\begin_inset Formula $1$
+\end_inset
+
+ )לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ ( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+)מהנחה( 
+\begin_inset Formula $L\left(M_{x}\right)=\phi\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \in L_{S}$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\left\langle M\right\rangle ,\left\langle x\right\rangle \right)\notin\overline{HP}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{x}$
+\end_inset
+
+ תגיע ל 
+\begin_inset Formula $2$
+\end_inset
+
+ )לכל 
+\begin_inset Formula $y$
+\end_inset
+
+( ואז תענה כמו 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ )בחירת 
+\begin_inset Formula $L$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(M_{x}\right)+L\notin S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M_{x}\right\rangle \notin L_{S}$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Standard
+\align center
+מש
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+מ
+\begin_inset Quotes erd
+\end_inset
+
+ט אי-דרמינסטית
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $RE=RE_{ND}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה )סקיצה( - הכלה דו-כיוונית
+\end_layout
+
+\begin_layout Standard
+כיון קל - 
+\begin_inset Formula $RE\subseteq RE_{ND}$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ דטרמינסטית, נבנה 
+\begin_inset Formula $M'$
+\end_inset
+
+ א
+\begin_inset Quotes erd
+\end_inset
+
+ד המקבלת את אותה שפה ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Quotes eld
+\end_inset
+
+שכפול של 
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כלומר , לכל 
+\begin_inset Formula $\delta\left(q,a\right)=\left(p,b,m\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\delta'\left(q,a\right)=\left(\left(p,b,m\right),\left(q,b,m\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לא קשה להראות ש 
+\begin_inset Formula $L\left(M'\right)=L\left(M\right)$
+\end_inset
+
+ )עץ החישוב של 
+\begin_inset Formula $\delta$
+\end_inset
+
+ יורכב משכפולים של מסלול החישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+אופציה אחרת: 
+\begin_inset Formula $\delta'\left(q,a\right)=\left(\left(p,b,m\right),\left(q_{a_{j}},b,m\right)\right)$
+\end_inset
+
+ - שומרים על המסלול המקורי, ומוסיף הרבה מסלולים שנתקעים
+\end_layout
+
+\begin_layout Standard
+כיון שני - 
+\begin_inset Formula $RE_{ND}\subseteq RE$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נסיון 
+\begin_inset Formula $I$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד .נבנה 
+\begin_inset Formula $M'$
+\end_inset
+
+ דטר' שקולה באופן הבא: 
+\begin_inset Formula $M'(x)$
+\end_inset
+
+ תבצע 
+\begin_inset Formula $DFS$
+\end_inset
+
+ על עץ החישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ )תפתח את עץ-הקונפיגרוציות( אם זיהתה 'קבל' תקבל מייד.
+ 
+\end_layout
+
+\begin_layout Standard
+זה לא עובד, כי ייתכן שנתקע במסלול אינסופי לפני שנגיע ל 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+נסיון 
+\begin_inset Formula $II$
+\end_inset
+
+: נסרוק את עץ החישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $BFS$
+\end_inset
+
+ .
+ בצעד ה 
+\begin_inset Formula $i$
+\end_inset
+
+ נפתח את רישות המסלולים עד אורך 
+\begin_inset Formula $i$
+\end_inset
+
+ .
+ אם נזהה קבלה, נקבל.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשפט שהוכחנו יכול להקל על הוכחות ששפה מסוימת 
+\begin_inset Formula $L$
+\end_inset
+
+ כן ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ ולהחליף הרצה מבוקרת.
+ לדוגמה: נתבונן ב 
+\begin_inset Formula $L$
+\end_inset
+
+ מהצורה:
+\end_layout
+
+\begin_layout Standard
+\align center
+{ קיימת 
+\begin_inset Formula $3$
+\end_inset
+
+ מילים 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ ש 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ ודוחה את 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|x_{1}\right|<\left|x_{2}\right|<\left|x_{3}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $M\ ||$
+\end_inset
+
+}
+\begin_inset Formula $L=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in RE$
+\end_inset
+
+ נתן להוכיח זאת ע
+\begin_inset Quotes erd
+\end_inset
+
+י בניית מ
+\begin_inset Quotes erd
+\end_inset
+
+ט שמבצעת הרצה מבוקרת, אבל גם להוכיח ע
+\begin_inset Quotes erd
+\end_inset
+
+י בניית מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד מתאימה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{L}\left(\left\langle M\right\rangle \right)$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+תנחש מילים 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left|x_{1}\right|<\left|x_{2}\right|<\left|x_{3}\right|$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x_{1},x_{2},x3$
+\end_inset
+
+ סדרתית.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קבלת את 
+\begin_inset Formula $x_{1},x_{3}$
+\end_inset
+
+ ודחתה את 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ נקבל
+\end_layout
+
+\begin_layout Itemize
+)אחרת, או נתקע אם 
+\begin_inset Formula $M$
+\end_inset
+
+ נתקעת על אחד הקלטים(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כעת נבהיר מהו הניחוש וכיצד ממשים אותו.
+ נוכיח ראשית נכונות:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M\right\rangle \in L$
+\end_inset
+
+ : קיימים 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ מתאימים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים ניחוש שמנחש את 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ במסלול שבו מנחשים אותו 
+\begin_inset Formula $M$
+\end_inset
+
+ בהכרח תקבל 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים מסלול מקבל 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle M\right\rangle \in L\left(M\right)$
+\end_inset
+
+ , כנדרש.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M\right\rangle \notin L$
+\end_inset
+
+ : לא קיימים 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ כנדרש 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכל ניחוש 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ לא נקבל )נדחה או נתקע(
+\end_layout
+
+\begin_layout Standard
+כיצד נממש את תהליך הניחוש? )זה תמיד יעבוד(, ננחש מחרוזת ש 
+\begin_inset Formula $0,1$
+\end_inset
+
+ ים ובסוף נפרסר אותה בתור 
+\begin_inset Formula $x_{1}\underbrace{,}x_{2}\underbrace{,}x_{3}$
+\end_inset
+
+ )אם יתאפשר , ויצאה לנו מחרוזת חוקית, אחרת מיד נדחה(.
+ בכל צעד נרצה להוסיף ביט 
+\begin_inset Formula $0/1$
+\end_inset
+
+ או לעצור )סיימנו לכתוב את המחרוזת( , כלומר יש 3 אפשרויות אבל 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מרשה רק 2 .
+ נממש ע
+\begin_inset Quotes erd
+\end_inset
+
+י שני מצבים )שגרת ניחוש(:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less8_3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סיבוכיות
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $9.4$
+\end_inset
+
+ : הגדרות 
+\begin_inset Formula $9.3$
+\end_inset
+
+ ו 
+\begin_inset Formula $8.9$
+\end_inset
+
+ ל
+\begin_inset Formula $NP$
+\end_inset
+
+ שקילות
+\end_layout
+
+\begin_layout Standard
+הוכחה: נראה הכלה דו-כיוונית ) של המחלקות הרלוונטיות
+\end_layout
+
+\begin_layout Standard
+כיון 1 : תהי 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $8.9$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+תהיה 
+\begin_inset Formula $M$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד המקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+ בזמן החסום ע
+\begin_inset Quotes erd
+\end_inset
+
+י פולינום 
+\begin_inset Formula $pm$
+\end_inset
+
+ .
+ נבנה יחס-
+\begin_inset Formula $NP$
+\end_inset
+
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $L=L_{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R(x,y)$
+\end_inset
+
+ )אם 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ נקרא ל 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+עד
+\begin_inset Quotes erd
+\end_inset
+
+ )לשייכות 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $L_{R}$
+\end_inset
+
+ (( :
+\begin_inset Formula $y$
+\end_inset
+
+ הוא מסלול בעץ החישוב של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+המסתיים ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ לדוגמה 
+\begin_inset Formula $y=1101101$
+\end_inset
+
+ - מגדיר רצף בחירות של 
+\begin_inset Formula $\delta$
+\end_inset
+
+ - מתוך 0 או 1 ( עד לשייכות 
+\begin_inset Formula $x$
+\end_inset
+
+ לשפה עבור הדוגמה להלן, אבל 
+\begin_inset Formula $110110$
+\end_inset
+
+ או 
+\begin_inset Formula $1101100$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less9_6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ראשית נבדוק שאכן 
+\begin_inset Formula $L=L_{R}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x\in L$
+\end_inset
+
+ : 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים מסלול 
+\begin_inset Formula $y$
+\end_inset
+
+ ב 
+\begin_inset Formula $M$
+\end_inset
+
+ המקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ )מהגדרת 
+\begin_inset Formula $y$
+\end_inset
+
+ - 
+\begin_inset Formula $y$
+\end_inset
+
+ המתאים למלסלול זה( קיים 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $R\left(x,y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ : לא קיים מסלטל מקבל ב 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל 
+\begin_inset Formula $y$
+\end_inset
+
+ יקיים 
+\begin_inset Formula $\left(x,y\right)\notin R$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נשאר לוודא ש 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא אכן יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+חסום פונלינומית: מהגדרת 
+\begin_inset Formula $R$
+\end_inset
+
+ , 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|y\right|\leq p\left(\left|x\right|\right)$
+\end_inset
+
+ , החסם על זמן הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ בכל מסלול 
+\end_layout
+
+\begin_layout Enumerate
+נתן לזיהי פולינומי בהנתן 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ , נסמלץ את ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ על המסלול המוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $y$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נפרט קצת מדוע החישוב אכן פולינומי - נקבל אם
+\begin_inset Quotes erd
+\end_inset
+
+ם המסלול 
+\begin_inset Formula $y$
+\end_inset
+
+ מסתיים ב 
+\begin_inset Formula $q_{cc}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הסימולציה מתבצעת בדומה למ
+\begin_inset Quotes erd
+\end_inset
+
+ט אוניברסלית.
+ בכל מקרה, אורך המסלול שבודקים הוא 
+\begin_inset Formula $\min\left(\left(\left|y\right|,p\left(\left|x\right|\right)\right)\right)\leq\left|y\right|+p\left(\left|x\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+במהלך ההרצה נשמור קונ' הנוכחית ונעדכן בכל פעם )תוכן סרט 
+\begin_inset Formula $+$
+\end_inset
+
+ מקום ומצב( , זמן החישוב:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{\#\text{Calculation steps}}_{\leq\left|y\right|+p\left(\left|x\right|\right)}\times\underbrace{\text{Next configuration's calculation time}}_{O\left(\left|x\right|+p\left(\left|x\right|\right)+y\right)*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $*$
+\end_inset
+
+ הסבר: בערך לינארי אורך הקונפ' , אורכה 
+\begin_inset Formula $O(..)$
+\end_inset
+
+ כי בכל צעד חישוב הסרט גדל ב1 לכל היותר
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+כלומר סה
+\begin_inset Quotes erd
+\end_inset
+
+כ מספר צעדים פונלינומי בקלט 
+\begin_inset Formula $\left|\left(x,y\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כיון שני: תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה ב 
+\begin_inset Formula $NP$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $9.3$
+\end_inset
+
+ נראה 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset Formula $8.9$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ מתאים עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ ,ויהי 
+\begin_inset Formula $P\left(x)\right)$
+\end_inset
+
+ החסם מ1 ו 
+\begin_inset Formula $q(n)$
+\end_inset
+
+ חסם זמן ריצה הריצה של אלג' המזהה את 
+\begin_inset Formula $\tilde{L}_{R}$
+\end_inset
+
+ )מהגדרה 
+\begin_inset Formula $1,2$
+\end_inset
+
+ שניהם פולינומים(.
+\end_layout
+
+\begin_layout Itemize
+נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולינומית עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+בניה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M(x)$
+\end_inset
+
+: בגדול 
+\begin_inset Formula $M$
+\end_inset
+
+ תנחש את 
+\begin_inset Formula $y$
+\end_inset
+
+ , ותבדוק אם אכן 
+\begin_inset Formula $R(x,y)=True$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+נפרט:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ תחשב את 
+\begin_inset Formula $P\left(\left|x\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהליך הניחוש: תקצה קטע : 
+\begin_inset Formula $\underbrace{\text{*\_\_\_\_\_\_\_\_\_\_*}}_{p\left(\left|x\right|\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תעבור לתחילתו ותנחש מחרוזת של 
+\begin_inset Formula $0$
+\end_inset
+
+ים ו
+\begin_inset Formula $1$
+\end_inset
+
+ים שמסתיימת לכל היותר לפני ה 
+\begin_inset Formula $*$
+\end_inset
+
+ השניה.
+ )כלומר כל עוד לא הגענו ל 
+\begin_inset Formula $*$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+ננחש
+\begin_inset Quotes erd
+\end_inset
+
+ ביט חדש 
+\begin_inset Formula $b$
+\end_inset
+
+ ונשרשר אותו, או שנעצור כאן.
+ בכל מקרה כשעוצרים 
+\begin_inset Formula $y$
+\end_inset
+
+ הוא: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\underbrace{\text{*\_\_\_\_\_\_\_|\ensuremath{\downarrow}....*}}_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תבדוק האם 
+\begin_inset Formula $R\left(x,y\right)=T$
+\end_inset
+
+ , ותקבל אם כן, אחרת תדחה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נכונות:
+\end_layout
+
+\begin_layout Enumerate
+יורכב משלושה שלבים: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נמיר מ 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ בעצם נתון באונארי, לבינארי.
+ יקח בערך 
+\begin_inset Formula $O\left(\left|x\right|\log\left|x\right|\right)$
+\end_inset
+
+ פעולות.
+ )מעדכנים מונה באורך 
+\begin_inset Formula $\log\left|x\right|$
+\end_inset
+
+ ( , נסמן את המונה ב 
+\begin_inset Formula $Cnt$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+חשוב הפולינום 
+\begin_inset Formula $p\left(Cnt\right)=Cnt^{d}\cdot c$
+\end_inset
+
+ - פולינומי באורך המונה השוטף שהוא 
+\begin_inset Formula $d\left(\log\left|x\right|\right)$
+\end_inset
+
+ בכל רגע עושים 
+\begin_inset Formula $d-1$
+\end_inset
+
+ הכפלות כופל בקבוע.
+ סה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $poly\left(\log\left|x\right|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+חלק מ2 - נקצה את השטח 
+\begin_inset Formula $\text{*\_\_\_\_\_\_\_ *}$
+\end_inset
+
+ שלמעשה דורש תרגום מבינארי חזרה לאונארי של 
+\begin_inset Formula $Cnt=p\left(\left|x\right|\right)$
+\end_inset
+
+ בערך 
+\begin_inset Formula $p\left(\left|x\right|\right)\cdot poly\left(\log\left|x\right|\right)$
+\end_inset
+
+ .
+ פעולות )ונוריד 
+\begin_inset Formula $1$
+\end_inset
+
+ מהמונה על כל תא שנקצה עד שנגיע ל 
+\begin_inset Formula $0$
+\end_inset
+
+ (
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הסברנו
+\end_layout
+
+\begin_layout Enumerate
+לוקח זמן :
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+עבור ה
+\begin_inset Formula $y$
+\end_inset
+
+ שחישבנו:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $q\left(\left|x\right|+\underbrace{\left|y\right|}_{\leq p\left(\left|x\right|\right)}\right)\thickapprox O\left(q\left(\underbrace{p\left|x\right|}_{\text{A polynomal too}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+הסכום עדיין פולינומי
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נשאר להראות נכונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x\in L$
+\end_inset
+
+ קיים 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $R\left(x,y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כיון ש 
+\begin_inset Formula $M$
+\end_inset
+
+ מ אפשרת לנחש כל 
+\begin_inset Formula $y$
+\end_inset
+
+ שארוכו 
+\begin_inset Formula $P\left(\left|x\right|\right)\geq$
+\end_inset
+
+ , בפרט יהיה קיים מסלול )אפילו הרבה- בכלל השלבים הדטרמינסטים בחישוב אם נממש
+ על ידי הכפלה( שבו 
+\begin_inset Formula $M$
+\end_inset
+
+ תנחש את ה 
+\begin_inset Formula $y$
+\end_inset
+
+ המתאים )אורכו 
+\begin_inset Formula $p\left(\left|x\right|\right)\geq$
+\end_inset
+
+ ( כי 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ חסם הנובע מכך ש
+\begin_inset Formula $R$
+\end_inset
+
+ חסום פולינומית שקבענו( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in L\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא קיים 
+\begin_inset Formula $y$
+\end_inset
+
+ מתאים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ )בניית 
+\begin_inset Formula $M$
+\end_inset
+
+ ( 
+\begin_inset Formula $M$
+\end_inset
+
+ תדחה בכל המסלולים 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Square$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+נראה ש
+\begin_inset Formula $factory\in NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $x,k\in\mathbb{N}^{+}\}$
+\end_inset
+
+ קיים מחלק 
+\begin_inset Formula $y$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $k\leq y<x$
+\end_inset
+
+ וכן 
+\begin_inset Formula $y\neq1$
+\end_inset
+
+
+\begin_inset Formula $factory=\{\left(x,k\right)|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נוכיח באמצעות בניית מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד יעילה.
+\end_layout
+
+\begin_layout Standard
+בניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{factoring}(n,k)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+ננחש מספר 
+\begin_inset Formula $y$
+\end_inset
+
+ )באורך 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 
+\begin_inset Formula $\log_{2}n$
+\end_inset
+
+ ביטים, עם אפסים מובילים(.
+ המספר הוא פשוט מחרוזת באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ שבהמשך נפרסר כמספר.
+\end_layout
+
+\begin_layout Enumerate
+נבדוק שאכן 
+\begin_inset Formula $y|n$
+\end_inset
+
+ וכן 
+\begin_inset Formula $(*)1<k\leq y<n$
+\end_inset
+
+.
+ אם כן, נקבל אחרת נדחה.
+\end_layout
+
+\begin_layout Standard
+נוכיח נכונות וסיבוכיות של הבניה:
+\end_layout
+
+\begin_layout Standard
+נכונות:
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $\left(n,k\right)\in factoirng$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $y$
+\end_inset
+
+ המקיים את 
+\begin_inset Formula $(*)$
+\end_inset
+
+ .מהבניה, כל 
+\begin_inset Formula $y$
+\end_inset
+
+שאורכו כאורך 
+\begin_inset Formula $n$
+\end_inset
+
+ )כלומר בפרט מכסה את כל המספרים 
+\begin_inset Formula $n\geq$
+\end_inset
+
+ אבל רק אותם( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים מסלול שבו מנחשים 
+\begin_inset Formula $y$
+\end_inset
+
+ מתאים והבדיקה שלו עובדרת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(n,k\right)\in L\left(M_{factoring}\right)$
+\end_inset
+
+ ,כנדרש.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $\left(n,k\right)\notin factoring$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא קיים 
+\begin_inset Formula $y$
+\end_inset
+
+ המקיים את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בכל מסלול 
+\begin_inset Formula $y$
+\end_inset
+
+ יתגלה ב2 כלא מקיים את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{factoing}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ תדחה בכל המסלולים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(n,k\right)\notin L\left(M_{factring}\right)$
+\end_inset
+
+ ,כנדרש.
+\end_layout
+
+\begin_layout Standard
+יעילות:
+\end_layout
+
+\begin_layout Itemize
+נראה פולינום 
+\begin_inset Formula $p(n)$
+\end_inset
+
+ כך שזמן הריצה בכל מסלול חסום ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $p(n)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ראשית, 
+\begin_inset Formula $\left|y\right|=\left|n\right|\leq\left|k\right|$
+\end_inset
+
+ )
+\begin_inset Formula $x$
+\end_inset
+
+ הקלט(
+\end_layout
+
+\begin_layout Itemize
+הבדיקה ב2 דורשת פעולת חילוק על מס' באורך 
+\begin_inset Formula $\underbrace{O\left(\log n\right)}_{\left|x\right|}$
+\end_inset
+
+ ביטים גם פולינומי ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ לפי פעולת חילוק שלמדנו בכיתה ג' - בערך 
+\begin_inset Formula $O\left(m^{2}\right)$
+\end_inset
+
+ פעולות על ביטים , עבור חלוקה של שני מס' באורך 
+\begin_inset Formula $m$
+\end_inset
+
+ ביטים .
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אפשר לשים לב, שבהגדרת 
+\begin_inset Formula $NP$
+\end_inset
+
+ ישנה אסימטריה :
+\end_layout
+
+\begin_layout Itemize
+אם הקלט 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ , אכן מסלול דוחה .
+\end_layout
+
+\begin_layout Itemize
+ואם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ אז נדרש רק קיום של מסלול מקבל אבל הרבה מסלולים אחרים יכולים לדחות.
+\end_layout
+
+\begin_layout Standard
+במילים אחרות, )לפי ההגדרה האלטרנטיבית( מובטח עד קצר לשייכות לשפה שנתן לבדוק
+ ביעילות, אבל לאי שייכות אין )באופן כללי( עד כזה.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $P\subseteq NP\cap coNP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $L\in P$
+\end_inset
+
+ ,אזי 
+\begin_inset Formula $\overline{L}\in P$
+\end_inset
+
+ )
+\begin_inset Formula $P$
+\end_inset
+
+ סגורה למשלים(, נראה:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י בניית יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ מתאים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למשל היחס הוא 
+\begin_inset Formula $\left\{ \left(x,1\right)|x\in L\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+חסום פול' - כי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|y\right|=1$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ניתן לזיהוי פולינומי ע
+\begin_inset Quotes erd
+\end_inset
+
+י בדיקת:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $y=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in L$
+\end_inset
+
+ )אפשרי כי 
+\begin_inset Formula $L\in P$
+\end_inset
+
+(
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{L}\in NP$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י בניית יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ מתאים ל 
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+באופן דומה נגדיר 
+\begin_inset Formula $R=\left\{ \left(x,1\right)|x\in\overline{L}\right\} $
+\end_inset
+
+ ....
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $factoring\in NP$
+\end_inset
+
+ הראנו, נותר להראות שייכות ל
+\begin_inset Formula $coNP$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+נבנה יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\overline{factoring}$
+\end_inset
+
+, כיצד יראה עד 
+\begin_inset Formula $y'$
+\end_inset
+
+ לטענה 
+\begin_inset Formula $\left(n,k\right)\notin factroing$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $y'=\left(p_{1},e_{1}\right),...,\left(p_{1},e_{k}\right)$
+\end_inset
+
+ )הפירוק של 
+\begin_inset Formula $n$
+\end_inset
+
+ לגורמים ראשונים(, כאשר 
+\begin_inset Formula $p_{1}<p_{2}<...<p_{t}$
+\end_inset
+
+ ראשוניים
+\end_layout
+
+\begin_layout Itemize
+מתקיים ש: 
+\begin_inset Formula $n=\prod\limits _{i=1}^{t}p_{i}^{e_{i}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $R\left(\left(n,k\right),y'\right)$
+\end_inset
+
+ - צ
+\begin_inset Quotes erd
+\end_inset
+
+ל ש 
+\begin_inset Formula $R$
+\end_inset
+
+ אכן יחס 
+\begin_inset Formula $NP$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\overline{factroing}$
+\end_inset
+
+ )ענת בלבלה את הסדר בסה
+\begin_inset Quotes erd
+\end_inset
+
+כ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל אלגוריתם + נכונות +יעילות(:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אכן 
+\begin_inset Formula $\overline{factroing}=\left\{ x|\exists yR\left(x,y\right)\right\} $
+\end_inset
+
+ , כי בדקנו בעזרת 
+\begin_inset Formula $\left(y'\right)$
+\end_inset
+
+ האם המחלק הכי גדול של 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ קטן/שווה או לא )ב 
+\begin_inset Formula $\overline{factoring}$
+\end_inset
+
+ לא( 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ חסום פול': )כי 
+\begin_inset Formula $t$
+\end_inset
+
+ קטן(
+\end_layout
+
+\begin_layout Enumerate
+נתן להזיהוי פולי' -הסברנו תוך כדי
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+האלגוריתם:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יבדוק שאכן 
+\begin_inset Formula $p_{1}<...<p_{t}$
+\end_inset
+
+ ,וכולם ראשוניים.
+ זה יעיל בדיקת ראשונית היא ב 
+\begin_inset Formula $P$
+\end_inset
+
+ )נמצא אלג' 
+\begin_inset Formula $AKS$
+\end_inset
+
+ רק ב 
+\begin_inset Formula $2002$
+\end_inset
+
+ שלוקח לפחות 
+\begin_inset Formula $\Omega\left(n^{6}\right)$
+\end_inset
+
+ זמן(
+\end_layout
+
+\begin_layout Enumerate
+בנוסף יבדוק שאכן, 
+\begin_inset Formula $n=\prod\limits _{i=1}^{t}p_{i}^{e_{i}}$
+\end_inset
+
+ זה יעיל כי 
+\begin_inset Formula $\sum e_{i}$
+\end_inset
+
+ בפירוק אמיתי היא לכל היותר 
+\begin_inset Formula $\log_{2}n=O\left(|x|\right)$
+\end_inset
+
+ ו נבצע לכל היותר מס' כזה של כפליל על מס' באורך 
+\begin_inset Formula $O\left(\left|x\right|\right)$
+\end_inset
+
+ )ה 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+- ים(
+\end_layout
+
+\begin_layout Enumerate
+לבסוף נבדוק האם 
+\begin_inset Formula $y=\frac{n}{p_{1}}$
+\end_inset
+
+ )
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ המחלק הכי גדול( מקיים 
+\begin_inset Formula $y|n$
+\end_inset
+
+ ו 
+\begin_inset Formula $1<k\leq y<n$
+\end_inset
+
+ אם אכן לא מתקיים, מחזיר 
+\begin_inset Quotes eld
+\end_inset
+
+כן
+\begin_inset Quotes erd
+\end_inset
+
+ אחרת מחזיר 
+\begin_inset Quotes eld
+\end_inset
+
+לא
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+תכוונת היחס 
+\begin_inset Formula $\lep$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבחנה היחס 
+\begin_inset Formula $\leq_{P}$
+\end_inset
+
+ )יחס בינארי המוגדר על קב' השפות 
+\begin_inset Formula $P\left(\tc\right)$
+\end_inset
+
+ מקיים:
+\end_layout
+
+\begin_layout Enumerate
+רפלקסיבי : לכל 
+\begin_inset Formula $L\in P\left(\tc\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $L\leq_{P}L$
+\end_inset
+
+ - ע
+\begin_inset Quotes erd
+\end_inset
+
+י פונ' הזהות 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+שהיא כמובן ב 
+\begin_inset Formula $POLY$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לא סימטרי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נקח:
+\begin_inset Formula $L_{2}=HP,L_{1}=\tc$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אז 
+\begin_inset Formula $L_{1}\leq_{p}L_{2}$
+\end_inset
+
+ )נמפה הכל למילה קבוע ב 
+\begin_inset Formula $HP$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Itemize
+בכיון השני 
+\begin_inset Formula $HP\not\leq_{p}\tc$
+\end_inset
+
+ כי אפילו 
+\begin_inset Formula $HP\not\leq\tc$
+\end_inset
+
+ - )בגלל תקפות - 
+\begin_inset Quotes eld
+\end_inset
+
+אין לאן
+\begin_inset Quotes erd
+\end_inset
+
+ למות מילים ב 
+\begin_inset Formula $HP$
+\end_inset
+
+ (
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נשים לב שכל 
+\begin_inset Formula $L\in RE$
+\end_inset
+
+ )ובפרט כל 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ , כי 
+\begin_inset Formula $NP\leq RE$
+\end_inset
+
+ ( מקיימת: 
+\begin_inset Formula $L\leq_{P}L_{u}$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מדוע? עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ נתונה תהי 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט המקבלת את 
+\begin_inset Formula $L$
+\end_inset
+
+ .
+ אזי 
+\begin_inset Formula $f\left(x\right)=\left(\left\langle M_{L}\right\rangle ,\left\langle x\right\rangle \right)$
+\end_inset
+
+ היא פונק' רידוקציה מתאימה שבפרט נתנת לחישוב בזמן פולינומי
+\end_layout
+
+\begin_layout Itemize
+בכיון השני, אם נבחר 
+\begin_inset Formula $L\in R$
+\end_inset
+
+ כלשהי, 
+\begin_inset Formula $L_{u}\leq_{P}L$
+\end_inset
+
+ )אחרת נקבל סתירה למשפט הרדקוציה, כי ידוע ש 
+\begin_inset Formula $L_{u}\notin R$
+\end_inset
+
+ (
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+טרנזיטבית: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אכן ,אם 
+\begin_inset Formula $L_{1}\lep L_{2}$
+\end_inset
+
+ , וגם 
+\begin_inset Formula $L_{2}\lep L_{3}$
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{1}\lep L_{3}$
+\end_inset
+
+ : נרכיב את פונק' הרדוקציה בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל 
+\begin_inset Formula $2$
+\end_inset
+
+ לזו בין 
+\begin_inset Formula $2$
+\end_inset
+
+ ל 
+\begin_inset Formula $3$
+\end_inset
+
+ .בפרט הפונצקיה החדשה נתנת לחישוב )בזמן( פולינומי )החסם הוא הרכבה של החסמים
+ הפולי' לשתי פונק' שהוא גם פולינום(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המשפט המרכזי בהקשר של 
+\begin_inset Formula $NPC$
+\end_inset
+
+ הוא משפט הרדוקציה לפונ' רדקוציה פונילנומיות.
+ נזכיר: 
+\end_layout
+
+\begin_layout Subsubsection*
+משפט הרדוקציה 
+\begin_inset Formula $10.3$
+\end_inset
+
+: יהיו 
+\begin_inset Formula $L_{1},L_{2}\subseteq\tc$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $L_{1}\leq_{p}L_{2}$
+\end_inset
+
+ .
+ אזי 
+\begin_inset Formula $L_{1}\in P\Leftarrow L_{2}\in P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה) דוגמה להוכה של מפשט הרדקוציה המקורי(:
+\end_layout
+
+\begin_layout Standard
+נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט פול' יעילה עבור 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename comp-picture/less11_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט יעילה )דטר( עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f\in POLY\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתוח הבניה:
+\end_layout
+
+\begin_layout Itemize
+נכונות: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תקפות 
+\begin_inset Formula $f$
+\end_inset
+
+ :
+\begin_inset Formula $f\left(x\right)\in L_{2}\underbrace{\Leftrightarrow}_{f}x\in L_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\underbrace{\Leftrightarrow}_{M_{1}}$
+\end_inset
+
+ 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+יעילות: יהיו 
+\begin_inset Formula $p_{1},p_{f}$
+\end_inset
+
+ פולינומים החוסמים את זמן הריצה של 
+\begin_inset Formula $M_{2},M_{f}$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אז 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ רצה בזמן 
+\begin_inset Formula $\underbrace{p_{f}\left(\left|x\right|\right)}_{\text{f(x) - calculation time }}+\underbrace{p_{2}\left(p_{f}\left(\left|x\right|\right)\right)}_{\text{because: \left|y\right|\ensuremath{\leq p_{f}\left(\left|x\right|\right)}}}\geq$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $11.2$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ אז 
+\begin_inset Formula $P=NP\Leftrightarrow L\in P$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיון 1 :
+\end_layout
+
+\begin_layout Itemize
+נניח 
+\begin_inset Formula $L\in P$
+\end_inset
+
+ מהגדרת 
+\begin_inset Formula $NPC$
+\end_inset
+
+ )חלק 2 (
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+ 
+\begin_inset Formula $L'\lep L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+עכשיו ממשפט הרידקוציה 
+\begin_inset Formula $L'\in P$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $NP=P$
+\end_inset
+
+ )כי 
+\begin_inset Formula $L'$
+\end_inset
+
+ שפה כלשהי ב 
+\begin_inset Formula $NP$
+\end_inset
+
+ ( 
+\end_layout
+
+\begin_layout Standard
+כיון 2 :
+\end_layout
+
+\begin_layout Itemize
+נניח ש 
+\begin_inset Formula $P=NP$
+\end_inset
+
+ , אז מהגדרת 
+\begin_inset Formula $NPC$
+\end_inset
+
+ )חלק 1( 
+\begin_inset Formula $L\in NP=P$
+\end_inset
+
+ -
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+בעיות שונות ב 
+\begin_inset Formula $NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+טענה 
+\begin_inset Formula $11.3$
+\end_inset
+
+ : תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+ .
+ אזי אם 
+\begin_inset Formula $L\lep L'$
+\end_inset
+
+ אז 
+\begin_inset Formula $L'\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה -נראה ש 
+\begin_inset Formula $L'$
+\end_inset
+
+מקיימת את שתי הדרישות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+ )נתון(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L'\in NPH$
+\end_inset
+
+ .כלומר, מקיימת 
+\begin_inset Formula $L\lep L'$
+\end_inset
+
+ , וגם לכל 
+\begin_inset Formula $L"\in NP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L"\lep L$
+\end_inset
+
+ )כי 
+\begin_inset Formula $l\in NPC$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $L\in NPH$
+\end_inset
+
+ ( כעת מטרנזיטביות של 
+\begin_inset Formula $\lep$
+\end_inset
+
+ , 
+\begin_inset Formula $L"\lep L'$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $L'\in NPH$
+\end_inset
+
+ )כי 
+\begin_inset Formula $L"$
+\end_inset
+
+ שפה כלשהי ב 
+\begin_inset Formula $NP$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $11.5$
+\end_inset
+
+ : 
+\begin_inset Formula $BH\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+רעיון ההוכחה )לפחות לחלק של 
+\begin_inset Formula $NPH$
+\end_inset
+
+ ( דומה לשלמות של 
+\begin_inset Formula $L_{u}$
+\end_inset
+
+ ב 
+\begin_inset Formula $RE$
+\end_inset
+
+ שראינו .
+ בפרט לא מאוד מפתיע שהבעיה ב 
+\begin_inset Formula $NPC$
+\end_inset
+
+ )נובע כמעט מיידית מהגדרת 
+\begin_inset Formula $NP$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+פורמלית:
+\end_layout
+
+\begin_layout Standard
+יש להראות ע
+\begin_inset Quotes erd
+\end_inset
+
+פ הגדרת 
+\begin_inset Formula $NPC$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $BH\in NP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נבנה א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולינומית מתאימה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{BH}\left(\left\langle M\right\rangle ,1^{P},\left\langle x\right\rangle \right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+תנחש מסלול חשוב בעץ של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ שאורכו 
+\begin_inset Formula $l\geq$
+\end_inset
+
+ )ראינו איך עושים זאת(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כלומר המחרוזת 
+\begin_inset Formula $y$
+\end_inset
+
+ שמנחשים היא מהצורה 
+\begin_inset Formula $y=y_{1},y_{2},...y_{t}$
+\end_inset
+
+ , כאשר 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ מגדיר אם בוחרים אפשרות 0 או 1 ב 
+\begin_inset Formula $\delta$
+\end_inset
+
+ בצעד 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ במסלול המוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $y$
+\end_inset
+
+ אם המסלול מסתיים בדיוק כך ש
+\begin_inset Formula $y$
+\end_inset
+
+ מסתיים, ומסתיים ב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ נקבל ,אחרת נדחה
+\end_layout
+
+\begin_layout Standard
+נכונות הבניה:
+\end_layout
+
+\begin_layout Standard
+נכונות : 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left(\left\langle M\right\rangle ,1^{P},\left\langle x\right\rangle \right)\in BH$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ ב 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים מסלול 
+\begin_inset Formula $y$
+\end_inset
+
+ באורך 
+\begin_inset Formula $t\leq l$
+\end_inset
+
+ המקבת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ )מהבניה( 
+\begin_inset Formula $M_{BH}$
+\end_inset
+
+ תנחש מסלול 
+\begin_inset Formula $y$
+\end_inset
+
+ מקבל כזה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\left\langle M\right\rangle ,1^{P},\left\langle x\right\rangle \right)\in L\left(M_{BH}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יעילות:
+\end_layout
+
+\begin_layout Itemize
+שלב 1 : ניחוש 
+\begin_inset Formula $y$
+\end_inset
+
+ : 
+\begin_inset Formula $O\left(l\right)$
+\end_inset
+
+ צעדים
+\end_layout
+
+\begin_layout Itemize
+שלב 2 )הרצה( : המכונה האוניברסלית שבנינו על קבלט 
+\begin_inset Formula $\left\langle M\right\rangle ,\left\langle x'\right\rangle $
+\end_inset
+
+ אכן רצה בזמן פולינומי ב 
+\begin_inset Formula $\left|M\right|$
+\end_inset
+
+ ומספר צעדי הסימולציה ו 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+.
+ )שמירה ועדכן קונפיגרוציה נוכחית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאן מס' צעדי הסימולציה , היא 
+\begin_inset Formula $l\geq$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ פולינומי בקלט שאורכו 
+\begin_inset Formula $\left|\left\langle M\right\rangle \right|+l+\left|\left\langle x\right\rangle \right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $BH\in NPH$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ נגדיר רדקוציה פול'י מ 
+\begin_inset Formula $L$
+\end_inset
+
+ ל 
+\begin_inset Formula $BH$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)$
+\end_inset
+
+ פולטת: 
+\begin_inset Formula $\left(\left\langle M_{L}\right\rangle ,1^{P_{L}\left(\left|x\right|\right)},\left\langle x\right\rangle \right)$
+\end_inset
+
+ , כאשר 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולינומית )קיימת כי 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ (, ו 
+\begin_inset Formula $P_{L}\left(\left|x\right|\right)$
+\end_inset
+
+ חסם המובטח עבור 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה ש 
+\begin_inset Formula $f$
+\end_inset
+
+ אכן פונק' רידקוציה פלונומית תקפה מ 
+\begin_inset Formula $L$
+\end_inset
+
+ ל 
+\begin_inset Formula $BH$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+2.
+ תקפות - ישירות מהגדרת 
+\begin_inset Formula $NP$
+\end_inset
+
+ וחסם זמן ריצה עבור מכונה א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולינומית:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים ב 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מסלול המקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\overset{\text{\ensuremath{1} }}{\iff}$
+\end_inset
+
+
+\begin_inset Formula $\left(\left\langle M_{L}\right\rangle ,1^{P_{L}\left(\left|x\right|\right)},\left\langle x\right\rangle \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+1.
+ כיון ש 
+\begin_inset Formula $P_{L}$
+\end_inset
+
+ חסם על אורך כל מסלול, מסלול מקבל, אם , קיים אורכו 
+\begin_inset Formula $P_{L}\left(x\right)\geq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 .
+ 
+\begin_inset Formula $\delta\in POLY$
+\end_inset
+
+ : נבנה מ
+\begin_inset Quotes erd
+\end_inset
+
+ט פול' עבור 
+\begin_inset Formula $M_{f},f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{f}\left(x\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+כתיבת 
+\begin_inset Formula $\left\langle M_{L}\right\rangle $
+\end_inset
+
+ - זמן קבוע 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ .
+ לא תלוי ב 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+חישוב זמן כתיבת 
+\begin_inset Formula $x$
+\end_inset
+
+ , לנארי ב 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ )מקודדים אות-אות(
+\end_layout
+
+\begin_layout Enumerate
+חישוב 
+\begin_inset Formula $P_{L}\left(\left|x\right|\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נחשב את 
+\begin_inset Formula $x$
+\end_inset
+
+ בבינארי, בעצם נמיר את 
+\begin_inset Formula $x$
+\end_inset
+
+ מאונארי לבינארי , דורש בערך 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+ זמן
+\end_layout
+
+\begin_layout Enumerate
+נחשב את הפולינום 
+\begin_inset Formula $P_{L}\left(b\right)$
+\end_inset
+
+ - דורש מס' קבוע של כפלים על מספרים בגודל 
+\begin_inset Formula $O\left(\log\left|x\right|\right)$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לדוגמה אם 
+\begin_inset Formula $p=17\cdot n^{4}$
+\end_inset
+
+ : נבצע שלושה כפלים כדי לחשב 
+\begin_inset Formula $n^{4}$
+\end_inset
+
+ נצבור בכל פעם את המכפלה עד כדי 
+\begin_inset Formula $n,n^{2},n^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ואז נכפול ב 
+\begin_inset Formula $17$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ זמן 
+\begin_inset Formula $poly\left(\log\left|x\right|\right)$
+\end_inset
+
+ - נשתמש באלג' בית לכפל.
+ תהי 
+\begin_inset Formula $c$
+\end_inset
+
+ התוצאה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+נמיר את 
+\begin_inset Formula $c$
+\end_inset
+
+ חזרה לאונארי = זמן 
+\begin_inset Formula $O\left(c\log c\right)$
+\end_inset
+
+ שזה פולינומי ב 
+\begin_inset Formula $|x|$
+\end_inset
+
+ בערך 
+\begin_inset Formula $P_{L}\left|x\right|$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\align center
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ פולנומי ב 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הערה: למה חשוב ב 
+\begin_inset Formula $BH$
+\end_inset
+
+ לייצג את החסם 
+\begin_inset Formula $l$
+\end_inset
+
+ על מס' הצעדים באונארי? למה לא בבינארי?
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $l$
+\end_inset
+
+ היה נתון בבינארי אז 
+\begin_inset Formula $M_{BH}$
+\end_inset
+
+ שבינינו לא היתה בהכרח יעילה.
+ למה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{BH}$
+\end_inset
+
+ מבצעת לפחות 
+\begin_inset Formula $l$
+\end_inset
+
+ צעדים באחד המסלולים )שבו מנחשים 
+\begin_inset Formula $y$
+\end_inset
+
+ באורך 
+\begin_inset Formula $l$
+\end_inset
+
+ ( , בייצוג בינארי הקלט היה נראה כך 
+\begin_inset Formula $\left\langle \left\langle M\right\rangle ,l,\left\langle x\right\rangle \right\rangle $
+\end_inset
+
+ כאשר אם 
+\begin_inset Formula $l$
+\end_inset
+
+ בבינארי , הוא דורש 
+\begin_inset Formula $O\left(\log l\right)$
+\end_inset
+
+ ביטים, זמן הריצה שלנו היה במקרה הגרוע אקספו' בקלט )לא מובטח ש 
+\begin_inset Formula $\left\langle M\right\rangle ,\left\langle x\right\rangle $
+\end_inset
+
+ מספיק ארוכים יחסית ל 
+\begin_inset Formula $l$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.4$
+\end_inset
+
+ 
+\begin_inset Formula $VC\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+1.
+ 
+\begin_inset Formula $VC\in NPC$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולינומית עבור 
+\begin_inset Formula $VC$
+\end_inset
+
+ - 
+\begin_inset Formula $M_{VC}\left(\left\langle G\right\rangle ,k\right)$
+\end_inset
+
+ תנחש קב' 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ , ותבדוק שהיא מהווה 
+\begin_inset Formula $VC$
+\end_inset
+
+ )כל הקשתות מכוסות על ידה( 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא קשה לראות שהמכונה אכן פולינומית )בפרט 
+\begin_inset Formula $\left|U\right|$
+\end_inset
+
+ שמנחשים היא באורך 
+\begin_inset Formula $k\log n$
+\end_inset
+
+ ביטים , לדוגמה והבדיקה גם ניתנת לבצוע בזמן פולינומי בגרף (
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+2.
+ 
+\begin_inset Formula $VC\in NPC$
+\end_inset
+
+ - אחר ההפסקה
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.5$
+\end_inset
+
+ 
+\begin_inset Formula $HS\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\end_layout
+
+\begin_layout Enumerate
+1.
+ 
+\begin_inset Formula $HS\in NP$
+\end_inset
+
+ : מ
+\begin_inset Quotes erd
+\end_inset
+
+ט א
+\begin_inset Quotes erd
+\end_inset
+
+ד פולי' מתאימה תחשב 
+\begin_inset Formula $U$
+\end_inset
+
+ ותבדוק שאכן 
+\begin_inset Formula $\forall i\ U\cup C_{i}\neq\phi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+2.
+ 
+\begin_inset Formula $HS\in NPH$
+\end_inset
+
+ : נראה עי
+\begin_inset Quotes erd
+\end_inset
+
+י רדוקציה מ 
+\begin_inset Formula $VC$
+\end_inset
+
+ ממשפט 
+\begin_inset Formula $12.4$
+\end_inset
+
+ , נקבל ש 
+\begin_inset Formula $HS\in NPH$
+\end_inset
+
+ )כי 
+\begin_inset Formula $VC\in NPH$
+\end_inset
+
+ (
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+רעיון הרדוקציה:
+\end_layout
+
+\begin_layout Standard
+כאן , נשים לב ש 
+\begin_inset Formula $VC$
+\end_inset
+
+ הוא מקרה פרטי של 
+\begin_inset Formula $HS$
+\end_inset
+
+ : קיים מיפוי מאוד פשוט מקבל עבור 
+\begin_inset Formula $VC$
+\end_inset
+
+ לקלט עבור 
+\begin_inset Formula $HS$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(\left\langle G\right\rangle ,x\right)$
+\end_inset
+
+: מזהה בין 
+\begin_inset Formula $V=\left\{ v_{1},...,v_{n}\right\} $
+\end_inset
+
+ ל 
+\begin_inset Formula $\left[n\right]$
+\end_inset
+
+ )למשל נזהה בין 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ למספר 
+\begin_inset Formula $i$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=k'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נזהה בין 
+\begin_inset Formula $E$
+\end_inset
+
+ לבין הקב' 
+\begin_inset Formula $C_{1},...,C_{t}$
+\end_inset
+
+ כל 
+\begin_inset Formula $e_{i}=\left\{ v_{i1},v_{i2}\right\} $
+\end_inset
+
+ תמופה ל 
+\begin_inset Formula $C_{i}=\left\{ i1,i2\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נפלוט :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left(n,k,C_{1},...,C_{t=\left|E\right|}\right)$
+\end_inset
+
+ שקבלנו
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נכונות הרידוקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ פולינומית: עוברים על הגרף, סופרים קודקודים ומעתיקים את מס' הקדקדים שיצא
+ , את 
+\begin_inset Formula $k$
+\end_inset
+
+ ,ו את הקשתות )תוך כדי מיפוי למספרים התאימים ( - זה פולינומי )ב 
+\begin_inset Formula $\left|\left\langle G\right\rangle ,k\right|$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+תקפות 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+הרעיון כאן הוא )תמיד( להראות כיצד עד עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ , מתרגם לעד עבור 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ולהיפך )נרחיב עוד מעט(
+\end_layout
+
+\begin_layout Standard
+כיון 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $\left(\left\langle G\right\rangle ,k\right)\in VC$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\left\{ V_{i1},...,v_{ik}\right\} $
+\end_inset
+
+ המהווה 
+\begin_inset Formula $VC$
+\end_inset
+
+ עבור 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\left\{ i1,....,ik\right\} $
+\end_inset
+
+ המכסה את כל הקב' 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ ,שכן אם 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא 
+\begin_inset Formula $VC$
+\end_inset
+
+ אז מתקיים בעצם 
+\begin_inset Formula $e\cap U\neq\phi$
+\end_inset
+
+ 
+\begin_inset Formula $\forall e\in E$
+\end_inset
+
+ , ולכן לכל 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ שהתקבל מ
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ כלשהו 
+\begin_inset Formula $C_{i}\cap U'=\phi$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(\left\langle G\right\rangle ,k\right)\in HS$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כיוון
+\begin_inset Formula $\text{\ensuremath{\Rightarrow}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+בשונה מהחלק הראשון בקורס לא נוכיח: שאם 
+\begin_inset Formula $x\notin L_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f(x)\notin L_{2}$
+\end_inset
+
+ , אלא נוכיח טענה שקולה שלפיה אם 
+\begin_inset Formula $f(x)\in L_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x\in L_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו: 
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $f\left(\left\langle G\right\rangle ,k\right)\in HS$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת קב' 
+\begin_inset Formula $U\in\left[n\right]$
+\end_inset
+
+ , 
+\begin_inset Formula $U=\left\{ i_{1},i_{2},....,i_{k}\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $U'\cap C_{i}\neq\phi$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ )בניה בפרט 
+\begin_inset Formula $k=k'$
+\end_inset
+
+ ( קיים 
+\begin_inset Formula $VC$
+\end_inset
+
+ 
+\begin_inset Formula $U=\left\{ v_{i1},....,v_{ik}\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\left\langle G\right\rangle ,k\right)\in VC$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הערה: הכיון ההפוך 
+\begin_inset Formula $HS\leq_{P}VC$
+\end_inset
+
+ יותר מסובך, כי 
+\begin_inset Formula $VC$
+\end_inset
+
+ הוא מקרה פרטי, רידוקציה אפשרית:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $HS\leq_{P}SAT_{P}\lep3SAT\lep VC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.6$
+\end_inset
+
+ 
+\begin_inset Formula $SC\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+1.
+ 
+\begin_inset Formula $SC\in NP$
+\end_inset
+
+.
+ ננחש 
+\begin_inset Formula $i\subseteq\left[t\right]$
+\end_inset
+
+ בודק 
+\begin_inset Formula $k$
+\end_inset
+
+ , ובודקים האם 
+\begin_inset Formula $\bigcup\limits _{i\in I}C_{i}=\left[n\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+2.
+ 
+\begin_inset Formula $SC\in NPH$
+\end_inset
+
+ : נראה 
+\begin_inset Formula $VC\lep SC$
+\end_inset
+
+ , ונסיק 
+\begin_inset Formula $SC\in NPH$
+\end_inset
+
+ על סמך משפט 
+\begin_inset Formula $12.4$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+רעין הבניה
+\end_layout
+
+\begin_layout Standard
+העבודה שמחפשים 
+\begin_inset Formula $k$
+\end_inset
+
+ קב' רומזת שנרצה 
+\begin_inset Formula $k=k'$
+\end_inset
+
+ ונרצה אישהו לזהות בין הקודקדים לבין הקבוצות 
+\begin_inset Formula $C_{1},...C_{t}$
+\end_inset
+
+ ובין 
+\begin_inset Formula $E$
+\end_inset
+
+ ל 
+\begin_inset Formula $\left[n\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כיצד נזהה בין הצמתים לקבוצות? לכל קדקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ נתאים לו את קב' הקשתות 
+\begin_inset Formula $E_{v}=\left\{ e|v\in e\right\} $
+\end_inset
+
+ , כלומר הקשתות היוצאות מ
+\begin_inset Formula $v$
+\end_inset
+
+ .
+ נסכם:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $f\left(\left\langle G\right\rangle ,k'\right)=\left(n=\left|E\right|,k=k',C_{1},...,C_{t=\left|V\right|}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $C_{i}=E_{v_{i}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נכונות הרדוקציה 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+פולינומית : סופרים קשתות, ואז עוברים על הצמתים ולכל צומת מחשבים את 
+\begin_inset Formula $E_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תקפות: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\left(\left\langle G\right\rangle ,k'\right)\in VC$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $VC$
+\end_inset
+
+ 
+\begin_inset Formula $U=\left\{ V_{i1},...,V_{ik'}\right\} $
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $SC$
+\end_inset
+
+ 
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $I=\left\{ i1,...,ik\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k=k'$
+\end_inset
+
+ )מהבניה ( כך ש
+\end_layout
+
+\begin_layout Standard
+\align center
+מתרגם חזרה ל 
+\begin_inset Formula $\left[\left|E\right|\right]$
+\end_inset
+
+
+\begin_inset Formula $\bigcup\limits _{i\in I}C_{i}\ec *\bigcup\limits _{i\in I}E_{v_{i}}\ec{vc}\rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $*$
+\end_inset
+
+ עד כדי מספור שמות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f\left(\left\langle G\right\rangle ,k'\right)\in SC$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת קב' 
+\begin_inset Formula $\left\{ i_{1},...,i_{k}\right\} =I\subseteq\left[n\right]$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\bigcup\limits _{i\in I}C_{i}=\left[n\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ )מהבניה( קיימת קב' קדקודים 
+\begin_inset Formula $U=\left\{ v_{i1},....,v_{ik'=k}\right\} $
+\end_inset
+
+ המהווה 
+\begin_inset Formula $VC$
+\end_inset
+
+ עבור 
+\begin_inset Formula $E$
+\end_inset
+
+ )כי מבחירת 
+\begin_inset Formula $I$
+\end_inset
+
+ , היא מכסה את כל הקשתות , כי כל 
+\begin_inset Formula $C_{i_{j}}$
+\end_inset
+
+ היא למעשה 
+\begin_inset Formula $E_{v_{i_{j}}}$
+\end_inset
+
+ -קב' הקשתות היצאות מ 
+\begin_inset Formula $V_{i_{j}}$
+\end_inset
+
+ מש
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+משפט 
+\begin_inset Formula $12.7$
+\end_inset
+
+ 
+\begin_inset Formula $3SAT\in NPC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $3SAT\in NP$
+\end_inset
+
+ , ננחש השמה 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ונבדוק שהיא מספקת ונקבל את 
+\begin_inset Formula $\varphi\left(x\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\phi$
+\end_inset
+
+ אכן מספקת
+\end_layout
+
+\begin_layout Standard
+2.
+ נראה על ידי 
+\begin_inset Formula $SAT\lep3SAT$
+\end_inset
+
+ - נראה בשבוע הבא, נקבל ש 
+\begin_inset Formula $3SAT\in NPH$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הערה: זה שימושי לפשט את 
+\begin_inset Formula $SAT$
+\end_inset
+
+ ל 
+\begin_inset Formula $3SAT$
+\end_inset
+
+ )כשפה 
+\begin_inset Formula $NPC$
+\end_inset
+
+ ( כדי להקל על רדוקציות לפשות חדשות בגלל המבנה היותר פשוט של 
+\begin_inset Formula $3SAT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רעיון הרידוקציה:
+\end_layout
+
+\begin_layout Standard
+עבור קלט 
+\begin_inset Formula $\varphi\left(x_{1},..,x_{n}\right)$
+\end_inset
+
+ לרדוקציה 
+\begin_inset Formula $\varphi\left(x\right)=\bigwedge\limits _{i=1}^{m}C_{i}$
+\end_inset
+
+ נפלוט 
+\begin_inset Formula $\varphi'\left(x,y\right)$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $\varphi\left(x,y\right)=\bigwedge\limits _{i=1}^{m}C'_{j}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ יהיה פסוק 
+\begin_inset Formula $3CNF$
+\end_inset
+
+.
+ שימו לב שלמרות ש 
+\begin_inset Formula $C_{i}'$
+\end_inset
+
+ הוא לא בהכרח פסוקית בודדת ל 
+\begin_inset Formula $\bigwedge\limits _{i=1}^{m}C_{i}'$
+\end_inset
+
+ יהיה מבנה של 
+\begin_inset Formula $3CNF$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+לדוגמה, נגדיר ש: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{matrix}C_{1}'=\left(x_{1}\lor\overline{x_{3}}\lor y_{1}\right)\land\left(x_{17}\lor\overline{y_{1}}\lor\overline{x_{3}}\right)\\
+C_{2}'=\left(x_{2}\lor x_{3}\lor x_{7}\right)\land\left(x_{1}\lor x_{1}\lor\overline{x_{8}}\right)\\
+than:\\
+C'_{1'}\land C_{2}'=\left(x_{1}\lor\overline{x_{3}}\lor y_{1}\right)\land...\land\left(x_{1}\lor\overline{x_{3}}\lor y_{1}\right)
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיצד נבצע את ההתאמה בין 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ ל 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ נחלק למקרים:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $C_{i}=l_{1}\lor l_{2}\lor l_{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 3 ליטרלים ניקח 
+\begin_inset Formula $C'_{1}=C_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $C_{i}=l_{1}\lor l_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 2 ליטרלים , ניקח 
+\begin_inset Formula $C_{i}'=\left(l_{1}\lor l_{2}\lor l_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $C_{i}=l_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 1 ליטרלים , נכפיל כמו ב2
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\begin_inset Formula $C_{i}=\bigvee\limits _{j=1}^{t}l_{i,j}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $t\geq u$
+\end_inset
+
+ .
+ נתאים 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C'_{i}=\left(l_{i_{1}}\lor l_{i_{2}}\lor y_{i_{1}}\right)\land\left(\overline{y_{i_{1}}}\lor l_{i_{2}}\lor y_{i_{2}}\right)\land\left(\overline{y_{i_{2}}}\lor l_{i_{4}}\lor y_{i_{3}}\right)\land....\land\land\left(\overline{y_{i_{t-3}}}\lor l_{i_{t-1}}\lor y_{i_{t}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+בראשון והאחרון יש שתי משתנים מקוריים ומשתנה 1 חדש
+\end_layout
+
+\begin_layout Standard
+\align center
+באמצעים יש את המשתנה שהוספנו בשלילה , ומשתנה חדש נוסף
+\end_layout
+
+\begin_layout Standard
+לדוגמה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{14}=x_{1}\lor\overline{x_{14}}\lor x_{12}\lor\overline{x_{3}\lor}x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הופך ל:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C'_{14}=\left(x_{1}\lor\overline{x_{14}}\lor y_{14,1}\right)\land\left(\overline{y_{14,1}}\lor x_{12}\lor y_{14,2}\right)\land\left(\overline{y_{14,2}}\lor\overline{x_{3}}\lor x_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ לא שקול לוגית ל 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ )אפילו סט המשתנים עליו הם מוגדרים שונה - אם נסתכל על 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ כמוגדר מעל 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ עדיין לא תהיה שקילות לוגית(
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נתוח 
+\begin_inset Formula $f\left(\varphi\left(X\right)\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+פולינומית
+\end_layout
+
+\begin_layout Standard
+כל פסוקית הופכת לפסוקית שאורכו פי 3 מהפסוקית המקורית )מבחינת מס' ליטרלים(
+ וגם קל לחשב את 
+\begin_inset Formula $C_{i}'$
+\end_inset
+
+ .
+ בערך לינארי ב
+\begin_inset Formula $\left|\varphi\left(x)\right)\right|$
+\end_inset
+
+על מכונת 
+\begin_inset Formula $RAM$
+\end_inset
+
+ )כולל הקצאת ה 
+\begin_inset Formula $y_{i,j}$
+\end_inset
+
+ ים (
+\end_layout
+
+\begin_layout Standard
+תקפות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $\varphi\left(x_{1},..,x_{n}\right)\in SAT$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+ השמה מספקת עבור 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ , נבנה השמה 
+\begin_inset Formula $\phi'\left(x,y\right)$
+\end_inset
+
+ המספקת את 
+\begin_inset Formula $\varphi'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $\phi'\left(x\right)=\phi\left(x\right)$
+\end_inset
+
+ ונקוה שנצליח להשלים השמה ל 
+\begin_inset Formula $y$
+\end_inset
+
+ים שסה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $\phi'$
+\end_inset
+
+ תספק את 
+\begin_inset Formula $\varphi'$
+\end_inset
+
+ )אכן נצליח(
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ , נשלים את ההשמה ל
+\begin_inset Formula $\phi'$
+\end_inset
+
+ ל 
+\begin_inset Formula $y_{i,j}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ תסתפק.
+ אם נצליח, אז גם 
+\begin_inset Formula $\varphi=\bigwedge C'_{i}$
+\end_inset
+
+ יסתק ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\phi'$
+\end_inset
+
+ .
+ נחלק למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C_{i}'$
+\end_inset
+
+ לא מכיל 
+\begin_inset Formula $y_{i'j}$
+\end_inset
+
+ים במקרה זה היא שווה ל 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ .
+ כיון ש 
+\begin_inset Formula $\phi'\left(x\right)=\phi\left(x\right)$
+\end_inset
+
+ , ו 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מספקת את 
+\begin_inset Formula $\varphi'$
+\end_inset
+
+ אז 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מספקת גם את 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\varphi=\bigwedge C_{i}$
+\end_inset
+
+( ולכן גם את 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $C_{i'}$
+\end_inset
+
+ מכיל 
+\begin_inset Formula $y_{i,j}$
+\end_inset
+
+ ים : נשים לב שקיים ליטרל 
+\begin_inset Formula $l_{i,j}=x_{r_{i}}$
+\end_inset
+
+ המסתפק ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\phi$
+\end_inset
+
+ בגלל השמה של ל 
+\begin_inset Formula $x$
+\end_inset
+
+ , כי 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מספקת כל פסוקית 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ , וכדי ש
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ תסתפק לפחות ליטרל אחד שלה צריך להסתפק.
+ נחלק למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $l_{i,j}$
+\end_inset
+
+ אינו שייך לפסוקיות ה
+\begin_inset Quotes erd
+\end_inset
+
+קצה
+\begin_inset Quotes erd
+\end_inset
+
+ ב 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{i}'=...\left(\overline{y_{i,j-3}}\lor l_{ij-1}\lor\underbrace{y_{i,j-2}}_{T}\right)\land\left(\underbrace{\overline{y_{i,j-2}}}_{F}\lor\underbrace{l_{ij}}_{T}\lor\underbrace{y_{i,j-1}}_{F}\right)\land\left(\underbrace{\overline{y_{i,j-1}}}_{T}\lor l_{ij+1}\lor y_{i,j}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Formula $l_{i,j}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $T$
+\end_inset
+
+ )כי ההשמה מספקת( נקבע 
+\begin_inset Formula $y_{i,j-1}=\overline{y_{i,j-2}}=F$
+\end_inset
+
+ , ואז ה
+\begin_inset Quotes erd
+\end_inset
+
+גל
+\begin_inset Quotes erd
+\end_inset
+
+ יתפשט
+\end_layout
+
+\begin_layout Standard
+כלומר ה
+\begin_inset Quotes erd
+\end_inset
+
+גל של 
+\begin_inset Formula $T$
+\end_inset
+
+ים יתפשט שמאלה וימינה ויאפשר לקבוע את 
+\begin_inset Formula $y_{i,j}$
+\end_inset
+
+ ים כך שכל הפסוקיות ב 
+\begin_inset Formula $C'_{i}$
+\end_inset
+
+ יסתפקו.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נניח ש 
+\begin_inset Formula $\varphi'\left(x,y\right)\in SAT$
+\end_inset
+
+ ונוכיח ש 
+\begin_inset Formula $\varphi\left(x\right)\in SAT$
+\end_inset
+
+ - שיעור הבא
+\end_layout
+
+\end_body
+\end_document
